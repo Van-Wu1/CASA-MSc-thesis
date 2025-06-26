@@ -3,7 +3,7 @@ title: CASA dissertation using Bookdown
 
 author: 
 - |
-    | Andrew MacLachlan
+    | Yifan Wu
     |    
     | CASA0010, MSc Smart Cities Dissertation 
     |  
