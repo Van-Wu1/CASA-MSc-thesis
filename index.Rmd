@@ -3,11 +3,11 @@ title: CASA dissertation using Bookdown
 
 author: 
 - |
-    | Andrew MacLachlan
+    | Yifan Wu
     |    
     | CASA0010, MSc Smart Cities Dissertation 
     |  
-    | Supervisor: Dr Andrew MacLachlan
+    | Supervisor: Dr Duncan Smith
     |
     | Repository: https://andrewmaclachlan.github.io/CASA0005repo/
     |  
@@ -15,7 +15,7 @@ author:
     | MSc (Or MRes) in the Centre for Advanced Spatial Analysis, 
     | Bartlett Faculty of the Built Environment, UCL
     |
-    | Word count:  
+    | Word count:  unknown 17:08 update
 
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
