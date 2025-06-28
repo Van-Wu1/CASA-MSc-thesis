@@ -1,22 +1,26 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 \documentclass[
   12pt,
   oneside]{book}
+\usepackage{xcolor}
+\usepackage[left=4cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
-\usepackage{setspace}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -24,6 +28,7 @@
   \usepackage[]{microtype}
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
+\usepackage{setspace}
 \makeatletter
 \@ifundefined{KOMAClassName}{% if non-KOMA class
   \IfFileExists{parskip.sty}{%
@@ -34,15 +39,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={CASA dissertation using Bookdown},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
-\usepackage[left=4cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -54,13 +50,13 @@
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
 \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
 \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
 \newcommand{\BuiltInTok}[1]{#1}
 \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
 \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
 \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
 \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
 \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
@@ -68,7 +64,7 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
 \newcommand{\ExtensionTok}[1]{#1}
 \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
 \newcommand{\ImportTok}[1]{#1}
 \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
@@ -77,7 +73,7 @@
 \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
 \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
 \newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
 \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
@@ -95,21 +91,26 @@
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
+\usepackage[style=apa,]{biblatex}
+\addbibresource{book.bib}
+\addbibresource{packages.bib}
+\addbibresource{test.bib}
 \usepackage[none]{hyphenat}
 \pagestyle{plain}
 \raggedbottom
@@ -139,29 +140,29 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
-\usepackage[style=apa,]{biblatex}
-\addbibresource{book.bib}
-\addbibresource{packages.bib}
-\addbibresource{test.bib}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={CASA dissertation using Bookdown},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{CASA dissertation using Bookdown}
-\author{Andrew MacLachlan\\
-~\\
+\author{Yifan Wu\\
+\strut \\
 CASA0010, MSc Smart Cities Dissertation\\
-~\\
+\strut \\
 Supervisor: Dr Andrew MacLachlan\\
-~\\
+\strut \\
 Repository: \url{https://andrewmaclachlan.github.io/CASA0005repo/}\\
-~\\
+\strut \\
 This dissertation is submitted in part requirement for the\\
 MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
-~\\
+\strut \\
 Word count:}
-\date{2021-04-12}
+\date{2025-06-26}
 
 \begin{document}
 \maketitle
@@ -169,20 +170,17 @@ Word count:}
 \setstretch{1.5}
 \pagenumbering{roman}
 
-\hypertarget{abstract}{%
-\chapter*{Abstract}\label{abstract}}
+\chapter*{Abstract}\label{abstract}
 
 Some abstract text
 
 \pagenumbering{roman}
 
-\hypertarget{declaration}{%
-\chapter*{Declaration}\label{declaration}}
+\chapter*{Declaration}\label{declaration}
 
 I hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
 
-\hypertarget{acknowledgements}{%
-\chapter*{Acknowledgements}\label{acknowledgements}}
+\chapter*{Acknowledgements}\label{acknowledgements}
 
 I would like to thank blah blah
 
@@ -192,10 +190,9 @@ I would like to thank blah blah
 \listoffigures
 \listoftables
 
-\hypertarget{abbreviations}{%
-\chapter*{Abbreviations}\label{abbreviations}}
+\chapter*{Abbreviations}\label{abbreviations}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{ll}
 \toprule
@@ -208,22 +205,19 @@ Digital Terrain Model & DTM\\
 \end{tabular}
 \end{table}
 
-\hypertarget{bookdown-basics}{%
-\chapter{Bookdown basics}\label{bookdown-basics}}
+\chapter{Bookdown basics}\label{bookdown-basics}
 
 \pagenumbering{arabic} 
 
 Bookdown enables us to take raw text files (e.g.~Rmarkdown files) and output them into a number of different formats with ease. This is more useful than LaTex as you can create a word version for comments from your supervisor, a pdf for final submission and an online book for your own portfolio.
 
-\hypertarget{structure}{%
-\section{Structure}\label{structure}}
+\section{Structure}\label{structure}
 
 A bookdown book simply combines multiple Rmarkdown files into .pdf, html or .epub (but i've disabled epub here).
 
 All Rmakdown files must be located in the base (or root) of the project. For example, don't got putting the .Rmd in a folder called chapters and then wonder why it's not working. They all must be in the same folder as the project file. You can however put output figure images into a folder (e.g.~figures) then call them in.
 
-\hypertarget{building-the-book}{%
-\section{Building the book}\label{building-the-book}}
+\section{Building the book}\label{building-the-book}
 
 You will need the packages: \texttt{bookdown,\ kabble,\ knitr}
 
@@ -287,8 +281,7 @@ You can also export the whole document as word by clicking Build Book and select
   use .pdf.
 \end{itemize}
 
-\hypertarget{yamls}{%
-\section{YAMLs}\label{yamls}}
+\section{YAMLs}\label{yamls}
 
 You will see some files with a \texttt{.yml} extension. These stand for yet another markup language.
 
@@ -300,8 +293,7 @@ The \texttt{\_bookdown.yml} controls the order in which the files are made into 
 
 I have set these up to create nice outputs, so there is really no need to change anything, unless you want to add a new chapter and include it in the list. To do so, simply create a new Rmarkdown document, delete all the default content, add a first level heading, and the then add it to where you want it to appear in the document in the \texttt{\_bookdown.yml}.
 
-\hypertarget{formatting}{%
-\section{Formatting}\label{formatting}}
+\section{Formatting}\label{formatting}
 
 You'll notice in the \texttt{\_output.yml} that the various formats (html (or gitbook) and pdf) are calling styling codes. The gitbook calls \texttt{style.css} and the \texttt{pdf\_book} calls \texttt{preamble.tex}. These files just style the various outputs.
 
@@ -313,8 +305,7 @@ For the .pdf version in the \texttt{preamble.tex} we have to use LaTex code. I a
 
 This tutorial from OurCoding Club explains some of the LaTex packages in a bit more detail: \url{https://ourcodingclub.github.io/tutorials/rmarkdown-dissertation/}
 
-\hypertarget{index-file}{%
-\section{Index file}\label{index-file}}
+\section{Index file}\label{index-file}
 
 Open up the \texttt{index.Rmd} this \texttt{Rmd} must be called first in the \texttt{\_bookdown.yml} list. There are a number of options here, but i've set them all up to be compliant with the CASA thesis requirements.
 
@@ -326,8 +317,7 @@ Input your GitHub repo and add a description.
 
 If you ever wanted to just create a report and not a thesis you can change the \texttt{documentclass} to other options such \texttt{report}, \texttt{article} or \texttt{letter}
 
-\hypertarget{preamble}{%
-\section{Preamble}\label{preamble}}
+\section{Preamble}\label{preamble}
 
 Open the \texttt{preable.Rmd} and you will see all the sections that are required before the main text (e.g.~Declaration and so on). At the top of the page i've used a code chunk set to LaTex, saying to use Roman numbering as we don't want page 1 to be the Declaration, we want it to be the first page of the Introduction. There are two conditions for each of the sections that state if output to HTML (gitbook) then do this, if output to LaTex then do this. This is the only place we have this. In our bookdown HTML we want to be able to click these sections, but in our LaTex .pdf we don't want them to appear in the table of contents. This is what this code is doing.
 
@@ -337,18 +327,15 @@ If you look back in the \texttt{\_output.yml} you'll also see the \texttt{toc} (
 
 The last section here is the abbreviations. To make this really easy, i've created an excel document to add them into. The code here will load that and then use the \texttt{kable} package to make a table. More on this later.I've also done the same for the research log in the appendix --- excel sheet called \texttt{research\_log}.
 
-\hypertarget{change-this-to-a-thesis}{%
-\section{Change this to a thesis}\label{change-this-to-a-thesis}}
+\section{Change this to a thesis}\label{change-this-to-a-thesis}
 
 Easy. Just change all the titles to what you want (e.g.~Introduction, Literature Review, Methodology, Discussion, Conclusion). Some of the latter \texttt{.Rmds} (Discussion etc) are ready to go!
 
-\hypertarget{word-count}{%
-\section{Word count}\label{word-count}}
+\section{Word count}\label{word-count}
 
 To get a word count install and then use the \href{https://github.com/benmarwick/wordcountaddin}{word count addin package} through Tools\textgreater Addins\textgreater Wordcount
 
-\hypertarget{adding-a-pdf}{%
-\section{Adding a pdf}\label{adding-a-pdf}}
+\section{Adding a pdf}\label{adding-a-pdf}
 
 If you wish to add another .pdf as an Appendix (in your .pdf) then again we need a bit of LaTex code
 
@@ -358,13 +345,11 @@ If you look in the \texttt{08-Appendix.Rmd} then you will see another if LaTex s
 
 You'd need a condition around this like in the \texttt{preamble.Rmd} but a link is fine. I embedded a .pdf in \href{https://andrewmaclachlan.github.io/CASA0005repo/assignment-resources-1.html}{the assignment resources of CASA0005}
 
-\hypertarget{writing-code}{%
-\section{Writing code}\label{writing-code}}
+\section{Writing code}\label{writing-code}
 
 Use one project for your thesis and another for your analysis. Don't try and do it all in a thesis project. You can set your output folder from your main analysis project to the thesis project and then easily load the figures in.
 
-\hypertarget{package-reproducibility}{%
-\section{Package reproducibility}\label{package-reproducibility}}
+\section{Package reproducibility}\label{package-reproducibility}
 
 Have you ever created an R script, come back to it 6 months later and wonder why it's not working correctly? It's probably because of package updates.
 
@@ -421,11 +406,9 @@ You can also interact with \texttt{git}
 
 For more information watch renv: Project Environments for R introduction video: \url{https://www.rstudio.com/resources/rstudioconf-2020/renv-project-environments-for-r/}
 
-\hypertarget{crossref}{%
-\chapter{Cross referencing}\label{crossref}}
+\chapter{Cross referencing}\label{crossref}
 
-\hypertarget{chapters-or-sections}{%
-\section{Chapters or sections}\label{chapters-or-sections}}
+\section{Chapters or sections}\label{chapters-or-sections}
 
 Always give you sections an additional reference\ldots e.g.~\texttt{\#\ Cross\ referencing\ \{\#crossref\}} This gives us two reference points. The first we can use to reference the section name\ldots{}
 
@@ -433,7 +416,7 @@ Always give you sections an additional reference\ldots e.g.~\texttt{\#\ Cross\ r
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  We want to say see the Introduction (or other section label)we use \ldots{}\texttt{{[}Cross\ referencing{]}} giving \protect\hyperlink{crossref}{Cross referencing}
+  We want to say see the Introduction (or other section label)we use \ldots{}\texttt{{[}Cross\ referencing{]}} giving \hyperref[crossref]{Cross referencing}
 \end{enumerate}
 
 But what if we want to reference the section number (e.g.~Chapter 1 or section 4.2)
@@ -445,11 +428,9 @@ But what if we want to reference the section number (e.g.~Chapter 1 or section 4
   Just reference the label we gave to the section\ldots.see Chapter \texttt{\textbackslash{}@ref(crossref)} giving see Chapter \ref{crossref}
 \end{enumerate}
 
-\hypertarget{figures-tables-even-code-chunks}{%
-\section{Figures, tables, even code chunks}\label{figures-tables-even-code-chunks}}
+\section{Figures, tables, even code chunks}\label{figures-tables-even-code-chunks}
 
-\hypertarget{figures}{%
-\subsection{Figures}\label{figures}}
+\subsection{Figures}\label{figures}
 
 When you create a figure, table or code chunk there is an option to name the chunk something. Do it!. Don't be like me and not! Be warned that these chunk names can't have any fancy or strange characters in them e.g.~\_. I think a - is allowed, but i'd keep it simple. Here is a figure. In the chunk options after \texttt{r} i have specified \texttt{nice-fig,\ echo=FALSE,\ fig.cap=\textquotesingle{}Here\ is\ a\ nice\ figure!\textquotesingle{},\ out.width=\textquotesingle{}80\%\textquotesingle{}}
 
@@ -459,10 +440,9 @@ When you create a figure, table or code chunk there is an option to name the chu
 
 To cross reference this just include Figure \texttt{\textbackslash{}@ref(fig:nice-fig)} which gives\ldots Figure \ref{fig:nice-fig}.
 
-\hypertarget{tables}{%
-\subsection{Tables}\label{tables}}
+\subsection{Tables}\label{tables}
 
-For tables i'd recommend using the \texttt{kable} package. Here is an example table, same deal as the \protect\hyperlink{figures-1}{Figures} section with naming the code chunk.
+For tables i'd recommend using the \texttt{kable} package. Here is an example table, same deal as the \hyperref[figures]{Figures} section with naming the code chunk.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -510,8 +490,7 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 
 Now to cite the table it's just Table \texttt{\textbackslash{}@ref(tab:nice-tab)}, giving Table \ref{tab:nice-tab}
 
-\hypertarget{citing-documents}{%
-\section{Citing documents}\label{citing-documents}}
+\section{Citing documents}\label{citing-documents}
 
 To cite documents they need to be in a \texttt{.bib} file, that must be loaded within your \texttt{index.Rmd} with the \texttt{bibliography:} argument. Have a look at my \texttt{index.Rmd} and you will see there are three such files, two that were provided as an example here \texttt{book.bib}, \texttt{packages.bib} and one that i added \texttt{test.bib}. I can simply cite the papers within them using the citation key e.g.~\texttt{{[}@xie2015{]}} giving \autocite{xie2015}. Make sure you remove the ones you don't need.
 
@@ -521,8 +500,7 @@ When citing multiple authors use a ; \texttt{{[}@xie2015;\ @maclachlan2017urban{
 
 To remove the author add a minus sign \texttt{-@maclachlan2017urban} = \autocite*{maclachlan2017urban}
 
-\hypertarget{citing-using-software}{%
-\section{Citing using software}\label{citing-using-software}}
+\section{Citing using software}\label{citing-using-software}
 
 Zotero can now continuously update your \texttt{.bib} file.
 
@@ -560,18 +538,15 @@ To export the library
 
 You can also manage references using \texttt{citr} which makes finding them to cite much easier. In RStudio go: Addins (top tool bar) \textgreater{} insert citations.
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
+\section{Footnotes}\label{footnotes}
 
 To add a footnote use \texttt{\^{}{[}This\ is\ a\ footnote{]}} to create \footnote{This is a footnote}.
 
-\hypertarget{equations-and-direct-quotes}{%
-\chapter{Equations and direct quotes}\label{equations-and-direct-quotes}}
+\chapter{Equations and direct quotes}\label{equations-and-direct-quotes}
 
 This section will focus on equations and direct quotes
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\section{Equations}\label{equations}
 
 You need to include equations with some LaTeX. The easiest way to do this is to use an online tool such as: \url{https://latex.codecogs.com/eqneditor/editor.php}. It can be a real pain to get these right, but once you've worked it out it will be much easier than dealing with word equation editor.
 
@@ -588,8 +563,7 @@ However, this won't generate an equation number and you can't cross reference it
 
 \texttt{\$\$} puts it on a new line, single \texttt{\$} keeps it on the same line (in the text)
 
-\hypertarget{quotes}{%
-\section{Block quotes (or direct quotes)}\label{quotes}}
+\section{Block quotes (or direct quotes)}\label{quotes}
 
 You may wish to quote a large section from a source, to do this use a block quote.
 
@@ -617,20 +591,17 @@ Instead you could just include the reference at the end of the quote, using the 
 ``This is a direct quote'' \textcite{xie2015} \eqref{eq:test}
 \end{quote}
 
-\hypertarget{figures-tables-hosting-gitbook}{%
-\chapter{Figures, tables, hosting GitBook}\label{figures-tables-hosting-gitbook}}
+\chapter{Figures, tables, hosting GitBook}\label{figures-tables-hosting-gitbook}
 
 This section is going to focus including figures and creating tables
 
 \begin{figure}
-\includegraphics[width=300pt]{C:/Users/Andy/Desktop/CASA_thesis_template/general_images/example_flow} \caption{Summary of methdological procedure for (a).... and (b)....}\label{fig:methodsflow}
+\includegraphics[width=300pt]{general_images/example_flow} \caption{Summary of methdological procedure for (a).... and (b)....}\label{fig:methodsflow}
 \end{figure}
 
-\hypertarget{including-figures-and-tables}{%
-\section{Including figures and tables}\label{including-figures-and-tables}}
+\section{Including figures and tables}\label{including-figures-and-tables}
 
-\hypertarget{figures-1}{%
-\subsection{Figures}\label{figures-1}}
+\subsection{Figures}\label{figures-1}
 
 To include the figure above use the code:
 
@@ -653,8 +624,7 @@ For making flow diagrams have a look at:
   Draw.io
 \end{enumerate}
 
-\hypertarget{tables-1}{%
-\subsection{Tables}\label{tables-1}}
+\subsection{Tables}\label{tables-1}
 
 For creating tables i'd suggest creating either an excel file or \texttt{.csv} and then reading the data into R and using the \texttt{kabble} package to format it how you wish. The example below is from the abbreviations section
 
@@ -680,7 +650,7 @@ For creating tables i'd suggest creating either an excel file or \texttt{.csv} a
 \end{Highlighting}
 \end{Shaded}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{ll}
 \toprule
@@ -778,8 +748,7 @@ City of Subiaco, Plant Pathogen Management Plan(2015)*\\
 
 Now remember to cross reference this table, it would be\ldots Table \texttt{\textbackslash{}@ref(tab:kable)}, giving Table \ref{tab:kable}
 
-\hypertarget{hosting-the-book}{%
-\section{Hosting the book}\label{hosting-the-book}}
+\section{Hosting the book}\label{hosting-the-book}
 
 You will need to create a new GitHub repository to host your book online using GitHub pages --- like the example is. GitHub pages takes a load of \texttt{.html} files and makes a website.
 
@@ -804,36 +773,27 @@ To do so you need to set up a few things
   Make sure you build your \texttt{.pdf} and then your \texttt{gitbook} for the latest \texttt{.pdf} to be a download option on the website.
 \end{enumerate}
 
-\hypertarget{discussion}{%
-\chapter{Discussion}\label{discussion}}
+\chapter{Discussion}\label{discussion}
 
 Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
 
-\hypertarget{research-significance}{%
-\section{Research significance}\label{research-significance}}
+\section{Research significance}\label{research-significance}
 
-\hypertarget{global-development-goals}{%
-\subsection{Global development goals}\label{global-development-goals}}
+\subsection{Global development goals}\label{global-development-goals}
 
-\hypertarget{local-policy}{%
-\subsection{Local policy}\label{local-policy}}
+\subsection{Local policy}\label{local-policy}
 
-\hypertarget{academic-research}{%
-\subsection{Academic research}\label{academic-research}}
+\subsection{Academic research}\label{academic-research}
 
-\hypertarget{limitations}{%
-\section{Limitations}\label{limitations}}
+\section{Limitations}\label{limitations}
 
-\hypertarget{transferability}{%
-\section{Transferability}\label{transferability}}
+\section{Transferability}\label{transferability}
 
-\hypertarget{conclusion}{%
-\chapter{Conclusion}\label{conclusion}}
+\chapter{Conclusion}\label{conclusion}
 
 Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
 
-\hypertarget{recommedations}{%
-\section{Recommedations}\label{recommedations}}
+\section{Recommedations}\label{recommedations}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -849,19 +809,16 @@ Short introduction to the chapter, reviewing the previous chapter and detailing 
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 
-\hypertarget{appendix-a-research-log}{%
-\chapter*{Appendix A Research log}\label{appendix-a-research-log}}
+\chapter*{Appendix A Research log}\label{appendix-a-research-log}
 \addcontentsline{toc}{chapter}{Appendix A Research log}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
-\hypertarget{subsection}{%
-\section*{subsection}\label{subsection}}
+\section*{subsection}\label{subsection}
 
-\hypertarget{sub-sub-section}{%
-\subsection*{sub sub section}\label{sub-sub-section}}
+\subsection*{sub sub section}\label{sub-sub-section}
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{ll}
 \toprule
@@ -873,8 +830,7 @@ Short introduction to the chapter, reviewing the previous chapter and detailing 
 \end{tabular}
 \end{table}
 
-\hypertarget{appendix-b-proposal}{%
-\chapter*{Appendix B Proposal}\label{appendix-b-proposal}}
+\chapter*{Appendix B Proposal}\label{appendix-b-proposal}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
 \enddocument
