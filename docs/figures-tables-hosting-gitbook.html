@@ -170,19 +170,10 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
-<li class="chapter" data-level="1" data-path="bookdown-basics.html"><a href="bookdown-basics.html"><i class="fa fa-check"></i><b>1</b> Bookdown basics</a>
+<li class="chapter" data-level="1" data-path="bookdown-introduction.html"><a href="bookdown-introduction.html"><i class="fa fa-check"></i><b>1</b> Bookdown Introduction</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="bookdown-basics.html"><a href="bookdown-basics.html#structure"><i class="fa fa-check"></i><b>1.1</b> Structure</a></li>
-<li class="chapter" data-level="1.2" data-path="bookdown-basics.html"><a href="bookdown-basics.html#building-the-book"><i class="fa fa-check"></i><b>1.2</b> Building the book</a></li>
-<li class="chapter" data-level="1.3" data-path="bookdown-basics.html"><a href="bookdown-basics.html#yamls"><i class="fa fa-check"></i><b>1.3</b> YAMLs</a></li>
-<li class="chapter" data-level="1.4" data-path="bookdown-basics.html"><a href="bookdown-basics.html#formatting"><i class="fa fa-check"></i><b>1.4</b> Formatting</a></li>
-<li class="chapter" data-level="1.5" data-path="bookdown-basics.html"><a href="bookdown-basics.html#index-file"><i class="fa fa-check"></i><b>1.5</b> Index file</a></li>
-<li class="chapter" data-level="1.6" data-path="bookdown-basics.html"><a href="bookdown-basics.html#preamble"><i class="fa fa-check"></i><b>1.6</b> Preamble</a></li>
-<li class="chapter" data-level="1.7" data-path="bookdown-basics.html"><a href="bookdown-basics.html#change-this-to-a-thesis"><i class="fa fa-check"></i><b>1.7</b> Change this to a thesis</a></li>
-<li class="chapter" data-level="1.8" data-path="bookdown-basics.html"><a href="bookdown-basics.html#word-count"><i class="fa fa-check"></i><b>1.8</b> Word count</a></li>
-<li class="chapter" data-level="1.9" data-path="bookdown-basics.html"><a href="bookdown-basics.html#adding-a-pdf"><i class="fa fa-check"></i><b>1.9</b> Adding a pdf</a></li>
-<li class="chapter" data-level="1.10" data-path="bookdown-basics.html"><a href="bookdown-basics.html#writing-code"><i class="fa fa-check"></i><b>1.10</b> Writing code</a></li>
-<li class="chapter" data-level="1.11" data-path="bookdown-basics.html"><a href="bookdown-basics.html#package-reproducibility"><i class="fa fa-check"></i><b>1.11</b> Package reproducibility</a></li>
+<li class="chapter" data-level="1.1" data-path="bookdown-introduction.html"><a href="bookdown-introduction.html#background-and-objectives"><i class="fa fa-check"></i><b>1.1</b> Background and Objectives</a></li>
+<li class="chapter" data-level="1.2" data-path="bookdown-introduction.html"><a href="bookdown-introduction.html#research-question"><i class="fa fa-check"></i><b>1.2</b> Research question</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
 <ul>
@@ -274,23 +265,23 @@ Figure 4.1: Summary of methdological procedure for (a)…. and (b)….
 <div id="tables" class="section level3 hasAnchor" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Tables<a href="figures-tables-hosting-gitbook.html#tables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>For creating tables i’d suggest creating either an excel file or <code>.csv</code> and then reading the data into R and using the <code>kabble</code> package to format it how you wish. The example below is from the abbreviations section</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="figures-tables-hosting-gitbook.html#cb3-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-2"><a href="figures-tables-hosting-gitbook.html#cb3-2" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb3-3"><a href="figures-tables-hosting-gitbook.html#cb3-3" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb3-4"><a href="figures-tables-hosting-gitbook.html#cb3-4" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb3-5"><a href="figures-tables-hosting-gitbook.html#cb3-5" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
-<span id="cb3-6"><a href="figures-tables-hosting-gitbook.html#cb3-6" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb3-7"><a href="figures-tables-hosting-gitbook.html#cb3-7" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="figures-tables-hosting-gitbook.html#cb3-8" tabindex="-1"></a><span class="co">#read in data</span></span>
-<span id="cb3-9"><a href="figures-tables-hosting-gitbook.html#cb3-9" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="fu">here</span>(<span class="st">&quot;tables&quot;</span>, <span class="st">&quot;abbreviations.xlsx&quot;</span>))<span class="sc">%&gt;%</span></span>
-<span id="cb3-10"><a href="figures-tables-hosting-gitbook.html#cb3-10" tabindex="-1"></a>  <span class="fu">arrange</span>(Term) <span class="sc">%&gt;%</span> <span class="co"># i.e. alphabetical order by Term</span></span>
-<span id="cb3-11"><a href="figures-tables-hosting-gitbook.html#cb3-11" tabindex="-1"></a>  <span class="co"># booktab = T gives us a pretty APA-ish table</span></span>
-<span id="cb3-12"><a href="figures-tables-hosting-gitbook.html#cb3-12" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">booktabs =</span> <span class="cn">TRUE</span>)<span class="sc">%&gt;%</span> </span>
-<span id="cb3-13"><a href="figures-tables-hosting-gitbook.html#cb3-13" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">position =</span> <span class="st">&quot;center&quot;</span>)<span class="sc">%&gt;%</span></span>
-<span id="cb3-14"><a href="figures-tables-hosting-gitbook.html#cb3-14" tabindex="-1"></a>  <span class="co"># any specifc row changes you want</span></span>
-<span id="cb3-15"><a href="figures-tables-hosting-gitbook.html#cb3-15" tabindex="-1"></a>    <span class="fu">row_spec</span>(.,</span>
-<span id="cb3-16"><a href="figures-tables-hosting-gitbook.html#cb3-16" tabindex="-1"></a>  <span class="at">row=</span><span class="dv">0</span>,</span>
-<span id="cb3-17"><a href="figures-tables-hosting-gitbook.html#cb3-17" tabindex="-1"></a>  <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="figures-tables-hosting-gitbook.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="figures-tables-hosting-gitbook.html#cb1-2" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-3"><a href="figures-tables-hosting-gitbook.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb1-4"><a href="figures-tables-hosting-gitbook.html#cb1-4" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-5"><a href="figures-tables-hosting-gitbook.html#cb1-5" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
+<span id="cb1-6"><a href="figures-tables-hosting-gitbook.html#cb1-6" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-7"><a href="figures-tables-hosting-gitbook.html#cb1-7" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="figures-tables-hosting-gitbook.html#cb1-8" tabindex="-1"></a><span class="co">#read in data</span></span>
+<span id="cb1-9"><a href="figures-tables-hosting-gitbook.html#cb1-9" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="fu">here</span>(<span class="st">&quot;tables&quot;</span>, <span class="st">&quot;abbreviations.xlsx&quot;</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb1-10"><a href="figures-tables-hosting-gitbook.html#cb1-10" tabindex="-1"></a>  <span class="fu">arrange</span>(Term) <span class="sc">%&gt;%</span> <span class="co"># i.e. alphabetical order by Term</span></span>
+<span id="cb1-11"><a href="figures-tables-hosting-gitbook.html#cb1-11" tabindex="-1"></a>  <span class="co"># booktab = T gives us a pretty APA-ish table</span></span>
+<span id="cb1-12"><a href="figures-tables-hosting-gitbook.html#cb1-12" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">booktabs =</span> <span class="cn">TRUE</span>)<span class="sc">%&gt;%</span> </span>
+<span id="cb1-13"><a href="figures-tables-hosting-gitbook.html#cb1-13" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">position =</span> <span class="st">&quot;center&quot;</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb1-14"><a href="figures-tables-hosting-gitbook.html#cb1-14" tabindex="-1"></a>  <span class="co"># any specifc row changes you want</span></span>
+<span id="cb1-15"><a href="figures-tables-hosting-gitbook.html#cb1-15" tabindex="-1"></a>    <span class="fu">row_spec</span>(.,</span>
+<span id="cb1-16"><a href="figures-tables-hosting-gitbook.html#cb1-16" tabindex="-1"></a>  <span class="at">row=</span><span class="dv">0</span>,</span>
+<span id="cb1-17"><a href="figures-tables-hosting-gitbook.html#cb1-17" tabindex="-1"></a>  <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -594,18 +585,18 @@ VIF
 </ul>
 <p>For example…
 </p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="figures-tables-hosting-gitbook.html#cb4-1" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="fu">here</span>(<span class="st">&quot;tables&quot;</span>, <span class="st">&quot;policy.xlsx&quot;</span>))<span class="sc">%&gt;%</span></span>
-<span id="cb4-2"><a href="figures-tables-hosting-gitbook.html#cb4-2" tabindex="-1"></a>  <span class="fu">mutate_all</span>(<span class="sc">~</span> <span class="fu">replace_na</span>(.x, <span class="st">&quot;&quot;</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb4-3"><a href="figures-tables-hosting-gitbook.html#cb4-3" tabindex="-1"></a>  <span class="co"># booktab = T gives us a pretty APA-ish table</span></span>
-<span id="cb4-4"><a href="figures-tables-hosting-gitbook.html#cb4-4" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">longtable =</span> T, <span class="at">booktabs =</span> T, </span>
-<span id="cb4-5"><a href="figures-tables-hosting-gitbook.html#cb4-5" tabindex="-1"></a>               <span class="at">caption =</span> <span class="st">&#39;Relevant influential international, metropolitan and local UHI and urban expansion policies, strategies and assessments (with publication date) referred to in this paper. * Denotes documents that lack specific UHI related policy but recognise the value of maintaining vegetation.&#39;</span>)<span class="sc">%&gt;%</span> </span>
-<span id="cb4-6"><a href="figures-tables-hosting-gitbook.html#cb4-6" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">position =</span> <span class="st">&quot;center&quot;</span>, <span class="at">full_width =</span> T)<span class="sc">%&gt;%</span></span>
-<span id="cb4-7"><a href="figures-tables-hosting-gitbook.html#cb4-7" tabindex="-1"></a>  <span class="co"># any specifc row changes you want</span></span>
-<span id="cb4-8"><a href="figures-tables-hosting-gitbook.html#cb4-8" tabindex="-1"></a>    <span class="fu">row_spec</span>(.,</span>
-<span id="cb4-9"><a href="figures-tables-hosting-gitbook.html#cb4-9" tabindex="-1"></a>  <span class="at">row=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">8</span>, <span class="dv">18</span>),</span>
-<span id="cb4-10"><a href="figures-tables-hosting-gitbook.html#cb4-10" tabindex="-1"></a>  <span class="at">bold =</span> <span class="cn">TRUE</span>)<span class="sc">%&gt;%</span></span>
-<span id="cb4-11"><a href="figures-tables-hosting-gitbook.html#cb4-11" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">width =</span> <span class="st">&quot;14cm&quot;</span>)<span class="sc">%&gt;%</span></span>
-<span id="cb4-12"><a href="figures-tables-hosting-gitbook.html#cb4-12" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">8</span>, <span class="dv">18</span>), <span class="at">hline_after =</span> T)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="figures-tables-hosting-gitbook.html#cb2-1" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="fu">here</span>(<span class="st">&quot;tables&quot;</span>, <span class="st">&quot;policy.xlsx&quot;</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="figures-tables-hosting-gitbook.html#cb2-2" tabindex="-1"></a>  <span class="fu">mutate_all</span>(<span class="sc">~</span> <span class="fu">replace_na</span>(.x, <span class="st">&quot;&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="figures-tables-hosting-gitbook.html#cb2-3" tabindex="-1"></a>  <span class="co"># booktab = T gives us a pretty APA-ish table</span></span>
+<span id="cb2-4"><a href="figures-tables-hosting-gitbook.html#cb2-4" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">longtable =</span> T, <span class="at">booktabs =</span> T, </span>
+<span id="cb2-5"><a href="figures-tables-hosting-gitbook.html#cb2-5" tabindex="-1"></a>               <span class="at">caption =</span> <span class="st">&#39;Relevant influential international, metropolitan and local UHI and urban expansion policies, strategies and assessments (with publication date) referred to in this paper. * Denotes documents that lack specific UHI related policy but recognise the value of maintaining vegetation.&#39;</span>)<span class="sc">%&gt;%</span> </span>
+<span id="cb2-6"><a href="figures-tables-hosting-gitbook.html#cb2-6" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">position =</span> <span class="st">&quot;center&quot;</span>, <span class="at">full_width =</span> T)<span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="figures-tables-hosting-gitbook.html#cb2-7" tabindex="-1"></a>  <span class="co"># any specifc row changes you want</span></span>
+<span id="cb2-8"><a href="figures-tables-hosting-gitbook.html#cb2-8" tabindex="-1"></a>    <span class="fu">row_spec</span>(.,</span>
+<span id="cb2-9"><a href="figures-tables-hosting-gitbook.html#cb2-9" tabindex="-1"></a>  <span class="at">row=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">8</span>, <span class="dv">18</span>),</span>
+<span id="cb2-10"><a href="figures-tables-hosting-gitbook.html#cb2-10" tabindex="-1"></a>  <span class="at">bold =</span> <span class="cn">TRUE</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb2-11"><a href="figures-tables-hosting-gitbook.html#cb2-11" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">width =</span> <span class="st">&quot;14cm&quot;</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb2-12"><a href="figures-tables-hosting-gitbook.html#cb2-12" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">8</span>, <span class="dv">18</span>), <span class="at">hline_after =</span> T)</span></code></pre></div>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:kable">Table 4.1: </span><span id="tab:kable">Table 4.2: </span>Relevant influential international, metropolitan and local UHI and urban expansion policies, strategies and assessments (with publication date) referred to in this paper. * Denotes documents that lack specific UHI related policy but recognise the value of maintaining vegetation.

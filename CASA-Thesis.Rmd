@@ -1,0 +1,501 @@
+--- 
+title: CASA dissertation using Bookdown
+
+author: 
+- |
+    | Yifan Wu
+    |    
+    | CASA0010, MSc Smart Cities Dissertation 
+    |  
+    | Supervisor: Dr Duncan Smith
+    |
+    | Repository: https://github.com/Van-Wu1/
+    |  
+    | This dissertation is submitted in part requirement for the 
+    | MSc in the Centre for Advanced Spatial Analysis, 
+    | Bartlett Faculty of the Built Environment, UCL
+    |
+    | Word count:  unknown ??:?? update
+
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+classoption: oneside #openany or #twosides #if two then need to change headers and check margins.
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.5
+bibliography: [book.bib, packages.bib, test.bib]
+biblio-style: apa
+link-citations: yes
+github-repo: Van-Wu1/CASA-MSc-thesis
+description: "This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL "
+always_allow_html: yes
+---
+
+```{=latex}
+\pagenumbering{roman}
+```
+
+```{r include=FALSE}
+library(knitr)
+```
+
+`r if (knitr:::is_html_output()) '
+# Abstract {-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Abstract {.unlisted .unnumbered}
+'`
+Some abstract text
+
+
+<!--chapter:end:index.Rmd-->
+
+```{=latex}
+\pagenumbering{roman}
+```
+
+```{r include=FALSE}
+library(knitr)
+```
+
+
+`r if (knitr:::is_html_output()) '
+# Declaration{-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Declaration {.unlisted .unnumbered}
+'`
+
+I, Yifan Wu, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+
+Yifan Wu, 24th August 2025
+
+`r if (knitr:::is_html_output()) '
+# Acknowledgements{-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Acknowledgements {.unlisted .unnumbered}
+'`
+(Unfinished...)
+
+
+```{=latex}
+% Trigger ToC creation in LaTeX
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+\listoftables
+```
+
+`r if (knitr:::is_html_output()) '
+# Abbreviations{-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Abbreviations {.unlisted .unnumbered}
+'`
+
+```{r abbreviations, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
+
+read_excel(here("tables", "abbreviations.xlsx"))%>%
+  arrange(Term) %>% # i.e. alphabetical order by Term
+  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+    row_spec(.,
+  row=0,
+  bold = TRUE)
+```
+
+
+<!--chapter:end:00-preamble.Rmd-->
+
+# Bookdown Introduction
+
+```{=latex}
+\pagenumbering{arabic} 
+```
+
+## Background and Objectives
+
+## Research question
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Literature Review {#literature-review}
+
+## Introduction to Urban Cycling Environment Assessment
+
+Cycling has increasingly been considered a key component of sustainable urban transport systems because it is a low‑emission, space‑efficient mode that can deliver environmental, health and social co‑benefits (Yanocha & Mawdsley, 2022). Evidence from international studies suggests that shifting a substantial share of trips to cycling can reduce greenhouse‑gas emissions, air pollutants and traffic externalities (Yanocha & Mawdsley, 2022). Estimates from the World Health Organization’s Health Economic Assessment Tool indicate that each kilometre cycled yields a societal benefit of about €0.16, whereas each kilometre driven imposes a cost of roughly €0.15 (Yanocha & Mawdsley, 2022).
+
+Research on the health impacts of cycling also suggests significant gains. A large Danish cohort study of more than 52,000 adults followed for 13 years found that habitual cycling was associated with lower risks of cardiovascular disease, respiratory disease, diabetes and all‑cause mortality, and these benefits were not materially diminished by exposure to traffic‑related air pollution (Logan et al., 2023). Modelling studies have further shown that, even in highly polluted cities, the health benefits of regular cycling generally outweigh the risks associated with increased inhalation of pollutants (Logan et al., 2023). In the Netherlands, a country with extensive cycling infrastructure, approximately 27 % of all trips are made by bicycle; Fishman et al. quantified the health benefits of this cycling culture at roughly 6,500 deaths prevented per year and about half a year of additional life expectancy per person (Fishman, Schepers & Kamphuis, 2015).
+
+Despite these findings, cycling participation and infrastructure quality vary widely between cities. Transport for London’s international benchmarking study reported that bicycle mode share is about 1 % in New York City, around 2 % in London, and approximately 40 % in Amsterdam (Transport for London, 2013). This heterogeneity highlights the need for systematic assessments of urban cycling environments to inform targeted investments. The FLOW project, an EU‑funded initiative, argues that improvements in walking and cycling infrastructure constitute some of the most promising long‑term measures for easing congestion because they are relatively inexpensive and can encourage shifts away from car use (Koska & Rudolph, 2016). Surveys conducted for the same project reveal that experts recognise the potential of walking and cycling measures to reduce congestion but note that such measures are implemented infrequently, indicating an implementation gap (Koska & Rudolph, 2016).
+
+Investments in cycling infrastructure also appear to produce wider societal benefits. Research by the Institute for Transportation and Development Policy reports that separated cycle lanes can reduce cyclist injuries and fatalities even as ridership increases, and that improvements in air quality from modal shifts can lead to further reductions in premature deaths (Yanocha & Mawdsley, 2022). In Washington, DC, analysis of the Capital Bikeshare system found that the presence of bikeshare stations was associated with a 2–3 % reduction in traffic congestion on nearby roads (Wichman, 2016). Such results suggest that well‑designed cycling interventions can contribute not only to individual wellbeing but also to urban efficiency and economic productivity.
+
+Overall, the literature indicates that cycling can play a meaningful role in reducing environmental impacts, improving public health and enhancing urban liveability. However, the marked disparities in cycling uptake and infrastructure provision across cities underscore the importance of context‑specific assessments. Rigorous evaluation of existing cycling environments and careful identification of infrastructural gaps are necessary to design effective policies and investments capable of realising the potential benefits of urban cycling.
+
+## Review of Existing Evaluation Frameworks
+
+### Structural Rideability
+
+A critical dimension of cycling environment assessment is Structural Rideability, capturing physical infrastructure attributes that directly influence cycling comfort, safety, and user inclusivity. This concept aligns with established frameworks such as the Canadian Bikeway Comfort and Safety (Can-BICS) Classification System, which systematically evaluates cycling infrastructure based on safety performance and user comfort across different facility types (Ferster et al., 2023). Similarly, the Dutch CROW Design Manual emphasizes five key principles for effective cycling infrastructure: cohesion, directness, safety, comfort, and attractiveness (CROW, 2016), reinforcing the multidimensional nature of structural cycling environment assessment.
+
+A foundational metric within this domain is the Level of Traffic Stress (LTS) (Mekuria et al., 2012), which categorizes road segments by traffic conditions, lane width, speed, and cycling infrastructure presence. Recent developments have extended LTS applicability through open-source mapping platforms, with Wasserman et al. (2019) demonstrating that OpenStreetMap-derived LTS scores achieve 89.9% accuracy compared to field-validated assessments, facilitating scalable urban mapping applications.
+
+While LTS provides a robust framework for cycling infrastructure assessment, empirical research has identified opportunities for refinement and expansion of its core assessment dimensions. Recent studies have highlighted the critical importance of specific infrastructure characteristics that form the foundation of comprehensive cycling environment evaluation:
+
+1.	Physical Infrastructure and Separation
+
+The design and quality of cycling infrastructure significantly influence safety outcomes and user comfort. Research consistently demonstrates that protected bike lanes and physically separated cycle tracks substantially reduce collision risk, with studies reporting injury rate reductions of up to 50% compared to conventional on-road facilities (Harris et al., 2013; Reynolds et al., 2009). The type of physical separation—ranging from painted lanes to grade-separated infrastructure—creates varying degrees of perceived and actual safety, directly influencing cycling participation across different user groups.
+
+2.	Traffic Speed and Volume Characteristics
+
+Vehicle speed and traffic volume represent fundamental determinants of cycling stress and safety. Studies indicate that slower traffic speeds are associated with significantly fewer cyclist injuries, with research demonstrating that combined bike infrastructure and traffic calming measures generate substantially higher cyclist comfort ratings (Sanders et al., 2021). The relationship between traffic characteristics and cycling safety forms a core component of stress-level assessment, with speed limits serving as critical design parameters for cycling infrastructure planning.
+
+3.	Network Connectivity and Intersection Design
+
+The continuity of cycling networks and intersection treatments constitute essential elements of comprehensive cycling environment assessment. Research demonstrates that cyclist interactions become more severe and less safe at locations with cycling network discontinuities, highlighting the importance of seamless network connections. Intersection and crossing treatments are fundamental considerations in LTS evaluation, with studies showing that specialized intersection designs can significantly reduce cyclist-motorist conflicts and improve overall network usability.
+4.	Spatial Configuration and Design Standards
+
+The geometric design of cycling facilities, including lane width, marking clarity, and spatial relationship to vehicular traffic, influences both objective and subjective safety measures. LTS assessment incorporates the number of lanes, effective vehicle speed, and the presence and type of bicycle facility, creating a comprehensive evaluation framework that accounts for the multidimensional nature of cycling infrastructure quality.
+
+These infrastructure dimensions represent the core components of systematic cycling environment assessment, building upon established LTS principles while providing detailed evaluation criteria for evidence-based cycling infrastructure planning and prioritization.
+
+### Environmental Perception
+
+Beyond structural attributes, environmental perception represents a critical dimension of cycling environment assessment, significantly influencing cycling comfort, route choice behavior, and overall cycling participation. This subjective yet quantifiable dimension encompasses multiple environmental factors that shape cyclists' psychological and physiological experiences during cycling activities.
+
+1.	Visual Greenery and Aesthetic Quality
+The visual perception of greenery, measured through the Green View Index (GVI), constitutes a fundamental component of environmental cycling assessment. Studies examining cycling patterns demonstrate that eye-level greenness is positively associated with cycling frequency on both weekdays and weekends (Lu et al., 2020; Yang et al., 2023). Systematic reviews confirm that street greenery promotes active travel through the creation of visually attractive, safe, and comfortable environments (Gascon et al., 2024).
+
+
+2.	Air Quality and Pollution Exposure
+
+Nitrogen dioxide (NO₂) serves as a representative indicator of urban air pollution exposure for cyclists. NO₂ is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO₂ provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO₂ exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (An et al., 2018).
+
+3.	Natural Features and Landscape Elements
+
+The presence and accessibility of natural features—including parks, green spaces, and water bodies—constitute essential components of environmental perception in cycling assessment. Research consistently demonstrates that exposure to natural environments generates measurable psychological benefits, with studies showing that green spaces boost serotonin and dopamine levels in the brain, contributing to happiness and well-being (Lee & Maheswaran, 2011).
+
+Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (Hooyberg et al., 2021). The integration of natural features into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.
+
+Collectively, these three environmental perception dimensions—visual greenery (GVI), air quality (NO₂), and natural features—provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
+
+### Network Performance
+
+Urban cycling evaluations also rely extensively on network performance indicators such as connectivity, centrality, and infrastructure density. Network performance assessment focuses on evaluating the ease and convenience of movement within the network without necessarily specifying origin-destination pairs, thus offering a versatile tool for urban cycling assessments.
+
+Contemporary approaches to network analysis have been revolutionized by open-source computational tools. Boeing (2017) developed OSMnx, a Python package that enables comprehensive street network analysis using OpenStreetMap data, allowing researchers to download, model, analyze, and visualize urban networks with unprecedented ease and accuracy. This methodological advancement has facilitated large-scale comparative studies of urban network structures across multiple cities and regions.
+
+The theoretical foundations of urban network analysis were established through graph-theoretic approaches that emphasize topological properties. Porta et al. (2006) introduced the primal graph methodology for urban street network analysis, demonstrating that centrality indices effectively capture the structural 'skeleton' of urban areas. Their Multiple Centrality Assessment (MCA) framework provides a metric-based approach that investigates multiple centrality indices simultaneously, offering more comprehensive network evaluation than single-index approaches.
+
+Recent research has expanded network performance assessment to incorporate cycling-specific infrastructure elements. Studies demonstrate that bicycle network connectivity significantly influences cycling behavior, with well-connected networks showing higher usage rates and broader demographic participation (Buehler & Dill, 2016). Furthermore, the integration of bicycle parking facilities and connections to public transportation nodes represents essential components of comprehensive network performance evaluation, as these multimodal connections significantly enhance cycling network attractiveness and usability (Geurs et al., 2016).
+
+Network density and structural coherence also play critical roles in cycling network effectiveness. Research indicates that cycling networks benefit from both high local connectivity and efficient long-distance connections, with network fragmentation representing a significant barrier to cycling adoption (Lowry et al., 2012). The application of graph-theoretic measures such as betweenness centrality and clustering coefficients provides quantitative frameworks for identifying critical network nodes and assessing overall network robustness for cycling infrastructure planning.
+
+##  Composite Index Approaches (CECI Models)
+
+Composite indices for assessing cycling environments have emerged as important tools for integrating multiple dimensions of urban cycling conditions into unified assessment metrics. Galarza-Torres et al. (2020) developed an urban Bikeability Index (BI) to assess and prioritise bicycle infrastructure investments, addressing particularities of roads in urban contexts. Their methodology incorporates infrastructure quality, safety considerations, and accessibility factors to guide investment decisions for improved cyclist accessibility.
+
+Hassanpour et al. (2021) proposed a Bike Composite Index (BCI) consisting of two sub-indices representing bike attractiveness and bike safety, estimated using Bike Kilometers Travelled (BKT) and cyclist-vehicle crash data from 134 traffic analysis zones in Vancouver, Canada. This approach demonstrates the practical application of composite indices in real urban environments, providing actionable insights for local planning decisions.
+
+More recently, Félix et al. (2022) developed a method for identifying potential locations for cycling infrastructure improvements using open data in Paris, addressing the need for simple and effective methods to support decision-making in bicycle planning. Their approach integrates spatial analysis with accessibility metrics to pinpoint areas requiring infrastructure enhancement.
+
+Advanced computational approaches have also been employed, with Szell et al. (2022) proposing a framework for generating efficient bike path networks that explicitly considers cyclists' demand distribution and route choices based on safety preferences. This demand-driven design approach represents a significant advancement in evidence-based cycling infrastructure planning.
+
+However, a significant limitation in current theoretical frameworks is the insufficient integration of cycling perceptual factors and subjective safety assessments. Among the 137 indicators identified in bikeability research, only a few relating to air quality were based on cyclist perceptions, highlighting the predominant focus on objective measures. Castro et al. (2023) emphasise that perceived safety is recognised as a key barrier to cycling, yet its constructs are poorly understood, with most assessments focusing primarily on crash and injury risk rather than broader perceptual dimensions. This gap between objective infrastructure provision and subjective cycling experiences represents a crucial oversight, as perceptual factors significantly influence cycling behaviour and route choices.
+
+Despite these methodological advances, current composite index frameworks still encounter limitations in data integration procedures, objective indicator weighting determination, and computational efficiency for large-scale applications. The insufficient incorporation of perceptual and subjective factors further compounds these challenges, highlighting the ongoing need for more holistic, transparent, and computationally robust methods for comprehensive cycling environment assessment.
+
+## Conclusion
+
+Despite the comprehensive literature base, existing cycling environment assessments remain predominantly fragmented, typically addressing only singular dimensions (structural, environmental, or network-based) (Muhs & Clifton, 2015). This fragmented approach limits the effectiveness of urban cycling environment evaluations, preventing the development of comprehensive and integrative insights crucial for urban planners and policymakers (Giles-Corti et al., 2019). Moreover, few existing frameworks have explicitly addressed the synergistic interactions among different cycling environment factors, particularly the intersection between structural and environmental perception variables.
+
+Addressing these research gaps, this study introduces the Cycling Environment Composite Index (CECI), a comprehensive indicator designed to integrate the critical dimensions of structural rideability, environmental perception, and network performance. The CECI differs from prior studies by explicitly synthesizing diverse but interrelated urban cycling determinants, thereby enhancing evaluation comprehensiveness. While aligning conceptually with the "15-minute city" framework—whereby residents can access their daily needs within a 15-minute walk, bicycle or transit ride from their home—the CECI's broader analytical scope ensures greater adaptability and utility for various urban contexts (Moreno et al., 2021). By explicitly integrating indicators such as GVI, air quality, LTS, network connectivity, and multimodal infrastructure, the proposed CECI methodology provides planners with a nuanced understanding of spatial disparities in cycling environment quality, thereby enabling targeted interventions.
+
+The integration of structural, environmental, and network performance indicators into a single composite index provides a robust, practical framework for assessing urban cycling environments comprehensively. Although developed and initially demonstrated in Greater London, the flexible design and theoretical robustness of CECI facilitate its potential adaptation and application to other urban contexts. The proposed index thus contributes to the ongoing development of urban cycling environment evaluation methods, potentially offering useful insights for targeted policy interventions and infrastructure investments to support sustainable urban mobility.
+
+<!--chapter:end:02-literature.Rmd-->
+
+# Data and methodology
+
+## Data
+
+This study draws on a series of open and authoritative datasets to construct a multi-dimensional database for assessing cycling conditions in London. The datasets cover four broad domains: general geographic data, structural rideability, environmental perception, and network centrality. Together, they capture both physical constraints and qualitative attributes of the urban environment. All datasets are openly accessible, ensuring transparency and reproducibility. Prior to analysis, spatial harmonisation was carried out by projecting all data to the British National Grid (EPSG:27700) and clipping them to the Greater London boundary.
+
+### General Data
+
+General-purpose datasets form the foundation of the research. The road network was extracted from OpenStreetMap (OSM) via Overpass Turbo queries. Filters were applied to retain only roads relevant to cycling, excluding private or non-navigable paths. This cleaned network dataset provides the geometric basis for all subsequent stages of analysis, including the calculation of network centrality and the assignment of slope and environmental attributes. To facilitate aggregation, administrative boundaries were sourced from the ONS Statistical GIS Boundary Files, comprising both Borough-level and Greater London shapefiles.
+
+### Data for Structural Rideability
+
+To capture the influence of terrain on cycling, slope data were integrated. These data were obtained from the Defra Data Services Platform at a resolution of 5 × 5 metres. Each OSM-derived road segment was intersected with the slope raster to compute mean gradients. This allows for the quantification of physical impedance to cycling: higher slopes are expected to increase exertion and reduce accessibility, making this dataset critical to the structural dimension of rideability.
+
+### Data for Environmental Perception
+
+Cycling experience is also shaped by environmental and perceptual factors. Three distinct datasets were incorporated:
+
+•	Green View Index (GVI): The GVI dataset originates from the Treepedia project (MIT, 2015), which employs Google Street View images (captured around 2015) to estimate the proportion of visible greenery along urban streets. While the dataset does not reflect more recent greening interventions or modifications to the built environment, it remains widely used as a proxy for visual landscape structure. Urban greenery at the street scale typically evolves slowly, especially in mature built-up areas such as London, and therefore the 2015 imagery still provides meaningful insights into the distribution of visual greenery. As such, despite its temporal limitations, GVI is considered a valid and informative indicator of the visual environment for this research.
+
+•	Air Quality (NO₂): Data were obtained from the London Air Quality Network, which provides long-term modelled and forecasted concentrations of key pollutants. Nitrogen dioxide (NO₂) was selected as a representative measure due to its close association with traffic-related emissions and industrial activity. This dataset, available at a 20-metre grid resolution and projected over a 25-year horizon, ensures both spatial detail and temporal consistency.
+
+•	Natural Features: Additional environmental attributes were derived from OSM, filtered using specific tags { "leisure": ["park"], "natural": ["water","wood","scrub"], "landuse": ["grass","meadow"] }. This allowed the identification of publicly accessible green and blue spaces, including parks, woodlands, grasslands, and water bodies. Such features are strongly associated with enhanced environmental quality and contribute positively to cycling comfort.
+
+### Data for Network Centrality
+
+Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.
+
+
+In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO$_2$), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
+
+The following table represents the data sources used in this study:
+
+```{r abbreviations, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
+
+read_excel(here("tables", "datasource.xlsx"))%>%
+  arrange(Term) %>% # i.e. alphabetical order by Term
+  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+    row_spec(.,
+  row=0,
+  bold = TRUE)
+```
+
+## Methodology
+
+Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
+
+### Network acquisition and pre-processing
+
+#### Extraction and selection
+
+The base street network is obtained from OpenStreetMap via a two-stage Overpass query. An inclusion-oriented stage captures bicycle-permissible ways across Greater London. A targeted clean removes motorways and ramps, under-construction segments, and links that explicitly prohibit cycling. Direction-dependent rules are implemented for left-hand traffic (right_hand_traffic=False).
+
+#### Topological and geometric cleaning
+
+A light-touch sequence improves graph consistency while preserving OSM geometry. Vertices within 2 m are snapped. Connected components with total length < 100 m are removed. Short dead-end stubs < 20 m are trimmed in three passes. Geometries are clipped to the Greater London boundary. Speed attributes recorded in miles per hour are converted to kilometres per hour (× 1.60934).
+
+#### Processed fields
+
+Pre-processing yields link-level attributes used downstream: proc_highway, proc_maxspeed, proc_width, proc_oneway, priority_road, motor_vehicle. These standardise tagging and encode London’s traffic handedness.
+
+#### Normalisation convention
+
+Continuous metrics generated by later modules follow a common scheme: values are winsorised at the 1st and 99th percentiles, then min–max scaled to [0, 1]. Edge betweenness is transformed with log1p before scaling. Normalisation is applied within each sub-index prior to composite scoring.
+
+### Structural rideability (Index1) — primary component
+
+#### Model Introduction
+
+##### Concept and provenance
+
+The structural module quantifies how road-segment design and operating conditions support everyday cycling. It draws on the open-source OSM-Cycling-Quality-Index developed for Berlin (SupaplexOSM/OSM-Cycling-Quality-Index), which implements a deterministic, rule-based scoring system over OpenStreetMap data. In that reference model, link-level attributes parsed from OSM—such as functional road class and posted speed, cycleway tags (track/lane/opposite), number of lanes, separation and buffer treatments, surface/smoothness, parking configuration, and basic junction handling—are mapped through factor tables to penalties or bonuses. The Berlin implementation produces a link-level cycling quality score and a separate Level of Traffic Stress (LTS) classification using transparent, auditable rules derived from the above tags and thresholds. The intellectual lineage is acknowledged, and licence and repository details are provided in the Code Availability note.
+
+#### Adaptations
+
+The adaptation used in this research retains the central idea that compounding frictions are represented by multiplicative factors applied to a base score derived from functional class and speed, while re-specifying inputs and thresholds where necessary for the London context.
+
+During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London’s OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope. 
+
+A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {stress_level (LTS), fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
+
+PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).
+
+Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF ≈ 2.03), with base_index at a moderate level (≈ 4.63), while fac1 and fac2 show higher mutual dependence (≈ 27.73 and ≈ 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
+
+<!--chapter:end:03-method.Rmd-->
+
+# Figures, tables, hosting GitBook
+
+This section is going to focus including figures and creating tables
+
+```{r methodsflow, echo=FALSE, out.width="300pt", fig.cap="Summary of methdological procedure for (a).... and (b)...."}
+library(here)
+knitr::include_graphics(here::here('general_images','example_flow.png'))
+```
+## Including figures and tables
+
+### Figures
+
+To include the figure above use the code:
+
+`knitr::include_graphics(here::here('general_images','example_flow.png'))` 
+
+within a code chunk. In the chunk options you can specify the width and figure captions e.g. 
+
+`out.width="100pt", fig.cap="Summary of methdological procedure for (a).... and (b)...."`. 
+
+However, if you do show the code with `echo=TRUE` then you can't specify the `out.width`. 
+
+For making flow diagrams have a look at:
+
+1. Lucidchart
+1. Draw.io
+
+### Tables
+
+For creating tables i'd suggest creating either an excel file or `.csv` and then reading the data into R and using the `kabble` package to format it how you wish. The example below is from the abbreviations section
+
+
+```{r tableexample, echo=TRUE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
+
+#read in data
+read_excel(here("tables", "abbreviations.xlsx"))%>%
+  arrange(Term) %>% # i.e. alphabetical order by Term
+  # booktab = T gives us a pretty APA-ish table
+  knitr::kable(booktabs = TRUE)%>% 
+  kable_styling(position = "center")%>%
+  # any specifc row changes you want
+    row_spec(.,
+  row=0,
+  bold = TRUE)
+```
+
+You do loads of things with kabble including adding small visulisations within the table - [consult the documentation for more info](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#Overview).
+
+**If in doubt, keep it simple**
+
+other useful arguments for tables:
+
+* `column_spec(2, width = "9cm")` = set column width
+
+* `kable(timeline,longtable = T....`= allow the table to go over multiple pages
+
+For example...
+\newpage
+```{r kable, echo=TRUE}
+read_excel(here("tables", "policy.xlsx"))%>%
+  mutate_all(~ replace_na(.x, "")) %>%
+  # booktab = T gives us a pretty APA-ish table
+  knitr::kable(longtable = T, booktabs = T, 
+               caption = 'Relevant influential international, metropolitan and local UHI and urban expansion policies, strategies and assessments (with publication date) referred to in this paper. * Denotes documents that lack specific UHI related policy but recognise the value of maintaining vegetation.')%>% 
+  kable_styling(position = "center", full_width = T)%>%
+  # any specifc row changes you want
+    row_spec(.,
+  row=c(0,1,8, 18),
+  bold = TRUE)%>%
+  column_spec(1, width = "14cm")%>%
+  row_spec(c(1, 8, 18), hline_after = T)
+```
+
+**Note** if you see the caption in the `.pdf` version it goes off the side of the page --- this is the reason why you don't show code in a `.pdf`. If you ever had to you could just seperate the string into sections and at the start use `paste("hello","this","is","a","string", sep=" ")`
+
+Now remember to cross reference this table, it would be...Table `\@ref(tab:kable)`, giving Table \@ref(tab:kable)
+
+## Hosting the book
+
+You will need to create a new GitHub repository to host your book online using GitHub pages --- like the example is. GitHub pages takes a load of `.html` files and makes a website. 
+
+To do so you need to set up a few things
+
+1. Go to the `_bookdown.yml` file and make sue that that you have this line of code: `output_dir: docs` (it should be there)
+1. In the same file make sure your `book_filename` doesn't have any spaces use `-` or `_` e.g. `CASA-Thesis`
+1. Go to the `_output.yml` file and change the `edit` argument to `YOURREPO/edit/main/%s`, here it's `https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/%s`
+1. Build your book locally, close the preview window
+1. Save, stage changes, commit and then push to GitHub
+1. On your GitHub repository > settings > GitHub pages > select the source as main and the folder as docs
+1. Make sure you build your `.pdf` and then your `gitbook` for the latest `.pdf` to be a download option on the website.
+
+<!--chapter:end:04-results.Rmd-->
+
+# Discussion
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+## Research significance 
+
+### Global development goals
+
+### Local policy
+
+### Academic research
+
+## Limitations
+
+## Transferability 
+
+<!--chapter:end:05-discussion.Rmd-->
+
+# Conclusion
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+## Recommedations
+
+1. Adapt policy x
+1. Undertake data informed targeted greening
+1. Further work into this area
+
+
+<!--chapter:end:06-conclusion.Rmd-->
+
+`r if (knitr:::is_html_output()) '
+# References {-}
+<div id="refs"></div>
+'`
+
+
+<!--chapter:end:07-references.Rmd-->
+
+
+```{=latex}
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
+```
+# Appendix A  Research log {-}
+
+```{=latex}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+```
+
+## subsection {.unlisted .unnumbered}
+
+### sub sub section {.unlisted .unnumbered}
+
+```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+
+read_excel(here("tables","research_log.xlsx"))%>%
+  arrange(Date) %>% # i.e. alphabetical order by Term
+  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+  row_spec(.,
+  row=0,
+  bold = TRUE)
+```
+
+`r if (knitr:::is_latex_output()) '
+# Appendix B  Proposal {.unlisted .unnumbered}
+'`
+
+```{=latex}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+\enddocument
+```
+
+<!--chapter:end:08-appendix.Rmd-->
+
