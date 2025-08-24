@@ -1,4 +1,4 @@
-# Bookdown Introduction
+# Introduction
 
 ```{=latex}
 \pagenumbering{arabic} 

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Declaration | CASA dissertation using Bookdown</title>
+  <title>Chapter 3 Data and methodology | CASA dissertation using Bookdown</title>
   <meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
   <meta name="generator" content="bookdown 0.43.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Declaration | CASA dissertation using Bookdown" />
+  <meta property="og:title" content="Chapter 3 Data and methodology | CASA dissertation using Bookdown" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
   <meta name="github-repo" content="Van-Wu1/CASA-MSc-thesis" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Declaration | CASA dissertation using Bookdown" />
+  <meta name="twitter:title" content="Chapter 3 Data and methodology | CASA dissertation using Bookdown" />
   
   <meta name="twitter:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="acknowledgements.html"/>
+<link rel="prev" href="literature-review.html"/>
+<link rel="next" href="figures-tables-hosting-gitbook.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -248,18 +248,83 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="declaration" class="section level1 unnumbered hasAnchor">
-<h1>Declaration<a href="declaration.html#declaration" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>I, Yifan Wu, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length</p>
-<p>Yifan Wu, 24th August 2025</p>
+<div id="data-and-methodology" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Data and methodology<a href="data-and-methodology.html#data-and-methodology" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="data" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Data<a href="data-and-methodology.html#data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This study draws on a series of open and authoritative datasets to construct a multi-dimensional database for assessing cycling conditions in London. The datasets cover four broad domains: general geographic data, structural rideability, environmental perception, and network centrality. Together, they capture both physical constraints and qualitative attributes of the urban environment. All datasets are openly accessible, ensuring transparency and reproducibility. Prior to analysis, spatial harmonisation was carried out by projecting all data to the British National Grid (EPSG:27700) and clipping them to the Greater London boundary.</p>
+<div id="general-data" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> General Data<a href="data-and-methodology.html#general-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>General-purpose datasets form the foundation of the research. The road network was extracted from OpenStreetMap (OSM) via Overpass Turbo queries. Filters were applied to retain only roads relevant to cycling, excluding private or non-navigable paths. This cleaned network dataset provides the geometric basis for all subsequent stages of analysis, including the calculation of network centrality and the assignment of slope and environmental attributes. To facilitate aggregation, administrative boundaries were sourced from the ONS Statistical GIS Boundary Files, comprising both Borough-level and Greater London shapefiles.</p>
+</div>
+<div id="data-for-structural-rideability" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Data for Structural Rideability<a href="data-and-methodology.html#data-for-structural-rideability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To capture the influence of terrain on cycling, slope data were integrated. These data were obtained from the Defra Data Services Platform at a resolution of 5 × 5 metres. Each OSM-derived road segment was intersected with the slope raster to compute mean gradients. This allows for the quantification of physical impedance to cycling: higher slopes are expected to increase exertion and reduce accessibility, making this dataset critical to the structural dimension of rideability.</p>
+</div>
+<div id="data-for-environmental-perception" class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Data for Environmental Perception<a href="data-and-methodology.html#data-for-environmental-perception" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cycling experience is also shaped by environmental and perceptual factors. Three distinct datasets were incorporated:</p>
+<p>• Green View Index (GVI): The GVI dataset originates from the Treepedia project (MIT, 2015), which employs Google Street View images (captured around 2015) to estimate the proportion of visible greenery along urban streets. While the dataset does not reflect more recent greening interventions or modifications to the built environment, it remains widely used as a proxy for visual landscape structure. Urban greenery at the street scale typically evolves slowly, especially in mature built-up areas such as London, and therefore the 2015 imagery still provides meaningful insights into the distribution of visual greenery. As such, despite its temporal limitations, GVI is considered a valid and informative indicator of the visual environment for this research.</p>
+<p>• Air Quality (NO₂): Data were obtained from the London Air Quality Network, which provides long-term modelled and forecasted concentrations of key pollutants. Nitrogen dioxide (NO₂) was selected as a representative measure due to its close association with traffic-related emissions and industrial activity. This dataset, available at a 20-metre grid resolution and projected over a 25-year horizon, ensures both spatial detail and temporal consistency.</p>
+<p>• Natural Features: Additional environmental attributes were derived from OSM, filtered using specific tags { “leisure”: [“park”], “natural”: [“water”,“wood”,“scrub”], “landuse”: [“grass”,“meadow”] }. This allowed the identification of publicly accessible green and blue spaces, including parks, woodlands, grasslands, and water bodies. Such features are strongly associated with enhanced environmental quality and contribute positively to cycling comfort.</p>
+</div>
+<div id="data-for-network-centrality" class="section level3 hasAnchor" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Data for Network Centrality<a href="data-and-methodology.html#data-for-network-centrality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.</p>
+<p>In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO<span class="math inline">\(_2\)</span>), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.</p>
+<p>The following table represents the data sources used in this study:</p>
+</div>
+</div>
+<div id="methodology" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Methodology<a href="data-and-methodology.html#methodology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.</p>
+<div id="network-acquisition-and-pre-processing" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Network acquisition and pre-processing<a href="data-and-methodology.html#network-acquisition-and-pre-processing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="extraction-and-selection" class="section level4 hasAnchor" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> Extraction and selection<a href="data-and-methodology.html#extraction-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The base street network is obtained from OpenStreetMap via a two-stage Overpass query. An inclusion-oriented stage captures bicycle-permissible ways across Greater London. A targeted clean removes motorways and ramps, under-construction segments, and links that explicitly prohibit cycling. Direction-dependent rules are implemented for left-hand traffic (right_hand_traffic=False).</p>
+</div>
+<div id="topological-and-geometric-cleaning" class="section level4 hasAnchor" number="3.2.1.2">
+<h4><span class="header-section-number">3.2.1.2</span> Topological and geometric cleaning<a href="data-and-methodology.html#topological-and-geometric-cleaning" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A light-touch sequence improves graph consistency while preserving OSM geometry. Vertices within 2 m are snapped. Connected components with total length &lt; 100 m are removed. Short dead-end stubs &lt; 20 m are trimmed in three passes. Geometries are clipped to the Greater London boundary. Speed attributes recorded in miles per hour are converted to kilometres per hour (× 1.60934).</p>
+</div>
+<div id="processed-fields" class="section level4 hasAnchor" number="3.2.1.3">
+<h4><span class="header-section-number">3.2.1.3</span> Processed fields<a href="data-and-methodology.html#processed-fields" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Pre-processing yields link-level attributes used downstream: proc_highway, proc_maxspeed, proc_width, proc_oneway, priority_road, motor_vehicle. These standardise tagging and encode London’s traffic handedness.</p>
+</div>
+<div id="normalisation-convention" class="section level4 hasAnchor" number="3.2.1.4">
+<h4><span class="header-section-number">3.2.1.4</span> Normalisation convention<a href="data-and-methodology.html#normalisation-convention" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Continuous metrics generated by later modules follow a common scheme: values are winsorised at the 1st and 99th percentiles, then min–max scaled to [0, 1]. Edge betweenness is transformed with log1p before scaling. Normalisation is applied within each sub-index prior to composite scoring.</p>
+</div>
+</div>
+<div id="structural-rideability-index1-primary-component" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Structural rideability (Index1) — primary component<a href="data-and-methodology.html#structural-rideability-index1-primary-component" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="model-introduction" class="section level4 hasAnchor" number="3.2.2.1">
+<h4><span class="header-section-number">3.2.2.1</span> Model Introduction<a href="data-and-methodology.html#model-introduction" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="concept-and-provenance" class="section level5 hasAnchor" number="3.2.2.1.1">
+<h5><span class="header-section-number">3.2.2.1.1</span> Concept and provenance<a href="data-and-methodology.html#concept-and-provenance" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>The structural module quantifies how road-segment design and operating conditions support everyday cycling. It draws on the open-source OSM-Cycling-Quality-Index developed for Berlin (SupaplexOSM/OSM-Cycling-Quality-Index), which implements a deterministic, rule-based scoring system over OpenStreetMap data. In that reference model, link-level attributes parsed from OSM—such as functional road class and posted speed, cycleway tags (track/lane/opposite), number of lanes, separation and buffer treatments, surface/smoothness, parking configuration, and basic junction handling—are mapped through factor tables to penalties or bonuses. The Berlin implementation produces a link-level cycling quality score and a separate Level of Traffic Stress (LTS) classification using transparent, auditable rules derived from the above tags and thresholds. The intellectual lineage is acknowledged, and licence and repository details are provided in the Code Availability note.</p>
+</div>
+</div>
+<div id="adaptations" class="section level4 hasAnchor" number="3.2.2.2">
+<h4><span class="header-section-number">3.2.2.2</span> Adaptations<a href="data-and-methodology.html#adaptations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The adaptation used in this research retains the central idea that compounding frictions are represented by multiplicative factors applied to a base score derived from functional class and speed, while re-specifying inputs and thresholds where necessary for the London context.</p>
+<p>During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London’s OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope.</p>
+<p>A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {stress_level (LTS), fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.</p>
+<p>PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).</p>
+<p>Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF ≈ 2.03), with base_index at a moderate level (≈ 4.63), while fac1 and fac2 show higher mutual dependence (≈ 27.73 and ≈ 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.</p>
+
+</div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="acknowledgements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="literature-review.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figures-tables-hosting-gitbook.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -290,7 +355,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/00-preamble.Rmd",
+    "link": "https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/03-method.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -301,7 +366,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": ["CASA-Thesis.pdf", "https://github.com/andrewmaclachlan/CASA-MSc-thesis/raw/main/00-preamble.Rmd"],
+  "download": ["CASA-Thesis.pdf", "https://github.com/andrewmaclachlan/CASA-MSc-thesis/raw/main/03-method.Rmd"],
   "search": {
     "engine": "fuse",
     "options": null
