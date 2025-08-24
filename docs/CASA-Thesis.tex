@@ -115,6 +115,7 @@
 \pagestyle{plain}
 \raggedbottom
 \usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{longtable}
 \usepackage{pdfpages}
 \usepackage[width=\textwidth]{caption}
 
@@ -153,7 +154,7 @@
 \strut \\
 CASA0010, MSc Smart Cities Dissertation\\
 \strut \\
-Supervisor: Dr Andrew MacLachlan\\
+Supervisor: Dr Duncan Smith\\
 \strut \\
 Repository: \url{https://andrewmaclachlan.github.io/CASA0005repo/}\\
 \strut \\
@@ -161,8 +162,8 @@ This dissertation is submitted in part requirement for the\\
 MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 \strut \\
-Word count:}
-\date{2025-06-26}
+Word count: unknown 17:08 update}
+\date{2025-08-24}
 
 \begin{document}
 \maketitle
@@ -406,141 +407,126 @@ You can also interact with \texttt{git}
 
 For more information watch renv: Project Environments for R introduction video: \url{https://www.rstudio.com/resources/rstudioconf-2020/renv-project-environments-for-r/}
 
-\chapter{Cross referencing}\label{crossref}
+\chapter{Literature Review}\label{literature-review}
 
-\section{Chapters or sections}\label{chapters-or-sections}
+\section{Introduction to Urban Cycling Environment Assessment}\label{introduction-to-urban-cycling-environment-assessment}
 
-Always give you sections an additional reference\ldots e.g.~\texttt{\#\ Cross\ referencing\ \{\#crossref\}} This gives us two reference points. The first we can use to reference the section name\ldots{}
+Cycling has increasingly been considered a key component of sustainable urban transport systems because it is a low‑emission, space‑efficient mode that can deliver environmental, health and social co‑benefits (Yanocha \&\,Mawdsley, 2022). Evidence from international studies suggests that shifting a substantial share of trips to cycling can reduce greenhouse‑gas emissions, air pollutants and traffic externalities (Yanocha \&\,Mawdsley, 2022). Estimates from the World Health Organization's Health Economic Assessment Tool indicate that each kilometre cycled yields a societal benefit of about €0.16, whereas each kilometre driven imposes a cost of roughly €0.15 (Yanocha \&\,Mawdsley, 2022).
+
+Research on the health impacts of cycling also suggests significant gains. A large Danish cohort study of more than 52,000 adults followed for 13 years found that habitual cycling was associated with lower risks of cardiovascular disease, respiratory disease, diabetes and all‑cause mortality, and these benefits were not materially diminished by exposure to traffic‑related air pollution (Logan et\,al., 2023). Modelling studies have further shown that, even in highly polluted cities, the health benefits of regular cycling generally outweigh the risks associated with increased inhalation of pollutants (Logan et\,al., 2023). In the Netherlands, a country with extensive cycling infrastructure, approximately 27 \% of all trips are made by bicycle; Fishman et\,al.~quantified the health benefits of this cycling culture at roughly 6,500 deaths prevented per year and about half a year of additional life expectancy per person (Fishman,\,Schepers \&\,Kamphuis, 2015).
+
+Despite these findings, cycling participation and infrastructure quality vary widely between cities. Transport for London's international benchmarking study reported that bicycle mode share is about 1 \% in New York City, around 2 \% in London, and approximately 40 \% in Amsterdam (Transport for London, 2013). This heterogeneity highlights the need for systematic assessments of urban cycling environments to inform targeted investments. The FLOW project, an EU‑funded initiative, argues that improvements in walking and cycling infrastructure constitute some of the most promising long‑term measures for easing congestion because they are relatively inexpensive and can encourage shifts away from car use (Koska \&\,Rudolph, 2016). Surveys conducted for the same project reveal that experts recognise the potential of walking and cycling measures to reduce congestion but note that such measures are implemented infrequently, indicating an implementation gap (Koska \&\,Rudolph, 2016).
+
+Investments in cycling infrastructure also appear to produce wider societal benefits. Research by the Institute for Transportation and Development Policy reports that separated cycle lanes can reduce cyclist injuries and fatalities even as ridership increases, and that improvements in air quality from modal shifts can lead to further reductions in premature deaths (Yanocha \&\,Mawdsley, 2022). In Washington, DC, analysis of the Capital Bikeshare system found that the presence of bikeshare stations was associated with a 2--3 \% reduction in traffic congestion on nearby roads (Wichman, 2016). Such results suggest that well‑designed cycling interventions can contribute not only to individual wellbeing but also to urban efficiency and economic productivity.
+
+Overall, the literature indicates that cycling can play a meaningful role in reducing environmental impacts, improving public health and enhancing urban liveability. However, the marked disparities in cycling uptake and infrastructure provision across cities underscore the importance of context‑specific assessments. Rigorous evaluation of existing cycling environments and careful identification of infrastructural gaps are necessary to design effective policies and investments capable of realising the potential benefits of urban cycling.
+
+\section{Review of Existing Evaluation Frameworks}\label{review-of-existing-evaluation-frameworks}
+
+\subsection{Structural Rideability}\label{structural-rideability}
+
+A critical dimension of cycling environment assessment is Structural Rideability, capturing physical infrastructure attributes that directly influence cycling comfort, safety, and user inclusivity. This concept aligns with established frameworks such as the Canadian Bikeway Comfort and Safety (Can-BICS) Classification System, which systematically evaluates cycling infrastructure based on safety performance and user comfort across different facility types (Ferster et al., 2023). Similarly, the Dutch CROW Design Manual emphasizes five key principles for effective cycling infrastructure: cohesion, directness, safety, comfort, and attractiveness (CROW, 2016), reinforcing the multidimensional nature of structural cycling environment assessment.
+
+A foundational metric within this domain is the Level of Traffic Stress (LTS) (Mekuria et al., 2012), which categorizes road segments by traffic conditions, lane width, speed, and cycling infrastructure presence. Recent developments have extended LTS applicability through open-source mapping platforms, with Wasserman et al.~(2019) demonstrating that OpenStreetMap-derived LTS scores achieve 89.9\% accuracy compared to field-validated assessments, facilitating scalable urban mapping applications.
+
+While LTS provides a robust framework for cycling infrastructure assessment, empirical research has identified opportunities for refinement and expansion of its core assessment dimensions. Recent studies have highlighted the critical importance of specific infrastructure characteristics that form the foundation of comprehensive cycling environment evaluation:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  We want to say see the Introduction (or other section label)we use \ldots{}\texttt{{[}Cross\ referencing{]}} giving \hyperref[crossref]{Cross referencing}
+  Physical Infrastructure and Separation
 \end{enumerate}
 
-But what if we want to reference the section number (e.g.~Chapter 1 or section 4.2)
+The design and quality of cycling infrastructure significantly influence safety outcomes and user comfort. Research consistently demonstrates that protected bike lanes and physically separated cycle tracks substantially reduce collision risk, with studies reporting injury rate reductions of up to 50\% compared to conventional on-road facilities (Harris et al., 2013; Reynolds et al., 2009). The type of physical separation---ranging from painted lanes to grade-separated infrastructure---creates varying degrees of perceived and actual safety, directly influencing cycling participation across different user groups.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  Just reference the label we gave to the section\ldots.see Chapter \texttt{\textbackslash{}@ref(crossref)} giving see Chapter \ref{crossref}
+  Traffic Speed and Volume Characteristics
 \end{enumerate}
 
-\section{Figures, tables, even code chunks}\label{figures-tables-even-code-chunks}
+Vehicle speed and traffic volume represent fundamental determinants of cycling stress and safety. Studies indicate that slower traffic speeds are associated with significantly fewer cyclist injuries, with research demonstrating that combined bike infrastructure and traffic calming measures generate substantially higher cyclist comfort ratings (Sanders et al., 2021). The relationship between traffic characteristics and cycling safety forms a core component of stress-level assessment, with speed limits serving as critical design parameters for cycling infrastructure planning.
 
-\subsection{Figures}\label{figures}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Network Connectivity and Intersection Design
+\end{enumerate}
 
-When you create a figure, table or code chunk there is an option to name the chunk something. Do it!. Don't be like me and not! Be warned that these chunk names can't have any fancy or strange characters in them e.g.~\_. I think a - is allowed, but i'd keep it simple. Here is a figure. In the chunk options after \texttt{r} i have specified \texttt{nice-fig,\ echo=FALSE,\ fig.cap=\textquotesingle{}Here\ is\ a\ nice\ figure!\textquotesingle{},\ out.width=\textquotesingle{}80\%\textquotesingle{}}
+The continuity of cycling networks and intersection treatments constitute essential elements of comprehensive cycling environment assessment. Research demonstrates that cyclist interactions become more severe and less safe at locations with cycling network discontinuities, highlighting the importance of seamless network connections. Intersection and crossing treatments are fundamental considerations in LTS evaluation, with studies showing that specialized intersection designs can significantly reduce cyclist-motorist conflicts and improve overall network usability.
+4. Spatial Configuration and Design Standards
 
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{CASA-Thesis_files/figure-latex/nice-fig-1} \caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+The geometric design of cycling facilities, including lane width, marking clarity, and spatial relationship to vehicular traffic, influences both objective and subjective safety measures. LTS assessment incorporates the number of lanes, effective vehicle speed, and the presence and type of bicycle facility, creating a comprehensive evaluation framework that accounts for the multidimensional nature of cycling infrastructure quality.
 
-To cross reference this just include Figure \texttt{\textbackslash{}@ref(fig:nice-fig)} which gives\ldots Figure \ref{fig:nice-fig}.
+These infrastructure dimensions represent the core components of systematic cycling environment assessment, building upon established LTS principles while providing detailed evaluation criteria for evidence-based cycling infrastructure planning and prioritization.
 
-\subsection{Tables}\label{tables}
+\subsection{Environmental Perception}\label{environmental-perception}
 
-For tables i'd recommend using the \texttt{kable} package. Here is an example table, same deal as the \hyperref[figures]{Figures} section with naming the code chunk.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Now to cite the table it's just Table \texttt{\textbackslash{}@ref(tab:nice-tab)}, giving Table \ref{tab:nice-tab}
-
-\section{Citing documents}\label{citing-documents}
-
-To cite documents they need to be in a \texttt{.bib} file, that must be loaded within your \texttt{index.Rmd} with the \texttt{bibliography:} argument. Have a look at my \texttt{index.Rmd} and you will see there are three such files, two that were provided as an example here \texttt{book.bib}, \texttt{packages.bib} and one that i added \texttt{test.bib}. I can simply cite the papers within them using the citation key e.g.~\texttt{{[}@xie2015{]}} giving \autocite{xie2015}. Make sure you remove the ones you don't need.
-
-If you remove the citation from the \texttt{{[}{]}} it will give \textcite{xie2015}.
-
-When citing multiple authors use a ; \texttt{{[}@xie2015;\ @maclachlan2017urban{]}} = \autocite{xie2015,maclachlan2017urban}
-
-To remove the author add a minus sign \texttt{-@maclachlan2017urban} = \autocite*{maclachlan2017urban}
-
-\section{Citing using software}\label{citing-using-software}
-
-Zotero can now continuously update your \texttt{.bib} file.
-
-To do so:
+Beyond structural attributes, environmental perception represents a critical dimension of cycling environment assessment, significantly influencing cycling comfort, route choice behavior, and overall cycling participation. This subjective yet quantifiable dimension encompasses multiple environmental factors that shape cyclists' psychological and physiological experiences during cycling activities.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Download the latest release --- the \texttt{.xpi} file: \url{https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.2.108}
+  Visual Greenery and Aesthetic Quality
+  The visual perception of greenery, measured through the Green View Index (GVI), constitutes a fundamental component of environmental cycling assessment. Studies examining cycling patterns demonstrate that eye-level greenness is positively associated with cycling frequency on both weekdays and weekends (Lu et al., 2020; Yang et al., 2023). Systematic reviews confirm that street greenery promotes active travel through the creation of visually attractive, safe, and comfortable environments (Gascon et al., 2024).
 \item
-  In Zotero \textgreater{} Tools \textgreater{} Add ons \textgreater{} Extensions
-\item
-  Select the cog \textgreater{} Install add on from file
-\item
-  Select the \texttt{.xip} \textgreater{} restart Zotero.
+  Air Quality and Pollution Exposure
 \end{enumerate}
 
-On the restart select the default naming convention.
-
-To export the library
+Nitrogen dioxide (NO₂) serves as a representative indicator of urban air pollution exposure for cyclists. NO₂ is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO₂ provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO₂ exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (An et al., 2018).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
 \item
-  File \textgreater{} export
-\item
-  Select Better BibLaTex
-\item
-  Click keep updated
-\item
-  Select the file to save into your Thesis project
-\item
-  Make sure you have the file listed in your \texttt{bibliography} in the \texttt{index.Rmd} file
+  Natural Features and Landscape Elements
 \end{enumerate}
 
-You can also manage references using \texttt{citr} which makes finding them to cite much easier. In RStudio go: Addins (top tool bar) \textgreater{} insert citations.
+The presence and accessibility of natural features---including parks, green spaces, and water bodies---constitute essential components of environmental perception in cycling assessment. Research consistently demonstrates that exposure to natural environments generates measurable psychological benefits, with studies showing that green spaces boost serotonin and dopamine levels in the brain, contributing to happiness and well-being (Lee \& Maheswaran, 2011).
 
-\section{Footnotes}\label{footnotes}
+Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (Hooyberg et al., 2021). The integration of natural features into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.
 
-To add a footnote use \texttt{\^{}{[}This\ is\ a\ footnote{]}} to create \footnote{This is a footnote}.
+Collectively, these three environmental perception dimensions---visual greenery (GVI), air quality (NO₂), and natural features---provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
+
+\subsection{Network Performance}\label{network-performance}
+
+Urban cycling evaluations also rely extensively on network performance indicators such as connectivity, centrality, and infrastructure density. Network performance assessment focuses on evaluating the ease and convenience of movement within the network without necessarily specifying origin-destination pairs, thus offering a versatile tool for urban cycling assessments.
+
+Contemporary approaches to network analysis have been revolutionized by open-source computational tools. Boeing (2017) developed OSMnx, a Python package that enables comprehensive street network analysis using OpenStreetMap data, allowing researchers to download, model, analyze, and visualize urban networks with unprecedented ease and accuracy. This methodological advancement has facilitated large-scale comparative studies of urban network structures across multiple cities and regions.
+
+The theoretical foundations of urban network analysis were established through graph-theoretic approaches that emphasize topological properties. Porta et al.~(2006) introduced the primal graph methodology for urban street network analysis, demonstrating that centrality indices effectively capture the structural `skeleton' of urban areas. Their Multiple Centrality Assessment (MCA) framework provides a metric-based approach that investigates multiple centrality indices simultaneously, offering more comprehensive network evaluation than single-index approaches.
+
+Recent research has expanded network performance assessment to incorporate cycling-specific infrastructure elements. Studies demonstrate that bicycle network connectivity significantly influences cycling behavior, with well-connected networks showing higher usage rates and broader demographic participation (Buehler \& Dill, 2016). Furthermore, the integration of bicycle parking facilities and connections to public transportation nodes represents essential components of comprehensive network performance evaluation, as these multimodal connections significantly enhance cycling network attractiveness and usability (Geurs et al., 2016).
+
+Network density and structural coherence also play critical roles in cycling network effectiveness. Research indicates that cycling networks benefit from both high local connectivity and efficient long-distance connections, with network fragmentation representing a significant barrier to cycling adoption (Lowry et al., 2012). The application of graph-theoretic measures such as betweenness centrality and clustering coefficients provides quantitative frameworks for identifying critical network nodes and assessing overall network robustness for cycling infrastructure planning.
+
+\section{Composite Index Approaches (CECI Models)}\label{composite-index-approaches-ceci-models}
+
+Composite indices for assessing cycling environments have emerged as important tools for integrating multiple dimensions of urban cycling conditions into unified assessment metrics. Galarza-Torres et al.~(2020) developed an urban Bikeability Index (BI) to assess and prioritise bicycle infrastructure investments, addressing particularities of roads in urban contexts. Their methodology incorporates infrastructure quality, safety considerations, and accessibility factors to guide investment decisions for improved cyclist accessibility.
+
+Hassanpour et al.~(2021) proposed a Bike Composite Index (BCI) consisting of two sub-indices representing bike attractiveness and bike safety, estimated using Bike Kilometers Travelled (BKT) and cyclist-vehicle crash data from 134 traffic analysis zones in Vancouver, Canada. This approach demonstrates the practical application of composite indices in real urban environments, providing actionable insights for local planning decisions.
+
+More recently, Félix et al.~(2022) developed a method for identifying potential locations for cycling infrastructure improvements using open data in Paris, addressing the need for simple and effective methods to support decision-making in bicycle planning. Their approach integrates spatial analysis with accessibility metrics to pinpoint areas requiring infrastructure enhancement.
+
+Advanced computational approaches have also been employed, with Szell et al.~(2022) proposing a framework for generating efficient bike path networks that explicitly considers cyclists' demand distribution and route choices based on safety preferences. This demand-driven design approach represents a significant advancement in evidence-based cycling infrastructure planning.
+
+However, a significant limitation in current theoretical frameworks is the insufficient integration of cycling perceptual factors and subjective safety assessments. Among the 137 indicators identified in bikeability research, only a few relating to air quality were based on cyclist perceptions, highlighting the predominant focus on objective measures. Castro et al.~(2023) emphasise that perceived safety is recognised as a key barrier to cycling, yet its constructs are poorly understood, with most assessments focusing primarily on crash and injury risk rather than broader perceptual dimensions. This gap between objective infrastructure provision and subjective cycling experiences represents a crucial oversight, as perceptual factors significantly influence cycling behaviour and route choices.
+
+Despite these methodological advances, current composite index frameworks still encounter limitations in data integration procedures, objective indicator weighting determination, and computational efficiency for large-scale applications. The insufficient incorporation of perceptual and subjective factors further compounds these challenges, highlighting the ongoing need for more holistic, transparent, and computationally robust methods for comprehensive cycling environment assessment.
+
+\section{Conclusion}\label{conclusion}
+
+Despite the comprehensive literature base, existing cycling environment assessments remain predominantly fragmented, typically addressing only singular dimensions (structural, environmental, or network-based) (Muhs \& Clifton, 2015). This fragmented approach limits the effectiveness of urban cycling environment evaluations, preventing the development of comprehensive and integrative insights crucial for urban planners and policymakers (Giles-Corti et al., 2019). Moreover, few existing frameworks have explicitly addressed the synergistic interactions among different cycling environment factors, particularly the intersection between structural and environmental perception variables.
+
+Addressing these research gaps, this study introduces the Cycling Environment Composite Index (CECI), a comprehensive indicator designed to integrate the critical dimensions of structural rideability, environmental perception, and network performance. The CECI differs from prior studies by explicitly synthesizing diverse but interrelated urban cycling determinants, thereby enhancing evaluation comprehensiveness. While aligning conceptually with the ``15-minute city'' framework---whereby residents can access their daily needs within a 15-minute walk, bicycle or transit ride from their home---the CECI's broader analytical scope ensures greater adaptability and utility for various urban contexts (Moreno et al., 2021). By explicitly integrating indicators such as GVI, air quality, LTS, network connectivity, and multimodal infrastructure, the proposed CECI methodology provides planners with a nuanced understanding of spatial disparities in cycling environment quality, thereby enabling targeted interventions.
+
+The integration of structural, environmental, and network performance indicators into a single composite index provides a robust, practical framework for assessing urban cycling environments comprehensively. Although developed and initially demonstrated in Greater London, the flexible design and theoretical robustness of CECI facilitate its potential adaptation and application to other urban contexts. The proposed index thus contributes to the ongoing development of urban cycling environment evaluation methods, potentially offering useful insights for targeted policy interventions and infrastructure investments to support sustainable urban mobility.
 
 \chapter{Equations and direct quotes}\label{equations-and-direct-quotes}
 
@@ -601,7 +587,7 @@ This section is going to focus including figures and creating tables
 
 \section{Including figures and tables}\label{including-figures-and-tables}
 
-\subsection{Figures}\label{figures-1}
+\subsection{Figures}\label{figures}
 
 To include the figure above use the code:
 
@@ -624,7 +610,7 @@ For making flow diagrams have a look at:
   Draw.io
 \end{enumerate}
 
-\subsection{Tables}\label{tables-1}
+\subsection{Tables}\label{tables}
 
 For creating tables i'd suggest creating either an excel file or \texttt{.csv} and then reading the data into R and using the \texttt{kabble} package to format it how you wish. The example below is from the abbreviations section
 
@@ -789,7 +775,7 @@ Short introduction to the chapter, reviewing the previous chapter and detailing 
 
 \section{Transferability}\label{transferability}
 
-\chapter{Conclusion}\label{conclusion}
+\chapter{Conclusion}\label{conclusion-1}
 
 Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
 

@@ -14,6 +14,13 @@ adding-a-pdf
 writing-code
 package-reproducibility
 literature-review
+introduction-to-urban-cycling-environment-assessment
+review-of-existing-evaluation-frameworks
+structural-rideability
+environmental-perception
+network-performance
+composite-index-approaches-ceci-models
+conclusion
 equations-and-direct-quotes
 equations
 quotes
@@ -29,5 +36,5 @@ local-policy
 academic-research
 limitations
 transferability
-conclusion
+conclusion-1
 recommedations

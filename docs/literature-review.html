@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Literature Review | CASA dissertation using Bookdown</title>
+  <meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  <meta name="generator" content="bookdown 0.43.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Literature Review | CASA dissertation using Bookdown" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  <meta name="github-repo" content="Van-Wu1/CASA-MSc-thesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Literature Review | CASA dissertation using Bookdown" />
+  
+  <meta name="twitter:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  
+
+
+
+<meta name="date" content="2025-08-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="bookdown-basics.html"/>
+<link rel="next" href="equations-and-direct-quotes.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_images/casa_logo.jpg"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
+<li class="chapter" data-level="1" data-path="bookdown-basics.html"><a href="bookdown-basics.html"><i class="fa fa-check"></i><b>1</b> Bookdown basics</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="bookdown-basics.html"><a href="bookdown-basics.html#structure"><i class="fa fa-check"></i><b>1.1</b> Structure</a></li>
+<li class="chapter" data-level="1.2" data-path="bookdown-basics.html"><a href="bookdown-basics.html#building-the-book"><i class="fa fa-check"></i><b>1.2</b> Building the book</a></li>
+<li class="chapter" data-level="1.3" data-path="bookdown-basics.html"><a href="bookdown-basics.html#yamls"><i class="fa fa-check"></i><b>1.3</b> YAMLs</a></li>
+<li class="chapter" data-level="1.4" data-path="bookdown-basics.html"><a href="bookdown-basics.html#formatting"><i class="fa fa-check"></i><b>1.4</b> Formatting</a></li>
+<li class="chapter" data-level="1.5" data-path="bookdown-basics.html"><a href="bookdown-basics.html#index-file"><i class="fa fa-check"></i><b>1.5</b> Index file</a></li>
+<li class="chapter" data-level="1.6" data-path="bookdown-basics.html"><a href="bookdown-basics.html#preamble"><i class="fa fa-check"></i><b>1.6</b> Preamble</a></li>
+<li class="chapter" data-level="1.7" data-path="bookdown-basics.html"><a href="bookdown-basics.html#change-this-to-a-thesis"><i class="fa fa-check"></i><b>1.7</b> Change this to a thesis</a></li>
+<li class="chapter" data-level="1.8" data-path="bookdown-basics.html"><a href="bookdown-basics.html#word-count"><i class="fa fa-check"></i><b>1.8</b> Word count</a></li>
+<li class="chapter" data-level="1.9" data-path="bookdown-basics.html"><a href="bookdown-basics.html#adding-a-pdf"><i class="fa fa-check"></i><b>1.9</b> Adding a pdf</a></li>
+<li class="chapter" data-level="1.10" data-path="bookdown-basics.html"><a href="bookdown-basics.html#writing-code"><i class="fa fa-check"></i><b>1.10</b> Writing code</a></li>
+<li class="chapter" data-level="1.11" data-path="bookdown-basics.html"><a href="bookdown-basics.html#package-reproducibility"><i class="fa fa-check"></i><b>1.11</b> Package reproducibility</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="literature-review.html"><a href="literature-review.html#introduction-to-urban-cycling-environment-assessment"><i class="fa fa-check"></i><b>2.1</b> Introduction to Urban Cycling Environment Assessment</a></li>
+<li class="chapter" data-level="2.2" data-path="literature-review.html"><a href="literature-review.html#review-of-existing-evaluation-frameworks"><i class="fa fa-check"></i><b>2.2</b> Review of Existing Evaluation Frameworks</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="literature-review.html"><a href="literature-review.html#structural-rideability"><i class="fa fa-check"></i><b>2.2.1</b> Structural Rideability</a></li>
+<li class="chapter" data-level="2.2.2" data-path="literature-review.html"><a href="literature-review.html#environmental-perception"><i class="fa fa-check"></i><b>2.2.2</b> Environmental Perception</a></li>
+<li class="chapter" data-level="2.2.3" data-path="literature-review.html"><a href="literature-review.html#network-performance"><i class="fa fa-check"></i><b>2.2.3</b> Network Performance</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="literature-review.html"><a href="literature-review.html#composite-index-approaches-ceci-models"><i class="fa fa-check"></i><b>2.3</b> Composite Index Approaches (CECI Models)</a></li>
+<li class="chapter" data-level="2.4" data-path="literature-review.html"><a href="literature-review.html#conclusion"><i class="fa fa-check"></i><b>2.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="equations-and-direct-quotes.html"><a href="equations-and-direct-quotes.html"><i class="fa fa-check"></i><b>3</b> Equations and direct quotes</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="equations-and-direct-quotes.html"><a href="equations-and-direct-quotes.html#equations"><i class="fa fa-check"></i><b>3.1</b> Equations</a></li>
+<li class="chapter" data-level="3.2" data-path="equations-and-direct-quotes.html"><a href="equations-and-direct-quotes.html#quotes"><i class="fa fa-check"></i><b>3.2</b> Block quotes (or direct quotes)</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="figures-tables-hosting-gitbook.html"><a href="figures-tables-hosting-gitbook.html"><i class="fa fa-check"></i><b>4</b> Figures, tables, hosting GitBook</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="figures-tables-hosting-gitbook.html"><a href="figures-tables-hosting-gitbook.html#including-figures-and-tables"><i class="fa fa-check"></i><b>4.1</b> Including figures and tables</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="figures-tables-hosting-gitbook.html"><a href="figures-tables-hosting-gitbook.html#figures"><i class="fa fa-check"></i><b>4.1.1</b> Figures</a></li>
+<li class="chapter" data-level="4.1.2" data-path="figures-tables-hosting-gitbook.html"><a href="figures-tables-hosting-gitbook.html#tables"><i class="fa fa-check"></i><b>4.1.2</b> Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="figures-tables-hosting-gitbook.html"><a href="figures-tables-hosting-gitbook.html#hosting-the-book"><i class="fa fa-check"></i><b>4.2</b> Hosting the book</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="discussion.html"><a href="discussion.html#research-significance"><i class="fa fa-check"></i><b>5.1</b> Research significance</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="discussion.html"><a href="discussion.html#global-development-goals"><i class="fa fa-check"></i><b>5.1.1</b> Global development goals</a></li>
+<li class="chapter" data-level="5.1.2" data-path="discussion.html"><a href="discussion.html#local-policy"><i class="fa fa-check"></i><b>5.1.2</b> Local policy</a></li>
+<li class="chapter" data-level="5.1.3" data-path="discussion.html"><a href="discussion.html#academic-research"><i class="fa fa-check"></i><b>5.1.3</b> Academic research</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#limitations"><i class="fa fa-check"></i><b>5.2</b> Limitations</a></li>
+<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#transferability"><i class="fa fa-check"></i><b>5.3</b> Transferability</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="conclusion-1.html"><a href="conclusion-1.html#recommedations"><i class="fa fa-check"></i><b>6.1</b> Recommedations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-research-log.html"><a href="appendix-a-research-log.html"><i class="fa fa-check"></i>Appendix A Research log</a></li>
+<li class="divider"></li>
+<li><a href="" target="blank"></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CASA dissertation using Bookdown</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="literature-review" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Literature Review<a href="literature-review.html#literature-review" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction-to-urban-cycling-environment-assessment" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Introduction to Urban Cycling Environment Assessment<a href="literature-review.html#introduction-to-urban-cycling-environment-assessment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cycling has increasingly been considered a key component of sustainable urban transport systems because it is a low‑emission, space‑efficient mode that can deliver environmental, health and social co‑benefits (Yanocha &amp; Mawdsley, 2022). Evidence from international studies suggests that shifting a substantial share of trips to cycling can reduce greenhouse‑gas emissions, air pollutants and traffic externalities (Yanocha &amp; Mawdsley, 2022). Estimates from the World Health Organization’s Health Economic Assessment Tool indicate that each kilometre cycled yields a societal benefit of about €0.16, whereas each kilometre driven imposes a cost of roughly €0.15 (Yanocha &amp; Mawdsley, 2022).</p>
+<p>Research on the health impacts of cycling also suggests significant gains. A large Danish cohort study of more than 52,000 adults followed for 13 years found that habitual cycling was associated with lower risks of cardiovascular disease, respiratory disease, diabetes and all‑cause mortality, and these benefits were not materially diminished by exposure to traffic‑related air pollution (Logan et al., 2023). Modelling studies have further shown that, even in highly polluted cities, the health benefits of regular cycling generally outweigh the risks associated with increased inhalation of pollutants (Logan et al., 2023). In the Netherlands, a country with extensive cycling infrastructure, approximately 27 % of all trips are made by bicycle; Fishman et al. quantified the health benefits of this cycling culture at roughly 6,500 deaths prevented per year and about half a year of additional life expectancy per person (Fishman, Schepers &amp; Kamphuis, 2015).</p>
+<p>Despite these findings, cycling participation and infrastructure quality vary widely between cities. Transport for London’s international benchmarking study reported that bicycle mode share is about 1 % in New York City, around 2 % in London, and approximately 40 % in Amsterdam (Transport for London, 2013). This heterogeneity highlights the need for systematic assessments of urban cycling environments to inform targeted investments. The FLOW project, an EU‑funded initiative, argues that improvements in walking and cycling infrastructure constitute some of the most promising long‑term measures for easing congestion because they are relatively inexpensive and can encourage shifts away from car use (Koska &amp; Rudolph, 2016). Surveys conducted for the same project reveal that experts recognise the potential of walking and cycling measures to reduce congestion but note that such measures are implemented infrequently, indicating an implementation gap (Koska &amp; Rudolph, 2016).</p>
+<p>Investments in cycling infrastructure also appear to produce wider societal benefits. Research by the Institute for Transportation and Development Policy reports that separated cycle lanes can reduce cyclist injuries and fatalities even as ridership increases, and that improvements in air quality from modal shifts can lead to further reductions in premature deaths (Yanocha &amp; Mawdsley, 2022). In Washington, DC, analysis of the Capital Bikeshare system found that the presence of bikeshare stations was associated with a 2–3 % reduction in traffic congestion on nearby roads (Wichman, 2016). Such results suggest that well‑designed cycling interventions can contribute not only to individual wellbeing but also to urban efficiency and economic productivity.</p>
+<p>Overall, the literature indicates that cycling can play a meaningful role in reducing environmental impacts, improving public health and enhancing urban liveability. However, the marked disparities in cycling uptake and infrastructure provision across cities underscore the importance of context‑specific assessments. Rigorous evaluation of existing cycling environments and careful identification of infrastructural gaps are necessary to design effective policies and investments capable of realising the potential benefits of urban cycling.</p>
+</div>
+<div id="review-of-existing-evaluation-frameworks" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Review of Existing Evaluation Frameworks<a href="literature-review.html#review-of-existing-evaluation-frameworks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="structural-rideability" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Structural Rideability<a href="literature-review.html#structural-rideability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A critical dimension of cycling environment assessment is Structural Rideability, capturing physical infrastructure attributes that directly influence cycling comfort, safety, and user inclusivity. This concept aligns with established frameworks such as the Canadian Bikeway Comfort and Safety (Can-BICS) Classification System, which systematically evaluates cycling infrastructure based on safety performance and user comfort across different facility types (Ferster et al., 2023). Similarly, the Dutch CROW Design Manual emphasizes five key principles for effective cycling infrastructure: cohesion, directness, safety, comfort, and attractiveness (CROW, 2016), reinforcing the multidimensional nature of structural cycling environment assessment.</p>
+<p>A foundational metric within this domain is the Level of Traffic Stress (LTS) (Mekuria et al., 2012), which categorizes road segments by traffic conditions, lane width, speed, and cycling infrastructure presence. Recent developments have extended LTS applicability through open-source mapping platforms, with Wasserman et al. (2019) demonstrating that OpenStreetMap-derived LTS scores achieve 89.9% accuracy compared to field-validated assessments, facilitating scalable urban mapping applications.</p>
+<p>While LTS provides a robust framework for cycling infrastructure assessment, empirical research has identified opportunities for refinement and expansion of its core assessment dimensions. Recent studies have highlighted the critical importance of specific infrastructure characteristics that form the foundation of comprehensive cycling environment evaluation:</p>
+<ol style="list-style-type: decimal">
+<li>Physical Infrastructure and Separation</li>
+</ol>
+<p>The design and quality of cycling infrastructure significantly influence safety outcomes and user comfort. Research consistently demonstrates that protected bike lanes and physically separated cycle tracks substantially reduce collision risk, with studies reporting injury rate reductions of up to 50% compared to conventional on-road facilities (Harris et al., 2013; Reynolds et al., 2009). The type of physical separation—ranging from painted lanes to grade-separated infrastructure—creates varying degrees of perceived and actual safety, directly influencing cycling participation across different user groups.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Traffic Speed and Volume Characteristics</li>
+</ol>
+<p>Vehicle speed and traffic volume represent fundamental determinants of cycling stress and safety. Studies indicate that slower traffic speeds are associated with significantly fewer cyclist injuries, with research demonstrating that combined bike infrastructure and traffic calming measures generate substantially higher cyclist comfort ratings (Sanders et al., 2021). The relationship between traffic characteristics and cycling safety forms a core component of stress-level assessment, with speed limits serving as critical design parameters for cycling infrastructure planning.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Network Connectivity and Intersection Design</li>
+</ol>
+<p>The continuity of cycling networks and intersection treatments constitute essential elements of comprehensive cycling environment assessment. Research demonstrates that cyclist interactions become more severe and less safe at locations with cycling network discontinuities, highlighting the importance of seamless network connections. Intersection and crossing treatments are fundamental considerations in LTS evaluation, with studies showing that specialized intersection designs can significantly reduce cyclist-motorist conflicts and improve overall network usability.
+4. Spatial Configuration and Design Standards</p>
+<p>The geometric design of cycling facilities, including lane width, marking clarity, and spatial relationship to vehicular traffic, influences both objective and subjective safety measures. LTS assessment incorporates the number of lanes, effective vehicle speed, and the presence and type of bicycle facility, creating a comprehensive evaluation framework that accounts for the multidimensional nature of cycling infrastructure quality.</p>
+<p>These infrastructure dimensions represent the core components of systematic cycling environment assessment, building upon established LTS principles while providing detailed evaluation criteria for evidence-based cycling infrastructure planning and prioritization.</p>
+</div>
+<div id="environmental-perception" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Environmental Perception<a href="literature-review.html#environmental-perception" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Beyond structural attributes, environmental perception represents a critical dimension of cycling environment assessment, significantly influencing cycling comfort, route choice behavior, and overall cycling participation. This subjective yet quantifiable dimension encompasses multiple environmental factors that shape cyclists’ psychological and physiological experiences during cycling activities.</p>
+<ol style="list-style-type: decimal">
+<li><p>Visual Greenery and Aesthetic Quality
+The visual perception of greenery, measured through the Green View Index (GVI), constitutes a fundamental component of environmental cycling assessment. Studies examining cycling patterns demonstrate that eye-level greenness is positively associated with cycling frequency on both weekdays and weekends (Lu et al., 2020; Yang et al., 2023). Systematic reviews confirm that street greenery promotes active travel through the creation of visually attractive, safe, and comfortable environments (Gascon et al., 2024).</p></li>
+<li><p>Air Quality and Pollution Exposure</p></li>
+</ol>
+<p>Nitrogen dioxide (NO₂) serves as a representative indicator of urban air pollution exposure for cyclists. NO₂ is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO₂ provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO₂ exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (An et al., 2018).</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Natural Features and Landscape Elements</li>
+</ol>
+<p>The presence and accessibility of natural features—including parks, green spaces, and water bodies—constitute essential components of environmental perception in cycling assessment. Research consistently demonstrates that exposure to natural environments generates measurable psychological benefits, with studies showing that green spaces boost serotonin and dopamine levels in the brain, contributing to happiness and well-being (Lee &amp; Maheswaran, 2011).</p>
+<p>Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (Hooyberg et al., 2021). The integration of natural features into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.</p>
+<p>Collectively, these three environmental perception dimensions—visual greenery (GVI), air quality (NO₂), and natural features—provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.</p>
+</div>
+<div id="network-performance" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Network Performance<a href="literature-review.html#network-performance" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Urban cycling evaluations also rely extensively on network performance indicators such as connectivity, centrality, and infrastructure density. Network performance assessment focuses on evaluating the ease and convenience of movement within the network without necessarily specifying origin-destination pairs, thus offering a versatile tool for urban cycling assessments.</p>
+<p>Contemporary approaches to network analysis have been revolutionized by open-source computational tools. Boeing (2017) developed OSMnx, a Python package that enables comprehensive street network analysis using OpenStreetMap data, allowing researchers to download, model, analyze, and visualize urban networks with unprecedented ease and accuracy. This methodological advancement has facilitated large-scale comparative studies of urban network structures across multiple cities and regions.</p>
+<p>The theoretical foundations of urban network analysis were established through graph-theoretic approaches that emphasize topological properties. Porta et al. (2006) introduced the primal graph methodology for urban street network analysis, demonstrating that centrality indices effectively capture the structural ‘skeleton’ of urban areas. Their Multiple Centrality Assessment (MCA) framework provides a metric-based approach that investigates multiple centrality indices simultaneously, offering more comprehensive network evaluation than single-index approaches.</p>
+<p>Recent research has expanded network performance assessment to incorporate cycling-specific infrastructure elements. Studies demonstrate that bicycle network connectivity significantly influences cycling behavior, with well-connected networks showing higher usage rates and broader demographic participation (Buehler &amp; Dill, 2016). Furthermore, the integration of bicycle parking facilities and connections to public transportation nodes represents essential components of comprehensive network performance evaluation, as these multimodal connections significantly enhance cycling network attractiveness and usability (Geurs et al., 2016).</p>
+<p>Network density and structural coherence also play critical roles in cycling network effectiveness. Research indicates that cycling networks benefit from both high local connectivity and efficient long-distance connections, with network fragmentation representing a significant barrier to cycling adoption (Lowry et al., 2012). The application of graph-theoretic measures such as betweenness centrality and clustering coefficients provides quantitative frameworks for identifying critical network nodes and assessing overall network robustness for cycling infrastructure planning.</p>
+</div>
+</div>
+<div id="composite-index-approaches-ceci-models" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Composite Index Approaches (CECI Models)<a href="literature-review.html#composite-index-approaches-ceci-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Composite indices for assessing cycling environments have emerged as important tools for integrating multiple dimensions of urban cycling conditions into unified assessment metrics. Galarza-Torres et al. (2020) developed an urban Bikeability Index (BI) to assess and prioritise bicycle infrastructure investments, addressing particularities of roads in urban contexts. Their methodology incorporates infrastructure quality, safety considerations, and accessibility factors to guide investment decisions for improved cyclist accessibility.</p>
+<p>Hassanpour et al. (2021) proposed a Bike Composite Index (BCI) consisting of two sub-indices representing bike attractiveness and bike safety, estimated using Bike Kilometers Travelled (BKT) and cyclist-vehicle crash data from 134 traffic analysis zones in Vancouver, Canada. This approach demonstrates the practical application of composite indices in real urban environments, providing actionable insights for local planning decisions.</p>
+<p>More recently, Félix et al. (2022) developed a method for identifying potential locations for cycling infrastructure improvements using open data in Paris, addressing the need for simple and effective methods to support decision-making in bicycle planning. Their approach integrates spatial analysis with accessibility metrics to pinpoint areas requiring infrastructure enhancement.</p>
+<p>Advanced computational approaches have also been employed, with Szell et al. (2022) proposing a framework for generating efficient bike path networks that explicitly considers cyclists’ demand distribution and route choices based on safety preferences. This demand-driven design approach represents a significant advancement in evidence-based cycling infrastructure planning.</p>
+<p>However, a significant limitation in current theoretical frameworks is the insufficient integration of cycling perceptual factors and subjective safety assessments. Among the 137 indicators identified in bikeability research, only a few relating to air quality were based on cyclist perceptions, highlighting the predominant focus on objective measures. Castro et al. (2023) emphasise that perceived safety is recognised as a key barrier to cycling, yet its constructs are poorly understood, with most assessments focusing primarily on crash and injury risk rather than broader perceptual dimensions. This gap between objective infrastructure provision and subjective cycling experiences represents a crucial oversight, as perceptual factors significantly influence cycling behaviour and route choices.</p>
+<p>Despite these methodological advances, current composite index frameworks still encounter limitations in data integration procedures, objective indicator weighting determination, and computational efficiency for large-scale applications. The insufficient incorporation of perceptual and subjective factors further compounds these challenges, highlighting the ongoing need for more holistic, transparent, and computationally robust methods for comprehensive cycling environment assessment.</p>
+</div>
+<div id="conclusion" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Conclusion<a href="literature-review.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Despite the comprehensive literature base, existing cycling environment assessments remain predominantly fragmented, typically addressing only singular dimensions (structural, environmental, or network-based) (Muhs &amp; Clifton, 2015). This fragmented approach limits the effectiveness of urban cycling environment evaluations, preventing the development of comprehensive and integrative insights crucial for urban planners and policymakers (Giles-Corti et al., 2019). Moreover, few existing frameworks have explicitly addressed the synergistic interactions among different cycling environment factors, particularly the intersection between structural and environmental perception variables.</p>
+<p>Addressing these research gaps, this study introduces the Cycling Environment Composite Index (CECI), a comprehensive indicator designed to integrate the critical dimensions of structural rideability, environmental perception, and network performance. The CECI differs from prior studies by explicitly synthesizing diverse but interrelated urban cycling determinants, thereby enhancing evaluation comprehensiveness. While aligning conceptually with the “15-minute city” framework—whereby residents can access their daily needs within a 15-minute walk, bicycle or transit ride from their home—the CECI’s broader analytical scope ensures greater adaptability and utility for various urban contexts (Moreno et al., 2021). By explicitly integrating indicators such as GVI, air quality, LTS, network connectivity, and multimodal infrastructure, the proposed CECI methodology provides planners with a nuanced understanding of spatial disparities in cycling environment quality, thereby enabling targeted interventions.</p>
+<p>The integration of structural, environmental, and network performance indicators into a single composite index provides a robust, practical framework for assessing urban cycling environments comprehensively. Although developed and initially demonstrated in Greater London, the flexible design and theoretical robustness of CECI facilitate its potential adaptation and application to other urban contexts. The proposed index thus contributes to the ongoing development of urban cycling environment evaluation methods, potentially offering useful insights for targeted policy interventions and infrastructure investments to support sustainable urban mobility.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="bookdown-basics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="equations-and-direct-quotes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": false
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/02-literature.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["CASA-Thesis.pdf", "https://github.com/andrewmaclachlan/CASA-MSc-thesis/raw/main/02-literature.Rmd"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
