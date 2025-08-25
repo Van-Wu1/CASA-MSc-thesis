@@ -1,10 +1,35 @@
 # Conclusion
 
-Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+This dissertation has developed and applied a composite framework for evaluating the cycling environment of London, addressing the interplay between infrastructural conditions, environmental perception, and network connectivity. The research was motivated by the need to move beyond fragmented assessments of cycling quality and to deliver a holistic tool that can highlight disparities and guide targeted interventions. Through the construction of a Cycling Quality Index (CQI), the study has provided new insights into the spatial distribution of cycling opportunities and constraints across Greater London.
 
-## Recommedations
+The findings revealed a marked core–periphery gradient, with central districts characterised by high traffic stress, fragmented facilities, and environmental burdens, while outer areas contained more isolated but higher-quality segments often associated with parks and green corridors. Importantly, the analysis showed that no single dimension is sufficient for evaluating cycling quality: infrastructural improvements may be undermined by environmental pressures, while attractive green routes may fail to deliver connectivity. By integrating these factors into a unified index, the study contributes both methodologically, by operationalising a replicable evaluation tool, and empirically, by providing one of the most detailed portraits of London’s cycling environment to date.
 
-1. Adapt policy x
-1. Undertake data informed targeted greening
-1. Further work into this area
+## Recommendations
 
+Based on the findings, several recommendations are offered:
+
+1. Strengthen central network continuity
+   Investments should prioritise filling infrastructural gaps and reducing bottlenecks in central London, where demand is highest but network fragmentation and environmental stress are most acute. Upgrading crossings, junctions, and corridor continuity can deliver substantial improvements in accessibility.
+
+2. Integrate cycling with environmental planning  
+   Air quality management and urban greening strategies should be coordinated with cycling investments. Targeted planting, green buffers, and pollution mitigation measures along key corridors can enhance both the environmental perception and health outcomes for cyclists.
+
+3. Connect peripheral high-quality segments  
+   Outer boroughs often contain strong but disconnected cycling corridors. Linking these segments into longer, continuous routes would enable greater use of peripheral assets and support more equitable access to cycling across the metropolitan region.
+
+4. Embed equity into cycling strategies  
+   Borough-level variation demonstrates that cycling provision remains uneven. Policies should therefore focus not only on expanding total infrastructure but also on ensuring that improvements address underserved communities and neighbourhoods.
+
+5. Adopt multi-dimensional evaluation tools  
+   The CQI framework developed here can support monitoring and prioritisation. Incorporating such composite indicators into policy evaluation would enable decision-makers to capture the full range of factors shaping cycling quality rather than relying on isolated metrics.
+
+## Future Research Directions
+
+While this study provides a comprehensive assessment, further work is required to refine and extend the framework:
+
+* Dynamic and temporal analysis: Incorporating peak-hour traffic conditions, seasonal variations in air quality, and temporal changes in greenery would provide a richer understanding of cyclists’ experiences.  
+* User-centred validation: Surveys, sensor data, or participatory mapping could be employed to ground-truth the CQI and ensure that it aligns with the perceptions of diverse user groups.  
+* Cross-city comparison: Applying the framework to other urban contexts would test its adaptability and create benchmarks for evaluating cycling environments internationally.  
+* Integration with multimodal accessibility: Future work could explore how cycling quality interacts with public transport nodes, last-mile connections, and emerging forms of micro-mobility.
+
+In conclusion, this dissertation has demonstrated that a multi-dimensional approach is essential for understanding and improving cycling environments. By providing a replicable framework and empirically mapping London’s disparities, the research offers both methodological and policy contributions. Ultimately, enabling cycling to play a greater role in London’s mobility system will require sustained investment, integrated planning, and evidence-based evaluation tools such as those developed in this study.

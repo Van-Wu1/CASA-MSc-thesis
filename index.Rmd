@@ -47,5 +47,7 @@ library(knitr)
 `r if (knitr:::is_latex_output()) '
 # Abstract {.unlisted .unnumbered}
 '`
-Some abstract text
+
+This study develops a composite framework to evaluate the cycling environment in London, integrating structural rideability, environmental perception, and network centrality into a unified Cycling Quality Index (CQI). Using multi-source datasets, including OpenStreetMap, environmental indicators, and graph-based network measures, the analysis identifies both local and city-wide constraints shaping ridership potential. The results reveal a pronounced core–periphery gradient: central London suffers from fragmented infrastructure, high traffic stress, and environmental burdens, while outer areas contain isolated yet high-quality segments often linked to green corridors. By combining facility-level attributes with spatial accessibility and environmental quality, the CQI provides a holistic measure that highlights critical gaps in network continuity and equity. The study contributes methodologically by operationalising a multi-dimensional index and empirically by mapping London’s cycling disparities. Findings support evidence-based interventions for sustainable mobility, emphasising the need to strengthen central connections, reduce environmental stressors, and extend high-quality cycling corridors into cohesive metropolitan networks.
+
 
