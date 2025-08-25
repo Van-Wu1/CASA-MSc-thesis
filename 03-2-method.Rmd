@@ -6,7 +6,7 @@ Figure X summarises the end-to-end pipeline for constructing a link-level Compos
 
 1. Extraction and selection
 
-The base street network is obtained from OpenStreetMap via a two-stage Overpass query. An inclusion-oriented stage captures bicycle-permissible ways across Greater London. A targeted clean removes motorways and ramps, under-construction segments, and links that explicitly prohibit cycling. Direction-dependent rules are implemented for left-hand traffic (right_hand_traffic=False).
+The base street network is obtained from OpenStreetMap via a two-stage Overpass query. An inclusion-oriented stage captures bicycle-permissible ways across Greater London. A targeted clean removes motorways and ramps, under-construction segments, and links that explicitly prohibit cycling. Direction-dependent rules are implemented for left-hand traffic (`right_hand traffic`=False).
 
 2. Topological and geometric cleaning
 
@@ -14,7 +14,7 @@ A light-touch sequence improves graph consistency while preserving OSM geometry.
 
 3. Processed fields
 
-Pre-processing yields link-level attributes used downstream: proc_highway, proc_maxspeed, proc_width, proc_oneway, priority_road, motor_vehicle. These standardise tagging and encode London’s traffic handedness.
+Pre-processing yields link-level attributes used downstream: `proc_highway`, `proc_maxspeed`, `proc_width`, `proc_oneway`, `priority_road`, `motor_vehicle`. These standardise tagging and encode London’s traffic handedness.
 
 4. Normalisation convention
 
@@ -34,11 +34,11 @@ The adaptation used in this research retains the central idea that compounding f
 
 During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London’s OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope. 
 
-A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {stress_level (LTS), fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
+A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {LTS, fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
 
 PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).
 
-Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF ≈ 2.03), with base_index at a moderate level (≈ 4.63), while fac1 and fac2 show higher mutual dependence (≈ 27.73 and ≈ 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
+Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF ≈ 2.03), with `base_index` at a moderate level (≈ 4.63), while fac1 and fac2 show higher mutual dependence (≈ 27.73 and ≈ 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
 
 Table X. PCA explained variance and loadings (absolute values).
 (PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
@@ -58,12 +58,12 @@ read_excel(here("tables", "PCA.xlsx"))%>%
   bold = TRUE)
 ```
 
-```{r pca, echo=FALSE, out.width="90%", fig.align='center', fig.cap="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress_level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions."}
+```{r pca, echo=FALSE, out.width="90%", fig.align='center', fig.cap="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions."}
 library(here)
 knitr::include_graphics(here::here('general_images','pca.png'))
 ```
 
-```{r vif1, echo=FALSE, out.width="75%", fig.align='center', fig.cap="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, base_index ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36."}
+```{r vif1, echo=FALSE, out.width="75%", fig.align='center', fig.cap="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, `base_index` ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36."}
 library(here)
 knitr::include_graphics(here::here('general_images','vif1.png'))
 ```
@@ -83,7 +83,7 @@ Five categories of factors are computed from processed tags and terrain.
 
 1. Facility and width (fac1): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used (see Appendix). The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.
 
-2. Speed and classification (fac2): Posted speed (proc_maxspeed) and proc_highway class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London’s distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.
+2. Speed and classification (fac2): Posted speed (`proc_maxspeed`) and `proc_highway` class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London’s distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.
 
 3. Slope (fac3): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac3 = 0.9 as a conservative treatment that avoids unjustified improvement.
 
@@ -114,7 +114,7 @@ Link values are obtained by buffering each link midpoint by 30 m (or by regular 
 
 ### Air quality (NO2)
 
-The gridded NO2 surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − NO2_norm) so that higher values consistently denote better conditions.
+The gridded NO2 surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − `NO2_norm`) so that higher values consistently denote better conditions.
 
 ### Natural-landscape proximity
 
@@ -165,7 +165,7 @@ rescaled to [0, 100].
 
 ### Merging and keying
 
-Outputs are joined by a stable key consisting of the OSM id and a hashed edge_uid derived from endpoint coordinates. Geometry is inherited from the structural layer to maintain alignment.
+Outputs are joined by a stable key consisting of the OSM id and a hashed `edge_uid` derived from endpoint coordinates. Geometry is inherited from the structural layer to maintain alignment.
 
 ### Composite scoring
 
