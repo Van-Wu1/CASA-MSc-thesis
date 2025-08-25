@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Methodology | CASA dissertation using Bookdown</title>
+  <meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  <meta name="generator" content="bookdown 0.43.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Methodology | CASA dissertation using Bookdown" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  <meta name="github-repo" content="Van-Wu1/CASA-MSc-thesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Methodology | CASA dissertation using Bookdown" />
+  
+  <meta name="twitter:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  
+
+
+
+<meta name="date" content="2025-08-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data.html"/>
+<link rel="next" href="results.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_images/casa_logo.jpg"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#background-and-objectives"><i class="fa fa-check"></i><b>1.1</b> Background and Objectives</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#research-question"><i class="fa fa-check"></i><b>1.2</b> Research question</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="literature-review.html"><a href="literature-review.html#introduction-to-urban-cycling-environment-assessment"><i class="fa fa-check"></i><b>2.1</b> Introduction to Urban Cycling Environment Assessment</a></li>
+<li class="chapter" data-level="2.2" data-path="literature-review.html"><a href="literature-review.html#review-of-existing-evaluation-frameworks"><i class="fa fa-check"></i><b>2.2</b> Review of Existing Evaluation Frameworks</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="literature-review.html"><a href="literature-review.html#structural-rideability"><i class="fa fa-check"></i><b>2.2.1</b> Structural Rideability</a></li>
+<li class="chapter" data-level="2.2.2" data-path="literature-review.html"><a href="literature-review.html#environmental-perception"><i class="fa fa-check"></i><b>2.2.2</b> Environmental Perception</a></li>
+<li class="chapter" data-level="2.2.3" data-path="literature-review.html"><a href="literature-review.html#network-performance"><i class="fa fa-check"></i><b>2.2.3</b> Network Performance</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="literature-review.html"><a href="literature-review.html#composite-index-approaches-ceci-models"><i class="fa fa-check"></i><b>2.3</b> Composite Index Approaches (CECI Models)</a></li>
+<li class="chapter" data-level="2.4" data-path="literature-review.html"><a href="literature-review.html#conclusion"><i class="fa fa-check"></i><b>2.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3</b> Data</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data.html"><a href="data.html#general-data"><i class="fa fa-check"></i><b>3.1</b> General Data</a></li>
+<li class="chapter" data-level="3.2" data-path="data.html"><a href="data.html#data-for-structural-rideability"><i class="fa fa-check"></i><b>3.2</b> Data for Structural Rideability</a></li>
+<li class="chapter" data-level="3.3" data-path="data.html"><a href="data.html#data-for-environmental-perception"><i class="fa fa-check"></i><b>3.3</b> Data for Environmental Perception</a></li>
+<li class="chapter" data-level="3.4" data-path="data.html"><a href="data.html#data-for-network-centrality"><i class="fa fa-check"></i><b>3.4</b> Data for Network Centrality</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>4</b> Methodology</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="methodology.html"><a href="methodology.html#network-acquisition-and-pre-processing"><i class="fa fa-check"></i><b>4.1</b> Network acquisition and pre-processing</a></li>
+<li class="chapter" data-level="4.2" data-path="methodology.html"><a href="methodology.html#structural-rideability-index1"><i class="fa fa-check"></i><b>4.2</b> Structural rideability (Index1)</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="methodology.html"><a href="methodology.html#model-introduction"><i class="fa fa-check"></i><b>4.2.1</b> Model Introduction</a></li>
+<li class="chapter" data-level="4.2.2" data-path="methodology.html"><a href="methodology.html#data-preprocessing"><i class="fa fa-check"></i><b>4.2.2</b> Data preprocessing</a></li>
+<li class="chapter" data-level="4.2.3" data-path="methodology.html"><a href="methodology.html#engineered-attributes-and-factor-mapping"><i class="fa fa-check"></i><b>4.2.3</b> Engineered attributes and factor mapping</a></li>
+<li class="chapter" data-level="4.2.4" data-path="methodology.html"><a href="methodology.html#base-score-and-multiplicative-formulation"><i class="fa fa-check"></i><b>4.2.4</b> Base score and multiplicative formulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="methodology.html"><a href="methodology.html#environmental-perception-index2"><i class="fa fa-check"></i><b>4.3</b> Environmental perception (Index2)</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="methodology.html"><a href="methodology.html#subcomponents-and-normalisation"><i class="fa fa-check"></i><b>4.3.1</b> Subcomponents and normalisation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="methodology.html"><a href="methodology.html#greenery-gvi"><i class="fa fa-check"></i><b>4.3.2</b> Greenery (GVI)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO2)</a></li>
+<li class="chapter" data-level="4.3.4" data-path="methodology.html"><a href="methodology.html#natural-landscape-proximity"><i class="fa fa-check"></i><b>4.3.4</b> Natural-landscape proximity</a></li>
+<li class="chapter" data-level="4.3.5" data-path="methodology.html"><a href="methodology.html#sub-index-formulation"><i class="fa fa-check"></i><b>4.3.5</b> Sub-index formulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="methodology.html"><a href="methodology.html#network-centrality-index3"><i class="fa fa-check"></i><b>4.4</b> Network centrality (Index3)</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="methodology.html"><a href="methodology.html#graph-representation"><i class="fa fa-check"></i><b>4.4.1</b> Graph representation</a></li>
+<li class="chapter" data-level="4.4.2" data-path="methodology.html"><a href="methodology.html#betweenness"><i class="fa fa-check"></i><b>4.4.2</b> Betweenness</a></li>
+<li class="chapter" data-level="4.4.3" data-path="methodology.html"><a href="methodology.html#range-limited-closeness"><i class="fa fa-check"></i><b>4.4.3</b> Range-limited closeness</a></li>
+<li class="chapter" data-level="4.4.4" data-path="methodology.html"><a href="methodology.html#sub-index-formulation-1"><i class="fa fa-check"></i><b>4.4.4</b> Sub-index formulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="methodology.html"><a href="methodology.html#composite-index-sensitivity-and-reporting"><i class="fa fa-check"></i><b>4.5</b> Composite index, sensitivity, and reporting</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="methodology.html"><a href="methodology.html#merging-and-keying"><i class="fa fa-check"></i><b>4.5.1</b> Merging and keying</a></li>
+<li class="chapter" data-level="4.5.2" data-path="methodology.html"><a href="methodology.html#composite-scoring"><i class="fa fa-check"></i><b>4.5.2</b> Composite scoring</a></li>
+<li class="chapter" data-level="4.5.3" data-path="methodology.html"><a href="methodology.html#sensitivity-analysis"><i class="fa fa-check"></i><b>4.5.3</b> Sensitivity analysis</a></li>
+<li class="chapter" data-level="4.5.4" data-path="methodology.html"><a href="methodology.html#quality-control-and-implementation-notes"><i class="fa fa-check"></i><b>4.5.4</b> Quality control and implementation notes</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#module-1-structural-ridability"><i class="fa fa-check"></i><b>5.1</b> Module 1: Structural Ridability</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="results.html"><a href="results.html#facility-type-geometry-and-traffic-context"><i class="fa fa-check"></i><b>5.1.1</b> Facility Type, Geometry, and Traffic Context</a></li>
+<li class="chapter" data-level="5.1.2" data-path="results.html"><a href="results.html#topography-and-traffic-stress"><i class="fa fa-check"></i><b>5.1.2</b> Topography and Traffic Stress</a></li>
+<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#fac_4"><i class="fa fa-check"></i><b>5.1.3</b> Fac_4</a></li>
+<li class="chapter" data-level="5.1.4" data-path="results.html"><a href="results.html#index-of-structural-ridability"><i class="fa fa-check"></i><b>5.1.4</b> Index of structural ridability</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="results.html"><a href="results.html#green-view-index-gvi"><i class="fa fa-check"></i><b>5.2.1</b> Green View Index (GVI)</a></li>
+<li class="chapter" data-level="5.2.2" data-path="03-2-method.html"><a href="#no%E2%82%82-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO₂ Concentration</a></li>
+<li class="chapter" data-level="5.2.3" data-path="results.html"><a href="results.html#natural-landscape"><i class="fa fa-check"></i><b>5.2.3</b> Natural Landscape</a></li>
+<li class="chapter" data-level="5.2.4" data-path="results.html"><a href="results.html#index-of-environmental-perception"><i class="fa fa-check"></i><b>5.2.4</b> Index of environmental perception</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#module-3-network-centrality"><i class="fa fa-check"></i><b>5.3</b> Module 3: Network Centrality</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#interpretation-of-centrality-patterns-in-londons-road-network"><i class="fa fa-check"></i><b>5.3.1</b> Interpretation of Centrality Patterns in London’s Road Network</a></li>
+<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#index-of-network-centrality"><i class="fa fa-check"></i><b>5.3.2</b> Index of network centrality</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#cycling-quality-index-cqi-analysis"><i class="fa fa-check"></i><b>5.4</b> Cycling Quality Index (CQI) Analysis</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#city-wide-distribution-and-bottleneck-identification"><i class="fa fa-check"></i><b>5.4.1</b> City-Wide Distribution and Bottleneck Identification</a></li>
+<li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#cqi-kernel-density-estimation-in-london"><i class="fa fa-check"></i><b>5.4.2</b> CQI Kernel Density Estimation in London</a></li>
+<li class="chapter" data-level="5.4.3" data-path="results.html"><a href="results.html#the-cqi-analysis-at-the-borough-level"><i class="fa fa-check"></i><b>5.4.3</b> The CQI analysis at the borough level</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="discussion.html"><a href="discussion.html#research-significance"><i class="fa fa-check"></i><b>6.1</b> Research significance</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="discussion.html"><a href="discussion.html#global-development-goals"><i class="fa fa-check"></i><b>6.1.1</b> Global development goals</a></li>
+<li class="chapter" data-level="6.1.2" data-path="discussion.html"><a href="discussion.html#local-policy"><i class="fa fa-check"></i><b>6.1.2</b> Local policy</a></li>
+<li class="chapter" data-level="6.1.3" data-path="discussion.html"><a href="discussion.html#academic-research"><i class="fa fa-check"></i><b>6.1.3</b> Academic research</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="discussion.html"><a href="discussion.html#limitations"><i class="fa fa-check"></i><b>6.2</b> Limitations</a></li>
+<li class="chapter" data-level="6.3" data-path="discussion.html"><a href="discussion.html#transferability"><i class="fa fa-check"></i><b>6.3</b> Transferability</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="conclusion-1.html"><a href="conclusion-1.html#recommedations"><i class="fa fa-check"></i><b>7.1</b> Recommedations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-research-log.html"><a href="appendix-a-research-log.html"><i class="fa fa-check"></i>Appendix A Research log</a></li>
+<li class="divider"></li>
+<li><a href="" target="blank"></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CASA dissertation using Bookdown</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="methodology" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Methodology<a href="methodology.html#methodology" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.</p>
+<div id="network-acquisition-and-pre-processing" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Network acquisition and pre-processing<a href="methodology.html#network-acquisition-and-pre-processing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Extraction and selection</li>
+</ol>
+<p>The base street network is obtained from OpenStreetMap via a two-stage Overpass query. An inclusion-oriented stage captures bicycle-permissible ways across Greater London. A targeted clean removes motorways and ramps, under-construction segments, and links that explicitly prohibit cycling. Direction-dependent rules are implemented for left-hand traffic (right_hand_traffic=False).</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Topological and geometric cleaning</li>
+</ol>
+<p>A light-touch sequence improves graph consistency while preserving OSM geometry. Vertices within 2 m are snapped. Connected components with total length &lt; 100 m are removed. Short dead-end stubs &lt; 20 m are trimmed in three passes. Geometries are clipped to the Greater London boundary. Speed attributes recorded in miles per hour are converted to kilometres per hour (× 1.60934).</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Processed fields</li>
+</ol>
+<p>Pre-processing yields link-level attributes used downstream: proc_highway, proc_maxspeed, proc_width, proc_oneway, priority_road, motor_vehicle. These standardise tagging and encode London’s traffic handedness.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Normalisation convention</li>
+</ol>
+<p>Continuous metrics generated by later modules follow a common scheme: values are winsorised at the 1st and 99th percentiles, then min–max scaled to [0, 1]. Edge betweenness is transformed with log1p before scaling. Normalisation is applied within each sub-index prior to composite scoring.</p>
+</div>
+<div id="structural-rideability-index1" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Structural rideability (Index1)<a href="methodology.html#structural-rideability-index1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="model-introduction" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Model Introduction<a href="methodology.html#model-introduction" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Concept and provenance</li>
+</ol>
+<p>The structural module quantifies how road-segment design and operating conditions support everyday cycling. It draws on the open-source OSM-Cycling-Quality-Index developed for Berlin (SupaplexOSM/OSM-Cycling-Quality-Index), which implements a deterministic, rule-based scoring system over OpenStreetMap data. In that reference model, link-level attributes parsed from OSM—such as functional road class and posted speed, cycleway tags (track/lane/opposite), number of lanes, separation and buffer treatments, surface/smoothness, parking configuration, and basic junction handling—are mapped through factor tables to penalties or bonuses. The Berlin implementation produces a link-level cycling quality score and a separate Level of Traffic Stress (LTS) classification using transparent, auditable rules derived from the above tags and thresholds. The intellectual lineage is acknowledged, and licence and repository details are provided in the Code Availability note.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Adaptations</li>
+</ol>
+<p>The adaptation used in this research retains the central idea that compounding frictions are represented by multiplicative factors applied to a base score derived from functional class and speed, while re-specifying inputs and thresholds where necessary for the London context.</p>
+<p>During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London’s OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope.</p>
+<p>A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {stress_level (LTS), fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.</p>
+<p>PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).</p>
+<p>Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF ≈ 2.03), with base_index at a moderate level (≈ 4.63), while fac1 and fac2 show higher mutual dependence (≈ 27.73 and ≈ 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.</p>
+Table X. PCA explained variance and loadings (absolute values).
+(PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Variable
+</th>
+<th style="text-align:right;font-weight: bold;">
+PC1
+</th>
+<th style="text-align:right;font-weight: bold;">
+PC2
+</th>
+<th style="text-align:right;font-weight: bold;">
+PC3
+</th>
+<th style="text-align:right;font-weight: bold;">
+PC4
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+stress_level
+</td>
+<td style="text-align:right;">
+0.771
+</td>
+<td style="text-align:right;">
+0.040
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fac1
+</td>
+<td style="text-align:right;">
+0.744
+</td>
+<td style="text-align:right;">
+0.348
+</td>
+<td style="text-align:right;">
+0.198
+</td>
+<td style="text-align:right;">
+0.535
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fac2
+</td>
+<td style="text-align:right;">
+0.724
+</td>
+<td style="text-align:right;">
+0.005
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.124
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fac4
+</td>
+<td style="text-align:right;">
+0.246
+</td>
+<td style="text-align:right;">
+0.944
+</td>
+<td style="text-align:right;">
+0.051
+</td>
+<td style="text-align:right;">
+0.216
+</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pca"></span>
+<img src="general_images/pca.png" alt="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress_level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions." width="90%" />
+<p class="caption">
+Figure 4.1: PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress_level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:vif1"></span>
+<img src="general_images/vif1.png" alt="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, base_index ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36." width="75%" />
+<p class="caption">
+Figure 4.2: Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, base_index ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36.
+</p>
+</div>
+<p>These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac1), speed/class (fac2), and separation/surface/priority (fac4), within the multiplicative structural specification.</p>
+<p>Also, there are some adaptations for left-hand-traffic regime, local speed patterns, and tag conventions to fit in with Great London.
+The structural specification preserves the core Berlin logic while substituting a slope-based fac3 and justifiably incorporating LTS as fac5, yielding a London-tailored yet methodologically transparent module. Full parameter tables appear in the Appendix.</p>
+</div>
+<div id="data-preprocessing" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Data preprocessing<a href="methodology.html#data-preprocessing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A key element of preprocessing is sidepath identification. Because cycle facilities may be encoded on parallel geometries, a sidepath search prevents under-recognition of protection. Each main link is sampled every 100 m, and a 22 m search radius is used to detect cycle-designated paths. Where a sidepath is found, the main link inherits the relevant facility attributes for scoring, reflecting the facilities realistically available along the corridor.</p>
+</div>
+<div id="engineered-attributes-and-factor-mapping" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Engineered attributes and factor mapping<a href="methodology.html#engineered-attributes-and-factor-mapping" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Five categories of factors are computed from processed tags and terrain.</p>
+<ol style="list-style-type: decimal">
+<li><p>Facility and width (fac1): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used (see Appendix). The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.</p></li>
+<li><p>Speed and classification (fac2): Posted speed (proc_maxspeed) and proc_highway class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London’s distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.</p></li>
+<li><p>Slope (fac3): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac3 = 0.9 as a conservative treatment that avoids unjustified improvement.</p></li>
+<li><p>Separation, buffer, surface, and priority (fac4): Presence and width of buffers, type of kerb or median separation, parking configuration, surface/smoothness classes, and priority on major roads contribute additional penalties or bonuses. Directionality is evaluated with respect to left-hand traffic (e.g., parking or buffer on the rider’s side). Rule tables provide deterministic mappings from tag combinations to factors.</p></li>
+<li><p>Level of Traffic Stress (fac5): An LTS class is assigned from the joint configuration of speed, lanes, facility type, and separation (with junction handling consistent with local practice). Classes are translated into factors using the codebook values reported in the Appendix.</p></li>
+</ol>
+</div>
+<div id="base-score-and-multiplicative-formulation" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Base score and multiplicative formulation<a href="methodology.html#base-score-and-multiplicative-formulation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A base score Base(highway, maxspeed) represents the nominal quality of a segment absent additional penalties or bonuses. The structural sub-index is:</p>
+<p><span class="math display">\[\begin{equation}
+Index_{1} = Base \times fac_{1} \times fac_{2} \times fac_{3} \times fac_{4} \times fac_{5}
+\end{equation}\]</span></p>
+<p>followed by linear rescaling to [0, 100]. The multiplicative form ensures that simultaneously adverse attributes (e.g., steep gradient, high speed, lack of separation) reduce scores more than any single attribute alone, reflecting the compounding nature of perceived stress and safety constraints. Conversely, coherent design packages (e.g., protected track with buffer on a low-speed street) achieve proportionally high values.</p>
+</div>
+</div>
+<div id="environmental-perception-index2" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Environmental perception (Index2)<a href="methodology.html#environmental-perception-index2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="subcomponents-and-normalisation" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Subcomponents and normalisation<a href="methodology.html#subcomponents-and-normalisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The environmental module operationalises three link-level components and combines them after normalisation.</p>
+</div>
+<div id="greenery-gvi" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Greenery (GVI)<a href="methodology.html#greenery-gvi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Link values are obtained by buffering each link midpoint by 30 m (or by regular along-link samples with the same radius) and averaging nearby GVI observations. Instances with no observations inside the buffer are recorded for transparency.</p>
+</div>
+<div id="air-quality-no2" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Air quality (NO2)<a href="methodology.html#air-quality-no2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The gridded NO2 surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − NO2_norm) so that higher values consistently denote better conditions.</p>
+</div>
+<div id="natural-landscape-proximity" class="section level3 hasAnchor" number="4.3.4">
+<h3><span class="header-section-number">4.3.4</span> Natural-landscape proximity<a href="methodology.html#natural-landscape-proximity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Polygons representing natural features are dissolved by type to avoid double counting. A multi-ring proximity function is computed around each link using the levels (50 m, 0.1), (40 m, 0.2), (30 m, 0.3), (20 m, 0.5), (10 m, 0.7), (1 m, 1.0); weights increase with proximity.</p>
+</div>
+<div id="sub-index-formulation" class="section level3 hasAnchor" number="4.3.5">
+<h3><span class="header-section-number">4.3.5</span> Sub-index formulation<a href="methodology.html#sub-index-formulation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>After normalisation to [0, 1], the three components are combined as:</p>
+<p><span class="math display">\[\begin{equation}
+Index_{2} = 0.5 \times GVI_{\text{norm}} + 0.3 \times (1 - NO_{2,\text{norm}}) + 0.2 \times Natural_{\text{norm}}
+\end{equation}\]</span></p>
+<p>then rescaled to [0, 100].</p>
+</div>
+</div>
+<div id="network-centrality-index3" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Network centrality (Index3)<a href="methodology.html#network-centrality-index3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="graph-representation" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Graph representation<a href="methodology.html#graph-representation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A primal, undirected graph is constructed from the cleaned OSM network. Edge weights equal metric length in metres.</p>
+</div>
+<div id="betweenness" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Betweenness<a href="methodology.html#betweenness" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Edge betweenness is estimated using approximate sampling with K = 1200 source pairs. Values are transformed with log1p and min–max scaled.</p>
+</div>
+<div id="range-limited-closeness" class="section level3 hasAnchor" number="4.4.3">
+<h3><span class="header-section-number">4.4.3</span> Range-limited closeness<a href="methodology.html#range-limited-closeness" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Node closeness is computed within 2 km and 5 km network radii; edge-level closeness is the mean of endpoint values. A multi-scale composite is formed as:</p>
+<p><span class="math display">\[\begin{equation}
+C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}
+\end{equation}\]</span></p>
+<p>then scaled to [0, 1].</p>
+</div>
+<div id="sub-index-formulation-1" class="section level3 hasAnchor" number="4.4.4">
+<h3><span class="header-section-number">4.4.4</span> Sub-index formulation<a href="methodology.html#sub-index-formulation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The centrality sub-index balances through-flow importance and local reachability:</p>
+<p><span class="math display">\[\begin{equation}
+Index_{3} = 0.4 \times Betweenness_{\text{norm}} + 0.6 \times C_{\text{multi,norm}}
+\end{equation}\]</span></p>
+<p>rescaled to [0, 100].</p>
+</div>
+</div>
+<div id="composite-index-sensitivity-and-reporting" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Composite index, sensitivity, and reporting<a href="methodology.html#composite-index-sensitivity-and-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="merging-and-keying" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Merging and keying<a href="methodology.html#merging-and-keying" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Outputs are joined by a stable key consisting of the OSM id and a hashed edge_uid derived from endpoint coordinates. Geometry is inherited from the structural layer to maintain alignment.</p>
+</div>
+<div id="composite-scoring" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> Composite scoring<a href="methodology.html#composite-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The composite index is the arithmetic mean of the three sub-indices under a baseline equal-weights assumption:</p>
+<p><span class="math display">\[\begin{equation}
+CECI = \frac{Index_{1} + Index_{2} + Index_{3}}{3}
+\end{equation}\]</span></p>
+<p>This choice balances design quality, environmental comfort, and network position at evaluation stage. Length-weighted summaries may subsequently be produced for Borough or MSOA units for descriptive purposes; these aggregations are intentionally separated from model construction.</p>
+</div>
+<div id="sensitivity-analysis" class="section level3 hasAnchor" number="4.5.3">
+<h3><span class="header-section-number">4.5.3</span> Sensitivity analysis<a href="methodology.html#sensitivity-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To examine robustness to weighting assumptions, three alternative schemes are predefined:</p>
+<ul>
+<li><p>Scheme A (Index1/Index2/Index3): 0.5 / 0.25 / 0.25.</p></li>
+<li><p>Scheme B (Index1/Index2/Index3): 0.25 / 0.5 / 0.25.</p></li>
+<li><p>Scheme C (Index1/Index2/Index3): 0.25 / 0.25 / 0.5.</p></li>
+</ul>
+<p>Comparative statistics and maps are reported alongside the baseline.</p>
+</div>
+<div id="quality-control-and-implementation-notes" class="section level3 hasAnchor" number="4.5.4">
+<h3><span class="header-section-number">4.5.4</span> Quality control and implementation notes<a href="methodology.html#quality-control-and-implementation-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Post-cleaning checks review connectivity and degree distributions. Borough-level sidepath rates are monitored to flag tagging anomalies. Overlay steps (slope, greenery, pollution, natural features) record geometry–attribute counts to confirm coverage before index computation. Normalisation diagnostics document the effect of p1–p99 winsorisation. Processing uses standard Python geospatial libraries (GeoPandas, Shapely, rasterio, OSMnx) and graph tools with fixed random seeds. Parameter files and scripts are available in the project repository.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": false
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/03-2-method.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["CASA-Thesis.pdf", "https://github.com/andrewmaclachlan/CASA-MSc-thesis/raw/main/03-2-method.Rmd"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

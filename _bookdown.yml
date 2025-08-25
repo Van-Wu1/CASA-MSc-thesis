@@ -5,7 +5,8 @@ rmd_files:
 - 00-preamble.Rmd
 - 01-intro.Rmd
 - 02-literature.Rmd
-- 03-method.Rmd
+- 03-1-data.Rmd
+- 03-2-method.Rmd
 - 04-results.Rmd
 - 05-discussion.Rmd
 - 06-conclusion.Rmd
