@@ -39,46 +39,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -127,20 +87,6 @@
 \fancyfoot[CO, CE] {\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -156,14 +102,14 @@ CASA0010, MSc Smart Cities Dissertation\\
 \strut \\
 Supervisor: Dr Duncan Smith\\
 \strut \\
-Repository: \url{https://andrewmaclachlan.github.io/CASA0005repo/}\\
+Repository: \url{https://github.com/Van-Wu1/}\\
 \strut \\
 This dissertation is submitted in part requirement for the\\
-MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
+MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 \strut \\
-Word count: unknown 17:08 update}
-\date{2025-08-24}
+Word count: unknown ??:?? update}
+\date{2025-08-25}
 
 \begin{document}
 \maketitle
@@ -173,17 +119,19 @@ Word count: unknown 17:08 update}
 
 \chapter*{Abstract}\label{abstract}
 
-Some abstract text
+This study develops a composite framework to evaluate the cycling environment in London, integrating structural rideability, environmental perception, and network centrality into a unified Cycling Quality Index (CQI). Using multi-source datasets, including OpenStreetMap, environmental indicators, and graph-based network measures, the analysis identifies both local and city-wide constraints shaping ridership potential. The results reveal a pronounced core--periphery gradient: central London suffers from fragmented infrastructure, high traffic stress, and environmental burdens, while outer areas contain isolated yet high-quality segments often linked to green corridors. By combining facility-level attributes with spatial accessibility and environmental quality, the CQI provides a holistic measure that highlights critical gaps in network continuity and equity. The study contributes methodologically by operationalising a multi-dimensional index and empirically by mapping London's cycling disparities. Findings support evidence-based interventions for sustainable mobility, emphasising the need to strengthen central connections, reduce environmental stressors, and extend high-quality cycling corridors into cohesive metropolitan networks.
 
 \pagenumbering{roman}
 
 \chapter*{Declaration}\label{declaration}
 
-I hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+I, Yifan Wu, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+
+Yifan Wu, 24th August 2025
 
 \chapter*{Acknowledgements}\label{acknowledgements}
 
-I would like to thank blah blah
+(Unfinished\ldots)
 
 % Trigger ToC creation in LaTeX
 \setcounter{tocdepth}{3}
@@ -199,213 +147,113 @@ I would like to thank blah blah
 \toprule
 \textbf{Term} & \textbf{Abbreviation}\\
 \midrule
+Air Quality Index & AQI\\
+Bike Composite Index & BCI\\
+Bike Kilometres Travelled & BKT\\
+Bikeability Index & BI\\
+Capital Bikeshare & –\\
+\addlinespace
+Central Activity Zone & CAZ\\
+Composite Quality Index & CQI\\
+Confidence Interval & CI\\
+Cycling Environment Composite Index & CECI\\
+Defra Data Services Platform & Defra\\
+\addlinespace
 Digital Elevation Model & DEM\\
 Digital Surface Model & DSM\\
 Digital Terrain Model & DTM\\
+European Union & EU\\
+Geographic Information System & GIS\\
+\addlinespace
+Global Positioning System & GPS\\
+Greater London Authority & GLA\\
+Green View Index & GVI\\
+Institute for Transportation and Development Policy & ITDP\\
+Kernel Density Estimation & KDE\\
+\addlinespace
+Level of Traffic Stress & LTS\\
+Mineta Transportation Institute & MTI\\
+Multiple Centrality Assessment & MCA\\
+Nitrogen Dioxide & NO₂\\
+OSMnx (Python package for network analysis) & OSMnx\\
+\addlinespace
+Office for National Statistics & ONS\\
+OpenStreetMap & OSM\\
+Ordinary Least Squares & OLS\\
+Principal Components Analysis & PCA\\
+Remote Sensing & RS\\
+\addlinespace
+Root Mean Square Error & RMSE\\
+Transport for London & TfL\\
+United Nations / World Health Organization & UN / WHO\\
+Variance Inflation Factor & VIF\\
+“15-minute city” & –\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\chapter{Bookdown basics}\label{bookdown-basics}
+\chapter{Introduction}\label{introduction}
 
 \pagenumbering{arabic} 
 
-Bookdown enables us to take raw text files (e.g.~Rmarkdown files) and output them into a number of different formats with ease. This is more useful than LaTex as you can create a word version for comments from your supervisor, a pdf for final submission and an online book for your own portfolio.
+\section{Background and Objectives}\label{background-and-objectives}
 
-\section{Structure}\label{structure}
+Cycling is increasingly recognised as a cornerstone of sustainable transport strategies worldwide. Compared with private cars, it produces negligible emissions, requires less road space, and contributes positively to public health. For cities such as London, promoting cycling is not only a response to the global climate emergency but also a way to address pressing local challenges such as air pollution, congestion, and social inequalities in mobility access.
 
-A bookdown book simply combines multiple Rmarkdown files into .pdf, html or .epub (but i've disabled epub here).
+Over the past decade, London has launched a series of cycling initiatives, ranging from the construction of Cycle Superhighways and Quietways to the more recent introduction of low-traffic neighbourhoods. These investments reflect growing political and societal support for active travel, as well as recognition that cycling can play a meaningful role in shifting travel behaviour. Nevertheless, the actual quality of the cycling environment remains uneven across the city. Central districts often experience heavy traffic, fragmented facilities, and environmental burdens, while peripheral areas may enjoy greener conditions yet lack coherent connections to employment centres or public transport hubs. This unevenness creates barriers for everyday commuting and limits the potential of cycling to become a mainstream mode of transport.
 
-All Rmakdown files must be located in the base (or root) of the project. For example, don't got putting the .Rmd in a folder called chapters and then wonder why it's not working. They all must be in the same folder as the project file. You can however put output figure images into a folder (e.g.~figures) then call them in.
+Traditional assessments of cycling in London have tended to focus on individual aspects, such as the length of designated cycle lanes or the presence of green corridors. While informative, such isolated measures fail to capture the lived experience of cyclists, who are simultaneously affected by infrastructure design, environmental quality, and network connectivity. What is missing is a holistic and systematic framework that can integrate these multiple dimensions into a coherent measure of cycling quality. Without such an approach, it is difficult for policymakers to identify where interventions are most urgently needed, or to evaluate whether current investments are leading to a more equitable cycling environment.
 
-\section{Building the book}\label{building-the-book}
+Against this backdrop, the objective of this dissertation is to develop and apply a comprehensive assessment framework for London's cycling environment. By integrating infrastructural, environmental, and network-based perspectives, the study aims to provide both a methodological advance and an empirical basis for guiding urban mobility planning. Specifically, the research seeks to move beyond piecemeal evaluations and deliver a composite indicator that can reveal the spatial patterns, disparities, and bottlenecks shaping the potential for cycling across the metropolis.
 
-You will need the packages: \texttt{bookdown,\ kabble,\ knitr}
+\section{Research Question}\label{research-question}
 
-You also need to install \texttt{tinytex::install\_tinytex()} for generating .pdfs from your book.
+The overarching research question is:
 
-Once installed you can build the book by clicking the Build Book icon under the build tab in the top right quadrant.
+How can the quality of London's cycling environment be systematically evaluated by integrating structural, environmental, and network-based dimensions, and what disparities and bottlenecks emerge from such an assessment?
 
-To export the book to word follow the code below from \href{https://www.eddjberry.com/post/writing-your-thesis-with-bookdown/}{Edd Berry}:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{preview\_chapter}\NormalTok{(}\StringTok{"01{-}intro.Rmd"}\NormalTok{,}
-                \AttributeTok{output\_format =} \StringTok{"bookdown::word\_document2"}\NormalTok{,}
-                \AttributeTok{output\_file =} \FunctionTok{paste0}\NormalTok{(}\StringTok{"thesis{-}intro{-}"}\NormalTok{, }
-                                     \FunctionTok{format}\NormalTok{(}\FunctionTok{Sys.Date}\NormalTok{(), }
-\NormalTok{                                            (}\StringTok{"\%d{-}\%m{-}\%y"}\NormalTok{)), }
-                                     \StringTok{".docx"}\NormalTok{),}
-                \AttributeTok{output\_dir =} \StringTok{"chapter{-}previews"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-You can also setup a reference document if you wish that word will style it on. To do so:
+This question is pursued through three interrelated aims:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  export to word using the code above.
-\item
-  change the headings styles in word
-\item
-  save the document
-\item
-  add the \texttt{output\_options()} function to the code above
+  Framework development
 \end{enumerate}
 
-See \href{https://bookdown.org/yihui/rmarkdown-cookbook/word-template.html}{Custom Word Templates} for more detailed instructions.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{preview\_chapter}\NormalTok{(}\StringTok{"01{-}intro.Rmd"}\NormalTok{,}
-                \AttributeTok{output\_format =} \StringTok{"bookdown::word\_document2"}\NormalTok{,}
-                \AttributeTok{output\_file =} \FunctionTok{paste0}\NormalTok{(}\StringTok{"thesis{-}intro{-}"}\NormalTok{, }
-                                     \FunctionTok{format}\NormalTok{(}\FunctionTok{Sys.Date}\NormalTok{(), }
-\NormalTok{                                            (}\StringTok{"\%d{-}\%m{-}\%y"}\NormalTok{)), }
-                                     \StringTok{".docx"}\NormalTok{),}
-                \AttributeTok{output\_dir =} \StringTok{"chapter{-}previews"}\NormalTok{,}
-                \AttributeTok{output\_options =} \FunctionTok{list}\NormalTok{(}\AttributeTok{reference\_docx =} \StringTok{"word{-}style{-}ref.docx"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
-You can also export the whole document as word by clicking Build Book and selecting it. However, note that tables built with \texttt{Kabble} don't work with word, so you have the following options
+To design a composite Cycling Quality Index (CQI) that synthesises three complementary perspectives:
 
 \begin{itemize}
 \tightlist
 \item
-  create the html (gitbook) and copy the tables into word
+  Structural rideability, capturing infrastructure types, geometry, and traffic-related stressors.\\
 \item
-  either exclude them (\texttt{eval=FALSE}) in the code chunk header
+  Environmental perception, accounting for greenery, air quality, and proximity to natural landscapes.\\
 \item
-  use .pdf.
+  Network centrality, reflecting the connectivity, accessibility, and functional performance of the road system.
 \end{itemize}
-
-\section{YAMLs}\label{yamls}
-
-You will see some files with a \texttt{.yml} extension. These stand for yet another markup language.
-
-Open the \texttt{\_output.yml} and \texttt{\_bookdown.yml}.
-
-The \texttt{\_output.yml} controls the settings for each outputted format.
-
-The \texttt{\_bookdown.yml} controls the order in which the files are made into chapters - you can also change the \texttt{Chapter} title if you wish here.
-
-I have set these up to create nice outputs, so there is really no need to change anything, unless you want to add a new chapter and include it in the list. To do so, simply create a new Rmarkdown document, delete all the default content, add a first level heading, and the then add it to where you want it to appear in the document in the \texttt{\_bookdown.yml}.
-
-\section{Formatting}\label{formatting}
-
-You'll notice in the \texttt{\_output.yml} that the various formats (html (or gitbook) and pdf) are calling styling codes. The gitbook calls \texttt{style.css} and the \texttt{pdf\_book} calls \texttt{preamble.tex}. These files just style the various outputs.
-
-I have copied in a basic styling with a CASA logo in the table of contents, you can replace this with other variations of the file if you wish or look at the \href{https://github.com/rstudio/bookdown-demo}{minimal bookdown example} or my \href{https://github.com/andrewmaclachlan/CASA0005repo/blob/master/assets/style.css}{CASA0005 .css file}.
-
-The best place to learn more about styling is the \href{https://rstudio4edu.github.io/rstudio4edu-book/intro-bookdown.html}{RStudio for education bookdown guide}
-
-For the .pdf version in the \texttt{preamble.tex} we have to use LaTex code. I am by no means an expert in this. If you Google each package it will tell you what it does. There isn't much here really, but all the header stuff refers to the headings at the top of each page.
-
-This tutorial from OurCoding Club explains some of the LaTex packages in a bit more detail: \url{https://ourcodingclub.github.io/tutorials/rmarkdown-dissertation/}
-
-\section{Index file}\label{index-file}
-
-Open up the \texttt{index.Rmd} this \texttt{Rmd} must be called first in the \texttt{\_bookdown.yml} list. There are a number of options here, but i've set them all up to be compliant with the CASA thesis requirements.
-
-You will need to change your title and name etc. Make sure you leave the a space here: \texttt{\textbar{}\ Andrew\ MacLachlan} this won't work \texttt{\textbar{}Andrew\ MacLachlan}
-
-If you were to be printing your work, you'd want to change the \texttt{classoption} to \texttt{twosides} and make sure the \texttt{geometry\ margins} were correct. \texttt{linestrech} refers to the line spacing and the bibliography stuff we come on to later.
-
-Input your GitHub repo and add a description.
-
-If you ever wanted to just create a report and not a thesis you can change the \texttt{documentclass} to other options such \texttt{report}, \texttt{article} or \texttt{letter}
-
-\section{Preamble}\label{preamble}
-
-Open the \texttt{preable.Rmd} and you will see all the sections that are required before the main text (e.g.~Declaration and so on). At the top of the page i've used a code chunk set to LaTex, saying to use Roman numbering as we don't want page 1 to be the Declaration, we want it to be the first page of the Introduction. There are two conditions for each of the sections that state if output to HTML (gitbook) then do this, if output to LaTex then do this. This is the only place we have this. In our bookdown HTML we want to be able to click these sections, but in our LaTex .pdf we don't want them to appear in the table of contents. This is what this code is doing.
-
-The Abstract is on the \texttt{index.Rmd} the same code condition applies to it, with Roman numbering also specified.
-
-If you look back in the \texttt{\_output.yml} you'll also see the \texttt{toc} (table of contents) is set to false. By default this appears right after the title, but we want this to come after our \texttt{preable.Rmd}. You'll see that i've called \texttt{\textbackslash{}tableofcontents}, \texttt{\textbackslash{}listoffigures} and \texttt{\textbackslash{}listoftables} in the correct place again using a LaTex code chunk. These aren't required for the bookdown output.
-
-The last section here is the abbreviations. To make this really easy, i've created an excel document to add them into. The code here will load that and then use the \texttt{kable} package to make a table. More on this later.I've also done the same for the research log in the appendix --- excel sheet called \texttt{research\_log}.
-
-\section{Change this to a thesis}\label{change-this-to-a-thesis}
-
-Easy. Just change all the titles to what you want (e.g.~Introduction, Literature Review, Methodology, Discussion, Conclusion). Some of the latter \texttt{.Rmds} (Discussion etc) are ready to go!
-
-\section{Word count}\label{word-count}
-
-To get a word count install and then use the \href{https://github.com/benmarwick/wordcountaddin}{word count addin package} through Tools\textgreater Addins\textgreater Wordcount
-
-\section{Adding a pdf}\label{adding-a-pdf}
-
-If you wish to add another .pdf as an Appendix (in your .pdf) then again we need a bit of LaTex code
-
-\texttt{\textbackslash{}includepdf{[}pages=\{-\}{]}\{mypdf.pdf\}}
-
-If you look in the \texttt{08-Appendix.Rmd} then you will see another if LaTex section, simply add in the line of code above, replacing \texttt{mypdf.pdf} with your pdf title in the main project folder. It will then be appended to the thesis. Of course, this isn't required in the online book, but you just link to them on GitHub or embed .pdfs using:
-
-You'd need a condition around this like in the \texttt{preamble.Rmd} but a link is fine. I embedded a .pdf in \href{https://andrewmaclachlan.github.io/CASA0005repo/assignment-resources-1.html}{the assignment resources of CASA0005}
-
-\section{Writing code}\label{writing-code}
-
-Use one project for your thesis and another for your analysis. Don't try and do it all in a thesis project. You can set your output folder from your main analysis project to the thesis project and then easily load the figures in.
-
-\section{Package reproducibility}\label{package-reproducibility}
-
-Have you ever created an R script, come back to it 6 months later and wonder why it's not working correctly? It's probably because of package updates.
-
-\texttt{renv} (pronounced R - env) can capture the packages used in your project and re-create your current library. You simply:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  Create a new project - \texttt{renv::init()}
-\item
-  Create a snapshot - \texttt{renv::snapshot()}
-\item
-  Call the snapshot to load - \texttt{renv::restore()}
+  Empirical application
 \end{enumerate}
 
-The package information and dependencies are stored in a \texttt{renv.lock} file.
+To apply this index across Greater London, producing fine-grained evaluations at the road-segment level while also generating aggregated profiles at the borough scale. This dual perspective allows for both micro-level diagnosis of problematic street sections and macro-level understanding of wider spatial inequalities.
 
-When R loads a package it gets it from the library path, which is where the packages live. Sometimes there are two libraries a system and a user library - use \texttt{.libPaths()}. The system library = the packages with R, the user library = packages you have installed.
-
-When you load a package it loads the first instance it comes across, user comes before system. To check - \texttt{find.package("tidyverse")}
-
-All your projects use these paths! If you load different packages and versions of them + dependencies. E.g.
-
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
 \tightlist
 \item
-  Project 1 used \texttt{sf} version 0.9-8
-\item
-  Project 2 used \texttt{sf} version 0.9-6
-\end{itemize}
+  Interpretation and policy relevance
+\end{enumerate}
 
-Switching between projects would mean you have the wrong version as they use the same libraries.
+To identify systematic disparities and critical bottlenecks that hinder cycling uptake, and to generate evidence-based insights for policy and planning. By highlighting where cycling conditions are weakest, and why, the findings aim to inform interventions that can enhance continuity, reduce environmental stressors, and extend high-quality corridors into a cohesive metropolitan network.
 
-\texttt{renv} - each project gets it's own library! Project local libraries.
-
-When you use \texttt{renv::init()} the library path will be changed to a project local one.
-
-It will create a lock file that holds all the package information.
-
-To re-create my environment once you have forked and pulled this repository you would use \texttt{renv::restore()}.
-
-Of coruse some projects use the same package version --- such as \texttt{tidyverse}, \texttt{renv} has a global cache of all the libraries. So there is a massive database of your libraries then each project library links it from there, meaning you don't have 10 versions of the same \texttt{tidyverse}.
-
-You can also interact with \texttt{git}
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{renv::history()} --- finds the commits where the lock file changed
-\item
-  \texttt{renv::revert(commit\ =\ "id")} --- changes the lock file back to what it was at a commit
-\end{itemize}
-
-For more information watch renv: Project Environments for R introduction video: \url{https://www.rstudio.com/resources/rstudioconf-2020/renv-project-environments-for-r/}
+By addressing these aims, the dissertation contributes in two ways. Methodologically, it demonstrates how diverse datasets can be operationalised into a single evaluative index, offering a replicable framework for other cities. Empirically, it provides a detailed, multi-dimensional portraits of London's cycling environment. Together, these contributions support the broader goal of enabling more sustainable, equitable, and resilient forms of urban mobility.
 
 \chapter{Literature Review}\label{literature-review}
 
@@ -528,236 +376,289 @@ Addressing these research gaps, this study introduces the Cycling Environment Co
 
 The integration of structural, environmental, and network performance indicators into a single composite index provides a robust, practical framework for assessing urban cycling environments comprehensively. Although developed and initially demonstrated in Greater London, the flexible design and theoretical robustness of CECI facilitate its potential adaptation and application to other urban contexts. The proposed index thus contributes to the ongoing development of urban cycling environment evaluation methods, potentially offering useful insights for targeted policy interventions and infrastructure investments to support sustainable urban mobility.
 
-\chapter{Equations and direct quotes}\label{equations-and-direct-quotes}
+\chapter{Data}\label{data}
 
-This section will focus on equations and direct quotes
+This study draws on a series of open and authoritative datasets to construct a multi-dimensional database for assessing cycling conditions in London. The datasets cover four broad domains: general geographic data, structural rideability, environmental perception, and network centrality. Together, they capture both physical constraints and qualitative attributes of the urban environment. All datasets are openly accessible, ensuring transparency and reproducibility. Prior to analysis, spatial harmonisation was carried out by projecting all data to the British National Grid (EPSG:27700) and clipping them to the Greater London boundary.
 
-\section{Equations}\label{equations}
+\section{General Data}\label{general-data}
 
-You need to include equations with some LaTeX. The easiest way to do this is to use an online tool such as: \url{https://latex.codecogs.com/eqneditor/editor.php}. It can be a real pain to get these right, but once you've worked it out it will be much easier than dealing with word equation editor.
+General-purpose datasets form the foundation of the research. The road network was extracted from OpenStreetMap (OSM) via Overpass Turbo queries. Filters were applied to retain only roads relevant to cycling, excluding private or non-navigable paths. This cleaned network dataset provides the geometric basis for all subsequent stages of analysis, including the calculation of network centrality and the assignment of slope and environmental attributes. To facilitate aggregation, administrative boundaries were sourced from the ONS Statistical GIS Boundary Files, comprising both Borough-level and Greater London shapefiles.
 
-\begin{equation} 
-  p= h\frac{c}{\varrho}
-  \label{eq:test}
-\end{equation}
+\section{Data for Structural Rideability}\label{data-for-structural-rideability}
 
-To reference this in the text we use: \eqref{eq:test}
+To capture the influence of terrain on cycling, slope data were integrated. These data were obtained from the Defra Data Services Platform at a resolution of 5 × 5 metres. Each OSM-derived road segment was intersected with the slope raster to compute mean gradients. This allows for the quantification of physical impedance to cycling: higher slopes are expected to increase exertion and reduce accessibility, making this dataset critical to the structural dimension of rideability.
 
-You can also test your code in your RMarkdown document using \texttt{\$} e.g.~\[p= h\frac{c}{\varrho}\]
+\section{Data for Environmental Perception}\label{data-for-environmental-perception}
 
-However, this won't generate an equation number and you can't cross reference it. But we can use this logic to define the parameters within the equation e.g.~where \(h\) is Plank's constant, \(6.626 × 10^-34 Js\)
+Cycling experience is also shaped by environmental and perceptual factors. Three distinct datasets were incorporated:
 
-\texttt{\$\$} puts it on a new line, single \texttt{\$} keeps it on the same line (in the text)
-
-\section{Block quotes (or direct quotes)}\label{quotes}
-
-You may wish to quote a large section from a source, to do this use a block quote.
-
-Simply input a \texttt{\textgreater{}} before the text. For example \texttt{\textgreater{}\ This\ is\ a\ quote}.
-
-\begin{quote}
-``This is a direct quote''
-\end{quote}
-
-You can also provide an attribution at the footer of the quote using \texttt{tufte::quote\_footer()}, either a name or a reference. You'll need to install the \texttt{tufte} package to use this. For example, \texttt{\textgreater{}\ {[}include\ only\ r\ here{]}\ tufte::quote\_footer(\textquotesingle{}-\/-\/-\ Joe\ Martin\textquotesingle{})} or \texttt{\textgreater{}\ {[}include\ only\ r\ here{]}\ tufte::quote\_footer(\textquotesingle{}-\/-\/-\ @xie2015\textquotesingle{})}
-
-Giving\ldots{}
-
-\begin{quote}
-\hfill --- Joe Martin
-\end{quote}
-
-\begin{quote}
-\hfill --- \textcite{xie2015}
-\end{quote}
-
-Instead you could just include the reference at the end of the quote, using the same method to reference as we've seen before..e.g. \texttt{\textgreater{}\ "This\ is\ a\ direct\ quote"\ @xie2015,\ Equation\ \textbackslash{}@ref(eq:test)}\ldots giving
-
-\begin{quote}
-``This is a direct quote'' \textcite{xie2015} \eqref{eq:test}
-\end{quote}
-
-\chapter{Figures, tables, hosting GitBook}\label{figures-tables-hosting-gitbook}
-
-This section is going to focus including figures and creating tables
-
-\begin{figure}
-\includegraphics[width=300pt]{general_images/example_flow} \caption{Summary of methdological procedure for (a).... and (b)....}\label{fig:methodsflow}
-\end{figure}
-
-\section{Including figures and tables}\label{including-figures-and-tables}
-
-\subsection{Figures}\label{figures}
-
-To include the figure above use the code:
-
-\texttt{knitr::include\_graphics(here::here(\textquotesingle{}general\_images\textquotesingle{},\textquotesingle{}example\_flow.png\textquotesingle{}))}
-
-within a code chunk. In the chunk options you can specify the width and figure captions e.g.~
-
-\texttt{out.width="100pt",\ fig.cap="Summary\ of\ methdological\ procedure\ for\ (a)....\ and\ (b)...."}.
-
-However, if you do show the code with \texttt{echo=TRUE} then you can't specify the \texttt{out.width}.
-
-For making flow diagrams have a look at:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
+\begin{itemize}
 \item
-  Lucidchart
+  Green View Index (GVI): The GVI dataset originates from the Treepedia project (MIT, 2015), which employs Google Street View images (captured around 2015) to estimate the proportion of visible greenery along urban streets. While the dataset does not reflect more recent greening interventions or modifications to the built environment, it remains widely used as a proxy for visual landscape structure. Urban greenery at the street scale typically evolves slowly, especially in mature built-up areas such as London, and therefore the 2015 imagery still provides meaningful insights into the distribution of visual greenery. As such, despite its temporal limitations, GVI is considered a valid and informative indicator of the visual environment for this research.
 \item
-  Draw.io
-\end{enumerate}
+  Air Quality (NO₂): Data were obtained from the London Air Quality Network, which provides long-term modelled and forecasted concentrations of key pollutants. Nitrogen dioxide (NO₂) was selected as a representative measure due to its close association with traffic-related emissions and industrial activity. This dataset, available at a 20-metre grid resolution and projected over a 25-year horizon, ensures both spatial detail and temporal consistency.
+\item
+  Natural Features: Additional environmental attributes were derived from OSM, filtered using specific tags \{ ``leisure'': {[}``park''{]}, ``natural'': {[}``water'',``wood'',``scrub''{]}, ``landuse'': {[}``grass'',``meadow''{]} \}. This allowed the identification of publicly accessible green and blue spaces, including parks, woodlands, grasslands, and water bodies. Such features are strongly associated with enhanced environmental quality and contribute positively to cycling comfort.
+\end{itemize}
 
-\subsection{Tables}\label{tables}
+\section{Data for Network Centrality}\label{data-for-network-centrality}
 
-For creating tables i'd suggest creating either an excel file or \texttt{.csv} and then reading the data into R and using the \texttt{kabble} package to format it how you wish. The example below is from the abbreviations section
+Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(tidyverse)}
-\FunctionTok{library}\NormalTok{(knitr)}
-\FunctionTok{library}\NormalTok{(kableExtra)}
-\FunctionTok{library}\NormalTok{(readxl)}
-\FunctionTok{library}\NormalTok{(fs)}
-\FunctionTok{library}\NormalTok{(here)}
+In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London's cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO\(_2\)), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
 
-\CommentTok{\#read in data}
-\FunctionTok{read\_excel}\NormalTok{(}\FunctionTok{here}\NormalTok{(}\StringTok{"tables"}\NormalTok{, }\StringTok{"abbreviations.xlsx"}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{arrange}\NormalTok{(Term) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# i.e. alphabetical order by Term}
-  \CommentTok{\# booktab = T gives us a pretty APA{-}ish table}
-\NormalTok{  knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\AttributeTok{booktabs =} \ConstantTok{TRUE}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%} 
-  \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{position =} \StringTok{"center"}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
-  \CommentTok{\# any specifc row changes you want}
-    \FunctionTok{row\_spec}\NormalTok{(.,}
-  \AttributeTok{row=}\DecValTok{0}\NormalTok{,}
-  \AttributeTok{bold =} \ConstantTok{TRUE}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+The following table represents the data sources used in this study:
 
 \begin{table}
 \centering
-\begin{tabular}{ll}
+\begin{tabular}{llllr}
 \toprule
-\textbf{Term} & \textbf{Abbreviation}\\
+\textbf{Dataset} & \textbf{Description} & \textbf{Aggregation} & \textbf{Source} & \textbf{Year}\\
 \midrule
-Digital Elevation Model & DEM\\
-Digital Surface Model & DSM\\
-Digital Terrain Model & DTM\\
+OSM Road Network & Extracted and filtered cycling-permissible roads & Line segments & OpenStreetMap / Overpass Turbo & 2025\\
+Borough / London Shp & Administrative boundaries at borough and Greater London scale & Polygon & ONS Statistical GIS Boundaries & 2021\\
+Slope Raster & Terrain slope at 5×5 m resolution & Raster & Defra Data Services Platform & 2022\\
+Green View Index (GVI) & Percentage of visible greenery from street-level imagery & Point / Segment & MIT Treepedia Project & 2015\\
+NO₂ Concentration & Modelled nitrogen dioxide levels & 20m Grid Raster & London Air Quality Network & 2016\\
+\addlinespace
+Natural Features & Parks, woodlands, meadows, water bodies from OSM tags & Polygon & OpenStreetMap & 2025\\
+Road Centrality Data & Betweenness and closeness derived from OSM road network & Line segments & Derived via OSMnx & 2025\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-You do loads of things with kabble including adding small visulisations within the table - \href{https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html\#Overview}{consult the documentation for more info}.
+\chapter{Methodology}\label{methodology}
 
-\textbf{If in doubt, keep it simple}
+Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
 
-other useful arguments for tables:
-
-\begin{itemize}
-\item
-  \texttt{column\_spec(2,\ width\ =\ "9cm")} = set column width
-\item
-  \texttt{kable(timeline,longtable\ =\ T....}= allow the table to go over multiple pages
-\end{itemize}
-
-For example\ldots{}
-\newpage
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{read\_excel}\NormalTok{(}\FunctionTok{here}\NormalTok{(}\StringTok{"tables"}\NormalTok{, }\StringTok{"policy.xlsx"}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate\_all}\NormalTok{(}\SpecialCharTok{\textasciitilde{}} \FunctionTok{replace\_na}\NormalTok{(.x, }\StringTok{""}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
-  \CommentTok{\# booktab = T gives us a pretty APA{-}ish table}
-\NormalTok{  knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\AttributeTok{longtable =}\NormalTok{ T, }\AttributeTok{booktabs =}\NormalTok{ T, }
-               \AttributeTok{caption =} \StringTok{\textquotesingle{}Relevant influential international, metropolitan and local UHI and urban expansion policies, strategies and assessments (with publication date) referred to in this paper. * Denotes documents that lack specific UHI related policy but recognise the value of maintaining vegetation.\textquotesingle{}}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%} 
-  \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{position =} \StringTok{"center"}\NormalTok{, }\AttributeTok{full\_width =}\NormalTok{ T)}\SpecialCharTok{\%\textgreater{}\%}
-  \CommentTok{\# any specifc row changes you want}
-    \FunctionTok{row\_spec}\NormalTok{(.,}
-  \AttributeTok{row=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{8}\NormalTok{, }\DecValTok{18}\NormalTok{),}
-  \AttributeTok{bold =} \ConstantTok{TRUE}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{column\_spec}\NormalTok{(}\DecValTok{1}\NormalTok{, }\AttributeTok{width =} \StringTok{"14cm"}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{row\_spec}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{18}\NormalTok{), }\AttributeTok{hline\_after =}\NormalTok{ T)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{longtabu} to \linewidth {>{\raggedright\arraybackslash}p{14cm}}
-\caption{\label{tab:kable}Relevant influential international, metropolitan and local UHI and urban expansion policies, strategies and assessments (with publication date) referred to in this paper. * Denotes documents that lack specific UHI related policy but recognise the value of maintaining vegetation.}\\
-\toprule
-\textbf{Policy}\\
-\midrule
-\textbf{International}\\
-\midrule
-United Nations The World Cities in 2016 (2016)\\
-United Nations New Urban Agenda (2017)\\
-ARUP City Resilience Framework (2015)\\
-United Nations International Strategy for Disaster Reduction Sendai Framework (2015)\\
-\addlinespace
-Universal Sustainable Development Goals (2015)\\
-Biological Diversity, Cities and Biodiversity Outlook (2012)\\
-\textbf{Metropolitan}\\
-\midrule
-AECOM Australia, Economic Assessment of the Urban Heat Island Effect, Melbourne (2012)\\
-The Spatial Development Strategy For Greater London (2017)\\
-\addlinespace
-Western Australia Planning Commission, Perth and Peel @3.5 million (2015)\\
-City of Johannesburg Metropolitan Municipality, Spatial Development Framework 2040 (2016)\\
-Western Australian Planning Commission, Directions 2031 and beyond: metropolitan planning beyond the horizon (2010)\\
-Western Australian Planning Commission, Development Control Policy 2.3 Public Open Space in Residential Areas (2002)\\
-Plan For The Metropolitan Region Perth And Fremantle (1955)\\
-\addlinespace
-Singapore Government, Open Space Provision (2011)\\
-Western Australian Planning Commission, Metropolitan Region Scheme Text (2006)\\
-\textbf{Local}\\
-\midrule
-USA Environmental Protection Agency, Reducing Urban Heat Islands Compendium of Strategies Trees and Vegetation (2008)\\
-USA Environmental Protection Agency, Reducing Urban Heat Islands Compendium of Strategies Urban Heat Island Basics (2008)\\
-\addlinespace
-USA Environmental Protection Agency, Reducing Urban Heat Islands, Compendium of Strategies Heat Island Reduction Activities (2008)\\
-City of Stirling, Stirling Urban Forest Community Consultation (2017)\\
-City of Fremantle, One Planet Fremantle Strategy 2014/2015 - 2019/2020, 1–12 (2014)\\
-Metropolitan Redevelopment Authority, Subiaco Redevelopment Scheme (2013)\\
-Metropolitan Redevelopment Authority, Subiaco Redevelopment Scheme 2 (2017)\\
-\addlinespace
-City of Bayswater, Urban Forest Strategy (2017)\\
-City of Perth, Urban Forest Plan 2016-2036 (2006)\\
-City of Fremantle, City of Fremantle Urban Forest Plan (2017)\\
-City of Fremantle, Annual Budget 2016-17 (2016)\\
-City of Wanneroo, Street Tree Policy (2016)*\\
-\addlinespace
-City of Subiaco, Plant Pathogen Management Plan(2015)*\\
-\bottomrule
-\end{longtabu}
-
-\textbf{Note} if you see the caption in the \texttt{.pdf} version it goes off the side of the page --- this is the reason why you don't show code in a \texttt{.pdf}. If you ever had to you could just seperate the string into sections and at the start use \texttt{paste("hello","this","is","a","string",\ sep="\ ")}
-
-Now remember to cross reference this table, it would be\ldots Table \texttt{\textbackslash{}@ref(tab:kable)}, giving Table \ref{tab:kable}
-
-\section{Hosting the book}\label{hosting-the-book}
-
-You will need to create a new GitHub repository to host your book online using GitHub pages --- like the example is. GitHub pages takes a load of \texttt{.html} files and makes a website.
-
-To do so you need to set up a few things
+\section{Network acquisition and pre-processing}\label{network-acquisition-and-pre-processing}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Go to the \texttt{\_bookdown.yml} file and make sue that that you have this line of code: \texttt{output\_dir:\ docs} (it should be there)
-\item
-  In the same file make sure your \texttt{book\_filename} doesn't have any spaces use \texttt{-} or \texttt{\_} e.g.~\texttt{CASA-Thesis}
-\item
-  Go to the \texttt{\_output.yml} file and change the \texttt{edit} argument to \texttt{YOURREPO/edit/main/\%s}, here it's \texttt{https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/\%s}
-\item
-  Build your book locally, close the preview window
-\item
-  Save, stage changes, commit and then push to GitHub
-\item
-  On your GitHub repository \textgreater{} settings \textgreater{} GitHub pages \textgreater{} select the source as main and the folder as docs
-\item
-  Make sure you build your \texttt{.pdf} and then your \texttt{gitbook} for the latest \texttt{.pdf} to be a download option on the website.
+  Extraction and selection
 \end{enumerate}
+
+The base street network is obtained from OpenStreetMap via a two-stage Overpass query. An inclusion-oriented stage captures bicycle-permissible ways across Greater London. A targeted clean removes motorways and ramps, under-construction segments, and links that explicitly prohibit cycling. Direction-dependent rules are implemented for left-hand traffic (\texttt{right\_hand\ traffic}=False).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Topological and geometric cleaning
+\end{enumerate}
+
+A light-touch sequence improves graph consistency while preserving OSM geometry. Vertices within 2 m are snapped. Connected components with total length \textless{} 100 m are removed. Short dead-end stubs \textless{} 20 m are trimmed in three passes. Geometries are clipped to the Greater London boundary. Speed attributes recorded in miles per hour are converted to kilometres per hour (× 1.60934).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Processed fields
+\end{enumerate}
+
+Pre-processing yields link-level attributes used downstream: \texttt{proc\_highway}, \texttt{proc\_maxspeed}, \texttt{proc\_width}, \texttt{proc\_oneway}, \texttt{priority\_road}, \texttt{motor\_vehicle}. These standardise tagging and encode London's traffic handedness.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Normalisation convention
+\end{enumerate}
+
+Continuous metrics generated by later modules follow a common scheme: values are winsorised at the 1st and 99th percentiles, then min--max scaled to {[}0, 1{]}. Edge betweenness is transformed with log1p before scaling. Normalisation is applied within each sub-index prior to composite scoring.
+
+\section{Structural rideability (Index1)}\label{structural-rideability-index1}
+
+\subsection{Model Introduction}\label{model-introduction}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Concept and provenance
+\end{enumerate}
+
+The structural module quantifies how road-segment design and operating conditions support everyday cycling. It draws on the open-source OSM-Cycling-Quality-Index developed for Berlin (SupaplexOSM/OSM-Cycling-Quality-Index), which implements a deterministic, rule-based scoring system over OpenStreetMap data. In that reference model, link-level attributes parsed from OSM---such as functional road class and posted speed, cycleway tags (track/lane/opposite), number of lanes, separation and buffer treatments, surface/smoothness, parking configuration, and basic junction handling---are mapped through factor tables to penalties or bonuses. The Berlin implementation produces a link-level cycling quality score and a separate Level of Traffic Stress (LTS) classification using transparent, auditable rules derived from the above tags and thresholds. The intellectual lineage is acknowledged, and licence and repository details are provided in the Code Availability note.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Adaptations
+\end{enumerate}
+
+The adaptation used in this research retains the central idea that compounding frictions are represented by multiplicative factors applied to a base score derived from functional class and speed, while re-specifying inputs and thresholds where necessary for the London context.
+
+During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London's OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope.
+
+A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set \{LTS, fac1, fac2, fac4\}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
+
+PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31\% (PC1), 25.32\% (PC2), 17.18\% (PC3), and 14.19\% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).
+
+Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with \texttt{base\_index} at a moderate level (= 4.63), while fac1 and fac2 show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
+
+Table X. PCA explained variance and loadings (absolute values).
+(PC1 = 43.31\%, PC2 = 25.32\%, PC3 = 17.18\%, PC4 = 14.19\%)
+
+\begin{table}
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Variable} & \textbf{PC1} & \textbf{PC2} & \textbf{PC3} & \textbf{PC4}\\
+\midrule
+stress\_level & 0.771 & 0.040 & 0.429 & 0.469\\
+fac1 & 0.744 & 0.348 & 0.198 & 0.535\\
+fac2 & 0.724 & 0.005 & 0.679 & 0.124\\
+fac4 & 0.246 & 0.944 & 0.051 & 0.216\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{general_images/pca} 
+
+}
+
+\caption{PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions.}\label{fig:pca}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{general_images/vif1} 
+
+}
+
+\caption{Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36.}\label{fig:vif1}
+\end{figure}
+
+These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac1), speed/class (fac2), and separation/surface/priority (fac4), within the multiplicative structural specification.
+
+Also, there are some adaptations for left-hand-traffic regime, local speed patterns, and tag conventions to fit in with Great London.
+The structural specification preserves the core Berlin logic while substituting a slope-based fac3 and justifiably incorporating LTS as fac5, yielding a London-tailored yet methodologically transparent module. Full parameter tables appear in the Appendix.
+
+\subsection{Data preprocessing}\label{data-preprocessing}
+
+A key element of preprocessing is sidepath identification. Because cycle facilities may be encoded on parallel geometries, a sidepath search prevents under-recognition of protection. Each main link is sampled every 100 m, and a 22 m search radius is used to detect cycle-designated paths. Where a sidepath is found, the main link inherits the relevant facility attributes for scoring, reflecting the facilities realistically available along the corridor.
+
+\subsection{Engineered attributes and factor mapping}\label{engineered-attributes-and-factor-mapping}
+
+Five categories of factors are computed from processed tags and terrain.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Facility and width (fac1): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used (see Appendix). The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.
+\item
+  Speed and classification (fac2): Posted speed (\texttt{proc\_maxspeed}) and \texttt{proc\_highway} class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London's distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.
+\item
+  Slope (fac3): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac3 = 0.9 as a conservative treatment that avoids unjustified improvement.
+\item
+  Separation, buffer, surface, and priority (fac4): Presence and width of buffers, type of kerb or median separation, parking configuration, surface/smoothness classes, and priority on major roads contribute additional penalties or bonuses. Directionality is evaluated with respect to left-hand traffic (e.g., parking or buffer on the rider's side). Rule tables provide deterministic mappings from tag combinations to factors.
+\item
+  Level of Traffic Stress (fac5): An LTS class is assigned from the joint configuration of speed, lanes, facility type, and separation (with junction handling consistent with local practice). Classes are translated into factors using the codebook values reported in the Appendix.
+\end{enumerate}
+
+\subsection{Base score and multiplicative formulation}\label{base-score-and-multiplicative-formulation}
+
+A base score Base(highway, maxspeed) represents the nominal quality of a segment absent additional penalties or bonuses. The structural sub-index is:
+
+\[Index_{1} = Base \times fac_{1} \times fac_{2} \times fac_{3} \times fac_{4} \times fac_{5}\]
+
+followed by linear rescaling to {[}0, 100{]}. The multiplicative form ensures that simultaneously adverse attributes (e.g., steep gradient, high speed, lack of separation) reduce scores more than any single attribute alone, reflecting the compounding nature of perceived stress and safety constraints. Conversely, coherent design packages (e.g., protected track with buffer on a low-speed street) achieve proportionally high values.
+
+\section{Environmental perception (Index2)}\label{environmental-perception-index2}
+
+\subsection{Subcomponents and normalisation}\label{subcomponents-and-normalisation}
+
+The environmental module operationalises three link-level components and combines them after normalisation.
+
+\subsection{Greenery (GVI)}\label{greenery-gvi}
+
+Link values are obtained by buffering each link midpoint by 30 m (or by regular along-link samples with the same radius) and averaging nearby GVI observations. Instances with no observations inside the buffer are recorded for transparency.
+
+\subsection{Air quality (NO2)}\label{air-quality-no2}
+
+The gridded NO2 surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − \texttt{NO2\_norm}) so that higher values consistently denote better conditions.
+
+\subsection{Natural-landscape proximity}\label{natural-landscape-proximity}
+
+Polygons representing natural features are dissolved by type to avoid double counting. A multi-ring proximity function is computed around each link using the levels (50 m, 0.1), (40 m, 0.2), (30 m, 0.3), (20 m, 0.5), (10 m, 0.7), (1 m, 1.0); weights increase with proximity.
+
+\subsection{Sub-index formulation}\label{sub-index-formulation}
+
+After normalisation to {[}0, 1{]}, the three components are combined as:
+
+\[Index_{2} = 0.5 \times GVI_{\text{norm}} + 0.3 \times (1 - NO_{2,\text{norm}}) + 0.2 \times Natural_{\text{norm}}\]
+
+then rescaled to {[}0, 100{]}.
+
+\section{Network centrality (Index3)}\label{network-centrality-index3}
+
+\subsection{Graph representation}\label{graph-representation}
+
+A primal, undirected graph is constructed from the cleaned OSM network. Edge weights equal metric length in metres.
+
+\subsection{Betweenness}\label{betweenness}
+
+Edge betweenness is estimated using approximate sampling with K = 1200 source pairs. Values are transformed with log1p and min--max scaled.
+
+\subsection{Range-limited closeness}\label{range-limited-closeness}
+
+Node closeness is computed within 2 km and 5 km network radii; edge-level closeness is the mean of endpoint values. A multi-scale composite is formed as:
+
+\[C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}\]
+
+then scaled to {[}0, 1{]}.
+
+\subsection{Sub-index formulation}\label{sub-index-formulation-1}
+
+The centrality sub-index balances through-flow importance and local reachability:
+
+\[Index_{3} = 0.4 \times Betweenness_{\text{norm}} + 0.6 \times C_{\text{multi,norm}}\]
+
+rescaled to {[}0, 100{]}.
+
+\section{Composite index, sensitivity, and reporting}\label{composite-index-sensitivity-and-reporting}
+
+\subsection{Merging and keying}\label{merging-and-keying}
+
+Outputs are joined by a stable key consisting of the OSM id and a hashed \texttt{edge\_uid} derived from endpoint coordinates. Geometry is inherited from the structural layer to maintain alignment.
+
+\subsection{Composite scoring}\label{composite-scoring}
+
+The composite index is the arithmetic mean of the three sub-indices under a baseline equal-weights assumption:
+
+\[CECI = \frac{Index_{1} + Index_{2} + Index_{3}}{3}\]
+
+This choice balances design quality, environmental comfort, and network position at evaluation stage. Length-weighted summaries may subsequently be produced for Borough or MSOA units for descriptive purposes; these aggregations are intentionally separated from model construction.
+
+\subsection{Sensitivity analysis}\label{sensitivity-analysis}
+
+To examine robustness to weighting assumptions, three alternative schemes are predefined:
+
+\begin{itemize}
+\item
+  Scheme A (Index1/Index2/Index3): 0.5 / 0.25 / 0.25.
+\item
+  Scheme B (Index1/Index2/Index3): 0.25 / 0.5 / 0.25.
+\item
+  Scheme C (Index1/Index2/Index3): 0.25 / 0.25 / 0.5.
+\end{itemize}
+
+Comparative statistics and maps are reported alongside the baseline.
+
+\subsection{Quality control and implementation notes}\label{quality-control-and-implementation-notes}
+
+Post-cleaning checks review connectivity and degree distributions. Borough-level sidepath rates are monitored to flag tagging anomalies. Overlay steps (slope, greenery, pollution, natural features) record geometry--attribute counts to confirm coverage before index computation. Normalisation diagnostics document the effect of p1--p99 winsorisation. Processing uses standard Python geospatial libraries (GeoPandas, Shapely, rasterio, OSMnx) and graph tools with fixed random seeds. Parameter files and scripts are available in the project repository.
+
+\chapter{Results}\label{results}
 
 \chapter{Discussion}\label{discussion}
 
@@ -767,30 +668,80 @@ Short introduction to the chapter, reviewing the previous chapter and detailing 
 
 \subsection{Global development goals}\label{global-development-goals}
 
+This study contributes to the wider agenda of sustainable development by addressing how active travel can be systematically evaluated and promoted. Cycling is explicitly connected to several United Nations Sustainable Development Goals (SDGs), including SDG 3 on good health and well-being, SDG 11 on sustainable cities and communities, and SDG 13 on climate action. By operationalising a composite measure of cycling quality, the research provides a framework for monitoring progress toward these goals. The findings highlight the need to improve accessibility, reduce exposure to environmental hazards, and ensure equity in mobility provision---key principles that resonate with international objectives for low-carbon, inclusive urban futures.
+
 \subsection{Local policy}\label{local-policy}
+
+At the local level, the dissertation provides evidence directly relevant to London's ongoing transport and environmental strategies. The identification of low-quality segments in the Central Activity Zone suggests that current investments in cycling infrastructure have yet to resolve issues of continuity and environmental stress in the city's busiest areas. The mapping of high-quality but disconnected corridors in outer boroughs also underscores the importance of linking peripheral areas to central employment hubs. These insights can inform initiatives such as the Mayor's Transport Strategy, the Healthy Streets Approach, and borough-level cycling action plans. By integrating infrastructural, environmental, and network perspectives, the CQI framework offers a tool for prioritising interventions where they can deliver the greatest impact.
 
 \subsection{Academic research}\label{academic-research}
 
+Academically, this study advances the growing field of urban cycling assessment by bridging methodological divides between infrastructure analysis, environmental perception, and spatial network science. While previous work has often focused on one dimension at a time, the composite index demonstrates the value of synthesising diverse indicators into a single evaluative framework. The approach responds to calls in the literature for multi-scalar, holistic assessments of urban mobility systems and contributes empirical evidence on London, a city that is often studied but rarely through an integrated, composite perspective. Beyond cycling research, the framework also illustrates how geospatial data, environmental metrics, and graph-theoretic measures can be combined in the analysis of urban accessibility.
+
 \section{Limitations}\label{limitations}
+
+The estimation of edge betweenness via stochastic source--target sampling imposes an inherent constraint on strict reproducibility. The sample size KK is chosen to balance run-time and stability, yet the procedure remains probabilistic; small numerical deviations and local rank shifts can arise across runs, and may be accentuated by differences in software versions, parallel execution order, or hardware. Under these conditions, the index is most appropriately interpreted through spatial patterns and relative ordering rather than exact equality of segment-level values across replications.
+
+Temporal alignment across inputs constitutes a further limitation. The component datasets are not fully contemporaneous---street-level greenery is inferred from imagery circa 2015, modelled NO₂ fields originate from LAEI 2016 projections, and the OSM network is continuously updated. This asynchrony introduces the possibility of local timing mismatches, particularly where recent greening initiatives, traffic-calming schemes, or redesigns have occurred. As a result, fine-grained differences should not be read as current, time-specific conditions in all locations but rather as a structural and perceptual baseline.
+
+Limitations also arise from cross-city parameter transfer within the structural rideability module. Thresholds and mappings for elements such as effective width, separation, and buffer rules derive from a framework calibrated in Berlin. Although the metadata in both contexts are sourced from OSM via Overpass Turbo, country-specific tagging practices, attribute completeness, and data conventions differ. During transfer, this heterogeneity can increase the frequency of missing or partially specified attributes. To avoid optimistic bias where attributes are absent, a conservative penalty mechanism is adopted that applies uniform downward adjustments under defined missingness conditions; this improves internal consistency but may produce a systematic downward shift in areas with sparser tagging.
+
+The dependence on OSM further entails issues of coverage and tagging consistency. Volunteer-contributed data are uneven across space and over feature types, and fine-grained fields of particular relevance to cycling---cycleway subtype, buffer presence and width, surface and smoothness---may be omitted or inconsistently recorded. Such variation can propagate to factor assignment and to the stability of LTS classification, especially in neighbourhoods where infrastructure is evolving faster than tagging activity.
+
+Design choices embedded in the network analysis also shape results. Centrality is computed on a primal, undirected, length-weighted graph, which abstracts from signal delay, turn costs, grade at junctions, and micro-routing preferences; the selected closeness radii and the approximate betweenness sampler represent defensible but not unique specifications. Similarly, distributional treatment through p1--p99 winsorisation and min--max scaling reduces the influence of extremes but compresses tail variation, with potential consequences for the relative prominence of isolated high- or low-scoring segments.
+
+In addition, the composite weighting schemes encode normative assumptions regarding the relative salience of structural quality, environmental comfort, and network position. Alternative analytical or policy perspectives might reasonably prioritise these dimensions differently, yielding variation in spatial rankings. Taken together, these considerations indicate that the index should be interpreted as a comparative, spatial diagnostic rather than as a definitive, time-specific measure of present conditions.
 
 \section{Transferability}\label{transferability}
 
+A further significance of this research lies in its transferability to other urban contexts. The CQI framework is built on widely available datasets and reproducible geospatial methods, making it adaptable to cities beyond London. While local calibration would be necessary to reflect different infrastructural standards, environmental conditions, or policy priorities, the general approach of integrating structural rideability, environmental perception, and network centrality is applicable to diverse settings. This opens avenues for cross-city comparisons and benchmarking, enabling researchers and policymakers to assess cycling environments in a consistent way. By doing so, the framework supports broader efforts to mainstream active travel within sustainable mobility agendas globally.
+
 \chapter{Conclusion}\label{conclusion-1}
 
-Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+This dissertation has developed and applied a composite framework for evaluating the cycling environment of London, addressing the interplay between infrastructural conditions, environmental perception, and network connectivity. The research was motivated by the need to move beyond fragmented assessments of cycling quality and to deliver a holistic tool that can highlight disparities and guide targeted interventions. Through the construction of a Cycling Quality Index (CQI), the study has provided new insights into the spatial distribution of cycling opportunities and constraints across Greater London.
 
-\section{Recommedations}\label{recommedations}
+The findings revealed a marked core--periphery gradient, with central districts characterised by high traffic stress, fragmented facilities, and environmental burdens, while outer areas contained more isolated but higher-quality segments often associated with parks and green corridors. Importantly, the analysis showed that no single dimension is sufficient for evaluating cycling quality: infrastructural improvements may be undermined by environmental pressures, while attractive green routes may fail to deliver connectivity. By integrating these factors into a unified index, the study contributes both methodologically, by operationalising a replicable evaluation tool, and empirically, by providing one of the most detailed portraits of London's cycling environment to date.
+
+\section{Recommendations}\label{recommendations}
+
+Based on the findings, several recommendations are offered:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\item
+  Strengthen central network continuity
+  Investments should prioritise filling infrastructural gaps and reducing bottlenecks in central London, where demand is highest but network fragmentation and environmental stress are most acute. Upgrading crossings, junctions, and corridor continuity can deliver substantial improvements in accessibility.
+\item
+  Integrate cycling with environmental planning\\
+  Air quality management and urban greening strategies should be coordinated with cycling investments. Targeted planting, green buffers, and pollution mitigation measures along key corridors can enhance both the environmental perception and health outcomes for cyclists.
+\item
+  Connect peripheral high-quality segments\\
+  Outer boroughs often contain strong but disconnected cycling corridors. Linking these segments into longer, continuous routes would enable greater use of peripheral assets and support more equitable access to cycling across the metropolitan region.
+\item
+  Embed equity into cycling strategies\\
+  Borough-level variation demonstrates that cycling provision remains uneven. Policies should therefore focus not only on expanding total infrastructure but also on ensuring that improvements address underserved communities and neighbourhoods.
+\item
+  Adopt multi-dimensional evaluation tools\\
+  The CQI framework developed here can support monitoring and prioritisation. Incorporating such composite indicators into policy evaluation would enable decision-makers to capture the full range of factors shaping cycling quality rather than relying on isolated metrics.
+\end{enumerate}
+
+\section{Future Research Directions}\label{future-research-directions}
+
+While this study provides a comprehensive assessment, further work is required to refine and extend the framework:
+
+\begin{itemize}
 \tightlist
 \item
-  Adapt policy x
+  Dynamic and temporal analysis: Incorporating peak-hour traffic conditions, seasonal variations in air quality, and temporal changes in greenery would provide a richer understanding of cyclists' experiences.\\
 \item
-  Undertake data informed targeted greening
+  User-centred validation: Surveys, sensor data, or participatory mapping could be employed to ground-truth the CQI and ensure that it aligns with the perceptions of diverse user groups.\\
 \item
-  Further work into this area
-\end{enumerate}
+  Cross-city comparison: Applying the framework to other urban contexts would test its adaptability and create benchmarks for evaluating cycling environments internationally.\\
+\item
+  Integration with multimodal accessibility: Future work could explore how cycling quality interacts with public transport nodes, last-mile connections, and emerging forms of micro-mobility.
+\end{itemize}
+
+In conclusion, this dissertation has demonstrated that a multi-dimensional approach is essential for understanding and improving cycling environments. By providing a replicable framework and empirically mapping London's disparities, the research offers both methodological and policy contributions. Ultimately, enabling cycling to play a greater role in London's mobility system will require sustained investment, integrated planning, and evidence-based evaluation tools such as those developed in this study.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography

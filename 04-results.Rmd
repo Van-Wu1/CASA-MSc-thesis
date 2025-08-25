@@ -13,17 +13,17 @@ library(here)
 knitr::include_graphics(here::here('general_images','fac1_2.png'))
 ```
 
-The base index primarily reflects a facility's priority status. As shown in Figure X, dedicated infrastructure such as cycle paths (base index ≈100) and cycle tracks (≈90) receive high baseline scores. In contrast, mixed-traffic or pedestrian-shared facilities, including shared footways (≈50) and shared traffic lanes (≈60), score substantially lower. This "type prior" rewards physical separation from motor traffic. This base score is then modified by two correction factors: fac₁ (width and surface) and fac₂ (road class and speed).
+The base index primarily reflects a facility's priority status. As shown in Figure X, dedicated infrastructure such as cycle paths (base index =100) and cycle tracks (=90) receive high baseline scores. In contrast, mixed-traffic or pedestrian-shared facilities, including shared footways (=50) and shared traffic lanes (=60), score substantially lower. This "type prior" rewards physical separation from motor traffic. This base score is then modified by two correction factors: fac₁ (width and surface) and fac₂ (road class and speed).
 
-* Dedicated Facilities (Cycle Path/Segregated Path): These facilities exhibit high scores for both fac₁ (≈0.78-0.88) and fac₂ (≈1.0), indicating adequate width, good surfacing, and minimal adjacency to motor traffic.
+* Dedicated Facilities (Cycle Path/Segregated Path): These facilities exhibit high scores for both fac₁ (=0.78-0.88) and fac₂ (=1.0), indicating adequate width, good surfacing, and minimal adjacency to motor traffic.
 
-* Cycle Tracks: While fac₂ remains high (≈0.9+), a slightly lower fac₁ (≈0.70-0.75) suggests that localized geometric shortfalls, such as at bridge approaches or pinch points, can erode the advantage of a high base score.
+* Cycle Tracks: While fac₂ remains high (=0.9+), a slightly lower fac₁ (=0.70-0.75) suggests that localized geometric shortfalls, such as at bridge approaches or pinch points, can erode the advantage of a high base score.
 
-* Shared Roads: For shared roads, a low base score (≈60) creates a "type ceiling," capping the total index even with decent geometry (fac₁ ≈ 0.76-0.80) and speed conditions (fac₂ ≈ 0.95).
+* Shared Roads: For shared roads, a low base score (=60) creates a "type ceiling," capping the total index even with decent geometry (fac₁ = 0.76-0.80) and speed conditions (fac₂ = 0.95).
 
-* Shared Traffic Lanes: This category is constrained by a traffic bottleneck, evidenced by the lowest fac₂ score (≈0.4) across all types. This indicates that mixing with motor traffic is the primary inhibitor of quality, regardless of geometry.
+* Shared Traffic Lanes: This category is constrained by a traffic bottleneck, evidenced by the lowest fac₂ score (=0.4) across all types. This indicates that mixing with motor traffic is the primary inhibitor of quality, regardless of geometry.
 
-* Track or Service Roads: These routes are constrained by geometry and surface quality, exhibiting the lowest fac₁ score (≈0.34) despite having a fac₂ of approximately 1.0 due to low-speed environments.
+* Track or Service Roads: These routes are constrained by geometry and surface quality, exhibiting the lowest fac₁ score (=0.34) despite having a fac₂ of approximately 1.0 due to low-speed environments.
 
 ### Topography and Traffic Stress
 
@@ -202,4 +202,4 @@ library(here)
 knitr::include_graphics(here::here('general_images','cqi_robustness_delta_bar.png'))
 ```
 
-Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|≈7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CQI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (τ=0.84) but undergoes moderate reconfigurations under W2 and W3 (τ≈0.57). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.
+Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|=7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CQI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (τ=0.84) but undergoes moderate reconfigurations under W2 and W3 (τ=0.57). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.

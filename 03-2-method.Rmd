@@ -38,7 +38,7 @@ A further adaptation concerns the role of Level of Traffic Stress (LTS). In the 
 
 PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).
 
-Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF ≈ 2.03), with `base_index` at a moderate level (≈ 4.63), while fac1 and fac2 show higher mutual dependence (≈ 27.73 and ≈ 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
+Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with `base_index` at a moderate level (= 4.63), while fac1 and fac2 show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
 
 Table X. PCA explained variance and loadings (absolute values).
 (PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
@@ -63,7 +63,7 @@ library(here)
 knitr::include_graphics(here::here('general_images','pca.png'))
 ```
 
-```{r vif1, echo=FALSE, out.width="75%", fig.align='center', fig.cap="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, `base_index` ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36."}
+```{r vif1, echo=FALSE, out.width="75%", fig.align='center', fig.cap="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36."}
 library(here)
 knitr::include_graphics(here::here('general_images','vif1.png'))
 ```
@@ -95,9 +95,7 @@ Five categories of factors are computed from processed tags and terrain.
 
 A base score Base(highway, maxspeed) represents the nominal quality of a segment absent additional penalties or bonuses. The structural sub-index is:
 
-\begin{equation}
-Index_{1} = Base \times fac_{1} \times fac_{2} \times fac_{3} \times fac_{4} \times fac_{5}
-\end{equation}
+$$Index_{1} = Base \times fac_{1} \times fac_{2} \times fac_{3} \times fac_{4} \times fac_{5}$$
 
 followed by linear rescaling to [0, 100]. The multiplicative form ensures that simultaneously adverse attributes (e.g., steep gradient, high speed, lack of separation) reduce scores more than any single attribute alone, reflecting the compounding nature of perceived stress and safety constraints. Conversely, coherent design packages (e.g., protected track with buffer on a low-speed street) achieve proportionally high values.
 
@@ -124,9 +122,7 @@ Polygons representing natural features are dissolved by type to avoid double cou
 
 After normalisation to [0, 1], the three components are combined as:
 
-\begin{equation}
-Index_{2} = 0.5 \times GVI_{\text{norm}} + 0.3 \times (1 - NO_{2,\text{norm}}) + 0.2 \times Natural_{\text{norm}}
-\end{equation}
+$$Index_{2} = 0.5 \times GVI_{\text{norm}} + 0.3 \times (1 - NO_{2,\text{norm}}) + 0.2 \times Natural_{\text{norm}}$$
 
 then rescaled to [0, 100].
 
@@ -145,9 +141,7 @@ Edge betweenness is estimated using approximate sampling with K = 1200 source pa
 
 Node closeness is computed within 2 km and 5 km network radii; edge-level closeness is the mean of endpoint values. A multi-scale composite is formed as:
 
-\begin{equation}
-C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}
-\end{equation}
+$$C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}$$
 
 then scaled to [0, 1].
 
@@ -155,9 +149,7 @@ then scaled to [0, 1].
 
 The centrality sub-index balances through-flow importance and local reachability:
 
-\begin{equation}
-Index_{3} = 0.4 \times Betweenness_{\text{norm}} + 0.6 \times C_{\text{multi,norm}}
-\end{equation}
+$$Index_{3} = 0.4 \times Betweenness_{\text{norm}} + 0.6 \times C_{\text{multi,norm}}$$
 
 rescaled to [0, 100].
 
@@ -171,9 +163,7 @@ Outputs are joined by a stable key consisting of the OSM id and a hashed `edge_u
 
 The composite index is the arithmetic mean of the three sub-indices under a baseline equal-weights assumption:
 
-\begin{equation}
-CECI = \frac{Index_{1} + Index_{2} + Index_{3}}{3}
-\end{equation}
+$$CECI = \frac{Index_{1} + Index_{2} + Index_{3}}{3}$$
 
 This choice balances design quality, environmental comfort, and network position at evaluation stage. Length-weighted summaries may subsequently be produced for Borough or MSOA units for descriptive purposes; these aggregations are intentionally separated from model construction.
 
