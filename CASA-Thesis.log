@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  25 AUG 2025 21:57
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  26 AUG 2025 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,6 +1478,16 @@ Chapter 2.
 [4
 
 ]
+Underfull \hbox (badness 1072) in paragraph at lines 280--281
+\TU/lmr/m/n/12 initiative, argues that improvements in walking and cycling infrastructure
+ []
+
+
+Overfull \hbox (0.43834pt too wide) in paragraph at lines 282--283
+[]\TU/lmr/m/n/12 Investments in cycling infrastructure also appear to produce wider societal benefits.
+ []
+
+
 
 [5]
 
@@ -1951,17 +1961,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
  []
 
 
-LaTeX Warning: Empty bibliography on input line 1073.
-
-
 
 [57]
+Underfull \hbox (badness 2042) in paragraph at lines 1074--1074
+\TU/lmr/m/n/12 Quantifying the Health and Related Economic Benefits [Publisher:
+ []
+
+
 
 [58
 
 ]
+Underfull \hbox (badness 1242) in paragraph at lines 1074--1074
+\TU/lmr/m/n/12 S. M., Hunte, G., Monro, M., Vernich, L., & Teschke, K. (2013).
+ []
 
-[59
+
+
+[59]
+Underfull \hbox (badness 2189) in paragraph at lines 1074--1074
+[][]\TU/lmr/m/n/12 Moreno, C., Allam, Z., Chabaud, D., Gall, C., & Pratlong, F. (2021).
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 1074--1074
+\TU/lmr/m/n/12 Introducing the “15-Minute City”: Sustainability, Resilience and
+ []
+
+
+
+[60]
+Underfull \hbox (badness 2245) in paragraph at lines 1074--1074
+\TU/lmr/m/n/12 Stress Analysis [Publisher: SAGE Publications Inc]. \TU/lmr/m/it/12 Transportation
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 1074--1074
+\TU/lmr/m/it/12 Research Record\TU/lmr/m/n/12 , \TU/lmr/m/it/12 2673\TU/lmr/m/n/12 (4), 284–294. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
+ []
+
+
+
+[61]
+
+[62
+
+]
+
+[63
 
 ] (./CASA-Thesis.aux)
  ***********
@@ -1973,12 +2020,12 @@ Package logreq Info: Writing requests to 'CASA-Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31061 strings out of 470481
- 589550 string characters out of 5489404
- 1701086 words of memory out of 5000000
- 58878 multiletter control sequences out of 15000+600000
+ 31522 strings out of 470481
+ 602970 string characters out of 5489404
+ 1707389 words of memory out of 5000000
+ 59339 multiletter control sequences out of 15000+600000
  633400 words of font info for 97 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 90i,12n,114p,1287b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,114p,2250b,5077s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CASA-Thesis.pdf (71 pages).
+Output written on CASA-Thesis.pdf (75 pages).
