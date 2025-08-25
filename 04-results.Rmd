@@ -8,7 +8,7 @@ The analysis of structural ridability reveals a two-layer constraint system gove
 
 ### Facility Type, Geometry, and Traffic Context
 
-```{r fac12, echo=FALSE, out.width="75%", fig.align='center', fig.cap="Average Base Index, fac1 and fac2 by Road Type"}
+```{r fac12, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Average Base Index, fac1 and fac2 by Road Type"}
 library(here)
 knitr::include_graphics(here::here('general_images','fac1_2.png'))
 ```
@@ -29,7 +29,7 @@ The base index primarily reflects a facility's priority status. As shown in Figu
 
 Beyond infrastructure, topography and traffic stress are key determinants of ridability.
 
-```{r slopeLTS, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial distribution of slope (a) and Level of Traffic Stress (b) across Greater London."}
+```{r slopeLTS, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial distribution of slope (a) and Level of Traffic Stress (b) across Greater London."}
 library(here)
 knitr::include_graphics(here::here('general_images','slopeLTS.png'))
 ```
@@ -52,7 +52,7 @@ Regression analysis shows that `fac_4` contributes negligibly to the variation o
 
 ### Index of structural ridability
 
-```{r indexs1, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial Distribution of the Index of Structural Ridability"}
+```{r indexs1, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of the Index of Structural Ridability"}
 library(here)
 knitr::include_graphics(here::here('general_images','index_s1.png'))
 ```
@@ -65,7 +65,7 @@ This module broadens the analysis to the perceptual and environmental context of
 
 ### Green View Index (GVI)
 
-```{r gvi, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Hot and Cold Spot Analysis (Getis-Ord Gi*) of the Green View Index (GVI)"}
+```{r gvi, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Hot and Cold Spot Analysis (Getis-Ord Gi*) of the Green View Index (GVI)"}
 library(here)
 knitr::include_graphics(here::here('general_images','gvi.png'))
 ```
@@ -74,7 +74,7 @@ This is a GVI heat map, which shows that the distribution of people's perception
 
 ### NO₂ Concentration
 
-```{r no2, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial Distribution of Annual Mean NO₂ Concentration."}
+```{r no2, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of Annual Mean NO₂ Concentration."}
 library(here)
 knitr::include_graphics(here::here('general_images','no2.png'))
 ```
@@ -82,7 +82,7 @@ knitr::include_graphics(here::here('general_images','no2.png'))
 The spatial distribution of NO₂ concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear “corridor effect.” These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure X).
 
 ### Natural Landscape
-```{r nf, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial Distribution of Natural Landscape Coverage."}
+```{r nf, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of Natural Landscape Coverage."}
 library(here)
 knitr::include_graphics(here::here('general_images','nf.png'))
 ```
@@ -91,7 +91,7 @@ The spatial distribution of natural landscape features presents a dispersed yet 
 
 ### Index of environmental perception
 
-```{r indexs2, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial Distribution of the Index of Environmental Perception"}
+```{r indexs2, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of the Index of Environmental Perception"}
 library(here)
 knitr::include_graphics(here::here('general_images','index_s2.png'))
 ```
@@ -106,7 +106,7 @@ In summary, the results from Module 2 reveal differentiated spatial patterns acr
 
 ### Interpretation of Centrality Patterns in London’s Road Network
 
-```{r Centrality, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Betweenness and Closeness Centrality in London's Road Network"}
+```{r Centrality, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Betweenness and Closeness Centrality in London's Road Network"}
 library(here)
 knitr::include_graphics(here::here('general_images','Centrality.png'))
 ```
@@ -119,7 +119,7 @@ The results also highlight the role of river crossings. Bridges along the Thames
 
 ### Index of network centrality
 
-```{r indexs3, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial Distribution of the Index of Network Centrality."}
+```{r indexs3, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of the Index of Network Centrality."}
 library(here)
 knitr::include_graphics(here::here('general_images','index_s3.png'))
 ```
@@ -134,7 +134,7 @@ Synthesizing the structural, environmental, and network metrics, the final Compo
 
 ### City-Wide Distribution and Bottleneck Identification
 
-```{r cqi, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Spatial Distribution of the Cycling Quality Index (CQI) by Quantile"}
+```{r cqi, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of the Cycling Quality Index (CQI) by Quantile"}
 library(here)
 knitr::include_graphics(here::here('general_images','cqi.png'))
 ```
@@ -147,7 +147,7 @@ In sum, London’s cycling environment demonstrates a pattern of linear clusteri
 
 ### CQI Kernel Density Estimation in London
 
-```{r kde, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Kernel Density Estimation (KDE) of Low-CQI Road Segments"}
+```{r kde, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Kernel Density Estimation (KDE) of Low-CQI Road Segments"}
 library(here)
 knitr::include_graphics(here::here('general_images','cqi_kde.png'))
 ```
@@ -176,28 +176,28 @@ Several other large clusters of low CQI values are found within London’s major
 
 In order to conduct a more detailed analysis of the CQI in London, this study also carried out a graded analysis based on the borough as the scale.
 
-```{r AverageCQIbyBorough, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Average Cycling Quality Index (CQI) by London Borough"}
+```{r AverageCQIbyBorough, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Average Cycling Quality Index (CQI) by London Borough"}
 library(here)
 knitr::include_graphics(here::here('general_images','AverageCQIbyBorough.png'))
 ```
 
 By averaging the Cycling Quality Index (CQI) across boroughs, notable spatial disparities emerge. The highest-performing areas are Richmond upon Thames (32.19), Waltham Forest (31.09), Greenwich (30.44), Sutton (29.95), and Southwark (29.80), which all exceed the citywide mean and highlight relatively stronger cycling environments. In contrast, the lowest CQI values are observed in City of London (22.08), Westminster (25.36), Kensington and Chelsea (26.06), Brent (26.16), and Bexley (26.18), reflecting more constrained cycling conditions. This divergence suggests that central and inner boroughs with dense urban form and heavy traffic flows tend to perform worse, while outer or suburban boroughs with more space and dedicated infrastructure achieve higher quality levels. The results point to a spatial imbalance in cycling provision, where infrastructure quality does not align evenly with urban density and travel demand. 
 
-```{r BoroughComposition, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Borough Road Composition by London-Wide CQI Quantiles"}
+```{r BoroughComposition, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Borough Road Composition by London-Wide CQI Quantiles"}
 library(here)
 knitr::include_graphics(here::here('general_images','BoroughComposition.png'))
 ```
 
 By examining borough-level road composition according to London-wide CQI quantiles, clear differences can be observed. The City of London shows the highest proportion of low-CQI links, highlighting its particularly constrained cycling conditions. For most boroughs, the share of mid-range CQI roads remains relatively stable, indicating that borough ranking is largely determined by the relative balance between high- and low-CQI segments rather than the middle category. This pattern suggests that differences in cycling quality across boroughs are more strongly driven by the extremes of infrastructure provision than by average conditions.
 
-```{r boxcqiborough, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Distribution of CQI Scores within Each London Borough"}
+```{r boxcqiborough, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Distribution of CQI Scores within Each London Borough"}
 library(here)
 knitr::include_graphics(here::here('general_images','box_cqi_by_borough.png'))
 ```
 
 To further examine intra-borough variation, Figure X presents the distribution of CQI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked borough     s, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CQI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.
 
-```{r cqirobustnessdeltabar, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes"}
+```{r cqirobustnessdeltabar, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes"}
 library(here)
 knitr::include_graphics(here::here('general_images','cqi_robustness_delta_bar.png'))
 ```

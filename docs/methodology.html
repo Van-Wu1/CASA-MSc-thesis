@@ -53,8 +53,6 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
-<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -263,7 +261,7 @@ Figure 4.1: Workflow of the Composite Cycling Environment Index (CECI)
 <ol style="list-style-type: decimal">
 <li>Concept and provenance</li>
 </ol>
-<p>The structural module quantifies how road-segment design and operating conditions support everyday cycling. It draws on the open-source OSM-Cycling-Quality-Index developed for Berlin (SupaplexOSM/OSM-Cycling-Quality-Index), which implements a deterministic, rule-based scoring system over OpenStreetMap data. In that reference model, link-level attributes parsed from OSM—such as functional road class and posted speed, cycleway tags (track/lane/opposite), number of lanes, separation and buffer treatments, surface/smoothness, parking configuration, and basic junction handling—are mapped through factor tables to penalties or bonuses. The Berlin implementation produces a link-level cycling quality score and a separate Level of Traffic Stress (LTS) classification using transparent, auditable rules derived from the above tags and thresholds. The intellectual lineage is acknowledged, and licence and repository details are provided in the Code Availability note.</p>
+<p>The structural module quantifies how road-segment design and operating conditions support everyday cycling. It draws on the open-source OSM Cycling Quality Index developed for Berlin (SupaplexOSM/OSM-Cycling-Quality-Index), which implements a deterministic, rule-based scoring system over OpenStreetMap data. In that reference model, link-level attributes parsed from OSM—such as functional road class and posted speed, cycleway tags (track/lane/opposite), number of lanes, separation and buffer treatments, surface/smoothness, parking configuration, and basic junction handling—are mapped through factor tables to penalties or bonuses. The Berlin implementation produces a link-level cycling quality score and a separate Level of Traffic Stress (LTS) classification using transparent, auditable rules derived from the above tags and thresholds. The intellectual lineage is acknowledged, and licence and repository details are provided in the Code Availability note.</p>
 <ol start="2" style="list-style-type: decimal">
 <li>Adaptations</li>
 </ol>
@@ -274,22 +272,25 @@ Figure 4.1: Workflow of the Composite Cycling Environment Index (CECI)
 <p>Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with <code>base_index</code> at a moderate level (= 4.63), while fac1 and fac2 show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.</p>
 Table X. PCA explained variance and loadings (absolute values).
 (PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:PCA">Table 4.1: </span>PCA table
+</caption>
 <thead>
 <tr>
 <th style="text-align:left;font-weight: bold;">
 Variable
 </th>
-<th style="text-align:right;font-weight: bold;">
+<th style="text-align:left;font-weight: bold;">
 PC1
 </th>
-<th style="text-align:right;font-weight: bold;">
+<th style="text-align:left;font-weight: bold;">
 PC2
 </th>
-<th style="text-align:right;font-weight: bold;">
+<th style="text-align:left;font-weight: bold;">
 PC3
 </th>
-<th style="text-align:right;font-weight: bold;">
+<th style="text-align:left;font-weight: bold;">
 PC4
 </th>
 </tr>
@@ -299,16 +300,16 @@ PC4
 <td style="text-align:left;">
 stress_level
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.771
 </td>
-<td style="text-align:right;">
-0.040
+<td style="text-align:left;">
+0.04
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.429
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.469
 </td>
 </tr>
@@ -316,16 +317,16 @@ stress_level
 <td style="text-align:left;">
 fac1
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.744
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.348
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.198
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.535
 </td>
 </tr>
@@ -333,16 +334,16 @@ fac1
 <td style="text-align:left;">
 fac2
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.724
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.005
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.679
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.124
 </td>
 </tr>
@@ -350,16 +351,16 @@ fac2
 <td style="text-align:left;">
 fac4
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.246
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.944
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.051
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.216
 </td>
 </tr>

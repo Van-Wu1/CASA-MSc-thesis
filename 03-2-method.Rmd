@@ -48,20 +48,38 @@ Variance inflation factors (VIF) provide a separate, regression-oriented perspec
 Table X. PCA explained variance and loadings (absolute values).
 (PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
 ```{r PCA, echo=FALSE, message=FALSE, warning=FALSE}
-library(tidyverse)
+library(readxl)
+library(dplyr)
 library(knitr)
 library(kableExtra)
-library(readxl)
-library(fs)
 library(here)
 
-read_excel(here("tables", "PCA.xlsx"))%>%
-  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
-  kable_styling(position = "center")%>%
-    row_spec(.,
-  row=0,
-  bold = TRUE)
+df <- read_excel(here("tables", "PCA.xlsx")) |>
+  mutate(across(everything(), as.character))
+
+if (knitr::is_latex_output()) {
+  # —— PDF（LaTeX）分支 ——
+  kbl(df,
+      booktabs = TRUE,
+      caption  = "PCA table"
+  ) |>
+    kable_styling(
+      position   = "center",
+      full_width = FALSE
+    ) |>
+    row_spec(0, bold = TRUE)
+
+} else {
+  # —— gitbook（HTML）分支 ——
+  kbl(df, caption = "PCA table") |>
+    kable_styling(
+      full_width = TRUE,
+      bootstrap_options = c("striped", "hover", "condensed")
+    ) |>
+    row_spec(0, bold = TRUE)
+}
 ```
+
 
 ```{r pca, echo=FALSE, out.width="90%", fig.align='center', fig.cap="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions."}
 library(here)
