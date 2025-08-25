@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  25 AUG 2025 18:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  25 AUG 2025 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,6 +1300,8 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 [4
 
 ]
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
 
 [5])
 \tf@toc=\write4
@@ -1307,31 +1309,40 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 
 
-[6] (./CASA-Thesis.lof)
+[6] (./CASA-Thesis.lof
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[7
+
+]
+Underfull \hbox (badness 1755) in paragraph at lines 22--22
+ [][] [][]\TU/lmr/m/n/12 Sensitivity Analysis of Borough Rankings under Alternative 
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `CASA-Thesis.lof'.
 
 
 
-[7
-
-] (./CASA-Thesis.lot)
+[8] (./CASA-Thesis.lot)
 \tf@lot=\write6
 \openout6 = `CASA-Thesis.lot'.
 
 
 
-[8
+[9
 
 ]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
 
-[9
+[10
 
 ]
 
-[10]
+[11]
 Chapter 1.
 
 
@@ -1631,90 +1642,238 @@ Underfull \hbox (badness 1515) in paragraph at lines 659--660
 [29]
 Chapter 5.
 
+Underfull \hbox (badness 1117) in paragraph at lines 667--668
+\TU/lmr/m/n/12 The analysis of structural ridability reveals a two-layer constraint system
+ []
+
+File: general_images/fac1_2.png Graphic file (type bmp)
+<general_images/fac1_2.png>
+Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
 
 [30
 
 ]
+Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+File: general_images/slopeLTS.png Graphic file (type bmp)
+<general_images/slopeLTS.png>
+
+
+[31]
+
+[32]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 731.
+Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[33]
+File: general_images/index_s1.png Graphic file (type bmp)
+<general_images/index_s1.png>
+Missing character: There is no ≥ (U+2265) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[34]
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+File: general_images/gvi.png Graphic file (type bmp)
+<general_images/gvi.png>
+
+
+[35]
+Missing character: There is no ₂ (U+2082) in font [lmroman12-bold]:mapping=tex-text;!
+File: general_images/no2.png Graphic file (type bmp)
+<general_images/no2.png>
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 1248) in paragraph at lines 776--777
+\TU/lmr/m/n/12 By contrast, peripheral zones and green buffer areas display significantly
+ []
+
+
+
+[36]
+File: general_images/nf.png Graphic file (type bmp)
+<general_images/nf.png>
+File: general_images/index_s2.png Graphic file (type bmp)
+<general_images/index_s2.png>
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[37]
+Underfull \hbox (badness 3428) in paragraph at lines 804--805
+[]\TU/lmr/m/n/12 The resulting composite index demonstrates a distinct spatial gradient.
+ []
+
+
+
+[38]
+File: general_images/Centrality.png Graphic file (type bmp)
+<general_images/Centrality.png>
+
+Underfull \hbox (badness 4024) in paragraph at lines 823--824
+\TU/lmr/m/n/12 through-traffic and inter-district connections, but offering less balanced
+ []
+
+
+
+[39]
+File: general_images/index_s3.png Graphic file (type bmp)
+<general_images/index_s3.png>
+
+
+[40]
+
+[41]
+Overfull \hbox (2.83415pt too wide) in paragraph at lines 846--846
+[]\TU/lmr/bx/n/14.4 City-Wide Distribution and Bottleneck Identification 
+ []
+
+File: general_images/cqi.png Graphic file (type bmp)
+<general_images/cqi.png>
+
+
+[42]
+File: general_images/cqi_kde.png Graphic file (type bmp)
+<general_images/cqi_kde.png>
+
+Underfull \hbox (badness 2707) in paragraph at lines 876--877
+[]\TU/lmr/m/n/12 The results show that clusters of low-CQI segments are predominantly
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 876--877
+\TU/lmr/m/n/12 lower quality. Additional hotspots extend along several radial corridors,
+ []
+
+
+
+[43]
+
+[44]
+
+[45]
+File: general_images/AverageCQIbyBorough.png Graphic file (type bmp)
+<general_images/AverageCQIbyBorough.png>
+
+Underfull \hbox (badness 1424) in paragraph at lines 919--920
+\TU/lmr/m/n/12 (32.19), Waltham Forest (31.09), Greenwich (30.44), Sutton (29.95), and
+ []
+
+
+
+[46]
+File: general_images/BoroughComposition.png Graphic file (type bmp)
+<general_images/BoroughComposition.png>
+File: general_images/box_cqi_by_borough.png Graphic file (type bmp)
+<general_images/box_cqi_by_borough.png>
+
+
+[47]
+File: general_images/cqi_robustness_delta_bar.png Graphic file (type bmp)
+<general_images/cqi_robustness_delta_bar.png>
+
+Underfull \hbox (badness 1199) in paragraph at lines 949--949
+[]\TU/lmr/m/n/12 Figure 5.15: |Sensitivity Analysis of Borough Rankings under Alternative
+ []
+
+Missing character: There is no τ (U+03C4) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no τ (U+03C4) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[48]
+
+[49]
 Chapter 6.
 
 
-[31
+[50
 
 ]
-Underfull \hbox (badness 1163) in paragraph at lines 683--684
+Underfull \hbox (badness 1163) in paragraph at lines 974--975
 \TU/lmr/m/n/12 The estimation of edge betweenness via stochastic source–target sampling
  []
 
 
 
-[32]
+[51]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 1635) in paragraph at lines 685--686
+Underfull \hbox (badness 1635) in paragraph at lines 976--977
 []\TU/lmr/m/n/12 Temporal alignment across inputs constitutes a further limitation. The
  []
 
 
 
-[33]
+[52]
 
-[34]
+[53]
 
-[35]
+[54]
 Chapter 7.
 
-Underfull \hbox (badness 2181) in paragraph at lines 701--702
+Underfull \hbox (badness 2181) in paragraph at lines 992--993
 \TU/lmr/m/n/12 This dissertation has developed and applied a composite framework for
  []
 
 
 
-[36
+[55
 
 ]
-Underfull \hbox (badness 3482) in paragraph at lines 715--718
+Underfull \hbox (badness 3482) in paragraph at lines 1006--1009
 \TU/lmr/m/n/12 Air quality management and urban greening strategies should be
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 724--726
+Underfull \hbox (badness 4072) in paragraph at lines 1015--1017
 \TU/lmr/m/n/12 The CQI framework developed here can support monitoring and
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 724--726
+Underfull \hbox (badness 2556) in paragraph at lines 1015--1017
 \TU/lmr/m/n/12 prioritisation. Incorporating such composite indicators into policy
  []
 
 
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 735--737
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--739
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1030
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--741
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
 
  []
 
 
-LaTeX Warning: Empty bibliography on input line 747.
+LaTeX Warning: Empty bibliography on input line 1038.
 
 
 
-[38]
+[57]
 
-[39
+[58
 
 ]
 
-[40
+[59
 
 ] (./CASA-Thesis.aux)
  ***********
@@ -1726,12 +1885,12 @@ Package logreq Info: Writing requests to 'CASA-Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29289 strings out of 470481
- 556006 string characters out of 5489404
- 1668357 words of memory out of 5000000
- 57181 multiletter control sequences out of 15000+600000
- 633262 words of font info for 92 fonts, out of 8000000 for 9000
+ 29628 strings out of 470481
+ 566379 string characters out of 5489404
+ 1670896 words of memory out of 5000000
+ 57503 multiletter control sequences out of 15000+600000
+ 633270 words of font info for 93 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  90i,12n,114p,1287b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CASA-Thesis.pdf (51 pages).
+Output written on CASA-Thesis.pdf (71 pages).
