@@ -31,6 +31,22 @@ In sum, this study combines structural, environmental, and network-based dataset
 
 The following table represents the data sources used in this study:
 
+```{r datasource, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
+
+read_excel(here("tables", "datasource.xlsx"))%>%
+  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+    row_spec(.,
+  row=0,
+  bold = TRUE)
+```
+
 ## Methodology
 
 Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.

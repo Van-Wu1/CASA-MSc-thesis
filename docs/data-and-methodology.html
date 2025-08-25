@@ -273,6 +273,148 @@ div.csl-indent {
 <p>Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.</p>
 <p>In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO<span class="math inline">\(_2\)</span>), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.</p>
 <p>The following table represents the data sources used in this study:</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Dataset
+</th>
+<th style="text-align:left;font-weight: bold;">
+Description
+</th>
+<th style="text-align:left;font-weight: bold;">
+Aggregation
+</th>
+<th style="text-align:left;font-weight: bold;">
+Source
+</th>
+<th style="text-align:right;font-weight: bold;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+OSM Road Network
+</td>
+<td style="text-align:left;">
+Extracted and filtered cycling-permissible roads
+</td>
+<td style="text-align:left;">
+Line segments
+</td>
+<td style="text-align:left;">
+OpenStreetMap / Overpass Turbo
+</td>
+<td style="text-align:right;">
+2025
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Borough / London Shp
+</td>
+<td style="text-align:left;">
+Administrative boundaries at borough and Greater London scale
+</td>
+<td style="text-align:left;">
+Polygon
+</td>
+<td style="text-align:left;">
+ONS Statistical GIS Boundaries
+</td>
+<td style="text-align:right;">
+2021
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Slope Raster
+</td>
+<td style="text-align:left;">
+Terrain slope at 5×5 m resolution
+</td>
+<td style="text-align:left;">
+Raster
+</td>
+<td style="text-align:left;">
+Defra Data Services Platform
+</td>
+<td style="text-align:right;">
+2022
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Green View Index (GVI)
+</td>
+<td style="text-align:left;">
+Percentage of visible greenery from street-level imagery
+</td>
+<td style="text-align:left;">
+Point / Segment
+</td>
+<td style="text-align:left;">
+MIT Treepedia Project
+</td>
+<td style="text-align:right;">
+2015
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NO₂ Concentration
+</td>
+<td style="text-align:left;">
+Modelled nitrogen dioxide levels
+</td>
+<td style="text-align:left;">
+20m Grid Raster
+</td>
+<td style="text-align:left;">
+London Air Quality Network
+</td>
+<td style="text-align:right;">
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Natural Features
+</td>
+<td style="text-align:left;">
+Parks, woodlands, meadows, water bodies from OSM tags
+</td>
+<td style="text-align:left;">
+Polygon
+</td>
+<td style="text-align:left;">
+OpenStreetMap
+</td>
+<td style="text-align:right;">
+2025
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Road Centrality Data
+</td>
+<td style="text-align:left;">
+Betweenness and closeness derived from OSM road network
+</td>
+<td style="text-align:left;">
+Line segments
+</td>
+<td style="text-align:left;">
+Derived via OSMnx
+</td>
+<td style="text-align:right;">
+2025
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="methodology" class="section level2 hasAnchor" number="3.2">
