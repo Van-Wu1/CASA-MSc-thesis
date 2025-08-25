@@ -107,12 +107,12 @@ read_excel(here("tables", "PCA.xlsx"))%>%
   bold = TRUE)
 ```
 
-```{r pca, echo=FALSE, out.width="300pt", fig.cap="•	Figure A. PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress_level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions."}
+```{r pca, echo=FALSE, out.width="90%", fig.align='center', fig.cap="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress_level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions."}
 library(here)
 knitr::include_graphics(here::here('general_images','pca.png'))
 ```
 
-```{r vif1, echo=FALSE, out.width="300pt", fig.cap="•	•	Figure B. Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, base_index ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36."}
+```{r vif1, echo=FALSE, out.width="90%", fig.align='center', fig.cap="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS ≈ 2.03, base_index ≈ 4.63, fac1 ≈ 27.73, fac2 ≈ 22.36."}
 library(here)
 knitr::include_graphics(here::here('general_images','vif1.png'))
 ```
@@ -227,10 +227,15 @@ CECI = \frac{Index_{1} + Index_{2} + Index_{3}}{3}
 This choice balances design quality, environmental comfort, and network position at evaluation stage. Length-weighted summaries may subsequently be produced for Borough or MSOA units for descriptive purposes; these aggregations are intentionally separated from model construction.
 
 #### Sensitivity analysis
+
 To examine robustness to weighting assumptions, three alternative schemes are predefined:
+
 * Scheme A (Index1/Index2/Index3): 0.5 / 0.25 / 0.25.
+
 * Scheme B (Index1/Index2/Index3): 0.25 / 0.5 / 0.25.
+
 * Scheme C (Index1/Index2/Index3): 0.25 / 0.25 / 0.5.
+
 Comparative statistics and maps are reported alongside the baseline.
 
 #### Quality control and implementation notes
