@@ -30,17 +30,43 @@ In sum, this study combines structural, environmental, and network-based dataset
 The following table represents the data sources used in this study:
 
 ```{r datasource, echo=FALSE, message=FALSE, warning=FALSE}
-library(tidyverse)
+library(readxl)
+library(dplyr)
 library(knitr)
 library(kableExtra)
-library(readxl)
-library(fs)
 library(here)
 
-read_excel(here("tables", "datasource.xlsx"))%>%
-  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
-  kable_styling(position = "center")%>%
-    row_spec(.,
-  row=0,
-  bold = TRUE)
+df <- read_excel(here("tables", "datasource.xlsx")) |>
+  mutate(across(everything(), as.character))
+
+if (knitr::is_latex_output()) {
+  # —— PDF（LaTeX）分支：固定列宽 + 自动换行/跨页 ——
+  kbl(df,
+      booktabs  = TRUE,
+      longtable = TRUE,
+      caption   = "Datasets and sources"
+  ) |>
+    kable_styling(
+      position      = "center",
+      full_width    = FALSE,
+      font_size     = 9,
+      latex_options = c("hold_position", "repeat_header", "scale_down")
+    ) |>
+    column_spec(1, width = "2.0cm") |>
+    column_spec(2, width = "5.0cm") |>
+    column_spec(3, width = "2.2cm") |>
+    column_spec(4, width = "2.2cm") |>
+    row_spec(0, bold = TRUE)
+
+} else {
+  # —— gitbook（HTML）分支：HTML 表格，宽了就横向滚动 ——
+  kbl(df, caption = "Datasets and sources") |>
+    kable_styling(
+      full_width = TRUE,
+      bootstrap_options = c("striped", "hover", "condensed")
+    ) |>
+    scroll_box(width = "100%")   # 让宽表横向滚动，避免被挤没
+}
 ```
+
+

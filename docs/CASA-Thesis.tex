@@ -87,6 +87,20 @@
 \fancyfoot[CO, CE] {\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -409,12 +423,23 @@ In sum, this study combines structural, environmental, and network-based dataset
 
 The following table represents the data sources used in this study:
 
-\begin{table}
-\centering
-\begin{tabular}{llllr}
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{5.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.2cm}l}
+\caption{\label{tab:datasource}Datasets and sources}\\
 \toprule
 \textbf{Dataset} & \textbf{Description} & \textbf{Aggregation} & \textbf{Source} & \textbf{Year}\\
 \midrule
+\endfirsthead
+\caption[]{\label{tab:datasource}Datasets and sources \textit{(continued)}}\\
+\toprule
+\textbf{Dataset} & \textbf{Description} & \textbf{Aggregation} & \textbf{Source} & \textbf{Year}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
 OSM Road Network & Extracted and filtered cycling-permissible roads & Line segments & OpenStreetMap / Overpass Turbo & 2025\\
 Borough / London Shp & Administrative boundaries at borough and Greater London scale & Polygon & ONS Statistical GIS Boundaries & 2021\\
 Slope Raster & Terrain slope at 5×5 m resolution & Raster & Defra Data Services Platform & 2022\\
@@ -422,12 +447,20 @@ Green View Index (GVI) & Percentage of visible greenery from street-level imager
 NO₂ Concentration & Modelled nitrogen dioxide levels & 20m Grid Raster & London Air Quality Network & 2016\\
 \addlinespace
 Natural Features & Parks, woodlands, meadows, water bodies from OSM tags & Polygon & OpenStreetMap & 2025\\
-Road Centrality Data & Betweenness and closeness derived from OSM road network & Line segments & Derived via OSMnx & 2025\\
-\bottomrule
-\end{tabular}
-\end{table}
+Road Centrality Data & Betweenness and closeness derived from OSM road network & Line segments & Derived via OSMnx & 2025\\*
+\end{longtable}
+\endgroup{}
 
 \chapter{Methodology}\label{methodology}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{general_images/flow} 
+
+}
+
+\caption{Workflow of the Composite Cycling Environment Index (CECI)}\label{fig:flow}
+\end{figure}
 
 Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
 

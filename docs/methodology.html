@@ -230,6 +230,12 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="methodology" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Methodology<a href="methodology.html#methodology" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:flow"></span>
+<img src="general_images/flow.png" alt="Workflow of the Composite Cycling Environment Index (CECI)" width="100%" />
+<p class="caption">
+Figure 4.1: Workflow of the Composite Cycling Environment Index (CECI)
+</p>
+</div>
 <p>Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.</p>
 <div id="network-acquisition-and-pre-processing" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Network acquisition and pre-processing<a href="methodology.html#network-acquisition-and-pre-processing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -362,13 +368,13 @@ fac4
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:pca"></span>
 <img src="general_images/pca.png" alt="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions." width="90%" />
 <p class="caption">
-Figure 4.1: PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions.
+Figure 4.2: PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions.
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:vif1"></span>
 <img src="general_images/vif1.png" alt="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36." width="75%" />
 <p class="caption">
-Figure 4.2: Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36.
+Figure 4.3: Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36.
 </p>
 </div>
 <p>These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac1), speed/class (fac2), and separation/surface/priority (fac4), within the multiplicative structural specification.</p>

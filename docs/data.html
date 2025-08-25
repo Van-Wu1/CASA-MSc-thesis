@@ -253,22 +253,26 @@ div.csl-indent {
 <p>Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.</p>
 <p>In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO<span class="math inline">\(_2\)</span>), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.</p>
 <p>The following table represents the data sources used in this study:</p>
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:datasource">Table 3.1: </span>Datasets and sources
+</caption>
 <thead>
 <tr>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 Dataset
 </th>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 Description
 </th>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 Aggregation
 </th>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 Source
 </th>
-<th style="text-align:right;font-weight: bold;">
+<th style="text-align:left;">
 Year
 </th>
 </tr>
@@ -287,7 +291,7 @@ Line segments
 <td style="text-align:left;">
 OpenStreetMap / Overpass Turbo
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2025
 </td>
 </tr>
@@ -304,7 +308,7 @@ Polygon
 <td style="text-align:left;">
 ONS Statistical GIS Boundaries
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2021
 </td>
 </tr>
@@ -321,7 +325,7 @@ Raster
 <td style="text-align:left;">
 Defra Data Services Platform
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2022
 </td>
 </tr>
@@ -338,7 +342,7 @@ Point / Segment
 <td style="text-align:left;">
 MIT Treepedia Project
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2015
 </td>
 </tr>
@@ -355,7 +359,7 @@ Modelled nitrogen dioxide levels
 <td style="text-align:left;">
 London Air Quality Network
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2016
 </td>
 </tr>
@@ -372,7 +376,7 @@ Polygon
 <td style="text-align:left;">
 OpenStreetMap
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2025
 </td>
 </tr>
@@ -389,12 +393,13 @@ Line segments
 <td style="text-align:left;">
 Derived via OSMnx
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2025
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 
 </div>
 </div>
