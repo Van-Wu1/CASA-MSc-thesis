@@ -341,7 +341,7 @@ Beyond structural attributes, environmental perception represents a critical dim
   Air Quality and Pollution Exposure
 \end{enumerate}
 
-Nitrogen dioxide (NO₂) serves as a representative indicator of urban air pollution exposure for cyclists. NO₂ is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO₂ provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO₂ exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (\textcite{an_impact_2018}).
+Nitrogen dioxide (NO\(_2\)) serves as a representative indicator of urban air pollution exposure for cyclists. NO\(_2\) is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO\(_2\) provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO\(_2\) exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (\textcite{an_impact_2018}).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -355,7 +355,7 @@ The presence and accessibility of natural features---including parks, green spac
 
 Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (\textcite{hooyberg_general_2020}). The integration of natural features into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.
 
-Collectively, these three environmental perception dimensions---visual greenery (GVI), air quality (NO₂), and natural features---provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
+Collectively, these three environmental perception dimensions---visual greenery (GVI), air quality (NO\(_2\)), and natural features---provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
 
 \subsection{Network Performance}\label{network-performance}
 
@@ -423,7 +423,7 @@ Cycling experience is also shaped by environmental and perceptual factors. Three
 \item
   Green View Index (GVI): The GVI dataset originates from the Treepedia project (MIT, 2015), which employs Google Street View images (captured around 2015) to estimate the proportion of visible greenery along urban streets. While the dataset does not reflect more recent greening interventions or modifications to the built environment, it remains widely used as a proxy for visual landscape structure. Urban greenery at the street scale typically evolves slowly, especially in mature built-up areas such as London, and therefore the 2015 imagery still provides meaningful insights into the distribution of visual greenery. As such, despite its temporal limitations, GVI is considered a valid and informative indicator of the visual environment for this research.
 \item
-  Air Quality (NO₂): Data were obtained from the London Air Quality Network, which provides long-term modelled and forecasted concentrations of key pollutants. Nitrogen dioxide (NO₂) was selected as a representative measure due to its close association with traffic-related emissions and industrial activity. This dataset, available at a 20-metre grid resolution and projected over a 25-year horizon, ensures both spatial detail and temporal consistency.
+  Air Quality (NO\(_2\)): Data were obtained from the London Air Quality Network, which provides long-term modelled and forecasted concentrations of key pollutants. Nitrogen dioxide (NO\(_2\)) was selected as a representative measure due to its close association with traffic-related emissions and industrial activity. This dataset, available at a 20-metre grid resolution and projected over a 25-year horizon, ensures both spatial detail and temporal consistency.
 \item
   Natural Features: Additional environmental attributes were derived from OSM, filtered using specific tags \{ ``leisure'': {[}``park''{]}, ``natural'': {[}``water'',``wood'',``scrub''{]}, ``landuse'': {[}``grass'',``meadow''{]} \}. This allowed the identification of publicly accessible green and blue spaces, including parks, woodlands, grasslands, and water bodies. Such features are strongly associated with enhanced environmental quality and contribute positively to cycling comfort.
 \end{itemize}
@@ -541,13 +541,13 @@ The structural module quantifies how road-segment design and operating condition
 
 The adaptation used in this research retains the central idea that compounding frictions are represented by multiplicative factors applied to a base score derived from functional class and speed, while re-specifying inputs and thresholds where necessary for the London context.
 
-During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London's OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope.
+During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac\(_3\) in the reference implementation collapses to a near-constant under London's OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac\(_3\) is re-specified as a terrain impedance factor derived from segment-level slope.
 
-A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set \{LTS, fac1, fac2, fac4\}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
+A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac\(_5\) in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set \{LTS, fac\(_1\), fac\(_2\), fac\(_4\)\}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
 
-PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31\% (PC1), 25.32\% (PC2), 17.18\% (PC3), and 14.19\% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table \ref{tab:PCA}, and the geometry of loadings is visualised in Figure \ref{fig:pca} (PCA biplot).
+PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31\% (PC1), 25.32\% (PC2), 17.18\% (PC3), and 14.19\% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac\(_4\) overwhelmingly defines PC2; fac\(_2\) contributes strongly to PC1 and PC3, and fac\(_1\) loads on PC1 and PC4. The contrasted signs of LTS and fac\(_2\) on PC1, together with the near-orthogonal signal of fac\(_4\) on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table \ref{tab:PCA}, and the geometry of loadings is visualised in Figure \ref{fig:pca} (PCA biplot).
 
-Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with \texttt{base\_index} at a moderate level (= 4.63), while fac1 and fac2 show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
+Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with \texttt{base\_index} at a moderate level (= 4.63), while fac\(_1\) and fac\(_2\) show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac\(_1\)/fac\(_2\)/fac\(_4\) and can therefore be retained as fac\(_5\) in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
 
 \begin{table}[H]
 \centering
@@ -573,7 +573,7 @@ fac4 & 0.246 & 0.944 & 0.051 & 0.216\\
 
 }
 
-\caption{PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions.}\label{fig:pca}
+\caption{PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac$_4$ defines PC2, indicating complementary dimensions.}\label{fig:pca}
 \end{figure}
 
 \begin{figure}
@@ -582,13 +582,13 @@ fac4 & 0.246 & 0.944 & 0.051 & 0.216\\
 
 }
 
-\caption{Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36.}\label{fig:vif1}
+\caption{Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac$_1$ = 27.73, fac$_2$ = 22.36.}\label{fig:vif1}
 \end{figure}
 
-These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac1), speed/class (fac2), and separation/surface/priority (fac4), within the multiplicative structural specification.
+These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac\(_1\)), speed/class (fac\(_2\)), and separation/surface/priority (fac\(_4\)), within the multiplicative structural specification.
 
 Also, there are some adaptations for left-hand-traffic regime, local speed patterns, and tag conventions to fit in with Great London.
-The structural specification preserves the core Berlin logic while substituting a slope-based fac3 and justifiably incorporating LTS as fac5, yielding a London-tailored yet methodologically transparent module. Full parameter tables appear in the Appendix.
+The structural specification preserves the core Berlin logic while substituting a slope-based fac\(_3\) and justifiably incorporating LTS as fac\(_5\), yielding a London-tailored yet methodologically transparent module. Full parameter tables appear in the Appendix.
 
 \subsection{Data preprocessing}\label{data-preprocessing}
 
@@ -601,15 +601,15 @@ Five categories of factors are computed from processed tags and terrain.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Facility and width (fac1): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used (see Appendix). The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.
+  Facility and width (fac\(_1\)): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used. The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.
 \item
-  Speed and classification (fac2): Posted speed (\texttt{proc\_maxspeed}) and \texttt{proc\_highway} class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London's distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.
+  Speed and classification (fac\(_2\)): Posted speed (\texttt{proc\_maxspeed}) and \texttt{proc\_highway} class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London's distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.
 \item
-  Slope (fac3): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac3 = 0.9 as a conservative treatment that avoids unjustified improvement.
+  Slope (fac\(_3\)): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac\(_3\) = 0.9 as a conservative treatment that avoids unjustified improvement.
 \item
-  Separation, buffer, surface, and priority (fac4): Presence and width of buffers, type of kerb or median separation, parking configuration, surface/smoothness classes, and priority on major roads contribute additional penalties or bonuses. Directionality is evaluated with respect to left-hand traffic (e.g., parking or buffer on the rider's side). Rule tables provide deterministic mappings from tag combinations to factors.
+  Separation, buffer, surface, and priority (fac\(_4\)): Presence and width of buffers, type of kerb or median separation, parking configuration, surface/smoothness classes, and priority on major roads contribute additional penalties or bonuses. Directionality is evaluated with respect to left-hand traffic (e.g., parking or buffer on the rider's side). Rule tables provide deterministic mappings from tag combinations to factors.
 \item
-  Level of Traffic Stress (fac5): An LTS class is assigned from the joint configuration of speed, lanes, facility type, and separation (with junction handling consistent with local practice). Classes are translated into factors using the codebook values reported in the Appendix.
+  Level of Traffic Stress (fac\(_5\)): An LTS class is assigned from the joint configuration of speed, lanes, facility type, and separation (with junction handling consistent with local practice). Classes are translated into factors using the codebook values reported in the Appendix.
 \end{enumerate}
 
 \subsection{Base score and multiplicative formulation}\label{base-score-and-multiplicative-formulation}
@@ -630,9 +630,9 @@ The environmental module operationalises three link-level components and combine
 
 Link values are obtained by buffering each link midpoint by 30 m (or by regular along-link samples with the same radius) and averaging nearby GVI observations. Instances with no observations inside the buffer are recorded for transparency.
 
-\subsection{Air quality (NO2)}\label{air-quality-no2}
+\subsection{\texorpdfstring{Air quality (NO\(_2\))}{Air quality (NO\_2)}}\label{air-quality-no_2}
 
-The gridded NO2 surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − \texttt{NO2\_norm}) so that higher values consistently denote better conditions.
+The gridded NO\(_2\) surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − NO\(_2\)\_norm) so that higher values consistently denote better conditions.
 
 \subsection{Natural-landscape proximity}\label{natural-landscape-proximity}
 
@@ -721,22 +721,22 @@ The analysis of structural ridability reveals a two-layer constraint system gove
 
 }
 
-\caption{Average Base Index, fac1 and fac2 by Road Type}\label{fig:fac12}
+\caption{Average Base Index, fac$_1$ and fac$_2$ by Road Type}\label{fig:fac12}
 \end{figure}
 
-The base index primarily reflects a facility's priority status. As shown in Figure \ref{fig:fac12}, dedicated infrastructure such as cycle paths (base index =100) and cycle tracks (=90) receive high baseline scores. In contrast, mixed-traffic or pedestrian-shared facilities, including shared footways (=50) and shared traffic lanes (=60), score substantially lower. This ``type prior'' rewards physical separation from motor traffic. This base score is then modified by two correction factors: fac₁ (width and surface) and fac₂ (road class and speed).
+The base index primarily reflects a facility's priority status. As shown in Figure \ref{fig:fac12}, dedicated infrastructure such as cycle paths (base index =100) and cycle tracks (=90) receive high baseline scores. In contrast, mixed-traffic or pedestrian-shared facilities, including shared footways (=50) and shared traffic lanes (=60), score substantially lower. This ``type prior'' rewards physical separation from motor traffic. This base score is then modified by two correction factors: fac\(_1\) (width and surface) and fac\(_2\) (road class and speed).
 
 \begin{itemize}
 \item
-  Dedicated Facilities (Cycle Path/Segregated Path): These facilities exhibit high scores for both fac₁ (=0.78-0.88) and fac₂ (=1.0), indicating adequate width, good surfacing, and minimal adjacency to motor traffic.
+  Dedicated Facilities (Cycle Path/Segregated Path): These facilities exhibit high scores for both fac\(_1\) (=0.78-0.88) and fac\(_2\) (=1.0), indicating adequate width, good surfacing, and minimal adjacency to motor traffic.
 \item
-  Cycle Tracks: While fac₂ remains high (=0.9+), a slightly lower fac₁ (=0.70-0.75) suggests that localized geometric shortfalls, such as at bridge approaches or pinch points, can erode the advantage of a high base score.
+  Cycle Tracks: While fac\(_2\) remains high (=0.9+), a slightly lower fac\(_1\) (=0.70-0.75) suggests that localized geometric shortfalls, such as at bridge approaches or pinch points, can erode the advantage of a high base score.
 \item
-  Shared Roads: For shared roads, a low base score (=60) creates a ``type ceiling,'' capping the total index even with decent geometry (fac₁ = 0.76-0.80) and speed conditions (fac₂ = 0.95).
+  Shared Roads: For shared roads, a low base score (=60) creates a ``type ceiling,'' capping the total index even with decent geometry (fac\(_1\) = 0.76-0.80) and speed conditions (fac\(_2\) = 0.95).
 \item
-  Shared Traffic Lanes: This category is constrained by a traffic bottleneck, evidenced by the lowest fac₂ score (=0.4) across all types. This indicates that mixing with motor traffic is the primary inhibitor of quality, regardless of geometry.
+  Shared Traffic Lanes: This category is constrained by a traffic bottleneck, evidenced by the lowest fac\(_2\) score (=0.4) across all types. This indicates that mixing with motor traffic is the primary inhibitor of quality, regardless of geometry.
 \item
-  Track or Service Roads: These routes are constrained by geometry and surface quality, exhibiting the lowest fac₁ score (=0.34) despite having a fac₂ of approximately 1.0 due to low-speed environments.
+  Track or Service Roads: These routes are constrained by geometry and surface quality, exhibiting the lowest fac\(_1\) score (=0.34) despite having a fac\(_2\) of approximately 1.0 due to low-speed environments.
 \end{itemize}
 
 \subsection{Topography and Traffic Stress}\label{topography-and-traffic-stress}
@@ -777,7 +777,7 @@ These patterns are consistent with the classification logic: the script applies 
 
 \subsection{\texorpdfstring{\texttt{Fac\_4}}{Fac\_4}}\label{fac_4}
 
-Regression analysis shows that \texttt{fac\_4} contributes negligibly to the variation of \texttt{index\_1\_nor} (R² = 0.003). Although the coefficient is statistically significant (β = --26.91, p \textless{} 0.001), the explained variance remains below 1\%, confirming that \texttt{fac\_4} functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, \texttt{fac\_4} was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
+Regression analysis shows that \texttt{fac\_4} contributes negligibly to the variation of \texttt{index\_1\_nor} (R² = 0.003). Although the coefficient is statistically significant ( \(\beta = 26.91\), \(p < 0.001\) ), the explained variance remains below 1\%, confirming that \texttt{fac\_4} functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, \texttt{fac\_4} was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
 
 \subsection{Index of structural ridability}\label{index-of-structural-ridability}
 
@@ -790,11 +790,11 @@ Regression analysis shows that \texttt{fac\_4} contributes negligibly to the var
 \caption{Spatial Distribution of the Index of Structural Ridability}\label{fig:indexs1}
 \end{figure}
 
-The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map and accompanying pie chart, nearly 70\% of road segments fall within the 15--25 and 25--35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0--15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (≥45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.
+The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map and accompanying pie chart, nearly 70\% of road segments fall within the 15--25 and 25--35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0--15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (\textgreater45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.
 
 \section{Module 2: Environmental Perception}\label{module-2-environmental-perception}
 
-This module broadens the analysis to the perceptual and environmental context of cycling. A composite index was developed from three variables: Green View Index (GVI), NO₂ concentration, and natural landscape coverage.
+This module broadens the analysis to the perceptual and environmental context of cycling. A composite index was developed from three variables: Green View Index (GVI), NO\(_2\) concentration, and natural landscape coverage.
 
 \subsection{Green View Index (GVI)}\label{green-view-index-gvi}
 
@@ -809,7 +809,7 @@ This module broadens the analysis to the perceptual and environmental context of
 
 This is a GVI heat map, which shows that the distribution of people's perception of green landscapes is not random but exhibits a distinct clustering pattern. High-value clusters (hot spots) are predominantly located in areas with large urban parks, river corridors, and low-density residential neighborhoods, forming continuous belts of greenery. In contrast, low-value clusters (cold spots) are concentrated in the urban core, particularly around transport interchanges, high-density commercial centers, and major road intersections where vegetation is limited.
 
-\subsection{NO₂ Concentration}\label{noux2082-concentration}
+\subsection{\texorpdfstring{NO\(_2\) Concentration}{NO\_2 Concentration}}\label{no_2-concentration}
 
 \begin{figure}
 
@@ -817,10 +817,10 @@ This is a GVI heat map, which shows that the distribution of people's perception
 
 }
 
-\caption{Spatial Distribution of Annual Mean NO₂ Concentration.}\label{fig:no2}
+\caption{Spatial Distribution of Annual Mean NO$_2$ Concentration.}\label{fig:no2}
 \end{figure}
 
-The spatial distribution of NO₂ concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear ``corridor effect.'' These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure \ref{fig:no2}).
+The spatial distribution of NO\(_2\) concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear ``corridor effect.'' These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure \ref{fig:no2}).
 
 \subsection{Natural Landscape}\label{natural-landscape}
 
@@ -846,7 +846,7 @@ The spatial distribution of natural landscape features presents a dispersed yet 
 \caption{Spatial Distribution of the Index of Environmental Perception}\label{fig:indexs2}
 \end{figure}
 
-When constructing the composite index that integrates GVI, NO₂, and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac1 (GVI) and fac3 (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac3 was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure \ref{fig:indexs2}) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (\texttt{fac\_gvi} = 1.077, \texttt{fac\_no2} = 1.039, \texttt{fac\_nat} = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.
+When constructing the composite index that integrates GVI, NO\(_2\), and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac\(_1\) (GVI) and fac\(_3\) (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac\(_3\) was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure \ref{fig:indexs2}) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (\texttt{fac\_gvi} = 1.077, fac\_NO\(_2\) = 1.039, \texttt{fac\_nat} = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.
 
 The resulting composite index demonstrates a distinct spatial gradient. High-value areas are primarily distributed in peripheral districts characterized by abundant green infrastructure and natural landscape patches, whereas low-value areas are concentrated in the city center, where limited greenery coincides with elevated pollution levels. This contrast highlights the compounded disadvantage faced by central urban districts, where deficits in environmental quality are most pronounced (Figure \ref{fig:indexs2}).
 
@@ -985,7 +985,7 @@ By examining borough-level road composition according to London-wide CECI quanti
 \caption{Distribution of CECI Scores within Each London Borough}\label{fig:boxcqiborough}
 \end{figure}
 
-To further examine intra-borough variation, Figure \ref{fig:boxcqiborough} presents the distribution of CECI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked borough s, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CECI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.
+To further examine intra-borough variation, Figure \ref{fig:boxcqiborough} presents the distribution of CECI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked boroughs, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CECI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.
 
 \begin{figure}
 
@@ -996,7 +996,7 @@ To further examine intra-borough variation, Figure \ref{fig:boxcqiborough} prese
 \caption{Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes}\label{fig:cqirobustnessdeltabar}
 \end{figure}
 
-Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max \textbar Δ\textbar=7.5\%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10--25\%, whereas prioritising Network Centrality (W3) lowers levels by 8--18\%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (τ=0.84) but undergoes moderate reconfigurations under W2 and W3 (τ=0.57). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.
+Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max \textbar Δ\textbar=7.5\%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10--25\%, whereas prioritising Network Centrality (W3) lowers levels by 8--18\%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (\(\tau = 0.84\)) but undergoes moderate reconfigurations under W2 and W3 (\(\tau = 0.57\)). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.
 
 \chapter{Discussion}\label{discussion}
 
@@ -1020,7 +1020,7 @@ Academically, this study advances the growing field of urban cycling assessment 
 
 The estimation of edge betweenness via stochastic source--target sampling imposes an inherent constraint on strict reproducibility. The sample size KK is chosen to balance run-time and stability, yet the procedure remains probabilistic; small numerical deviations and local rank shifts can arise across runs, and may be accentuated by differences in software versions, parallel execution order, or hardware. Under these conditions, the index is most appropriately interpreted through spatial patterns and relative ordering rather than exact equality of segment-level values across replications.
 
-Temporal alignment across inputs constitutes a further limitation. The component datasets are not fully contemporaneous---street-level greenery is inferred from imagery circa 2015, modelled NO₂ fields originate from LAEI 2016 projections, and the OSM network is continuously updated. This asynchrony introduces the possibility of local timing mismatches, particularly where recent greening initiatives, traffic-calming schemes, or redesigns have occurred. As a result, fine-grained differences should not be read as current, time-specific conditions in all locations but rather as a structural and perceptual baseline.
+Temporal alignment across inputs constitutes a further limitation. The component datasets are not fully contemporaneous---street-level greenery is inferred from imagery circa 2015, modelled NO\(_2\) fields originate from LAEI 2016 projections, and the OSM network is continuously updated. This asynchrony introduces the possibility of local timing mismatches, particularly where recent greening initiatives, traffic-calming schemes, or redesigns have occurred. As a result, fine-grained differences should not be read as current, time-specific conditions in all locations but rather as a structural and perceptual baseline.
 
 Limitations also arise from cross-city parameter transfer within the structural rideability module. Thresholds and mappings for elements such as effective width, separation, and buffer rules derive from a framework calibrated in Berlin. Although the metadata in both contexts are sourced from OSM via Overpass Turbo, country-specific tagging practices, attribute completeness, and data conventions differ. During transfer, this heterogeneity can increase the frequency of missing or partially specified attributes. To avoid optimistic bias where attributes are absent, a conservative penalty mechanism is adopted that applies uniform downward adjustments under defined missingness conditions; this improves internal consistency but may produce a systematic downward shift in areas with sparser tagging.
 
@@ -1088,7 +1088,6 @@ In conclusion, this dissertation has demonstrated that a multi-dimensional appro
 \addcontentsline{toc}{chapter}{Appendix}
 
 \section*{Appendix A Key Parameter Summary}\label{appendix-a-key-parameter-summary}
-\addcontentsline{toc}{section}{Appendix A Key Parameter Summary}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
@@ -1096,7 +1095,9 @@ In conclusion, this dissertation has demonstrated that a multi-dimensional appro
 \item
   \textbf{Coordinate system \& traffic direction}:
 
-  \texttt{crs\_metric=\textquotesingle{}EPSG:27700\textquotesingle{}} / \texttt{crs\_output=\textquotesingle{}EPSG:27700\textquotesingle{}}; \texttt{right\_hand\_traffic=True}.
+  \texttt{crs\_metric=\textquotesingle{}EPSG:27700\textquotesingle{}} / \texttt{crs\_output=\textquotesingle{}EPSG:27700\textquotesingle{}};
+
+  \texttt{right\_hand\_traffic=True}.
 \item
   \textbf{Sidepath buffer}:
 
@@ -1145,7 +1146,226 @@ In conclusion, this dissertation has demonstrated that a multi-dimensional appro
 
 \clearpage
 
-\section*{Appendix B Research log}\label{appendix-b-research-log}
+\section*{Appendix B Key Parameters and Mappings in Section of structural rideability}\label{sec:appendix-params}
+
+\subsection*{A. Global settings and network assumptions}\label{a.-global-settings-and-network-assumptions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Coordinate reference systems:} processing CRS = \texttt{EPSG:27700}; output CRS = \texttt{EPSG:27700}.
+\item
+  \textbf{Traffic side:} left-hand traffic (\texttt{right\_hand\_traffic\ =\ FALSE}).
+\item
+  \textbf{Sidepath detection:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{sidepath\_buffer\_size\ =\ 22} m (lateral search radius)
+  \item
+    \texttt{sidepath\_buffer\_distance\ =\ 100} m (longitudinal sampling step)
+  \item
+    Default one-way flags for cycle facilities: \texttt{default\_oneway\_cycle\_lane\ =\ \textquotesingle{}yes\textquotesingle{}}, \texttt{default\_oneway\_cycle\_track\ =\ \textquotesingle{}yes\textquotesingle{}}.
+  \end{itemize}
+\item
+  \textbf{Highway classes prohibited for cycling:} \texttt{motorway}, \texttt{motorway\_link}, \texttt{trunk}, \texttt{trunk\_link} (excluded from rideability scoring).
+\end{itemize}
+
+\subsection*{B. Default widths (m)}\label{b.-default-widths-m}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fallback carriageway width:} \texttt{11}.
+\item
+  \textbf{By highway type (examples):} \texttt{primary=17}, \texttt{secondary=15}, \texttt{tertiary=13}, \texttt{residential=11}, \texttt{living\_street=6}, \texttt{service=4}, \texttt{pedestrian=6}, \texttt{cycleway=1.5}, \texttt{footway=2}, \texttt{track=2.5}.
+\item
+  \textbf{Lane / parking templates (m):} motor-vehicle lane \texttt{3.2}, bus/PSV \texttt{4.5}, cycle lane \texttt{1.4}; parallel/angled/perpendicular parking \texttt{2.2\ /\ 4.5\ /\ 5.0}.
+\end{itemize}
+
+\subsection*{C. Surface and smoothness factors}\label{c.-surface-and-smoothness-factors}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Surface fallbacks (examples):} cycle track → \texttt{paving\_stones}; cycle lane → \texttt{asphalt}; \texttt{track} uses \texttt{tracktype} to map to \texttt{asphalt/compacted/unpaved}
+  \texttt{/ground/grass}, etc.
+\item
+  \textbf{\texttt{surface\_factor\_dict} (indicative):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    High: \texttt{asphalt}, \texttt{paved}, \texttt{concrete}, \texttt{chipseal}, \texttt{metal} → \textbf{1.0}
+  \item
+    Medium: \texttt{paving\_stones}, \texttt{compacted}, \texttt{fine\_gravel}, \texttt{bricks} → \textbf{0.7}
+  \item
+    Low: \texttt{sett}, \texttt{cobblestone}, \texttt{concrete:lanes}, \texttt{unpaved}, \texttt{wood} → \textbf{0.3}
+  \item
+    Very low: \texttt{ground}, \texttt{dirt}, \texttt{earth}, \texttt{mud}, \texttt{gravel}, \texttt{grass}, \texttt{grass\_paver}, \ldots{} → \textbf{0.2}
+  \item
+    Minimal: \texttt{sand}, \texttt{rock} → \textbf{0.15}
+  \end{itemize}
+\item
+  \textbf{\texttt{smoothness\_factor\_dict}:} \texttt{excellent=1.10}, \texttt{good=1.00}, \texttt{intermediate=0.70}, \texttt{bad=0.30}, \texttt{very\_bad=0.20}, \texttt{horrible=0.15}, \texttt{very\_horrible=0.10}, \texttt{impassable=0}.
+\end{itemize}
+
+\subsection*{D. Road class, speed and facility/separation weighting}\label{d.-road-class-speed-and-facilityseparation-weighting}
+
+\begin{itemize}
+\item
+  \textbf{\texttt{highway\_factor\_dict} (examples):} \texttt{motorway=0.10}, \texttt{trunk=0.15}, \texttt{primary=0.35}, \texttt{secondary=0.65}, \texttt{tertiary=0.85}, \texttt{residential=1.00}, \texttt{living\_street=1.10}.
+\item
+  \textbf{\texttt{maxspeed\_factor\_dict} (km/h):} \texttt{20→1.05}, \texttt{30→1.00}, \texttt{50→0.95}, \texttt{60→0.85}, \texttt{70→0.70}, \texttt{100→0.50}.
+\item
+  \textbf{Facility type weighting (illustrative groups):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Shared/bicycle road/shared traffic lane
+  \end{itemize}
+
+  → \textbf{1.0}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Advisory/central cycle lane; shared bus lane; crossings/links
+  \end{itemize}
+
+  → \textbf{0.7}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exclusive/protected lane; track/path; segregated/shared footway
+  \end{itemize}
+
+  → \textbf{0.2}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Cycle path within track or service road where not intended for through cycling
+  \end{itemize}
+
+  → \textbf{0}
+\item
+  \textbf{\texttt{separation\_level\_dict} (examples):}
+\end{itemize}
+
+\texttt{none=0}; \texttt{studs=0.1}; \texttt{kerb/flex\_post/greenery=0.3–0.5}; \texttt{planter=0.6}; \texttt{ditch=0.8}; \texttt{hedge/jersey\_barrier=0.9}; \texttt{fence/guard\_rail=1.0}.
+
+\subsection*{E. Base index and access modifiers}\label{e.-base-index-and-access-modifiers}
+
+\begin{itemize}
+\tightlist
+\item
+  **\texttt{base\_index\_dict} (0--100; examples):
+\end{itemize}
+
+** cycle path \textbf{100}; cycle track \textbf{90}; segregated path \textbf{80}; shared path \textbf{70}; exclusive cycle lane \textbf{80}; protected lane \textbf{90}; advisory lane \textbf{70}; central lane \textbf{60}; shared bus lane \textbf{65}; bicycle road \textbf{70}; shared road \textbf{60}; track/service \textbf{65}; link \textbf{60}; crossing \textbf{60}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Motor-vehicle access bonus (\texttt{motor\_vehicle\_access\_index\_dict}):}
+\end{itemize}
+
+\texttt{no=100}, \texttt{agricultural/forestry=90}, \texttt{private/customers/delivery/permit=80}, \texttt{destination=70}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Traffic signs (examples):}
+\end{itemize}
+
+mandatory cycle signs \texttt{{[}\textquotesingle{}237\textquotesingle{},\textquotesingle{}240\textquotesingle{},\textquotesingle{}241\textquotesingle{}{]}}; non-mandatory \texttt{{[}\textquotesingle{}none\textquotesingle{},\textquotesingle{}1022\textquotesingle{}{]}}.
+
+\subsection*{F. Data completeness weights (penalties for missing attributes)}\label{f.-data-completeness-weights-penalties-for-missing-attributes}
+
+\texttt{width=25}, \texttt{surface=30}, \texttt{smoothness=10}, \texttt{width:lanes=10}, \texttt{parking=25}, \texttt{crossing=10}, \texttt{crossing\_markings=10}, \texttt{maxspeed=15}, \texttt{lit=15}.
+
+\subsection*{G. Functional mappings used in analysis}\label{g.-functional-mappings-used-in-analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Slope-to-factor mapping:}\\
+  ≤2\% → \textbf{1.00}; 2--4\% → \textbf{0.95}; 4--6\% → \textbf{0.85}; 6--8\% → \textbf{0.75}; 8--10\% → \textbf{0.65}; \textgreater10\% → \textbf{0.90}.
+\item
+  \textbf{Level of Traffic Stress (LTS) to factor:}\\
+  LTS 1 → \textbf{1.00}; LTS 2 → \textbf{0.90}; LTS 3 → \textbf{0.75}; LTS 4 → \textbf{0.60}; other/NA → \textbf{0.90}.
+\end{itemize}
+
+\subsection*{H. Fields included in processing and outputs (abridged)}\label{h.-fields-included-in-processing-and-outputs-abridged}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Input attributes (typical):}
+\end{itemize}
+
+\texttt{highway}, \texttt{name}, \texttt{oneway}, \texttt{lanes}, \texttt{width*}, \texttt{maxspeed}, \texttt{lit}, \texttt{incline}, \texttt{surface}, \texttt{smoothness}, \texttt{cycleway*}, \texttt{sidewalk*}, \texttt{parking*}, \texttt{separation*}, \texttt{buffer*}, \texttt{traffic\_mode*}, \texttt{traffic\_sign*}, etc.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Key derived/output fields:}
+\end{itemize}
+
+\texttt{id}, \texttt{way\_type}, \texttt{base\_index}, \texttt{fac\_1}, \texttt{fac\_2}, \texttt{fac\_4}, \texttt{fac\_5} (LTS), environment indices, completeness flags, and standardised \texttt{proc\_*} fields used for modelling and visualisation.
+
+\clearpage
+
+\section*{Appendix C Key Parameters and Mappings in Section of structural rideability}\label{sec:appendix-params}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{3.0cm}}
+\toprule
+\textbf{Category} & \textbf{Parameter Name} & \textbf{Value in Code} & \textbf{Notes}\\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\textit{(continued)}}\\
+\toprule
+\textbf{Category} & \textbf{Parameter Name} & \textbf{Value in Code} & \textbf{Notes}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+General settings & CRS & EPSG:27700 & Unified projected coordinate system for analysis and outputs\\
+NA & segment\_geometry & LineString (S1 output) & Base geometry used for buffering and sampling\\
+GVI processing & gvi\_source & Treepedia (\textasciitilde{}2015 GSV) & Data source\\
+NA & gvi\_statistic & mean & Mean of all GVI points within the buffer\\
+NA & gvi\_buffer\_radius & 30 m & Buffer radius centered at the segment midpoint\\
+\addlinespace
+NA & borough\_mean\_impute & TRUE & Impute missing values with the mean of the containing borough\\
+NA & gvi\_flag & 0/1 & 0 = use buffer mean; 1 = use borough mean\\
+NO₂ processing & no2\_source & NO₂ raster (AQI/LAEI2025) & Data source (read from .tif)\\
+NA & no2\_sample\_step & 10 m & Spacing of sample points along the segment\\
+NA & no2\_statistic & mean & Average raster value over sampled points\\
+\addlinespace
+NA & nodata\_handling & exclude & Exclude NoData pixels during aggregation\\
+Natural-feature proximity & nature\_source & OSM-extracted park / water / wood / grass & Data source\\
+NA & buffer\_rings & {}[50, 40, 30, 20, 10, 1] m & Multiple concentric buffers from far to near\\
+NA & score\_mapping & Far rings = lower score; near rings = higher score (near overwrites far) & See code mapping table for exact scores\\
+NA & override\_rule & nearer overwrites farther & Scores from nearer rings override farther ones\\
+\addlinespace
+Normalization \& composition & norm\_method & min–max & Normalize all inputs to [0, 1]\\
+NA & no2\_inverse & 1 - minmax(NO₂) & Higher pollution → lower score; invert after min–max\\
+NA & weights & GVI = 0.5, NO₂ = 0.3, Natural = 0.2 & Weights for the environmental perception index\\
+NA & env\_index\_range & 0–1 & Output is a continuous proportion value\\*
+\end{longtable}
+\endgroup{}
+
+\clearpage
+
+\section*{Appendix D Research log}\label{appendix-d-research-log}
 
 \begin{table}
 \centering
@@ -1181,10 +1401,6 @@ In conclusion, this dissertation has demonstrated that a multi-dimensional appro
 \bottomrule
 \end{tabular}
 \end{table}
-
-\clearpage
-
-\section*{Appendix C Research log}\label{appendix-c-research-log}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
 \enddocument

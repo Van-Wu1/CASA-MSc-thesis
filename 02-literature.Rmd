@@ -48,7 +48,7 @@ The visual perception of greenery, measured through the Green View Index (GVI), 
 
 2.  Air Quality and Pollution Exposure
 
-Nitrogen dioxide (NO₂) serves as a representative indicator of urban air pollution exposure for cyclists. NO₂ is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO₂ provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO₂ exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (@an_impact_2018).
+Nitrogen dioxide (NO$_2$) serves as a representative indicator of urban air pollution exposure for cyclists. NO$_2$ is predominantly transport-related, with most emissions from cars, trucks, and buses, directly reflecting traffic-related exposure conditions (Ma et al., 2024). As a regulated pollutant used to assess ambient air quality in urban environments, NO$_2$ provides a robust and standardized measure for cycling environment assessment. Studies demonstrate substantial spatial variations in NO$_2$ exposure along different cycling routes, with measurable implications for both physiological comfort and health safety perceptions (@an_impact_2018).
 
 3.  Natural Features and Landscape Elements
 
@@ -56,7 +56,7 @@ The presence and accessibility of natural features—including parks, green spac
 
 Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (@hooyberg_general_2020). The integration of natural features into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.
 
-Collectively, these three environmental perception dimensions—visual greenery (GVI), air quality (NO₂), and natural features—provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
+Collectively, these three environmental perception dimensions—visual greenery (GVI), air quality (NO$_2$), and natural features—provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
 
 ### Network Performance
 

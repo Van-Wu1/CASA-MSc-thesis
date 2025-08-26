@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  26 AUG 2025 18:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  26 AUG 2025 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,7 +973,11 @@ File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 ))
 \@quotelevel=\count495
 \@quotereset=\count496
-(./CASA-Thesis.aux)
+(./CASA-Thesis.aux
+
+LaTeX Warning: Label `sec:appendix-params' multiply defined.
+
+)
 \openout1 = `CASA-Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
@@ -1389,8 +1393,6 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 [4
 
 ]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
 
 [5])
 \tf@toc=\write4
@@ -1399,8 +1401,6 @@ Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=
 
 
 [6] (./CASA-Thesis.lof
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
 
 [7
 
@@ -1511,17 +1511,10 @@ Underfull \hbox (badness 1509) in paragraph at lines 324--326
 
 
 [8]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
 
 [9]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 1655) in paragraph at lines 358--359
-\TU/lmr/m/n/12 (GVI), air quality (NO₂), and natural features—provide a comprehensive
+Underfull \hbox (badness 1430) in paragraph at lines 358--359
+\TU/lmr/m/n/12 (GVI), air quality (NO$[]$), and natural features—provide a comprehensive
  []
 
 
@@ -1625,9 +1618,6 @@ Underfull \hbox (badness 2119) in paragraph at lines 424--426
 
 
 [17]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
 Underfull \hbox (badness 1895) in paragraph at lines 428--429
 []\TU/lmr/m/n/12 Natural Features: Additional environmental attributes were derived
  []
@@ -1711,8 +1701,8 @@ Underfull \hbox (badness 1082) in paragraph at lines 595--596
 
 
 [25]
-Underfull \hbox (badness 1436) in paragraph at lines 606--608
-[]\TU/lmr/m/n/12 Speed and classification (fac2): Posted speed (\TU/lmtt/m/n/12 proc_-maxspeed\TU/lmr/m/n/12 ) and
+Underfull \hbox (badness 1502) in paragraph at lines 606--608
+[]\TU/lmr/m/n/12 Speed and classification (fac$[]$): Posted speed (\TU/lmtt/m/n/12 proc_-maxspeed\TU/lmr/m/n/12 ) and
  []
 
 
@@ -1749,22 +1739,11 @@ Underfull \hbox (badness 1117) in paragraph at lines 714--715
 
 File: general_images/fac1_2.png Graphic file (type bmp)
 <general_images/fac1_2.png>
-Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
 
 [31
 
 ]
-Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 File: general_images/slopeLTS.png Graphic file (type bmp)
 <general_images/slopeLTS.png>
 
@@ -1774,28 +1753,21 @@ File: general_images/slopeLTS.png Graphic file (type bmp)
 [33]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 778.
-Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=tex-text;!
 
 
 [34]
 File: general_images/index_s1.png Graphic file (type bmp)
 <general_images/index_s1.png>
-Missing character: There is no ≥ (U+2265) in font [lmroman12-regular]:mapping=tex-text;!
 
 
 [35]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 File: general_images/gvi.png Graphic file (type bmp)
 <general_images/gvi.png>
 
 
 [36]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-bold]:mapping=tex-text;!
 File: general_images/no2.png Graphic file (type bmp)
 <general_images/no2.png>
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
 Underfull \hbox (badness 1248) in paragraph at lines 823--824
 \TU/lmr/m/n/12 By contrast, peripheral zones and green buffer areas display significantly
@@ -1811,8 +1783,6 @@ File: general_images/index_s2.png Graphic file (type bmp)
 
 
 [38]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
 Underfull \hbox (badness 3428) in paragraph at lines 851--852
 []\TU/lmr/m/n/12 The resulting composite index demonstrates a distinct spatial gradient.
  []
@@ -1894,8 +1864,6 @@ Underfull \hbox (badness 1199) in paragraph at lines 996--996
 []\TU/lmr/m/n/12 Figure 5.15: |Sensitivity Analysis of Borough Rankings under Alternative
  []
 
-Missing character: There is no τ (U+03C4) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no τ (U+03C4) in font [lmroman12-regular]:mapping=tex-text;!
 
 
 [49]
@@ -1914,8 +1882,6 @@ Underfull \hbox (badness 1163) in paragraph at lines 1021--1022
 
 
 [52]
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-
 Underfull \hbox (badness 1635) in paragraph at lines 1023--1024
 []\TU/lmr/m/n/12 Temporal alignment across inputs constitutes a further limitation. The
  []
@@ -2043,22 +2009,17 @@ Underfull \hbox (badness 2096) in paragraph at lines 1086--1086
 
 
 [65]
-Overfull \hbox (59.68094pt too wide) in paragraph at lines 1099--1101
-[]\TU/lmtt/m/n/12 crs_-metric=[]EPSG:27700[] \TU/lmr/m/n/12 / \TU/lmtt/m/n/12 crs_-output=[]EPSG:27700[]\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 right_-hand_-traffic=True\TU/lmr/m/n/12 . 
- []
-
-
-Overfull \hbox (11.5049pt too wide) in paragraph at lines 1107--1109
+Overfull \hbox (11.5049pt too wide) in paragraph at lines 1108--1110
 []\TU/lmtt/m/n/12 default_-oneway_-cycle_-lane=[]yes[]\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 default_-oneway_-cycle_-track=[]yes[]\TU/lmr/m/n/12 . 
  []
 
 
-Overfull \hbox (24.18556pt too wide) in paragraph at lines 1111--1113
+Overfull \hbox (24.18556pt too wide) in paragraph at lines 1112--1114
 []\TU/lmtt/m/n/12 primary=17\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 secondary=15\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 tertiary=13\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 residential=11\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 living_-street=6\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
 []\TU/lmtt/m/n/12 default_-highway_-surface_-dict\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 default_-cycleway_-surface_-*\TU/lmr/m/n/12 ,
  []
 
@@ -2067,36 +2028,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 1119--1121
 [66
 
 ]
-Underfull \hbox (badness 1158) in paragraph at lines 1131--1133
+Underfull \hbox (badness 1158) in paragraph at lines 1132--1134
 []\TU/lmtt/m/n/12 highway_-factor_-dict_-weights \TU/lmr/m/n/12 (higher weight for mixed with motor
  []
 
 
 
 [67]
+Overfull \hbox (0.38625pt too wide) in paragraph at lines 1169--1170
+[]\TU/lmr/m/n/12 Default one-way flags for cycle facilities: \TU/lmtt/m/n/12 default_-oneway_-cycle_-lane
+ []
+
+
+Overfull \hbox (4.99995pt too wide) in paragraph at lines 1182--1184
+[]\TU/lmr/bx/n/12 By highway type (examples): \TU/lmtt/m/n/12 primary=17\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 secondary=15\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 tertiary=13\TU/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1184
+\TU/lmtt/m/n/12 residential=11\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 living_-street=6\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 service=4\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 pedestrian=6\TU/lmr/m/n/12 ,
+ []
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1195.
+
 
 [68
 
 ]
+Overfull \hbox (22.89192pt too wide) in paragraph at lines 1211--1212
+[]\TU/lmtt/b/n/12 smoothness_-factor_-dict\TU/lmr/bx/n/12 : \TU/lmtt/m/n/12 excellent=1.10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 good=1.00\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 intermediate=0.70\TU/lmr/m/n/12 ,
+ []
 
-[69
+
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
+\TU/lmtt/m/n/12 bad=0.30\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 very_-bad=0.20\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 horrible=0.15\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 very_-horrible=0.10\TU/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 1218--1220
+[]\TU/lmtt/b/n/12 highway_-factor_-dict \TU/lmr/bx/n/12 (examples): \TU/lmtt/m/n/12 motorway=0.10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 trunk=0.15\TU/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 1218--1220
+\TU/lmtt/m/n/12 primary=0.35\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 secondary=0.65\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 tertiary=0.85\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 residential=1.00\TU/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1259--1260
+[]\TU/lmtt/m/n/12 none=0\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 studs=0.1\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 kerb/flex_-post/greenery=0.3–0.5\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 planter=0.6\TU/lmr/m/n/12 ;
+ []
+
+
+
+[69]
+Overfull \hbox (6.63991pt too wide) in paragraph at lines 1277--1278
+[]\TU/lmtt/m/n/12 no=100\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 agricultural/forestry=90\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 private/customers/delivery/permit=80\TU/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 1287--1287
+[][]\TU/lmr/bx/n/14.4 F. Data completeness weights (penalties for missing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1289--1290
+\TU/lmtt/m/n/12 width=25\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 surface=30\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 smoothness=10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 width:lanes=10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 parking=25\TU/lmr/m/n/12 ,
+ []
+
+Missing character: There is no ≤ (U+2264) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[70]
+Underfull \hbox (badness 4621) in paragraph at lines 1311--1312
+\TU/lmtt/m/n/12 smoothness\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 cycleway*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 sidewalk*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 parking*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 separation*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 buffer*\TU/lmr/m/n/12 ,
+ []
+
+
+
+[71]
+Overfull \hbox (11.54472pt too wide) in paragraph at lines 1347--1347
+[]|\TU/lmr/m/n/9 borough_-mean_-impute|  
+ []
+
+Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
+
+Overfull \hbox (19.56488pt too wide) in paragraph at lines 1354--1354
+[]|\TU/lmr/m/n/9 Natural-feature 
+ []
+
+
+Overfull \hbox (14.65988pt too wide) in paragraph at lines 1359--1359
+[]|\TU/lmr/m/n/9 Normalization 
+ []
+
+
+Overfull \hbox (5.94788pt too wide) in paragraph at lines 1359--1359
+\TU/lmr/m/n/9 composition|  
+ []
+
+Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
+[72
+
+]
+
+[73]
+
+[74
 
 ] (./CASA-Thesis.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'CASA-Thesis.run.xml'.
 \openout1 = `CASA-Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31702 strings out of 470481
- 609496 string characters out of 5489404
- 1708392 words of memory out of 5000000
- 59519 multiletter control sequences out of 15000+600000
- 633400 words of font info for 97 fonts, out of 8000000 for 9000
+ 31718 strings out of 470481
+ 610013 string characters out of 5489404
+ 1714185 words of memory out of 5000000
+ 59532 multiletter control sequences out of 15000+600000
+ 633416 words of font info for 99 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  90i,12n,114p,2670b,5077s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CASA-Thesis.pdf (81 pages).
+Output written on CASA-Thesis.pdf (86 pages).

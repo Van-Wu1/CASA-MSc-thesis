@@ -8,22 +8,22 @@ The analysis of structural ridability reveals a two-layer constraint system gove
 
 ### Facility Type, Geometry, and Traffic Context
 
-```{r fac12, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Average Base Index, fac1 and fac2 by Road Type"}
+```{r fac12, echo=FALSE, out.width="95%", fig.align='center', fig.cap="Average Base Index, fac$_1$ and fac$_2$ by Road Type"}
 library(here)
 knitr::include_graphics(here::here('general_images','fac1_2.png'))
 ```
 
-The base index primarily reflects a facility's priority status. As shown in Figure \@ref(fig:fac12), dedicated infrastructure such as cycle paths (base index =100) and cycle tracks (=90) receive high baseline scores. In contrast, mixed-traffic or pedestrian-shared facilities, including shared footways (=50) and shared traffic lanes (=60), score substantially lower. This "type prior" rewards physical separation from motor traffic. This base score is then modified by two correction factors: fac₁ (width and surface) and fac₂ (road class and speed).
+The base index primarily reflects a facility's priority status. As shown in Figure \@ref(fig:fac12), dedicated infrastructure such as cycle paths (base index =100) and cycle tracks (=90) receive high baseline scores. In contrast, mixed-traffic or pedestrian-shared facilities, including shared footways (=50) and shared traffic lanes (=60), score substantially lower. This "type prior" rewards physical separation from motor traffic. This base score is then modified by two correction factors: fac$_1$ (width and surface) and fac$_2$ (road class and speed).
 
-* Dedicated Facilities (Cycle Path/Segregated Path): These facilities exhibit high scores for both fac₁ (=0.78-0.88) and fac₂ (=1.0), indicating adequate width, good surfacing, and minimal adjacency to motor traffic.
+* Dedicated Facilities (Cycle Path/Segregated Path): These facilities exhibit high scores for both fac$_1$ (=0.78-0.88) and fac$_2$ (=1.0), indicating adequate width, good surfacing, and minimal adjacency to motor traffic.
 
-* Cycle Tracks: While fac₂ remains high (=0.9+), a slightly lower fac₁ (=0.70-0.75) suggests that localized geometric shortfalls, such as at bridge approaches or pinch points, can erode the advantage of a high base score.
+* Cycle Tracks: While fac$_2$ remains high (=0.9+), a slightly lower fac$_1$ (=0.70-0.75) suggests that localized geometric shortfalls, such as at bridge approaches or pinch points, can erode the advantage of a high base score.
 
-* Shared Roads: For shared roads, a low base score (=60) creates a "type ceiling," capping the total index even with decent geometry (fac₁ = 0.76-0.80) and speed conditions (fac₂ = 0.95).
+* Shared Roads: For shared roads, a low base score (=60) creates a "type ceiling," capping the total index even with decent geometry (fac$_1$ = 0.76-0.80) and speed conditions (fac$_2$ = 0.95).
 
-* Shared Traffic Lanes: This category is constrained by a traffic bottleneck, evidenced by the lowest fac₂ score (=0.4) across all types. This indicates that mixing with motor traffic is the primary inhibitor of quality, regardless of geometry.
+* Shared Traffic Lanes: This category is constrained by a traffic bottleneck, evidenced by the lowest fac$_2$ score (=0.4) across all types. This indicates that mixing with motor traffic is the primary inhibitor of quality, regardless of geometry.
 
-* Track or Service Roads: These routes are constrained by geometry and surface quality, exhibiting the lowest fac₁ score (=0.34) despite having a fac₂ of approximately 1.0 due to low-speed environments.
+* Track or Service Roads: These routes are constrained by geometry and surface quality, exhibiting the lowest fac$_1$ score (=0.34) despite having a fac$_2$ of approximately 1.0 due to low-speed environments.
 
 ### Topography and Traffic Stress
 
@@ -48,7 +48,7 @@ These patterns are consistent with the classification logic: the script applies 
 
 ### `Fac_4`
 
-Regression analysis shows that `fac_4` contributes negligibly to the variation of `index_1_nor` (R² = 0.003). Although the coefficient is statistically significant (β = –26.91, p < 0.001), the explained variance remains below 1%, confirming that `fac_4` functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, `fac_4` was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
+Regression analysis shows that `fac_4` contributes negligibly to the variation of `index_1_nor` (R² = 0.003). Although the coefficient is statistically significant ( $\beta = 26.91$, $p < 0.001$ ), the explained variance remains below 1%, confirming that `fac_4` functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, `fac_4` was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
 
 ### Index of structural ridability
 
@@ -57,11 +57,11 @@ library(here)
 knitr::include_graphics(here::here('general_images','index_s1.png'))
 ```
 
-The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map and accompanying pie chart, nearly 70% of road segments fall within the 15–25 and 25–35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0–15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (≥45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.
+The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map and accompanying pie chart, nearly 70% of road segments fall within the 15–25 and 25–35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0–15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (>45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.
 
 ## Module 2: Environmental Perception
 
-This module broadens the analysis to the perceptual and environmental context of cycling. A composite index was developed from three variables: Green View Index (GVI), NO₂ concentration, and natural landscape coverage.
+This module broadens the analysis to the perceptual and environmental context of cycling. A composite index was developed from three variables: Green View Index (GVI), NO$_2$ concentration, and natural landscape coverage.
 
 ### Green View Index (GVI)
 
@@ -72,14 +72,14 @@ knitr::include_graphics(here::here('general_images','gvi.png'))
 
 This is a GVI heat map, which shows that the distribution of people's perception of green landscapes is not random but exhibits a distinct clustering pattern. High-value clusters (hot spots) are predominantly located in areas with large urban parks, river corridors, and low-density residential neighborhoods, forming continuous belts of greenery. In contrast, low-value clusters (cold spots) are concentrated in the urban core, particularly around transport interchanges, high-density commercial centers, and major road intersections where vegetation is limited.
 
-### NO₂ Concentration
+### NO$_2$ Concentration
 
-```{r no2, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of Annual Mean NO₂ Concentration."}
+```{r no2, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of Annual Mean NO$_2$ Concentration."}
 library(here)
 knitr::include_graphics(here::here('general_images','no2.png'))
 ```
 
-The spatial distribution of NO₂ concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear “corridor effect.” These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure \@ref(fig:no2)).
+The spatial distribution of NO$_2$ concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear “corridor effect.” These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure \@ref(fig:no2)).
 
 ### Natural Landscape
 ```{r nf, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial Distribution of Natural Landscape Coverage."}
@@ -96,7 +96,7 @@ library(here)
 knitr::include_graphics(here::here('general_images','index_s2.png'))
 ```
 
-When constructing the composite index that integrates GVI, NO₂, and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac1 (GVI) and fac3 (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac3 was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure \@ref(fig:indexs2)) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (`fac_gvi` = 1.077, `fac_no2` = 1.039, `fac_nat` = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.
+When constructing the composite index that integrates GVI, NO$_2$, and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac$_1$ (GVI) and fac$_3$ (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac$_3$ was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure \@ref(fig:indexs2)) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (`fac_gvi` = 1.077, fac_NO$_2$ = 1.039, `fac_nat` = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.
 
 The resulting composite index demonstrates a distinct spatial gradient. High-value areas are primarily distributed in peripheral districts characterized by abundant green infrastructure and natural landscape patches, whereas low-value areas are concentrated in the city center, where limited greenery coincides with elevated pollution levels. This contrast highlights the compounded disadvantage faced by central urban districts, where deficits in environmental quality are most pronounced (Figure \@ref(fig:indexs2)).
 
@@ -195,11 +195,11 @@ library(here)
 knitr::include_graphics(here::here('general_images','box_cqi_by_borough.png'))
 ```
 
-To further examine intra-borough variation, Figure \@ref(fig:boxcqiborough) presents the distribution of CECI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked borough     s, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CECI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.
+To further examine intra-borough variation, Figure \@ref(fig:boxcqiborough) presents the distribution of CECI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked boroughs, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CECI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.
 
 ```{r cqirobustnessdeltabar, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes"}
 library(here)
 knitr::include_graphics(here::here('general_images','cqi_robustness_delta_bar.png'))
 ```
 
-Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|=7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (τ=0.84) but undergoes moderate reconfigurations under W2 and W3 (τ=0.57). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.
+Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|=7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 ($\tau = 0.84$) but undergoes moderate reconfigurations under W2 and W3 ($\tau = 0.57$). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.

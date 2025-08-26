@@ -148,7 +148,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="methodology.html"><a href="methodology.html#subcomponents-and-normalisation"><i class="fa fa-check"></i><b>4.3.1</b> Subcomponents and normalisation</a></li>
 <li class="chapter" data-level="4.3.2" data-path="methodology.html"><a href="methodology.html#greenery-gvi"><i class="fa fa-check"></i><b>4.3.2</b> Greenery (GVI)</a></li>
-<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO2)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no_2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO<span class="math inline">\(_2\)</span>)</a></li>
 <li class="chapter" data-level="4.3.4" data-path="methodology.html"><a href="methodology.html#natural-landscape-proximity"><i class="fa fa-check"></i><b>4.3.4</b> Natural-landscape proximity</a></li>
 <li class="chapter" data-level="4.3.5" data-path="methodology.html"><a href="methodology.html#sub-index-formulation"><i class="fa fa-check"></i><b>4.3.5</b> Sub-index formulation</a></li>
 </ul></li>
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="results.html"><a href="results.html#green-view-index-gvi"><i class="fa fa-check"></i><b>5.2.1</b> Green View Index (GVI)</a></li>
-<li class="chapter" data-level="5.2.2" data-path="08-appendix.html"><a href="#no%E2%82%82-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO₂ Concentration</a></li>
+<li class="chapter" data-level="5.2.2" data-path="results.html"><a href="results.html#no_2-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO<span class="math inline">\(_2\)</span> Concentration</a></li>
 <li class="chapter" data-level="5.2.3" data-path="results.html"><a href="results.html#natural-landscape"><i class="fa fa-check"></i><b>5.2.3</b> Natural Landscape</a></li>
 <li class="chapter" data-level="5.2.4" data-path="results.html"><a href="results.html#index-of-environmental-perception"><i class="fa fa-check"></i><b>5.2.4</b> Index of environmental perception</a></li>
 </ul></li>
@@ -212,12 +212,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="conclusion-1.html"><a href="conclusion-1.html#future-research-directions"><i class="fa fa-check"></i><b>7.2</b> Future Research Directions</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
-<ul>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-a-key-parameter-summary"><i class="fa fa-check"></i>Appendix A Key Parameter Summary</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-b-research-log"><i class="fa fa-check"></i>Appendix B Research log</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-c-research-log"><i class="fa fa-check"></i>Appendix C Research log</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="" target="blank"></a></li>
 
@@ -240,11 +235,12 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="appendix" class="section level1 unnumbered hasAnchor">
 <h1>Appendix<a href="appendix.html#appendix" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="appendix-a-key-parameter-summary" class="section level2 unnumbered hasAnchor">
+<div id="appendix-a-key-parameter-summary" class="section level2 unlisted unnumbered hasAnchor">
 <h2>Appendix A Key Parameter Summary<a href="appendix.html#appendix-a-key-parameter-summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><strong>Coordinate system &amp; traffic direction</strong>:</p>
-<p><code>crs_metric='EPSG:27700'</code> / <code>crs_output='EPSG:27700'</code>; <code>right_hand_traffic=True</code>.</p></li>
+<p><code>crs_metric='EPSG:27700'</code> / <code>crs_output='EPSG:27700'</code>;</p>
+<p><code>right_hand_traffic=True</code>.</p></li>
 <li><p><strong>Sidepath buffer</strong>:</p>
 <p><code>sidepath_buffer_size=22</code>; <code>sidepath_buffer_distance=100</code>.</p></li>
 <li><p><strong>Default one-way setting</strong>:</p>
@@ -269,8 +265,403 @@ div.csl-indent {
 <p><code>cycling_highway_prohibition_list</code> (<code>motorway</code>, <code>trunk</code>, etc.).</p></li>
 </ul>
 </div>
-<div id="appendix-b-research-log" class="section level2 unnumbered hasAnchor">
-<h2>Appendix B Research log<a href="appendix.html#appendix-b-research-log" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sec:appendix-params" class="section level2 unlisted unnumbered hasAnchor">
+<h2>Appendix B Key Parameters and Mappings in Section of structural rideability<a href="appendix.html#sec:appendix-params" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="a.-global-settings-and-network-assumptions" class="section level3 unlisted unnumbered hasAnchor">
+<h3>A. Global settings and network assumptions<a href="appendix.html#a.-global-settings-and-network-assumptions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Coordinate reference systems:</strong> processing CRS = <code>EPSG:27700</code>; output CRS = <code>EPSG:27700</code>.</li>
+<li><strong>Traffic side:</strong> left-hand traffic (<code>right_hand_traffic = FALSE</code>).</li>
+<li><strong>Sidepath detection:</strong>
+<ul>
+<li><code>sidepath_buffer_size = 22</code> m (lateral search radius)</li>
+<li><code>sidepath_buffer_distance = 100</code> m (longitudinal sampling step)</li>
+<li>Default one-way flags for cycle facilities: <code>default_oneway_cycle_lane = 'yes'</code>, <code>default_oneway_cycle_track = 'yes'</code>.</li>
+</ul></li>
+<li><strong>Highway classes prohibited for cycling:</strong> <code>motorway</code>, <code>motorway_link</code>, <code>trunk</code>, <code>trunk_link</code> (excluded from rideability scoring).</li>
+</ul>
+</div>
+<div id="b.-default-widths-m" class="section level3 unlisted unnumbered hasAnchor">
+<h3>B. Default widths (m)<a href="appendix.html#b.-default-widths-m" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Fallback carriageway width:</strong> <code>11</code>.</li>
+<li><strong>By highway type (examples):</strong> <code>primary=17</code>, <code>secondary=15</code>, <code>tertiary=13</code>, <code>residential=11</code>, <code>living_street=6</code>, <code>service=4</code>, <code>pedestrian=6</code>, <code>cycleway=1.5</code>, <code>footway=2</code>, <code>track=2.5</code>.</li>
+<li><strong>Lane / parking templates (m):</strong> motor-vehicle lane <code>3.2</code>, bus/PSV <code>4.5</code>, cycle lane <code>1.4</code>; parallel/angled/perpendicular parking <code>2.2 / 4.5 / 5.0</code>.</li>
+</ul>
+</div>
+<div id="c.-surface-and-smoothness-factors" class="section level3 unlisted unnumbered hasAnchor">
+<h3>C. Surface and smoothness factors<a href="appendix.html#c.-surface-and-smoothness-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Surface fallbacks (examples):</strong> cycle track → <code>paving_stones</code>; cycle lane → <code>asphalt</code>; <code>track</code> uses <code>tracktype</code> to map to <code>asphalt/compacted/unpaved</code>
+<code>/ground/grass</code>, etc.</li>
+<li><strong><code>surface_factor_dict</code> (indicative):</strong>
+<ul>
+<li>High: <code>asphalt</code>, <code>paved</code>, <code>concrete</code>, <code>chipseal</code>, <code>metal</code> → <strong>1.0</strong></li>
+<li>Medium: <code>paving_stones</code>, <code>compacted</code>, <code>fine_gravel</code>, <code>bricks</code> → <strong>0.7</strong></li>
+<li>Low: <code>sett</code>, <code>cobblestone</code>, <code>concrete:lanes</code>, <code>unpaved</code>, <code>wood</code> → <strong>0.3</strong></li>
+<li>Very low: <code>ground</code>, <code>dirt</code>, <code>earth</code>, <code>mud</code>, <code>gravel</code>, <code>grass</code>, <code>grass_paver</code>, … → <strong>0.2</strong></li>
+<li>Minimal: <code>sand</code>, <code>rock</code> → <strong>0.15</strong></li>
+</ul></li>
+<li><strong><code>smoothness_factor_dict</code>:</strong> <code>excellent=1.10</code>, <code>good=1.00</code>, <code>intermediate=0.70</code>, <code>bad=0.30</code>, <code>very_bad=0.20</code>, <code>horrible=0.15</code>, <code>very_horrible=0.10</code>, <code>impassable=0</code>.</li>
+</ul>
+</div>
+<div id="d.-road-class-speed-and-facilityseparation-weighting" class="section level3 unlisted unnumbered hasAnchor">
+<h3>D. Road class, speed and facility/separation weighting<a href="appendix.html#d.-road-class-speed-and-facilityseparation-weighting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p><strong><code>highway_factor_dict</code> (examples):</strong> <code>motorway=0.10</code>, <code>trunk=0.15</code>, <code>primary=0.35</code>, <code>secondary=0.65</code>, <code>tertiary=0.85</code>, <code>residential=1.00</code>, <code>living_street=1.10</code>.</p></li>
+<li><p><strong><code>maxspeed_factor_dict</code> (km/h):</strong> <code>20→1.05</code>, <code>30→1.00</code>, <code>50→0.95</code>, <code>60→0.85</code>, <code>70→0.70</code>, <code>100→0.50</code>.</p></li>
+<li><p><strong>Facility type weighting (illustrative groups):</strong></p>
+<ul>
+<li>Shared/bicycle road/shared traffic lane</li>
+</ul>
+<p>→ <strong>1.0</strong></p>
+<ul>
+<li>Advisory/central cycle lane; shared bus lane; crossings/links</li>
+</ul>
+<p>→ <strong>0.7</strong></p>
+<ul>
+<li>Exclusive/protected lane; track/path; segregated/shared footway</li>
+</ul>
+<p>→ <strong>0.2</strong></p>
+<ul>
+<li>Cycle path within track or service road where not intended for through cycling</li>
+</ul>
+<p>→ <strong>0</strong></p></li>
+<li><p><strong><code>separation_level_dict</code> (examples):</strong></p></li>
+</ul>
+<p><code>none=0</code>; <code>studs=0.1</code>; <code>kerb/flex_post/greenery=0.3–0.5</code>; <code>planter=0.6</code>; <code>ditch=0.8</code>; <code>hedge/jersey_barrier=0.9</code>; <code>fence/guard_rail=1.0</code>.</p>
+</div>
+<div id="e.-base-index-and-access-modifiers" class="section level3 unlisted unnumbered hasAnchor">
+<h3>E. Base index and access modifiers<a href="appendix.html#e.-base-index-and-access-modifiers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>**<code>base_index_dict</code> (0–100; examples):</li>
+</ul>
+<p>** cycle path <strong>100</strong>; cycle track <strong>90</strong>; segregated path <strong>80</strong>; shared path <strong>70</strong>; exclusive cycle lane <strong>80</strong>; protected lane <strong>90</strong>; advisory lane <strong>70</strong>; central lane <strong>60</strong>; shared bus lane <strong>65</strong>; bicycle road <strong>70</strong>; shared road <strong>60</strong>; track/service <strong>65</strong>; link <strong>60</strong>; crossing <strong>60</strong>.</p>
+<ul>
+<li><strong>Motor-vehicle access bonus (<code>motor_vehicle_access_index_dict</code>):</strong></li>
+</ul>
+<p><code>no=100</code>, <code>agricultural/forestry=90</code>, <code>private/customers/delivery/permit=80</code>, <code>destination=70</code>.</p>
+<ul>
+<li><strong>Traffic signs (examples):</strong></li>
+</ul>
+<p>mandatory cycle signs <code>['237','240','241']</code>; non-mandatory <code>['none','1022']</code>.</p>
+</div>
+<div id="f.-data-completeness-weights-penalties-for-missing-attributes" class="section level3 unlisted unnumbered hasAnchor">
+<h3>F. Data completeness weights (penalties for missing attributes)<a href="appendix.html#f.-data-completeness-weights-penalties-for-missing-attributes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><code>width=25</code>, <code>surface=30</code>, <code>smoothness=10</code>, <code>width:lanes=10</code>, <code>parking=25</code>, <code>crossing=10</code>, <code>crossing_markings=10</code>, <code>maxspeed=15</code>, <code>lit=15</code>.</p>
+</div>
+<div id="g.-functional-mappings-used-in-analysis" class="section level3 unlisted unnumbered hasAnchor">
+<h3>G. Functional mappings used in analysis<a href="appendix.html#g.-functional-mappings-used-in-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Slope-to-factor mapping:</strong><br />
+≤2% → <strong>1.00</strong>; 2–4% → <strong>0.95</strong>; 4–6% → <strong>0.85</strong>; 6–8% → <strong>0.75</strong>; 8–10% → <strong>0.65</strong>; &gt;10% → <strong>0.90</strong>.</li>
+<li><strong>Level of Traffic Stress (LTS) to factor:</strong><br />
+LTS 1 → <strong>1.00</strong>; LTS 2 → <strong>0.90</strong>; LTS 3 → <strong>0.75</strong>; LTS 4 → <strong>0.60</strong>; other/NA → <strong>0.90</strong>.</li>
+</ul>
+</div>
+<div id="h.-fields-included-in-processing-and-outputs-abridged" class="section level3 unlisted unnumbered hasAnchor">
+<h3>H. Fields included in processing and outputs (abridged)<a href="appendix.html#h.-fields-included-in-processing-and-outputs-abridged" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Input attributes (typical):</strong></li>
+</ul>
+<p><code>highway</code>, <code>name</code>, <code>oneway</code>, <code>lanes</code>, <code>width*</code>, <code>maxspeed</code>, <code>lit</code>, <code>incline</code>, <code>surface</code>, <code>smoothness</code>, <code>cycleway*</code>, <code>sidewalk*</code>, <code>parking*</code>, <code>separation*</code>, <code>buffer*</code>, <code>traffic_mode*</code>, <code>traffic_sign*</code>, etc.</p>
+<ul>
+<li><strong>Key derived/output fields:</strong></li>
+</ul>
+<p><code>id</code>, <code>way_type</code>, <code>base_index</code>, <code>fac_1</code>, <code>fac_2</code>, <code>fac_4</code>, <code>fac_5</code> (LTS), environment indices, completeness flags, and standardised <code>proc_*</code> fields used for modelling and visualisation.</p>
+</div>
+</div>
+<div id="sec:appendix-params" class="section level2 unlisted unnumbered hasAnchor">
+<h2>Appendix C Key Parameters and Mappings in Section of structural rideability<a href="appendix.html#sec:appendix-params" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table style="width:100%; word-break:break-word; overflow-wrap:anywhere; white-space:normal; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-condensed">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Category
+</th>
+<th style="text-align:left;font-weight: bold;">
+Parameter Name
+</th>
+<th style="text-align:left;font-weight: bold;">
+Value in Code
+</th>
+<th style="text-align:left;font-weight: bold;">
+Notes
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+General settings
+</td>
+<td style="text-align:left;">
+CRS
+</td>
+<td style="text-align:left;">
+EPSG:27700
+</td>
+<td style="text-align:left;">
+Unified projected coordinate system for analysis and outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+segment_geometry
+</td>
+<td style="text-align:left;">
+LineString (S1 output)
+</td>
+<td style="text-align:left;">
+Base geometry used for buffering and sampling
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GVI processing
+</td>
+<td style="text-align:left;">
+gvi_source
+</td>
+<td style="text-align:left;">
+Treepedia (~2015 GSV)
+</td>
+<td style="text-align:left;">
+Data source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+gvi_statistic
+</td>
+<td style="text-align:left;">
+mean
+</td>
+<td style="text-align:left;">
+Mean of all GVI points within the buffer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+gvi_buffer_radius
+</td>
+<td style="text-align:left;">
+30 m
+</td>
+<td style="text-align:left;">
+Buffer radius centered at the segment midpoint
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+borough_mean_impute
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+Impute missing values with the mean of the containing borough
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+gvi_flag
+</td>
+<td style="text-align:left;">
+0/1
+</td>
+<td style="text-align:left;">
+0 = use buffer mean; 1 = use borough mean
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NO₂ processing
+</td>
+<td style="text-align:left;">
+no2_source
+</td>
+<td style="text-align:left;">
+NO₂ raster (AQI/LAEI2025)
+</td>
+<td style="text-align:left;">
+Data source (read from .tif)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+no2_sample_step
+</td>
+<td style="text-align:left;">
+10 m
+</td>
+<td style="text-align:left;">
+Spacing of sample points along the segment
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+no2_statistic
+</td>
+<td style="text-align:left;">
+mean
+</td>
+<td style="text-align:left;">
+Average raster value over sampled points
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+nodata_handling
+</td>
+<td style="text-align:left;">
+exclude
+</td>
+<td style="text-align:left;">
+Exclude NoData pixels during aggregation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Natural-feature proximity
+</td>
+<td style="text-align:left;">
+nature_source
+</td>
+<td style="text-align:left;">
+OSM-extracted park / water / wood / grass
+</td>
+<td style="text-align:left;">
+Data source
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+buffer_rings
+</td>
+<td style="text-align:left;">
+[50, 40, 30, 20, 10, 1] m
+</td>
+<td style="text-align:left;">
+Multiple concentric buffers from far to near
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+score_mapping
+</td>
+<td style="text-align:left;">
+Far rings = lower score; near rings = higher score (near overwrites far)
+</td>
+<td style="text-align:left;">
+See code mapping table for exact scores
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+override_rule
+</td>
+<td style="text-align:left;">
+nearer overwrites farther
+</td>
+<td style="text-align:left;">
+Scores from nearer rings override farther ones
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Normalization &amp; composition
+</td>
+<td style="text-align:left;">
+norm_method
+</td>
+<td style="text-align:left;">
+min–max
+</td>
+<td style="text-align:left;">
+Normalize all inputs to [0, 1]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+no2_inverse
+</td>
+<td style="text-align:left;">
+1 - minmax(NO₂)
+</td>
+<td style="text-align:left;">
+Higher pollution → lower score; invert after min–max
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+weights
+</td>
+<td style="text-align:left;">
+GVI = 0.5, NO₂ = 0.3, Natural = 0.2
+</td>
+<td style="text-align:left;">
+Weights for the environmental perception index
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+env_index_range
+</td>
+<td style="text-align:left;">
+0–1
+</td>
+<td style="text-align:left;">
+Output is a continuous proportion value
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="appendix-d-research-log" class="section level2 unlisted unnumbered hasAnchor">
+<h2>Appendix D Research log<a href="appendix.html#appendix-d-research-log" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -453,9 +844,6 @@ Finalized writing
 </tr>
 </tbody>
 </table>
-</div>
-<div id="appendix-c-research-log" class="section level2 unnumbered hasAnchor">
-<h2>Appendix C Research log<a href="appendix.html#appendix-c-research-log" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
 </div>

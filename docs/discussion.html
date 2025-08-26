@@ -148,7 +148,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="methodology.html"><a href="methodology.html#subcomponents-and-normalisation"><i class="fa fa-check"></i><b>4.3.1</b> Subcomponents and normalisation</a></li>
 <li class="chapter" data-level="4.3.2" data-path="methodology.html"><a href="methodology.html#greenery-gvi"><i class="fa fa-check"></i><b>4.3.2</b> Greenery (GVI)</a></li>
-<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO2)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no_2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO<span class="math inline">\(_2\)</span>)</a></li>
 <li class="chapter" data-level="4.3.4" data-path="methodology.html"><a href="methodology.html#natural-landscape-proximity"><i class="fa fa-check"></i><b>4.3.4</b> Natural-landscape proximity</a></li>
 <li class="chapter" data-level="4.3.5" data-path="methodology.html"><a href="methodology.html#sub-index-formulation"><i class="fa fa-check"></i><b>4.3.5</b> Sub-index formulation</a></li>
 </ul></li>
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="results.html"><a href="results.html#green-view-index-gvi"><i class="fa fa-check"></i><b>5.2.1</b> Green View Index (GVI)</a></li>
-<li class="chapter" data-level="5.2.2" data-path="05-discussion.html"><a href="#no%E2%82%82-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO₂ Concentration</a></li>
+<li class="chapter" data-level="5.2.2" data-path="results.html"><a href="results.html#no_2-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO<span class="math inline">\(_2\)</span> Concentration</a></li>
 <li class="chapter" data-level="5.2.3" data-path="results.html"><a href="results.html#natural-landscape"><i class="fa fa-check"></i><b>5.2.3</b> Natural Landscape</a></li>
 <li class="chapter" data-level="5.2.4" data-path="results.html"><a href="results.html#index-of-environmental-perception"><i class="fa fa-check"></i><b>5.2.4</b> Index of environmental perception</a></li>
 </ul></li>
@@ -212,12 +212,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="conclusion-1.html"><a href="conclusion-1.html#future-research-directions"><i class="fa fa-check"></i><b>7.2</b> Future Research Directions</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
-<ul>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-a-key-parameter-summary"><i class="fa fa-check"></i>Appendix A Key Parameter Summary</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-b-research-log"><i class="fa fa-check"></i>Appendix B Research log</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-c-research-log"><i class="fa fa-check"></i>Appendix C Research log</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="" target="blank"></a></li>
 
@@ -259,7 +254,7 @@ div.csl-indent {
 <div id="limitations" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Limitations<a href="discussion.html#limitations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The estimation of edge betweenness via stochastic source–target sampling imposes an inherent constraint on strict reproducibility. The sample size KK is chosen to balance run-time and stability, yet the procedure remains probabilistic; small numerical deviations and local rank shifts can arise across runs, and may be accentuated by differences in software versions, parallel execution order, or hardware. Under these conditions, the index is most appropriately interpreted through spatial patterns and relative ordering rather than exact equality of segment-level values across replications.</p>
-<p>Temporal alignment across inputs constitutes a further limitation. The component datasets are not fully contemporaneous—street-level greenery is inferred from imagery circa 2015, modelled NO₂ fields originate from LAEI 2016 projections, and the OSM network is continuously updated. This asynchrony introduces the possibility of local timing mismatches, particularly where recent greening initiatives, traffic-calming schemes, or redesigns have occurred. As a result, fine-grained differences should not be read as current, time-specific conditions in all locations but rather as a structural and perceptual baseline.</p>
+<p>Temporal alignment across inputs constitutes a further limitation. The component datasets are not fully contemporaneous—street-level greenery is inferred from imagery circa 2015, modelled NO<span class="math inline">\(_2\)</span> fields originate from LAEI 2016 projections, and the OSM network is continuously updated. This asynchrony introduces the possibility of local timing mismatches, particularly where recent greening initiatives, traffic-calming schemes, or redesigns have occurred. As a result, fine-grained differences should not be read as current, time-specific conditions in all locations but rather as a structural and perceptual baseline.</p>
 <p>Limitations also arise from cross-city parameter transfer within the structural rideability module. Thresholds and mappings for elements such as effective width, separation, and buffer rules derive from a framework calibrated in Berlin. Although the metadata in both contexts are sourced from OSM via Overpass Turbo, country-specific tagging practices, attribute completeness, and data conventions differ. During transfer, this heterogeneity can increase the frequency of missing or partially specified attributes. To avoid optimistic bias where attributes are absent, a conservative penalty mechanism is adopted that applies uniform downward adjustments under defined missingness conditions; this improves internal consistency but may produce a systematic downward shift in areas with sparser tagging.</p>
 <p>The dependence on OSM further entails issues of coverage and tagging consistency. Volunteer-contributed data are uneven across space and over feature types, and fine-grained fields of particular relevance to cycling—cycleway subtype, buffer presence and width, surface and smoothness—may be omitted or inconsistently recorded. Such variation can propagate to factor assignment and to the stability of LTS classification, especially in neighbourhoods where infrastructure is evolving faster than tagging activity.</p>
 <p>Design choices embedded in the network analysis also shape results. Centrality is computed on a primal, undirected, length-weighted graph, which abstracts from signal delay, turn costs, grade at junctions, and micro-routing preferences; the selected closeness radii and the approximate betweenness sampler represent defensible but not unique specifications. Similarly, distributional treatment through p1–p99 winsorisation and min–max scaling reduces the influence of extremes but compresses tail variation, with potential consequences for the relative prominence of isolated high- or low-scoring segments.</p>

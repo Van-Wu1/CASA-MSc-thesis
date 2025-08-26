@@ -13,7 +13,9 @@
 
 * **Coordinate system & traffic direction**:
 
-  `crs_metric='EPSG:27700'` / `crs_output='EPSG:27700'`; `right_hand_traffic=True`.
+  `crs_metric='EPSG:27700'` / `crs_output='EPSG:27700'`;
+  
+  `right_hand_traffic=True`.
 
 * **Sidepath buffer**:
 
@@ -62,9 +64,9 @@
 
 \clearpage
 
-## Appendix B Key Parameters and Mappings {#sec:appendix-params .unlisted .unnumbered}
+## Appendix B Key Parameters and Mappings in Section of structural rideability {#sec:appendix-params .unlisted .unnumbered}
 
-### A. Global settings and network assumptions
+### A. Global settings and network assumptions{.unlisted .unnumbered}
 - **Coordinate reference systems:** processing CRS = `EPSG:27700`; output CRS = `EPSG:27700`.
 - **Traffic side:** left-hand traffic (`right_hand_traffic = FALSE`).
 - **Sidepath detection:**
@@ -73,13 +75,14 @@
   - Default one-way flags for cycle facilities: `default_oneway_cycle_lane = 'yes'`, `default_oneway_cycle_track = 'yes'`.
 - **Highway classes prohibited for cycling:** `motorway`, `motorway_link`, `trunk`, `trunk_link` (excluded from rideability scoring).
 
-### B. Default widths (m)
+### B. Default widths (m){.unlisted .unnumbered}
 - **Fallback carriageway width:** `11`.
 - **By highway type (examples):** `primary=17`, `secondary=15`, `tertiary=13`, `residential=11`, `living_street=6`, `service=4`, `pedestrian=6`, `cycleway=1.5`, `footway=2`, `track=2.5`.
 - **Lane / parking templates (m):** motor-vehicle lane `3.2`, bus/PSV `4.5`, cycle lane `1.4`; parallel/angled/perpendicular parking `2.2 / 4.5 / 5.0`.
 
-### C. Surface and smoothness factors
-- **Surface fallbacks (examples):** cycle track → `paving_stones`; cycle lane → `asphalt`; `track` uses `tracktype` to map to `asphalt/compacted/unpaved/ground/grass`, etc.
+### C. Surface and smoothness factors{.unlisted .unnumbered}
+- **Surface fallbacks (examples):** cycle track → `paving_stones`; cycle lane → `asphalt`; `track` uses `tracktype` to map to `asphalt/compacted/unpaved`
+`/ground/grass`, etc.
 - **`surface_factor_dict` (indicative):**
   - High: `asphalt`, `paved`, `concrete`, `chipseal`, `metal` → **1.0**
   - Medium: `paving_stones`, `compacted`, `fine_gravel`, `bricks` → **0.7**
@@ -88,39 +91,113 @@
   - Minimal: `sand`, `rock` → **0.15**
 - **`smoothness_factor_dict`:** `excellent=1.10`, `good=1.00`, `intermediate=0.70`, `bad=0.30`, `very_bad=0.20`, `horrible=0.15`, `very_horrible=0.10`, `impassable=0`.
 
-### D. Road class, speed and facility/separation weighting
+### D. Road class, speed and facility/separation weighting{.unlisted .unnumbered}
 - **`highway_factor_dict` (examples):** `motorway=0.10`, `trunk=0.15`, `primary=0.35`, `secondary=0.65`, `tertiary=0.85`, `residential=1.00`, `living_street=1.10`.
 - **`maxspeed_factor_dict` (km/h):** `20→1.05`, `30→1.00`, `50→0.95`, `60→0.85`, `70→0.70`, `100→0.50`.
 - **Facility type weighting (illustrative groups):**
-  - Shared/bicycle road/shared traffic lane → **1.0**
-  - Advisory/central cycle lane; shared bus lane; crossings/links → **0.7**
-  - Exclusive/protected lane; track/path; segregated/shared footway → **0.2**
-  - Cycle path within track or service road where not intended for through cycling → **0**
-- **`separation_level_dict` (examples):** `none=0`; `studs=0.1`; `kerb/flex_post/greenery=0.3–0.5`; `planter=0.6`; `ditch=0.8`; `hedge/jersey_barrier=0.9`; `fence/guard_rail=1.0`.
+  - Shared/bicycle road/shared traffic lane 
+  
+  → **1.0**
+  
+  - Advisory/central cycle lane; shared bus lane; crossings/links 
+  
+  → **0.7**
+  
+  - Exclusive/protected lane; track/path; segregated/shared footway 
+  
+  → **0.2**
+  
+  - Cycle path within track or service road where not intended for through cycling 
+  
+  → **0**
 
-### E. Base index and access modifiers
-- **`base_index_dict` (0–100; examples):** cycle path **100**; cycle track **90**; segregated path **80**; shared path **70**; exclusive cycle lane **80**; protected lane **90**; advisory lane **70**; central lane **60**; shared bus lane **65**; bicycle road **70**; shared road **60**; track/service **65**; link **60**; crossing **60**.
-- **Motor-vehicle access bonus (`motor_vehicle_access_index_dict`):** `no=100`, `agricultural/forestry=90`, `private/customers/delivery/permit=80`, `destination=70`.
-- **Traffic signs (examples):** mandatory cycle signs `['237','240','241']`; non-mandatory `['none','1022']`.
+- **`separation_level_dict` (examples):** 
 
-### F. Data completeness weights (penalties for missing attributes)
+`none=0`; `studs=0.1`; `kerb/flex_post/greenery=0.3–0.5`; `planter=0.6`; `ditch=0.8`; `hedge/jersey_barrier=0.9`; `fence/guard_rail=1.0`.
+
+### E. Base index and access modifiers{.unlisted .unnumbered}
+
+- **`base_index_dict` (0–100; examples):
+
+** cycle path **100**; cycle track **90**; segregated path **80**; shared path **70**; exclusive cycle lane **80**; protected lane **90**; advisory lane **70**; central lane **60**; shared bus lane **65**; bicycle road **70**; shared road **60**; track/service **65**; link **60**; crossing **60**.
+
+- **Motor-vehicle access bonus (`motor_vehicle_access_index_dict`):** 
+
+`no=100`, `agricultural/forestry=90`, `private/customers/delivery/permit=80`, `destination=70`.
+
+- **Traffic signs (examples):** 
+
+mandatory cycle signs `['237','240','241']`; non-mandatory `['none','1022']`.
+
+### F. Data completeness weights (penalties for missing attributes){.unlisted .unnumbered}
 `width=25`, `surface=30`, `smoothness=10`, `width:lanes=10`, `parking=25`, `crossing=10`, `crossing_markings=10`, `maxspeed=15`, `lit=15`.
 
-### G. Functional mappings used in analysis
+### G. Functional mappings used in analysis{.unlisted .unnumbered}
 - **Slope-to-factor mapping:**  
   ≤2% → **1.00**; 2–4% → **0.95**; 4–6% → **0.85**; 6–8% → **0.75**; 8–10% → **0.65**; >10% → **0.90**.
 - **Level of Traffic Stress (LTS) to factor:**  
   LTS 1 → **1.00**; LTS 2 → **0.90**; LTS 3 → **0.75**; LTS 4 → **0.60**; other/NA → **0.90**.
 
-### H. Fields included in processing and outputs (abridged)
-- **Input attributes (typical):** `highway`, `name`, `oneway`, `lanes`, `width*`, `maxspeed`, `lit`, `incline`, `surface`, `smoothness`, `cycleway*`, `sidewalk*`, `parking*`, `separation*`, `buffer*`, `traffic_mode*`, `traffic_sign*`, etc.
-- **Key derived/output fields:** `id`, `way_type`, `base_index`, `fac_1`, `fac_2`, `fac_4`, `fac_5` (LTS), environment indices, completeness flags, and standardised `proc_*` fields used for modelling and visualisation.
+### H. Fields included in processing and outputs (abridged){.unlisted .unnumbered}
+- **Input attributes (typical):** 
 
+`highway`, `name`, `oneway`, `lanes`, `width*`, `maxspeed`, `lit`, `incline`, `surface`, `smoothness`, `cycleway*`, `sidewalk*`, `parking*`, `separation*`, `buffer*`, `traffic_mode*`, `traffic_sign*`, etc.
 
+- **Key derived/output fields:** 
+
+`id`, `way_type`, `base_index`, `fac_1`, `fac_2`, `fac_4`, `fac_5` (LTS), environment indices, completeness flags, and standardised `proc_*` fields used for modelling and visualisation.
 
 \clearpage
 
-## Appendix C Research log {.unlisted .unnumbered}
+## Appendix C Key Parameters and Mappings in Section of structural rideability {#sec:appendix-params .unlisted .unnumbered}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(here)
+
+df <- read_excel(here("tables", "AppendixC.xlsx")) |>
+  mutate(across(everything(), as.character))
+
+if (knitr::is_latex_output()) {
+  # —— PDF（LaTeX）分支：固定列宽 + 自动换行/跨页 ——
+  kbl(df,
+      booktabs  = TRUE,
+      longtable = TRUE,
+      caption = NULL    
+  ) |>
+    kable_styling(
+      position      = "center",
+      full_width    = FALSE,
+      font_size     = 9,
+      latex_options = c("hold_position", "repeat_header", "scale_down")
+    ) |>
+    column_spec(1, width = "1.5cm") |>
+    column_spec(2, width = "3.0cm") |>
+    column_spec(3, width = "3.5cm") |>
+    column_spec(4, width = "3.0cm") |>
+    row_spec(0, bold = TRUE)
+
+} else {
+  # —— HTML：无标题，不设列宽；用 CSS 强制自动换行，避免横向滚动 ——
+  kbl(
+    df,
+    caption    = NULL,
+    table.attr = "style='width:100%; word-break:break-word; overflow-wrap:anywhere; white-space:normal;'"
+  ) |>
+    kable_styling(
+      full_width = TRUE,
+      bootstrap_options = c("striped", "hover", "condensed")
+    ) |>
+    row_spec(0, bold = TRUE)
+}
+```
+
+\clearpage
+
+## Appendix D Research log {.unlisted .unnumbered}
 
 ```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -137,8 +214,6 @@ read_excel(here("tables","research_log.xlsx"))%>%
   row=0,
   bold = TRUE)
 ```
-
-\clearpage
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

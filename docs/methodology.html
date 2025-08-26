@@ -148,7 +148,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="methodology.html"><a href="methodology.html#subcomponents-and-normalisation"><i class="fa fa-check"></i><b>4.3.1</b> Subcomponents and normalisation</a></li>
 <li class="chapter" data-level="4.3.2" data-path="methodology.html"><a href="methodology.html#greenery-gvi"><i class="fa fa-check"></i><b>4.3.2</b> Greenery (GVI)</a></li>
-<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO2)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no_2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO<span class="math inline">\(_2\)</span>)</a></li>
 <li class="chapter" data-level="4.3.4" data-path="methodology.html"><a href="methodology.html#natural-landscape-proximity"><i class="fa fa-check"></i><b>4.3.4</b> Natural-landscape proximity</a></li>
 <li class="chapter" data-level="4.3.5" data-path="methodology.html"><a href="methodology.html#sub-index-formulation"><i class="fa fa-check"></i><b>4.3.5</b> Sub-index formulation</a></li>
 </ul></li>
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="results.html"><a href="results.html#green-view-index-gvi"><i class="fa fa-check"></i><b>5.2.1</b> Green View Index (GVI)</a></li>
-<li class="chapter" data-level="5.2.2" data-path="03-2-method.html"><a href="#no%E2%82%82-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO₂ Concentration</a></li>
+<li class="chapter" data-level="5.2.2" data-path="results.html"><a href="results.html#no_2-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO<span class="math inline">\(_2\)</span> Concentration</a></li>
 <li class="chapter" data-level="5.2.3" data-path="results.html"><a href="results.html#natural-landscape"><i class="fa fa-check"></i><b>5.2.3</b> Natural Landscape</a></li>
 <li class="chapter" data-level="5.2.4" data-path="results.html"><a href="results.html#index-of-environmental-perception"><i class="fa fa-check"></i><b>5.2.4</b> Index of environmental perception</a></li>
 </ul></li>
@@ -212,12 +212,7 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="conclusion-1.html"><a href="conclusion-1.html#future-research-directions"><i class="fa fa-check"></i><b>7.2</b> Future Research Directions</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
-<ul>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-a-key-parameter-summary"><i class="fa fa-check"></i>Appendix A Key Parameter Summary</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-b-research-log"><i class="fa fa-check"></i>Appendix B Research log</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-c-research-log"><i class="fa fa-check"></i>Appendix C Research log</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="" target="blank"></a></li>
 
@@ -278,10 +273,10 @@ Figure 4.1: Workflow of the Cycling Environment Composite Index (CECI)
 <li>Adaptations</li>
 </ol>
 <p>The adaptation used in this research retains the central idea that compounding frictions are represented by multiplicative factors applied to a base score derived from functional class and speed, while re-specifying inputs and thresholds where necessary for the London context.</p>
-<p>During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac3 in the reference implementation collapses to a near-constant under London’s OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac3 is re-specified as a terrain impedance factor derived from segment-level slope.</p>
-<p>A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {LTS, fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.</p>
-<p>PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table <a href="methodology.html#tab:PCA">4.1</a>, and the geometry of loadings is visualised in Figure <a href="methodology.html#fig:pca">4.2</a> (PCA biplot).</p>
-<p>Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with <code>base_index</code> at a moderate level (= 4.63), while fac1 and fac2 show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.</p>
+<p>During model transfer, several source-model assumptions interact with country-specific OSM tagging practices and data completeness. In particular, the factor slot denoted as fac<span class="math inline">\(_3\)</span> in the reference implementation collapses to a near-constant under London’s OSM coverage (the driving attribute is sparsely or inconsistently recorded, yielding no informative variation at link level). To avoid carrying a non-informative term into the structural score, fac<span class="math inline">\(_3\)</span> is re-specified as a terrain impedance factor derived from segment-level slope.</p>
+<p>A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac<span class="math inline">\(_5\)</span> in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {LTS, fac<span class="math inline">\(_1\)</span>, fac<span class="math inline">\(_2\)</span>, fac<span class="math inline">\(_4\)</span>}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.</p>
+<p>PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac<span class="math inline">\(_4\)</span> overwhelmingly defines PC2; fac<span class="math inline">\(_2\)</span> contributes strongly to PC1 and PC3, and fac<span class="math inline">\(_1\)</span> loads on PC1 and PC4. The contrasted signs of LTS and fac<span class="math inline">\(_2\)</span> on PC1, together with the near-orthogonal signal of fac<span class="math inline">\(_4\)</span> on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table <a href="methodology.html#tab:PCA">4.1</a>, and the geometry of loadings is visualised in Figure <a href="methodology.html#fig:pca">4.2</a> (PCA biplot).</p>
+<p>Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with <code>base_index</code> at a moderate level (= 4.63), while fac<span class="math inline">\(_1\)</span> and fac<span class="math inline">\(_2\)</span> show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac<span class="math inline">\(_1\)</span>/fac<span class="math inline">\(_2\)</span>/fac<span class="math inline">\(_4\)</span> and can therefore be retained as fac<span class="math inline">\(_5\)</span> in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:PCA">Table 4.1: </span>PCA explained variance and loadings (absolute values).(PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
@@ -378,20 +373,20 @@ fac4
 </table>
 <p>(PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:pca"></span>
-<img src="general_images/pca.png" alt="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions." width="90%" />
+<img src="general_images/pca.png" alt="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac$_4$ defines PC2, indicating complementary dimensions." width="90%" />
 <p class="caption">
-Figure 4.2: PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions.
+Figure 4.2: PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac<span class="math inline">\(_4\)</span> defines PC2, indicating complementary dimensions.
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:vif1"></span>
-<img src="general_images/vif1.png" alt="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36." width="75%" />
+<img src="general_images/vif1.png" alt="Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac$_1$ = 27.73, fac$_2$ = 22.36." width="75%" />
 <p class="caption">
-Figure 4.3: Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac1 = 27.73, fac2 = 22.36.
+Figure 4.3: Multicollinearity check (VIF). Bars show VIF for the structural variables used in diagnostics. LTS = 2.03, base index = 4.63, fac<span class="math inline">\(_1\)</span> = 27.73, fac<span class="math inline">\(_2\)</span> = 22.36.
 </p>
 </div>
-<p>These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac1), speed/class (fac2), and separation/surface/priority (fac4), within the multiplicative structural specification.</p>
+<p>These diagnostics justify retaining LTS as an independent factor in Index1, alongside facility/width (fac<span class="math inline">\(_1\)</span>), speed/class (fac<span class="math inline">\(_2\)</span>), and separation/surface/priority (fac<span class="math inline">\(_4\)</span>), within the multiplicative structural specification.</p>
 <p>Also, there are some adaptations for left-hand-traffic regime, local speed patterns, and tag conventions to fit in with Great London.
-The structural specification preserves the core Berlin logic while substituting a slope-based fac3 and justifiably incorporating LTS as fac5, yielding a London-tailored yet methodologically transparent module. Full parameter tables appear in the Appendix.</p>
+The structural specification preserves the core Berlin logic while substituting a slope-based fac<span class="math inline">\(_3\)</span> and justifiably incorporating LTS as fac<span class="math inline">\(_5\)</span>, yielding a London-tailored yet methodologically transparent module. Full parameter tables appear in the Appendix.</p>
 </div>
 <div id="data-preprocessing" class="section level3 hasAnchor" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> Data preprocessing<a href="methodology.html#data-preprocessing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -401,11 +396,11 @@ The structural specification preserves the core Berlin logic while substituting 
 <h3><span class="header-section-number">4.2.3</span> Engineered attributes and factor mapping<a href="methodology.html#engineered-attributes-and-factor-mapping" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Five categories of factors are computed from processed tags and terrain.</p>
 <ol style="list-style-type: decimal">
-<li><p>Facility and width (fac1): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used (see Appendix). The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.</p></li>
-<li><p>Speed and classification (fac2): Posted speed (<code>proc_maxspeed</code>) and <code>proc_highway</code> class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London’s distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.</p></li>
-<li><p>Slope (fac3): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac3 = 0.9 as a conservative treatment that avoids unjustified improvement.</p></li>
-<li><p>Separation, buffer, surface, and priority (fac4): Presence and width of buffers, type of kerb or median separation, parking configuration, surface/smoothness classes, and priority on major roads contribute additional penalties or bonuses. Directionality is evaluated with respect to left-hand traffic (e.g., parking or buffer on the rider’s side). Rule tables provide deterministic mappings from tag combinations to factors.</p></li>
-<li><p>Level of Traffic Stress (fac5): An LTS class is assigned from the joint configuration of speed, lanes, facility type, and separation (with junction handling consistent with local practice). Classes are translated into factors using the codebook values reported in the Appendix.</p></li>
+<li><p>Facility and width (fac<span class="math inline">\(_1\)</span>): Functional class together with cycleway:* tags and width inform a factor that rewards physically separated facilities and adequate operating width. Where width is unknown, conservative defaults are used. The mapping distinguishes protected tracks, painted lanes, advisory lanes, and mixed-traffic conditions.</p></li>
+<li><p>Speed and classification (fac<span class="math inline">\(_2\)</span>): Posted speed (<code>proc_maxspeed</code>) and <code>proc_highway</code> class are combined to reflect exposure to motor traffic. Cut-points are calibrated to London’s distribution of speeds and classes and are interpreted under left-hand traffic for oneway segments.</p></li>
+<li><p>Slope (fac<span class="math inline">\(_3\)</span>): Terrain impedance is computed by sampling the 5 × 5 m slope raster along each geometry. Samples are aggregated to a representative segment value (robust statistic as specified in the Appendix) and then mapped to penalty factors. Missing slope receives fac<span class="math inline">\(_3\)</span> = 0.9 as a conservative treatment that avoids unjustified improvement.</p></li>
+<li><p>Separation, buffer, surface, and priority (fac<span class="math inline">\(_4\)</span>): Presence and width of buffers, type of kerb or median separation, parking configuration, surface/smoothness classes, and priority on major roads contribute additional penalties or bonuses. Directionality is evaluated with respect to left-hand traffic (e.g., parking or buffer on the rider’s side). Rule tables provide deterministic mappings from tag combinations to factors.</p></li>
+<li><p>Level of Traffic Stress (fac<span class="math inline">\(_5\)</span>): An LTS class is assigned from the joint configuration of speed, lanes, facility type, and separation (with junction handling consistent with local practice). Classes are translated into factors using the codebook values reported in the Appendix.</p></li>
 </ol>
 </div>
 <div id="base-score-and-multiplicative-formulation" class="section level3 hasAnchor" number="4.2.4">
@@ -425,9 +420,9 @@ The structural specification preserves the core Berlin logic while substituting 
 <h3><span class="header-section-number">4.3.2</span> Greenery (GVI)<a href="methodology.html#greenery-gvi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Link values are obtained by buffering each link midpoint by 30 m (or by regular along-link samples with the same radius) and averaging nearby GVI observations. Instances with no observations inside the buffer are recorded for transparency.</p>
 </div>
-<div id="air-quality-no2" class="section level3 hasAnchor" number="4.3.3">
-<h3><span class="header-section-number">4.3.3</span> Air quality (NO2)<a href="methodology.html#air-quality-no2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The gridded NO2 surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − <code>NO2_norm</code>) so that higher values consistently denote better conditions.</p>
+<div id="air-quality-no_2" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Air quality (NO<span class="math inline">\(_2\)</span>)<a href="methodology.html#air-quality-no_2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The gridded NO<span class="math inline">\(_2\)</span> surface (cell size 20 m) is sampled every 10 m along each link and averaged. The normalised value is inverted as (1 − NO<span class="math inline">\(_2\)</span>_norm) so that higher values consistently denote better conditions.</p>
 </div>
 <div id="natural-landscape-proximity" class="section level3 hasAnchor" number="4.3.4">
 <h3><span class="header-section-number">4.3.4</span> Natural-landscape proximity<a href="methodology.html#natural-landscape-proximity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
