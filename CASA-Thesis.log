@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  26 AUG 2025 00:33
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  26 AUG 2025 02:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,11 +1478,6 @@ Chapter 2.
 [4
 
 ]
-Underfull \hbox (badness 1072) in paragraph at lines 280--281
-\TU/lmr/m/n/12 initiative, argues that improvements in walking and cycling infrastructure
- []
-
-
 Overfull \hbox (0.43834pt too wide) in paragraph at lines 282--283
 []\TU/lmr/m/n/12 Investments in cycling infrastructure also appear to produce wider societal benefits.
  []
@@ -1490,6 +1485,16 @@ Overfull \hbox (0.43834pt too wide) in paragraph at lines 282--283
 
 
 [5]
+Underfull \hbox (badness 1168) in paragraph at lines 292--293
+\TU/lmr/m/n/12 has been extensively validated and refined across multiple contexts, with
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 292--293
+\TU/lmr/m/n/12 @ furth_-network_-2016 demonstrating its applicability for network-wide
+ []
+
+
 
 [6]
 Underfull \hbox (badness 1577) in paragraph at lines 313--314
@@ -1497,6 +1502,8 @@ Underfull \hbox (badness 1577) in paragraph at lines 313--314
  []
 
 
+
+[7]
 Underfull \hbox (badness 1389) in paragraph at lines 323--325
 []\TU/lmr/m/n/12 The continuity of cycling networks and intersection treatments constitute
  []
@@ -1513,13 +1520,14 @@ Underfull \hbox (badness 1509) in paragraph at lines 323--325
 
 
 
-[7]
-
 [8]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
+
+[9]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
 Underfull \hbox (badness 1655) in paragraph at lines 357--358
@@ -1527,8 +1535,6 @@ Underfull \hbox (badness 1655) in paragraph at lines 357--358
  []
 
 
-
-[9]
 Underfull \hbox (badness 3965) in paragraph at lines 363--364
 []\TU/lmr/m/n/12 Contemporary approaches to network analysis have been revolutionized
  []
@@ -1544,30 +1550,30 @@ Underfull \hbox (badness 2698) in paragraph at lines 363--364
  []
 
 
+
+[10]
 Underfull \hbox (badness 1596) in paragraph at lines 365--366
 \TU/lmr/m/n/12 ‘skeleton’ of urban areas. Their Multiple Centrality Assessment (MCA)
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 367--368
-\TU/lmr/m/n/12 connectivity significantly influences cycling behavior, with well-connected
+Overfull \hbox (46.98364pt too wide) in paragraph at lines 367--368
+\TU/lmr/m/n/12 cycling-specific infrastructure elements ([]Lovelace et al. ([]2017[]); @ netjasov_-potential_-2019).
  []
 
 
-
-[10]
 Underfull \hbox (badness 2142) in paragraph at lines 369--370
 \TU/lmr/m/n/12 centrality and clustering coefficients provides quantitative frameworks for
  []
 
 
-Overfull \hbox (6.3659pt too wide) in paragraph at lines 371--371
-[]\TU/lmr/bx/n/17.28 Composite Index Approaches (CECI Models) 
+
+[11]
+Underfull \hbox (badness 1859) in paragraph at lines 371--371
+[]\TU/lmr/bx/n/17.28 Cycling Environmental Composite Index
  []
 
 
-
-[11]
 Underfull \hbox (badness 1205) in paragraph at lines 381--382
 []\TU/lmr/m/n/12 However, a significant limitation in current theoretical frameworks is the
  []
@@ -1578,13 +1584,13 @@ Underfull \hbox (badness 1701) in paragraph at lines 381--382
  []
 
 
+
+[12]
 Underfull \hbox (badness 3601) in paragraph at lines 387--388
 \TU/lmr/m/n/12 Despite the comprehensive literature base, existing cycling environment
  []
 
 
-
-[12]
 Underfull \hbox (badness 1810) in paragraph at lines 389--390
 \TU/lmr/m/n/12 the critical dimensions of structural rideability, environmental perception,
  []
@@ -1601,8 +1607,8 @@ Underfull \hbox (badness 2173) in paragraph at lines 389--390
 [14]
 Chapter 3.
 
-Underfull \hbox (badness 1460) in paragraph at lines 399--400
-\TU/lmr/m/n/12 GIS Boundary Files, comprising both Borough-level and Greater London
+Underfull \hbox (badness 1102) in paragraph at lines 397--398
+\TU/lmr/m/n/12 assessment due to its ongoing transformation from a car-dominated to a
  []
 
 
@@ -1610,136 +1616,149 @@ Underfull \hbox (badness 1460) in paragraph at lines 399--400
 [15
 
 ]
-Underfull \hbox (badness 2119) in paragraph at lines 411--413
-\TU/lmr/m/n/12 around 2015) to estimate the proportion of visible greenery along
+Underfull \hbox (badness 2875) in paragraph at lines 401--402
+[]\TU/lmr/m/n/12 Recent evaluations of London’s cycling interventions have shown mixed
  []
 
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 1460) in paragraph at lines 411--412
+\TU/lmr/m/n/12 GIS Boundary Files, comprising both Borough-level and Greater London
+ []
+
 
 
 [16]
-Underfull \hbox (badness 1895) in paragraph at lines 415--416
-[]\TU/lmr/m/n/12 Natural Features: Additional environmental attributes were derived
- []
-
-
-Overfull \hbox (1.67303pt too wide) in paragraph at lines 443--443
-[]|\TU/lmr/m/n/9 OpenStreetMap 
- []
-
-Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
-
-Overfull \hbox (1.67303pt too wide) in paragraph at lines 449--449
-[]|\TU/lmr/m/n/9 OpenStreetMap|  
+Underfull \hbox (badness 2119) in paragraph at lines 423--425
+\TU/lmr/m/n/12 around 2015) to estimate the proportion of visible greenery along
  []
 
 
 
 [17]
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 1895) in paragraph at lines 427--428
+[]\TU/lmr/m/n/12 Natural Features: Additional environmental attributes were derived
+ []
+
+
 
 [18]
+Overfull \hbox (1.67303pt too wide) in paragraph at lines 455--455
+[]|\TU/lmr/m/n/9 OpenStreetMap 
+ []
+
+Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
+
+Overfull \hbox (1.67303pt too wide) in paragraph at lines 461--461
+[]|\TU/lmr/m/n/9 OpenStreetMap|  
+ []
+
+
+
+[19]
 Chapter 4.
 File: general_images/flow.png Graphic file (type bmp)
 <general_images/flow.png>
 
-Underfull \hbox (badness 1038) in paragraph at lines 465--466
+Underfull \hbox (badness 1038) in paragraph at lines 477--478
 []\TU/lmr/m/n/12 Figure X summarises the end-to-end pipeline for constructing a link-level
  []
 
 
 
-[19
+[20
 
 ]
-Underfull \hbox (badness 1881) in paragraph at lines 476--477
+Underfull \hbox (badness 1881) in paragraph at lines 488--489
 \TU/lmr/m/n/12 Overpass query. An inclusion-oriented stage captures bicycle-permissible
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 476--477
+Underfull \hbox (badness 1253) in paragraph at lines 488--489
 \TU/lmr/m/n/12 ways across Greater London. A targeted clean removes motorways and
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 486--487
+Underfull \hbox (badness 1281) in paragraph at lines 498--499
 []\TU/lmr/m/n/12 A light-touch sequence improves graph consistency while preserving OSM
  []
 
 
 
-[20]
-Underfull \hbox (badness 1496) in paragraph at lines 519--520
+[21]
+Underfull \hbox (badness 1496) in paragraph at lines 531--532
 []\TU/lmr/m/n/12 The structural module quantifies how road-segment design and operating
  []
 
 
 
-[21]
-Underfull \hbox (badness 4726) in paragraph at lines 531--532
+[22]
+Underfull \hbox (badness 4726) in paragraph at lines 543--544
 []\TU/lmr/m/n/12 During model transfer, several source-model assumptions interact with
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 537--538
+Underfull \hbox (badness 4886) in paragraph at lines 549--550
 []\TU/lmr/m/n/12 Variance inflation factors (VIF) provide a separate, regression-oriented
  []
 
 
 
-[22]
+[23]
 File: general_images/pca.png Graphic file (type bmp)
 <general_images/pca.png>
 File: general_images/vif1.png Graphic file (type bmp)
 <general_images/vif1.png>
 
-Underfull \hbox (badness 1286) in paragraph at lines 578--580
+Underfull \hbox (badness 1286) in paragraph at lines 590--592
 []\TU/lmr/m/n/12 Also, there are some adaptations for left-hand-traffic regime, local speed
  []
 
 
 
-[23]
-Underfull \hbox (badness 1082) in paragraph at lines 583--584
+[24]
+Underfull \hbox (badness 1082) in paragraph at lines 595--596
 \TU/lmr/m/n/12 A key element of preprocessing is sidepath identification. Because cycle
  []
 
 
 
-[24]
-Underfull \hbox (badness 1436) in paragraph at lines 594--596
+[25]
+Underfull \hbox (badness 1436) in paragraph at lines 606--608
 []\TU/lmr/m/n/12 Speed and classification (fac2): Posted speed (\TU/lmtt/m/n/12 proc_-maxspeed\TU/lmr/m/n/12 ) and
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 598--600
+Underfull \hbox (badness 2393) in paragraph at lines 610--612
 \TU/lmr/m/n/12 surface/smoothness classes, and priority on major roads contribute
  []
 
 
 
-[25]
-Underfull \hbox (badness 1072) in paragraph at lines 615--616
+[26]
+Underfull \hbox (badness 1072) in paragraph at lines 627--628
 \TU/lmr/m/n/12 The environmental module operationalises three link-level components and
  []
 
 
 
-[26]
-
 [27]
 
 [28]
-Underfull \hbox (badness 1515) in paragraph at lines 694--695
+
+[29]
+Underfull \hbox (badness 1515) in paragraph at lines 706--707
 \TU/lmr/m/n/12 greenery, pollution, natural features) record geometry–attribute counts to
  []
 
 
 
-[29]
+[30]
 Chapter 5.
 
-Underfull \hbox (badness 1117) in paragraph at lines 702--703
+Underfull \hbox (badness 1117) in paragraph at lines 714--715
 \TU/lmr/m/n/12 The analysis of structural ridability reveals a two-layer constraint system
  []
 
@@ -1749,7 +1768,7 @@ Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
 
-[30
+[31
 
 ]
 Missing character: There is no ₁ (U+2081) in font [lmroman12-regular]:mapping=tex-text;!
@@ -1765,27 +1784,27 @@ File: general_images/slopeLTS.png Graphic file (type bmp)
 <general_images/slopeLTS.png>
 
 
-[31]
-
 [32]
+
+[33]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 766.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 778.
 Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=tex-text;!
 
 
-[33]
+[34]
 File: general_images/index_s1.png Graphic file (type bmp)
 <general_images/index_s1.png>
 Missing character: There is no ≥ (U+2265) in font [lmroman12-regular]:mapping=tex-text;!
 
 
-[34]
+[35]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 File: general_images/gvi.png Graphic file (type bmp)
 <general_images/gvi.png>
 
 
-[35]
+[36]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-bold]:mapping=tex-text;!
 File: general_images/no2.png Graphic file (type bmp)
 <general_images/no2.png>
@@ -1793,47 +1812,47 @@ Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 1248) in paragraph at lines 811--812
+Underfull \hbox (badness 1248) in paragraph at lines 823--824
 \TU/lmr/m/n/12 By contrast, peripheral zones and green buffer areas display significantly
  []
 
 
 
-[36]
+[37]
 File: general_images/nf.png Graphic file (type bmp)
 <general_images/nf.png>
 File: general_images/index_s2.png Graphic file (type bmp)
 <general_images/index_s2.png>
 
 
-[37]
+[38]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 3428) in paragraph at lines 839--840
+Underfull \hbox (badness 3428) in paragraph at lines 851--852
 []\TU/lmr/m/n/12 The resulting composite index demonstrates a distinct spatial gradient.
  []
 
 
 
-[38]
+[39]
 File: general_images/Centrality.png Graphic file (type bmp)
 <general_images/Centrality.png>
 
-Underfull \hbox (badness 4024) in paragraph at lines 858--859
+Underfull \hbox (badness 4024) in paragraph at lines 870--871
 \TU/lmr/m/n/12 through-traffic and inter-district connections, but offering less balanced
  []
 
 
 
-[39]
+[40]
 File: general_images/index_s3.png Graphic file (type bmp)
 <general_images/index_s3.png>
 
 
-[40]
-
 [41]
-Overfull \hbox (2.83415pt too wide) in paragraph at lines 881--881
+
+[42]
+Overfull \hbox (2.83415pt too wide) in paragraph at lines 893--893
 []\TU/lmr/bx/n/14.4 City-Wide Distribution and Bottleneck Identification 
  []
 
@@ -1841,47 +1860,47 @@ File: general_images/cqi.png Graphic file (type bmp)
 <general_images/cqi.png>
 
 
-[42]
+[43]
 File: general_images/cqi_kde.png Graphic file (type bmp)
 <general_images/cqi_kde.png>
 
-Underfull \hbox (badness 2707) in paragraph at lines 911--912
+Underfull \hbox (badness 2707) in paragraph at lines 923--924
 []\TU/lmr/m/n/12 The results show that clusters of low-CQI segments are predominantly
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 911--912
+Underfull \hbox (badness 1442) in paragraph at lines 923--924
 \TU/lmr/m/n/12 lower quality. Additional hotspots extend along several radial corridors,
  []
 
 
 
-[43]
-
 [44]
 
 [45]
+
+[46]
 File: general_images/AverageCQIbyBorough.png Graphic file (type bmp)
 <general_images/AverageCQIbyBorough.png>
 
-Underfull \hbox (badness 1424) in paragraph at lines 954--955
+Underfull \hbox (badness 1424) in paragraph at lines 966--967
 \TU/lmr/m/n/12 (32.19), Waltham Forest (31.09), Greenwich (30.44), Sutton (29.95), and
  []
 
 
 
-[46]
+[47]
 File: general_images/BoroughComposition.png Graphic file (type bmp)
 <general_images/BoroughComposition.png>
 File: general_images/box_cqi_by_borough.png Graphic file (type bmp)
 <general_images/box_cqi_by_borough.png>
 
 
-[47]
+[48]
 File: general_images/cqi_robustness_delta_bar.png Graphic file (type bmp)
 <general_images/cqi_robustness_delta_bar.png>
 
-Underfull \hbox (badness 1199) in paragraph at lines 984--984
+Underfull \hbox (badness 1199) in paragraph at lines 996--996
 []\TU/lmr/m/n/12 Figure 5.15: |Sensitivity Analysis of Borough Rankings under Alternative
  []
 
@@ -1889,126 +1908,143 @@ Missing character: There is no τ (U+03C4) in font [lmroman12-regular]:mapping=t
 Missing character: There is no τ (U+03C4) in font [lmroman12-regular]:mapping=tex-text;!
 
 
-[48]
-
 [49]
+
+[50]
 Chapter 6.
 
 
-[50
+[51
 
 ]
-Underfull \hbox (badness 1163) in paragraph at lines 1009--1010
+Underfull \hbox (badness 1163) in paragraph at lines 1021--1022
 \TU/lmr/m/n/12 The estimation of edge betweenness via stochastic source–target sampling
  []
 
 
 
-[51]
+[52]
 Missing character: There is no ₂ (U+2082) in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 1635) in paragraph at lines 1011--1012
+Underfull \hbox (badness 1635) in paragraph at lines 1023--1024
 []\TU/lmr/m/n/12 Temporal alignment across inputs constitutes a further limitation. The
  []
 
 
 
-[52]
-
 [53]
 
 [54]
+
+[55]
 Chapter 7.
 
-Underfull \hbox (badness 2181) in paragraph at lines 1027--1028
+Underfull \hbox (badness 2181) in paragraph at lines 1039--1040
 \TU/lmr/m/n/12 This dissertation has developed and applied a composite framework for
  []
 
 
 
-[55
+[56
 
 ]
-Underfull \hbox (badness 3482) in paragraph at lines 1041--1044
+Underfull \hbox (badness 3482) in paragraph at lines 1053--1056
 \TU/lmr/m/n/12 Air quality management and urban greening strategies should be
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 1050--1052
+Underfull \hbox (badness 4072) in paragraph at lines 1062--1064
 \TU/lmr/m/n/12 The CQI framework developed here can support monitoring and
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 1050--1052
+Underfull \hbox (badness 2556) in paragraph at lines 1062--1064
 \TU/lmr/m/n/12 prioritisation. Incorporating such composite indicators into policy
  []
 
 
 
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 1061--1063
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1065
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
-
- []
-
-
-
 [57]
-Underfull \hbox (badness 2042) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1075
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1079
+
+ []
+
+
+
+[58]
+Underfull \hbox (badness 2073) in paragraph at lines 1086--1086
+\TU/lmr/m/it/12 Research Part A: Policy and Practice\TU/lmr/m/n/12 , \TU/lmr/m/it/12 46\TU/lmr/m/n/12 (10), 1730–1740. []$[][][][][] []
+ []
+
+
+
+[59
+
+]
+Underfull \hbox (badness 2042) in paragraph at lines 1086--1086
 \TU/lmr/m/n/12 Quantifying the Health and Related Economic Benefits [Publisher:
  []
 
 
+Underfull \hbox (badness 2393) in paragraph at lines 1086--1086
+\TU/lmr/m/it/12 Research Part F: Traffic Psychology and Behaviour\TU/lmr/m/n/12 , \TU/lmr/m/it/12 56\TU/lmr/m/n/12 , 381–391.
+ []
 
-[58
 
-]
-Underfull \hbox (badness 1242) in paragraph at lines 1074--1074
+Underfull \hbox (badness 1242) in paragraph at lines 1086--1086
 \TU/lmr/m/n/12 S. M., Hunte, G., Monro, M., Vernich, L., & Teschke, K. (2013).
  []
 
 
 
-[59]
-Underfull \hbox (badness 2189) in paragraph at lines 1074--1074
+[60]
+
+[61]
+Underfull \hbox (badness 2189) in paragraph at lines 1086--1086
 [][]\TU/lmr/m/n/12 Moreno, C., Allam, Z., Chabaud, D., Gall, C., & Pratlong, F. (2021).
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 1074--1074
+Underfull \hbox (badness 6978) in paragraph at lines 1086--1086
 \TU/lmr/m/n/12 Introducing the “15-Minute City”: Sustainability, Resilience and
  []
 
 
 
-[60]
-Underfull \hbox (badness 2245) in paragraph at lines 1074--1074
+[62]
+Underfull \hbox (badness 2245) in paragraph at lines 1086--1086
 \TU/lmr/m/n/12 Stress Analysis [Publisher: SAGE Publications Inc]. \TU/lmr/m/it/12 Transportation
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 1074--1074
+Underfull \hbox (badness 1205) in paragraph at lines 1086--1086
 \TU/lmr/m/it/12 Research Record\TU/lmr/m/n/12 , \TU/lmr/m/it/12 2673\TU/lmr/m/n/12 (4), 284–294. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
  []
 
 
+Underfull \hbox (badness 2096) in paragraph at lines 1086--1086
+\TU/lmr/m/n/12 deterrents of bicycling: Comparing influences on decisions to ride.
+ []
 
-[61]
 
-[62
+
+[63]
+
+[64
 
 ]
 
-[63
+[65
 
 ] (./CASA-Thesis.aux)
  ***********
@@ -2020,12 +2056,12 @@ Package logreq Info: Writing requests to 'CASA-Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31522 strings out of 470481
- 602970 string characters out of 5489404
- 1707389 words of memory out of 5000000
- 59339 multiletter control sequences out of 15000+600000
+ 31591 strings out of 470481
+ 605542 string characters out of 5489404
+ 1707247 words of memory out of 5000000
+ 59408 multiletter control sequences out of 15000+600000
  633400 words of font info for 97 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 90i,12n,114p,2250b,5077s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,114p,2467b,5077s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CASA-Thesis.pdf (75 pages).
+Output written on CASA-Thesis.pdf (77 pages).

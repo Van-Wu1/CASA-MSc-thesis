@@ -1,16 +1,28 @@
-# Data
+# Study Area and Data
+
+## Study Area
+
+London represents a particularly relevant case study for cycling environment assessment due to its ongoing transformation from a car-dominated to a more cycling-friendly city. The Greater London Authority has implemented substantial cycling infrastructure investments through initiatives such as the Cycle Superhighways, Quietways, and Mini-Holland programmes (@tfl_cycling_action_2018). Despite these investments, cycling modal share remains relatively low at approximately 2% of all trips, compared to leading cycling cities such as Copenhagen (29%) and Amsterdam (38%) (@aldred_impacts_2019).
+
+The London cycling landscape presents unique challenges that highlight the importance of comprehensive environmental assessment. Research by @goodman_inequalities_2018 demonstrates significant inequalities in cycling participation across London's diverse socio-economic geography, with higher cycling rates concentrated in inner London boroughs with better infrastructure provision. @aldred_investigating_2015 identified that perceptions of safety, air quality, and route attractiveness significantly influence cycling behavior across London's varied urban contexts, emphasising the need for multidimensional assessment approaches.
+
+Recent evaluations of London's cycling interventions have shown mixed results. The Mini-Holland programme, which invested £30 million in cycling infrastructure across three outer London boroughs, showed positive impacts on cycling participation and safety outcomes (@aldred_impacts_2019). However, the programme also highlighted the importance of community engagement and the complex relationship between infrastructure provision and behavioral change. These findings underscore the necessity for sophisticated evaluation tools that can capture both objective infrastructure quality and subjective environmental factors influencing cycling decisions in diverse urban contexts.
+
+London's geographic and demographic diversity, combined with its substantial ongoing investment in cycling infrastructure, makes it an ideal testing ground for comprehensive cycling environment assessment methodologies. The city's extensive open data availability, detailed geographic information systems, and varied cycling infrastructure types provide an optimal context for developing and validating integrated assessment approaches that can inform evidence-based cycling policy and investment decisions.
+
+## Data
 
 This study draws on a series of open and authoritative datasets to construct a multi-dimensional database for assessing cycling conditions in London. The datasets cover four broad domains: general geographic data, structural rideability, environmental perception, and network centrality. Together, they capture both physical constraints and qualitative attributes of the urban environment. All datasets are openly accessible, ensuring transparency and reproducibility. Prior to analysis, spatial harmonisation was carried out by projecting all data to the British National Grid (EPSG:27700) and clipping them to the Greater London boundary.
 
-## General Data
+### General Data
 
 General-purpose datasets form the foundation of the research. The road network was extracted from OpenStreetMap (OSM) via Overpass Turbo queries. Filters were applied to retain only roads relevant to cycling, excluding private or non-navigable paths. This cleaned network dataset provides the geometric basis for all subsequent stages of analysis, including the calculation of network centrality and the assignment of slope and environmental attributes. To facilitate aggregation, administrative boundaries were sourced from the ONS Statistical GIS Boundary Files, comprising both Borough-level and Greater London shapefiles.
 
-## Data for Structural Rideability
+### Data for Structural Rideability
 
 To capture the influence of terrain on cycling, slope data were integrated. These data were obtained from the Defra Data Services Platform at a resolution of 5 × 5 metres. Each OSM-derived road segment was intersected with the slope raster to compute mean gradients. This allows for the quantification of physical impedance to cycling: higher slopes are expected to increase exertion and reduce accessibility, making this dataset critical to the structural dimension of rideability.
 
-## Data for Environmental Perception
+### Data for Environmental Perception
 
 Cycling experience is also shaped by environmental and perceptual factors. Three distinct datasets were incorporated:
 
@@ -20,10 +32,9 @@ Cycling experience is also shaped by environmental and perceptual factors. Three
 
 * Natural Features: Additional environmental attributes were derived from OSM, filtered using specific tags { "leisure": ["park"], "natural": ["water","wood","scrub"], "landuse": ["grass","meadow"] }. This allowed the identification of publicly accessible green and blue spaces, including parks, woodlands, grasslands, and water bodies. Such features are strongly associated with enhanced environmental quality and contribute positively to cycling comfort.
 
-## Data for Network Centrality
+### Data for Network Centrality
 
 Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.
-
 
 In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO$_2$), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
 
