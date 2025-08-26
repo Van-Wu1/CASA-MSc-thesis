@@ -5,7 +5,7 @@ library(here)
 knitr::include_graphics(here::here('general_images','flow.png'))
 ```
 
-Figure X summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
+Figure \@ref(fig:flow) summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
 
 ## Network acquisition and pre-processing
 
@@ -41,12 +41,10 @@ During model transfer, several source-model assumptions interact with country-sp
 
 A further adaptation concerns the role of Level of Traffic Stress (LTS). In the reference framework, Level of Traffic Stress (LTS) and the Cycling Quality Index (CQI) are produced as parallel outputs. To determine whether LTS can be introduced as an additional structural factor within the composite (fac5 in Index1) without undue redundancy, a link-level multicollinearity check was conducted on the set {LTS, fac1, fac2, fac4}. Variables were standardised and analysed using principal components analysis (PCA); segments with incomplete structural attributes were excluded to ensure comparability.
 
-PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table X, and the geometry of loadings is visualised in Figure A (PCA biplot).
+PCA indicates a multi-dimensional structure rather than a single dominant latent factor. The explained-variance ratios are 43.31% (PC1), 25.32% (PC2), 17.18% (PC3), and 14.19% (PC4). Loadings show that LTS aligns chiefly with PC1, while fac4 overwhelmingly defines PC2; fac2 contributes strongly to PC1 and PC3, and fac1 loads on PC1 and PC4. The contrasted signs of LTS and fac2 on PC1, together with the near-orthogonal signal of fac4 on PC2, support the interpretation that these variables capture complementary dimensions rather than a single construct. Summary values are reported in Table \@ref(tab:PCA), and the geometry of loadings is visualised in Figure \@ref(fig:pca) (PCA biplot).
 
 Variance inflation factors (VIF) provide a separate, regression-oriented perspective. LTS exhibits low collinearity (VIF = 2.03), with `base_index` at a moderate level (= 4.63), while fac1 and fac2 show higher mutual dependence (= 27.73 and = 22.36). The low VIF for LTS combined with the PCA results indicates that LTS contributes additional information beyond fac1/fac2/fac4 and can therefore be retained as fac5 in Index1. The pairs plot and correlation matrix provided in the Appendix offer further diagnostic context.
 
-Table X. PCA explained variance and loadings (absolute values).
-(PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)
 ```{r PCA, echo=FALSE, message=FALSE, warning=FALSE}
 library(readxl)
 library(dplyr)
@@ -58,10 +56,10 @@ df <- read_excel(here("tables", "PCA.xlsx")) |>
   mutate(across(everything(), as.character))
 
 if (knitr::is_latex_output()) {
-  # —— PDF（LaTeX）分支 ——
-  kbl(df,
-      booktabs = TRUE,
-      caption  = "PCA table"
+  kbl(
+    df,
+    booktabs = TRUE,
+    caption  = "PCA explained variance and loadings (absolute values). (PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)",
   ) |>
     kable_styling(
       position   = "center",
@@ -71,7 +69,7 @@ if (knitr::is_latex_output()) {
 
 } else {
   # —— gitbook（HTML）分支 ——
-  kbl(df, caption = "PCA table") |>
+  kbl(df, caption = "PCA explained variance and loadings (absolute values).<br>(PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)") |>
     kable_styling(
       full_width = TRUE,
       bootstrap_options = c("striped", "hover", "condensed")
