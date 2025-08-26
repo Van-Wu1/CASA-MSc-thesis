@@ -1,21 +1,23 @@
 --- 
-title: CASA dissertation using Bookdown
+title: 'Developing the Cycling Environmental Composite Index (CECI) to Assess Cycling Friendliness: Evidence from London'
 
 author: 
 - |
     | Yifan Wu
     |    
-    | CASA0010, MSc Smart Cities Dissertation 
+    | CASA0010, MSc Urban Spatial Science Dissertation 
     |  
     | Supervisor: Dr Duncan Smith
     |
-    | Repository: https://github.com/Van-Wu1/
+    | Thesis Repository: https://van-wu1.github.io/CASA-MSc-thesis/
     |  
+    | Project repository (code): https://github.com/Van-Wu1/CECI.git
+    |
     | This dissertation is submitted in part requirement for the 
     | MSc in the Centre for Advanced Spatial Analysis, 
     | Bartlett Faculty of the Built Environment, UCL
     |
-    | Word count:  unknown ??:?? update
+    | Word count: 11,066
 
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site

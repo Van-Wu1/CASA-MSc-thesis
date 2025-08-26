@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  26 AUG 2025 23:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.28)  27 AUG 2025 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -980,26 +980,26 @@ LaTeX Warning: Label `sec:appendix-params' multiply defined.
 )
 \openout1 = `CASA-Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1035,19 +1035,19 @@ LaTeX Font Info:    ... okay on input line 129.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 129.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 129.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 129.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 129.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 129.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 129.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 131.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 129.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 131.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999970497384594.
@@ -1075,7 +1075,7 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 129.
+(Font)              scaled to size 12.0pt on input line 131.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999970497384594.
@@ -1111,15 +1111,15 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 129.
+(Font)              scaled to size 12.0pt on input line 131.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 129.
+(Font)              `operators' in the math version `normal' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 129.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 131.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 129.
+(Font)              `operators' in the math version `bold' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 129.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 131.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999970497384594.
@@ -1185,13 +1185,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.000097049443433]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 129.
+(Font)              `symbols' in the math version `normal' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 129.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 131.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 129.
+(Font)              `symbols' in the math version `bold' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 129.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 131.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999970497384594.
@@ -1251,23 +1251,23 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9998970500334856]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 129.
+(Font)              `largesymbols' in the math version `normal' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 129.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 131.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 129.
+(Font)              `largesymbols' in the math version `bold' on input line 131.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 129.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 131.
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen282
 \MT@vwid@rightmargin=\dimen283
-LaTeX Info: Redefining \microtypecontext on input line 129.
-Package microtype Info: Applying patch `item' on input line 129.
-Package microtype Info: Applying patch `toc' on input line 129.
-Package microtype Info: Applying patch `eqnum' on input line 129.
-Package microtype Info: Applying patch `footnote' on input line 129.
-Package microtype Info: Applying patch `verbatim' on input line 129.
-LaTeX Info: Redefining \microtypesetup on input line 129.
+LaTeX Info: Redefining \microtypecontext on input line 131.
+Package microtype Info: Applying patch `item' on input line 131.
+Package microtype Info: Applying patch `toc' on input line 131.
+Package microtype Info: Applying patch `eqnum' on input line 131.
+Package microtype Info: Applying patch `footnote' on input line 131.
+Package microtype Info: Applying patch `verbatim' on input line 131.
+LaTeX Info: Redefining \microtypesetup on input line 131.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -1307,55 +1307,60 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'CASA-Thesis.bbl' found.
 (./CASA-Thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 129.
-Package biblatex Info: Reference segment=0 on input line 129.
+Package biblatex Info: Reference section=0 on input line 131.
+Package biblatex Info: Reference segment=0 on input line 131.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 129.
+Package hyperref Info: Link coloring OFF on input line 131.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
+(Font)              scaled to size 14.4pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 131.
+(Font)              scaled to size 10.0pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 131.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 131.
+(Font)              scaled to size 7.0pt on input line 133.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 133.
 (c:/Users/Lenovo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.4013pt on input line 131.
+(Font)              scaled to size 14.4013pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 131.
+(Font)              scaled to size 10.00092pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 131.
+(Font)              scaled to size 7.00064pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 131.
+(Font)              scaled to size 14.39845pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 131.
+(Font)              scaled to size 9.99893pt on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 131.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 131.
+(Font)              scaled to size 6.99925pt on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 133.
 (c:/Users/Lenovo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/Users/Lenovo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 131.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 133.
 (c:/Users/Lenovo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/Users/Lenovo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+Overfull \hbox (10.76456pt too wide) in paragraph at lines 133--133
+ [][] 
+ []
+
+
 
 [1
 
 
 ]
-Underfull \hbox (badness 2486) in paragraph at lines 137--138
+Underfull \hbox (badness 2486) in paragraph at lines 139--140
 \TU/lmr/m/n/12 network centrality into a unified Cycling Environment Composite Index
  []
 
@@ -1440,18 +1445,8 @@ Chapter 1.
 ]
 
 [2]
-Underfull \hbox (badness 2142) in paragraph at lines 244--246
+Underfull \hbox (badness 2142) in paragraph at lines 246--248
 []\TU/lmr/m/n/12 Structural rideability, capturing infrastructure types, geometry, and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
-
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 246--248
-[]\TU/lmr/m/n/12 Environmental perception, accounting for greenery, air quality, and
  []
 
 
@@ -1460,12 +1455,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--248
  []
 
 
-Overfull \hbox (11.99246pt too wide) in paragraph at lines 271--272
+Underfull \hbox (badness 1783) in paragraph at lines 248--250
+[]\TU/lmr/m/n/12 Environmental perception, accounting for greenery, air quality, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+
+Overfull \hbox (11.99246pt too wide) in paragraph at lines 273--274
 []\TU/lmr/m/n/12 By addressing these aims, the dissertation contributes in two ways. Methodologically,
  []
 
 
-Overfull \hbox (0.21434pt too wide) in paragraph at lines 271--272
+Overfull \hbox (0.21434pt too wide) in paragraph at lines 273--274
 \TU/lmr/m/n/12 it demonstrates how diverse datasets can be operationalised into a single evaluative
  []
 
@@ -1478,7 +1483,7 @@ Chapter 2.
 [4
 
 ]
-Overfull \hbox (0.43834pt too wide) in paragraph at lines 283--284
+Overfull \hbox (0.43834pt too wide) in paragraph at lines 285--286
 []\TU/lmr/m/n/12 Investments in cycling infrastructure also appear to produce wider societal benefits.
  []
 
@@ -1487,24 +1492,24 @@ Overfull \hbox (0.43834pt too wide) in paragraph at lines 283--284
 [5]
 
 [6]
-Underfull \hbox (badness 1577) in paragraph at lines 314--315
+Underfull \hbox (badness 1577) in paragraph at lines 316--317
 \TU/lmr/m/n/12 with significantly fewer cyclist injuries, with research demonstrating that
  []
 
 
 
 [7]
-Underfull \hbox (badness 1389) in paragraph at lines 324--326
+Underfull \hbox (badness 1389) in paragraph at lines 326--328
 []\TU/lmr/m/n/12 The continuity of cycling networks and intersection treatments constitute
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 324--326
+Underfull \hbox (badness 1082) in paragraph at lines 326--328
 \TU/lmr/m/n/12 locations with cycling network discontinuities, highlighting the importance
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 324--326
+Underfull \hbox (badness 1509) in paragraph at lines 326--328
 \TU/lmr/m/n/12 fundamental considerations in LTS evaluation, with studies showing that
  []
 
@@ -1513,73 +1518,73 @@ Underfull \hbox (badness 1509) in paragraph at lines 324--326
 [8]
 
 [9]
-Underfull \hbox (badness 1430) in paragraph at lines 358--359
+Underfull \hbox (badness 1430) in paragraph at lines 360--361
 \TU/lmr/m/n/12 (GVI), air quality (NO$[]$), and natural features—provide a comprehensive
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 364--365
+Underfull \hbox (badness 3965) in paragraph at lines 366--367
 []\TU/lmr/m/n/12 Contemporary approaches to network analysis have been revolutionized
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 364--365
+Underfull \hbox (badness 1173) in paragraph at lines 366--367
 \TU/lmr/m/n/12 Python package that enables comprehensive street network analysis using
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 364--365
+Underfull \hbox (badness 2698) in paragraph at lines 366--367
 \TU/lmr/m/n/12 OpenStreetMap data, allowing researchers to download, model, analyze,
  []
 
 
 
 [10]
-Underfull \hbox (badness 1596) in paragraph at lines 366--367
+Underfull \hbox (badness 1596) in paragraph at lines 368--369
 \TU/lmr/m/n/12 ‘skeleton’ of urban areas. Their Multiple Centrality Assessment (MCA)
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 368--369
+Underfull \hbox (badness 2158) in paragraph at lines 370--371
 \TU/lmr/m/n/12 influences cycling behavior, with well-connected networks showing higher
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 370--371
+Underfull \hbox (badness 2142) in paragraph at lines 372--373
 \TU/lmr/m/n/12 centrality and clustering coefficients provides quantitative frameworks for
  []
 
 
 
 [11]
-Underfull \hbox (badness 1859) in paragraph at lines 372--372
+Underfull \hbox (badness 1859) in paragraph at lines 374--374
 []\TU/lmr/bx/n/17.28 Cycling Environmental Composite Index
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 382--383
+Underfull \hbox (badness 1205) in paragraph at lines 384--385
 []\TU/lmr/m/n/12 However, a significant limitation in current theoretical frameworks is the
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 382--383
+Underfull \hbox (badness 1701) in paragraph at lines 384--385
 \TU/lmr/m/n/12 insufficient integration of cycling perceptual factors and subjective safety
  []
 
 
 
 [12]
-Underfull \hbox (badness 3601) in paragraph at lines 388--389
+Underfull \hbox (badness 3601) in paragraph at lines 390--391
 \TU/lmr/m/n/12 Despite the comprehensive literature base, existing cycling environment
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 390--391
+Underfull \hbox (badness 1810) in paragraph at lines 392--393
 \TU/lmr/m/n/12 the critical dimensions of structural rideability, environmental perception,
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 390--391
+Underfull \hbox (badness 2173) in paragraph at lines 392--393
 \TU/lmr/m/n/12 synthesizing diverse but interrelated urban cycling determinants, thereby
  []
 
@@ -1590,7 +1595,7 @@ Underfull \hbox (badness 2173) in paragraph at lines 390--391
 [14]
 Chapter 3.
 
-Underfull \hbox (badness 1102) in paragraph at lines 398--399
+Underfull \hbox (badness 1102) in paragraph at lines 400--401
 \TU/lmr/m/n/12 assessment due to its ongoing transformation from a car-dominated to a
  []
 
@@ -1599,39 +1604,39 @@ Underfull \hbox (badness 1102) in paragraph at lines 398--399
 [15
 
 ]
-Underfull \hbox (badness 2875) in paragraph at lines 402--403
+Underfull \hbox (badness 2875) in paragraph at lines 404--405
 []\TU/lmr/m/n/12 Recent evaluations of London’s cycling interventions have shown mixed
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 412--413
+Underfull \hbox (badness 1460) in paragraph at lines 414--415
 \TU/lmr/m/n/12 GIS Boundary Files, comprising both Borough-level and Greater London
  []
 
 
 
 [16]
-Underfull \hbox (badness 2119) in paragraph at lines 424--426
+Underfull \hbox (badness 2119) in paragraph at lines 426--428
 \TU/lmr/m/n/12 around 2015) to estimate the proportion of visible greenery along
  []
 
 
 
 [17]
-Underfull \hbox (badness 1895) in paragraph at lines 428--429
+Underfull \hbox (badness 1895) in paragraph at lines 430--431
 []\TU/lmr/m/n/12 Natural Features: Additional environmental attributes were derived
  []
 
 
 
 [18]
-Overfull \hbox (1.67303pt too wide) in paragraph at lines 456--456
+Overfull \hbox (1.67303pt too wide) in paragraph at lines 458--458
 []|\TU/lmr/m/n/9 OpenStreetMap 
  []
 
 Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
 
-Overfull \hbox (1.67303pt too wide) in paragraph at lines 462--462
+Overfull \hbox (1.67303pt too wide) in paragraph at lines 464--464
 []|\TU/lmr/m/n/9 OpenStreetMap|  
  []
 
@@ -1646,36 +1651,36 @@ File: general_images/flow.png Graphic file (type bmp)
 [20
 
 ]
-Underfull \hbox (badness 1881) in paragraph at lines 489--490
+Underfull \hbox (badness 1881) in paragraph at lines 491--492
 \TU/lmr/m/n/12 Overpass query. An inclusion-oriented stage captures bicycle-permissible
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 489--490
+Underfull \hbox (badness 1253) in paragraph at lines 491--492
 \TU/lmr/m/n/12 ways across Greater London. A targeted clean removes motorways and
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 499--500
+Underfull \hbox (badness 1281) in paragraph at lines 501--502
 []\TU/lmr/m/n/12 A light-touch sequence improves graph consistency while preserving OSM
  []
 
 
 
 [21]
-Underfull \hbox (badness 1496) in paragraph at lines 532--533
+Underfull \hbox (badness 1496) in paragraph at lines 534--535
 []\TU/lmr/m/n/12 The structural module quantifies how road-segment design and operating
  []
 
 
 
 [22]
-Underfull \hbox (badness 4726) in paragraph at lines 544--545
+Underfull \hbox (badness 4726) in paragraph at lines 546--547
 []\TU/lmr/m/n/12 During model transfer, several source-model assumptions interact with
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 550--551
+Underfull \hbox (badness 4886) in paragraph at lines 552--553
 []\TU/lmr/m/n/12 Variance inflation factors (VIF) provide a separate, regression-oriented
  []
 
@@ -1689,31 +1694,31 @@ File: general_images/vif1.png Graphic file (type bmp)
 
 
 [24]
-Underfull \hbox (badness 1286) in paragraph at lines 590--592
+Underfull \hbox (badness 1286) in paragraph at lines 592--594
 []\TU/lmr/m/n/12 Also, there are some adaptations for left-hand-traffic regime, local speed
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 595--596
+Underfull \hbox (badness 1082) in paragraph at lines 597--598
 \TU/lmr/m/n/12 A key element of preprocessing is sidepath identification. Because cycle
  []
 
 
 
 [25]
-Underfull \hbox (badness 1502) in paragraph at lines 606--608
+Underfull \hbox (badness 1502) in paragraph at lines 608--610
 []\TU/lmr/m/n/12 Speed and classification (fac$[]$): Posted speed (\TU/lmtt/m/n/12 proc_-maxspeed\TU/lmr/m/n/12 ) and
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 610--612
+Underfull \hbox (badness 2393) in paragraph at lines 612--614
 \TU/lmr/m/n/12 surface/smoothness classes, and priority on major roads contribute
  []
 
 
 
 [26]
-Underfull \hbox (badness 1072) in paragraph at lines 627--628
+Underfull \hbox (badness 1072) in paragraph at lines 629--630
 \TU/lmr/m/n/12 The environmental module operationalises three link-level components and
  []
 
@@ -1724,7 +1729,7 @@ Underfull \hbox (badness 1072) in paragraph at lines 627--628
 [28]
 
 [29]
-Underfull \hbox (badness 1515) in paragraph at lines 706--707
+Underfull \hbox (badness 1515) in paragraph at lines 708--709
 \TU/lmr/m/n/12 greenery, pollution, natural features) record geometry–attribute counts to
  []
 
@@ -1733,7 +1738,7 @@ Underfull \hbox (badness 1515) in paragraph at lines 706--707
 [30]
 Chapter 5.
 
-Underfull \hbox (badness 1117) in paragraph at lines 714--715
+Underfull \hbox (badness 1117) in paragraph at lines 716--717
 \TU/lmr/m/n/12 The analysis of structural ridability reveals a two-layer constraint system
  []
 
@@ -1752,7 +1757,7 @@ File: general_images/slopeLTS.png Graphic file (type bmp)
 
 [33]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 778.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 780.
 
 
 [34]
@@ -1769,7 +1774,7 @@ File: general_images/gvi.png Graphic file (type bmp)
 File: general_images/no2.png Graphic file (type bmp)
 <general_images/no2.png>
 
-Underfull \hbox (badness 1248) in paragraph at lines 823--824
+Underfull \hbox (badness 1248) in paragraph at lines 825--826
 \TU/lmr/m/n/12 By contrast, peripheral zones and green buffer areas display significantly
  []
 
@@ -1783,7 +1788,7 @@ File: general_images/index_s2.png Graphic file (type bmp)
 
 
 [38]
-Underfull \hbox (badness 3428) in paragraph at lines 851--852
+Underfull \hbox (badness 3428) in paragraph at lines 853--854
 []\TU/lmr/m/n/12 The resulting composite index demonstrates a distinct spatial gradient.
  []
 
@@ -1793,7 +1798,7 @@ Underfull \hbox (badness 3428) in paragraph at lines 851--852
 File: general_images/Centrality.png Graphic file (type bmp)
 <general_images/Centrality.png>
 
-Underfull \hbox (badness 4024) in paragraph at lines 870--871
+Underfull \hbox (badness 4024) in paragraph at lines 872--873
 \TU/lmr/m/n/12 through-traffic and inter-district connections, but offering less balanced
  []
 
@@ -1805,14 +1810,14 @@ File: general_images/index_s3.png Graphic file (type bmp)
 
 
 [41]
-Underfull \hbox (badness 7291) in paragraph at lines 889--889
+Underfull \hbox (badness 7291) in paragraph at lines 891--891
 []\TU/lmr/bx/n/17.28 Cycling Environment Composite Index
  []
 
 
 
 [42]
-Overfull \hbox (2.83415pt too wide) in paragraph at lines 893--893
+Overfull \hbox (2.83415pt too wide) in paragraph at lines 895--895
 []\TU/lmr/bx/n/14.4 City-Wide Distribution and Bottleneck Identification 
  []
 
@@ -1824,17 +1829,17 @@ File: general_images/cqi.png Graphic file (type bmp)
 File: general_images/cqi_kde.png Graphic file (type bmp)
 <general_images/cqi_kde.png>
 
-Underfull \hbox (badness 1769) in paragraph at lines 921--922
+Underfull \hbox (badness 1769) in paragraph at lines 923--924
 \TU/lmr/m/n/12 distribution of the Cycling Environment Composite Index (CECI). Road
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 923--924
+Underfull \hbox (badness 1735) in paragraph at lines 925--926
 []\TU/lmr/m/n/12 The results show that clusters of low-CECI segments are predominantly
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 923--924
+Underfull \hbox (badness 1442) in paragraph at lines 925--926
 \TU/lmr/m/n/12 lower quality. Additional hotspots extend along several radial corridors,
  []
 
@@ -1860,7 +1865,7 @@ File: general_images/box_cqi_by_borough.png Graphic file (type bmp)
 File: general_images/cqi_robustness_delta_bar.png Graphic file (type bmp)
 <general_images/cqi_robustness_delta_bar.png>
 
-Underfull \hbox (badness 1199) in paragraph at lines 996--996
+Underfull \hbox (badness 1199) in paragraph at lines 998--998
 []\TU/lmr/m/n/12 Figure 5.15: |Sensitivity Analysis of Borough Rankings under Alternative
  []
 
@@ -1875,14 +1880,14 @@ Chapter 6.
 [51
 
 ]
-Underfull \hbox (badness 1163) in paragraph at lines 1021--1022
+Underfull \hbox (badness 1163) in paragraph at lines 1023--1024
 \TU/lmr/m/n/12 The estimation of edge betweenness via stochastic source–target sampling
  []
 
 
 
 [52]
-Underfull \hbox (badness 1635) in paragraph at lines 1023--1024
+Underfull \hbox (badness 1635) in paragraph at lines 1025--1026
 []\TU/lmr/m/n/12 Temporal alignment across inputs constitutes a further limitation. The
  []
 
@@ -1895,7 +1900,7 @@ Underfull \hbox (badness 1635) in paragraph at lines 1023--1024
 [55]
 Chapter 7.
 
-Underfull \hbox (badness 2181) in paragraph at lines 1039--1040
+Underfull \hbox (badness 2181) in paragraph at lines 1041--1042
 \TU/lmr/m/n/12 This dissertation has developed and applied a composite framework for
  []
 
@@ -1904,28 +1909,23 @@ Underfull \hbox (badness 2181) in paragraph at lines 1039--1040
 [56
 
 ]
-Underfull \hbox (badness 3482) in paragraph at lines 1053--1056
+Underfull \hbox (badness 3482) in paragraph at lines 1055--1058
 \TU/lmr/m/n/12 Air quality management and urban greening strategies should be
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 1062--1064
+Underfull \hbox (badness 2626) in paragraph at lines 1064--1066
 \TU/lmr/m/n/12 The CECI framework developed here can support monitoring and
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 1062--1064
+Underfull \hbox (badness 2556) in paragraph at lines 1064--1066
 \TU/lmr/m/n/12 prioritisation. Incorporating such composite indicators into policy
  []
 
 
 
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 1073--1075
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1075--1077
 
  []
@@ -1936,9 +1936,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1077--1079
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1081
+
+ []
+
+
 
 [58]
-Underfull \hbox (badness 2073) in paragraph at lines 1086--1086
+Underfull \hbox (badness 2073) in paragraph at lines 1088--1088
 \TU/lmr/m/it/12 Research Part A: Policy and Practice\TU/lmr/m/n/12 , \TU/lmr/m/it/12 46\TU/lmr/m/n/12 (10), 1730–1740. []$[][][][][] []
  []
 
@@ -1947,24 +1952,24 @@ Underfull \hbox (badness 2073) in paragraph at lines 1086--1086
 [59
 
 ]
-Overfull \hbox (27.6783pt too wide) in paragraph at lines 1086--1086
+Overfull \hbox (27.6783pt too wide) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 [Publisher: Routledge _-eprint: https://doi.org/10.1080/01441647.2015.1069908].
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 1086--1086
+Underfull \hbox (badness 2042) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 Quantifying the Health and Related Economic Benefits [Publisher:
  []
 
 
 
 [60]
-Underfull \hbox (badness 2393) in paragraph at lines 1086--1086
+Underfull \hbox (badness 2393) in paragraph at lines 1088--1088
 \TU/lmr/m/it/12 Research Part F: Traffic Psychology and Behaviour\TU/lmr/m/n/12 , \TU/lmr/m/it/12 56\TU/lmr/m/n/12 , 381–391.
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 1086--1086
+Underfull \hbox (badness 1242) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 S. M., Hunte, G., Monro, M., Vernich, L., & Teschke, K. (2013).
  []
 
@@ -1973,53 +1978,53 @@ Underfull \hbox (badness 1242) in paragraph at lines 1086--1086
 [61]
 
 [62]
-Underfull \hbox (badness 2189) in paragraph at lines 1086--1086
+Underfull \hbox (badness 2189) in paragraph at lines 1088--1088
 [][]\TU/lmr/m/n/12 Moreno, C., Allam, Z., Chabaud, D., Gall, C., & Pratlong, F. (2021).
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 1086--1086
+Underfull \hbox (badness 6978) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 Introducing the “15-Minute City”: Sustainability, Resilience and
  []
 
 
 
 [63]
-Overfull \hbox (61.2943pt too wide) in paragraph at lines 1086--1086
+Overfull \hbox (61.2943pt too wide) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 future [Publisher: Routledge _-eprint: https://doi.org/10.1080/01441647.2017.1340234].
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 1086--1086
+Underfull \hbox (badness 2245) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 Stress Analysis [Publisher: SAGE Publications Inc]. \TU/lmr/m/it/12 Transportation
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 1086--1086
+Underfull \hbox (badness 1205) in paragraph at lines 1088--1088
 \TU/lmr/m/it/12 Research Record\TU/lmr/m/n/12 , \TU/lmr/m/it/12 2673\TU/lmr/m/n/12 (4), 284–294. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
  []
 
 
 
 [64]
-Underfull \hbox (badness 2096) in paragraph at lines 1086--1086
+Underfull \hbox (badness 2096) in paragraph at lines 1088--1088
 \TU/lmr/m/n/12 deterrents of bicycling: Comparing influences on decisions to ride.
  []
 
 
 
 [65]
-Overfull \hbox (11.5049pt too wide) in paragraph at lines 1108--1110
+Overfull \hbox (11.5049pt too wide) in paragraph at lines 1110--1112
 []\TU/lmtt/m/n/12 default_-oneway_-cycle_-lane=[]yes[]\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 default_-oneway_-cycle_-track=[]yes[]\TU/lmr/m/n/12 . 
  []
 
 
-Overfull \hbox (24.18556pt too wide) in paragraph at lines 1112--1114
+Overfull \hbox (24.18556pt too wide) in paragraph at lines 1114--1116
 []\TU/lmtt/m/n/12 primary=17\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 secondary=15\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 tertiary=13\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 residential=11\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 living_-street=6\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1124
 []\TU/lmtt/m/n/12 default_-highway_-surface_-dict\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 default_-cycleway_-surface_-*\TU/lmr/m/n/12 ,
  []
 
@@ -2028,72 +2033,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
 [66
 
 ]
-Underfull \hbox (badness 1158) in paragraph at lines 1132--1134
+Underfull \hbox (badness 1158) in paragraph at lines 1134--1136
 []\TU/lmtt/m/n/12 highway_-factor_-dict_-weights \TU/lmr/m/n/12 (higher weight for mixed with motor
  []
 
 
 
 [67]
-Overfull \hbox (0.38625pt too wide) in paragraph at lines 1169--1170
+Overfull \hbox (0.38625pt too wide) in paragraph at lines 1171--1172
 []\TU/lmr/m/n/12 Default one-way flags for cycle facilities: \TU/lmtt/m/n/12 default_-oneway_-cycle_-lane
  []
 
 
-Overfull \hbox (4.99995pt too wide) in paragraph at lines 1182--1184
+Overfull \hbox (4.99995pt too wide) in paragraph at lines 1184--1186
 []\TU/lmr/bx/n/12 By highway type (examples): \TU/lmtt/m/n/12 primary=17\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 secondary=15\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 tertiary=13\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1184
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1186
 \TU/lmtt/m/n/12 residential=11\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 living_-street=6\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 service=4\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 pedestrian=6\TU/lmr/m/n/12 ,
  []
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1195.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1197.
 
 
 [68
 
 ]
-Overfull \hbox (22.89192pt too wide) in paragraph at lines 1211--1212
+Overfull \hbox (22.89192pt too wide) in paragraph at lines 1213--1214
 []\TU/lmtt/b/n/12 smoothness_-factor_-dict\TU/lmr/bx/n/12 : \TU/lmtt/m/n/12 excellent=1.10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 good=1.00\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 intermediate=0.70\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
+Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
 \TU/lmtt/m/n/12 bad=0.30\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 very_-bad=0.20\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 horrible=0.15\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 very_-horrible=0.10\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 1218--1220
+Underfull \hbox (badness 7704) in paragraph at lines 1220--1222
 []\TU/lmtt/b/n/12 highway_-factor_-dict \TU/lmr/bx/n/12 (examples): \TU/lmtt/m/n/12 motorway=0.10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 trunk=0.15\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 1218--1220
+Underfull \hbox (badness 2717) in paragraph at lines 1220--1222
 \TU/lmtt/m/n/12 primary=0.35\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 secondary=0.65\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 tertiary=0.85\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 residential=1.00\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1259--1260
+Underfull \hbox (badness 10000) in paragraph at lines 1261--1262
 []\TU/lmtt/m/n/12 none=0\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 studs=0.1\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 kerb/flex_-post/greenery=0.3–0.5\TU/lmr/m/n/12 ; \TU/lmtt/m/n/12 planter=0.6\TU/lmr/m/n/12 ;
  []
 
 
 
 [69]
-Overfull \hbox (6.63991pt too wide) in paragraph at lines 1277--1278
+Overfull \hbox (6.63991pt too wide) in paragraph at lines 1279--1280
 []\TU/lmtt/m/n/12 no=100\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 agricultural/forestry=90\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 private/customers/delivery/permit=80\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 1287--1287
+Underfull \hbox (badness 2478) in paragraph at lines 1289--1289
 [][]\TU/lmr/bx/n/14.4 F. Data completeness weights (penalties for missing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1289--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1292
 \TU/lmtt/m/n/12 width=25\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 surface=30\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 smoothness=10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 width:lanes=10\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 parking=25\TU/lmr/m/n/12 ,
  []
 
@@ -2101,31 +2106,31 @@ Missing character: There is no ≤ (U+2264) in font [lmroman12-regular]:mapping=
 
 
 [70]
-Underfull \hbox (badness 4621) in paragraph at lines 1311--1312
+Underfull \hbox (badness 4621) in paragraph at lines 1313--1314
 \TU/lmtt/m/n/12 smoothness\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 cycleway*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 sidewalk*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 parking*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 separation*\TU/lmr/m/n/12 , \TU/lmtt/m/n/12 buffer*\TU/lmr/m/n/12 ,
  []
 
 
 
 [71]
-Overfull \hbox (11.54472pt too wide) in paragraph at lines 1347--1347
+Overfull \hbox (11.54472pt too wide) in paragraph at lines 1349--1349
 []|\TU/lmr/m/n/9 borough_-mean_-impute|  
  []
 
 Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
 Missing character: There is no ₂ (U+2082) in font [lmroman9-regular]:mapping=tex-text;!
 
-Overfull \hbox (19.56488pt too wide) in paragraph at lines 1354--1354
+Overfull \hbox (19.56488pt too wide) in paragraph at lines 1356--1356
 []|\TU/lmr/m/n/9 Natural-feature 
  []
 
 
-Overfull \hbox (14.65988pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (14.65988pt too wide) in paragraph at lines 1361--1361
 []|\TU/lmr/m/n/9 Normalization 
  []
 
 
-Overfull \hbox (5.94788pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (5.94788pt too wide) in paragraph at lines 1361--1361
 \TU/lmr/m/n/9 composition|  
  []
 
@@ -2154,7 +2159,7 @@ Package logreq Info: Writing requests to 'CASA-Thesis.run.xml'.
 Here is how much of TeX's memory you used:
  31718 strings out of 470481
  610013 string characters out of 5489404
- 1714185 words of memory out of 5000000
+ 1714948 words of memory out of 5000000
  59532 multiletter control sequences out of 15000+600000
  633416 words of font info for 99 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
