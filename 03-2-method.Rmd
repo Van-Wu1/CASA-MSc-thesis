@@ -65,7 +65,8 @@ if (knitr::is_latex_output()) {
   ) |>
     kable_styling(
       position   = "center",
-      full_width = FALSE
+      full_width = FALSE,
+      latex_options = "HOLD_position"
     ) |>
     row_spec(0, bold = TRUE)
 

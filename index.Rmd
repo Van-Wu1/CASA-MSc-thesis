@@ -31,6 +31,9 @@ link-citations: yes
 github-repo: Van-Wu1/CASA-MSc-thesis
 description: "This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL "
 always_allow_html: yes
+
+header-includes:
+  - \usepackage{float}      # 支持 [H] 固定图表位置
 ---
 
 ```{=latex}
