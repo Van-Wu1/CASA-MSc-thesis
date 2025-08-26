@@ -3,15 +3,72 @@
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 ```
-# Appendix A  Research log {-}
+# Appendix {.unnumbered}
+
+## Appendix A Key Parameter Summary {-}
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 ```
 
-## subsection {.unlisted .unnumbered}
+* **Coordinate system & traffic direction**:
 
-### sub sub section {.unlisted .unnumbered}
+  `crs_metric='EPSG:27700'` / `crs_output='EPSG:27700'`; `right_hand_traffic=True`.
+
+* **Sidepath buffer**:
+
+  `sidepath_buffer_size=22`; `sidepath_buffer_distance=100`.
+
+* **Default one-way setting**:
+
+  `default_oneway_cycle_lane='yes'`; `default_oneway_cycle_track='yes'`.
+
+* **Default road width (m)**:
+
+  `primary=17`, `secondary=15`, `tertiary=13`, `residential=11`, `living_street=6`, etc.
+
+* **Default facility/parking width (m)**:
+
+  Motor vehicles 3.2, buses 4.5, bicycles 1.4, pedestrians 2.2, rail 4.5, vertical 5.0.
+
+* **Default surface layers**:
+
+  `default_highway_surface_dict`, `default_cycleway_surface_*`, `default_track_surface_dict`.
+
+* **Base components**:
+
+  `base_index_dict` (path/track/lanes/bus/bicycle/shared...).
+
+* **Road class / speed limit factors**:
+
+  `highway_factor_dict`, `maxspeed_factor_dict`.
+
+* **Factor weighting**:
+
+  `highway_factor_dict_weights` (higher weight for mixed with motor traffic, lower for segregated facilities).
+
+* **Surface / smoothness factors**:
+
+  `surface_factor_dict`, `smoothness_factor_dict`.
+
+* **Data completeness factors**:
+
+  `data_incompleteness_dict` (`surface=30`, `width=25`, etc.).
+
+* **Road classes prohibited for cycling**:
+
+  `cycling_highway_prohibition_list` (`motorway`, `trunk`, etc.).
+
+
+\clearpage
+
+```{r, results='asis', echo=FALSE}
+if (knitr:::is_latex_output()) {
+  cat("## Appendix B  Research log {.unlisted .unnumbered}\n")
+} else if (knitr:::is_html_output()) {
+  cat("## Appendix B  Research log {-}\n")
+}
+```
 
 ```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -19,9 +76,9 @@ library(knitr)
 library(kableExtra)
 library(readxl)
 library(fs)
+library(here)
 
 read_excel(here("tables","research_log.xlsx"))%>%
-  arrange(Date) %>% # i.e. alphabetical order by Term
   knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
   kable_styling(position = "center")%>%
   row_spec(.,
@@ -29,9 +86,16 @@ read_excel(here("tables","research_log.xlsx"))%>%
   bold = TRUE)
 ```
 
-`r if (knitr:::is_latex_output()) '
-# Appendix B  Proposal {.unlisted .unnumbered}
-'`
+\clearpage
+
+```{r, results='asis', echo=FALSE}
+if (knitr:::is_latex_output()) {
+  cat("## Appendix C  Research log {.unlisted .unnumbered}\n")
+} else if (knitr:::is_html_output()) {
+  cat("## Appendix C  Research log {-}\n")
+}
+```
+
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

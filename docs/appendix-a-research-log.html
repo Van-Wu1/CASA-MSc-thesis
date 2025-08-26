@@ -212,7 +212,10 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="conclusion-1.html"><a href="conclusion-1.html#future-research-directions"><i class="fa fa-check"></i><b>7.2</b> Future Research Directions</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="" data-path="appendix-a-research-log.html"><a href="appendix-a-research-log.html"><i class="fa fa-check"></i>Appendix A Research log</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-research-log.html"><a href="appendix-a-research-log.html"><i class="fa fa-check"></i>Appendix A Research log</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="appendix-a-research-log.html"><a href="appendix-a-research-log.html#key-parameter-summary"><i class="fa fa-check"></i><b>7.2.1</b> Key Parameter Summary</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="" target="blank"></a></li>
 
@@ -235,42 +238,35 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="appendix-a-research-log" class="section level1 unnumbered hasAnchor">
 <h1>Appendix A Research log<a href="appendix-a-research-log.html#appendix-a-research-log" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="subsection" class="section level2 unlisted unnumbered hasAnchor">
-<h2>subsection<a href="appendix-a-research-log.html#subsection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="sub-sub-section" class="section level3 unlisted unnumbered hasAnchor">
-<h3>sub sub section<a href="appendix-a-research-log.html#sub-sub-section" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table class="table" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;font-weight: bold;">
-Date
-</th>
-<th style="text-align:left;font-weight: bold;">
-Task
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-31st May 2020
-</td>
-<td style="text-align:left;">
-data search, commenced literature review
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-7th June 2020
-</td>
-<td style="text-align:left;">
-revised literature in the direction of x
-</td>
-</tr>
-</tbody>
-</table>
+<div id="key-parameter-summary" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Key Parameter Summary<a href="appendix-a-research-log.html#key-parameter-summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p><strong>Coordinate system &amp; traffic direction</strong>:
+<code>crs_metric='EPSG:27700'</code> / <code>crs_output='EPSG:27700'</code>; <code>right_hand_traffic=True</code>.</p></li>
+<li><p><strong>Sidepath buffer</strong>:
+<code>sidepath_buffer_size=22</code>; <code>sidepath_buffer_distance=100</code>.</p></li>
+<li><p><strong>Default one-way setting</strong>:
+<code>default_oneway_cycle_lane='yes'</code>; <code>default_oneway_cycle_track='yes'</code>.</p></li>
+<li><p><strong>Default road width (m)</strong>:
+<code>primary=17</code>, <code>secondary=15</code>, <code>tertiary=13</code>, <code>residential=11</code>, <code>living_street=6</code>, etc.</p></li>
+<li><p><strong>Default facility/parking width (m)</strong>:
+Motor vehicles 3.2, buses 4.5, bicycles 1.4, pedestrians 2.2, rail 4.5, vertical 5.0.</p></li>
+<li><p><strong>Default surface layers</strong>:
+<code>default_highway_surface_dict</code>, <code>default_cycleway_surface_*</code>, <code>default_track_surface_dict</code> (see Appendix).</p></li>
+<li><p><strong>Base components</strong>:
+<code>base_index_dict</code> (path/track/lanes/bus/bicycle/shared…).</p></li>
+<li><p><strong>Road class / speed limit factors</strong>:
+<code>highway_factor_dict</code>, <code>maxspeed_factor_dict</code>.</p></li>
+<li><p><strong>Factor weighting</strong>:
+<code>highway_factor_dict_weights</code> (higher weight for mixed with motor traffic, lower for segregated facilities).</p></li>
+<li><p><strong>Surface / smoothness factors</strong>:
+<code>surface_factor_dict</code>, <code>smoothness_factor_dict</code>.</p></li>
+<li><p><strong>Data completeness factors</strong>:
+<code>data_incompleteness_dict</code> (<code>surface=30</code>, <code>width=25</code>, etc.).</p></li>
+<li><p><strong>Road classes prohibited for cycling</strong>:
+<code>cycling_highway_prohibition_list</code> (<code>motorway</code>, <code>trunk</code>, etc.).</p></li>
+</ul>
 
-</div>
 </div>
 </div>
             </section>

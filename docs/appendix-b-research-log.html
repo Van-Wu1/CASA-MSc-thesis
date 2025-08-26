@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Appendix B Research log | CASA dissertation using Bookdown</title>
+  <meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  <meta name="generator" content="bookdown 0.43.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Appendix B Research log | CASA dissertation using Bookdown" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  <meta name="github-repo" content="Van-Wu1/CASA-MSc-thesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Appendix B Research log | CASA dissertation using Bookdown" />
+  
+  <meta name="twitter:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+  
+
+
+
+<meta name="date" content="2025-08-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="appendix.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_images/casa_logo.jpg"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#background-and-objectives"><i class="fa fa-check"></i><b>1.1</b> Background and Objectives</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#research-question"><i class="fa fa-check"></i><b>1.2</b> Research Question</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="literature-review.html"><a href="literature-review.html#introduction-to-urban-cycling-environment-assessment"><i class="fa fa-check"></i><b>2.1</b> Introduction to Urban Cycling Environment Assessment</a></li>
+<li class="chapter" data-level="2.2" data-path="literature-review.html"><a href="literature-review.html#review-of-existing-evaluation-frameworks"><i class="fa fa-check"></i><b>2.2</b> Review of Existing Evaluation Frameworks</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="literature-review.html"><a href="literature-review.html#structural-rideability"><i class="fa fa-check"></i><b>2.2.1</b> Structural Rideability</a></li>
+<li class="chapter" data-level="2.2.2" data-path="literature-review.html"><a href="literature-review.html#environmental-perception"><i class="fa fa-check"></i><b>2.2.2</b> Environmental Perception</a></li>
+<li class="chapter" data-level="2.2.3" data-path="literature-review.html"><a href="literature-review.html#network-performance"><i class="fa fa-check"></i><b>2.2.3</b> Network Performance</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="literature-review.html"><a href="literature-review.html#cycling-environmental-composite-index-approaches-ceci-models"><i class="fa fa-check"></i><b>2.3</b> Cycling Environmental Composite Index Approaches (CECI Models)</a></li>
+<li class="chapter" data-level="2.4" data-path="literature-review.html"><a href="literature-review.html#conclusion"><i class="fa fa-check"></i><b>2.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="study-area-and-data.html"><a href="study-area-and-data.html"><i class="fa fa-check"></i><b>3</b> Study Area and Data</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="study-area-and-data.html"><a href="study-area-and-data.html#study-area"><i class="fa fa-check"></i><b>3.1</b> Study Area</a></li>
+<li class="chapter" data-level="3.2" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data"><i class="fa fa-check"></i><b>3.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="study-area-and-data.html"><a href="study-area-and-data.html#general-data"><i class="fa fa-check"></i><b>3.2.1</b> General Data</a></li>
+<li class="chapter" data-level="3.2.2" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-structural-rideability"><i class="fa fa-check"></i><b>3.2.2</b> Data for Structural Rideability</a></li>
+<li class="chapter" data-level="3.2.3" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-environmental-perception"><i class="fa fa-check"></i><b>3.2.3</b> Data for Environmental Perception</a></li>
+<li class="chapter" data-level="3.2.4" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-network-centrality"><i class="fa fa-check"></i><b>3.2.4</b> Data for Network Centrality</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>4</b> Methodology</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="methodology.html"><a href="methodology.html#network-acquisition-and-pre-processing"><i class="fa fa-check"></i><b>4.1</b> Network acquisition and pre-processing</a></li>
+<li class="chapter" data-level="4.2" data-path="methodology.html"><a href="methodology.html#structural-rideability-index1"><i class="fa fa-check"></i><b>4.2</b> Structural rideability (Index1)</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="methodology.html"><a href="methodology.html#model-introduction"><i class="fa fa-check"></i><b>4.2.1</b> Model Introduction</a></li>
+<li class="chapter" data-level="4.2.2" data-path="methodology.html"><a href="methodology.html#data-preprocessing"><i class="fa fa-check"></i><b>4.2.2</b> Data preprocessing</a></li>
+<li class="chapter" data-level="4.2.3" data-path="methodology.html"><a href="methodology.html#engineered-attributes-and-factor-mapping"><i class="fa fa-check"></i><b>4.2.3</b> Engineered attributes and factor mapping</a></li>
+<li class="chapter" data-level="4.2.4" data-path="methodology.html"><a href="methodology.html#base-score-and-multiplicative-formulation"><i class="fa fa-check"></i><b>4.2.4</b> Base score and multiplicative formulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="methodology.html"><a href="methodology.html#environmental-perception-index2"><i class="fa fa-check"></i><b>4.3</b> Environmental perception (Index2)</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="methodology.html"><a href="methodology.html#subcomponents-and-normalisation"><i class="fa fa-check"></i><b>4.3.1</b> Subcomponents and normalisation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="methodology.html"><a href="methodology.html#greenery-gvi"><i class="fa fa-check"></i><b>4.3.2</b> Greenery (GVI)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="methodology.html"><a href="methodology.html#air-quality-no2"><i class="fa fa-check"></i><b>4.3.3</b> Air quality (NO2)</a></li>
+<li class="chapter" data-level="4.3.4" data-path="methodology.html"><a href="methodology.html#natural-landscape-proximity"><i class="fa fa-check"></i><b>4.3.4</b> Natural-landscape proximity</a></li>
+<li class="chapter" data-level="4.3.5" data-path="methodology.html"><a href="methodology.html#sub-index-formulation"><i class="fa fa-check"></i><b>4.3.5</b> Sub-index formulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="methodology.html"><a href="methodology.html#network-centrality-index3"><i class="fa fa-check"></i><b>4.4</b> Network centrality (Index3)</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="methodology.html"><a href="methodology.html#graph-representation"><i class="fa fa-check"></i><b>4.4.1</b> Graph representation</a></li>
+<li class="chapter" data-level="4.4.2" data-path="methodology.html"><a href="methodology.html#betweenness"><i class="fa fa-check"></i><b>4.4.2</b> Betweenness</a></li>
+<li class="chapter" data-level="4.4.3" data-path="methodology.html"><a href="methodology.html#range-limited-closeness"><i class="fa fa-check"></i><b>4.4.3</b> Range-limited closeness</a></li>
+<li class="chapter" data-level="4.4.4" data-path="methodology.html"><a href="methodology.html#sub-index-formulation-1"><i class="fa fa-check"></i><b>4.4.4</b> Sub-index formulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="methodology.html"><a href="methodology.html#composite-index-sensitivity-and-reporting"><i class="fa fa-check"></i><b>4.5</b> Composite index, sensitivity, and reporting</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="methodology.html"><a href="methodology.html#merging-and-keying"><i class="fa fa-check"></i><b>4.5.1</b> Merging and keying</a></li>
+<li class="chapter" data-level="4.5.2" data-path="methodology.html"><a href="methodology.html#composite-scoring"><i class="fa fa-check"></i><b>4.5.2</b> Composite scoring</a></li>
+<li class="chapter" data-level="4.5.3" data-path="methodology.html"><a href="methodology.html#sensitivity-analysis"><i class="fa fa-check"></i><b>4.5.3</b> Sensitivity analysis</a></li>
+<li class="chapter" data-level="4.5.4" data-path="methodology.html"><a href="methodology.html#quality-control-and-implementation-notes"><i class="fa fa-check"></i><b>4.5.4</b> Quality control and implementation notes</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#module-1-structural-ridability"><i class="fa fa-check"></i><b>5.1</b> Module 1: Structural Ridability</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="results.html"><a href="results.html#facility-type-geometry-and-traffic-context"><i class="fa fa-check"></i><b>5.1.1</b> Facility Type, Geometry, and Traffic Context</a></li>
+<li class="chapter" data-level="5.1.2" data-path="results.html"><a href="results.html#topography-and-traffic-stress"><i class="fa fa-check"></i><b>5.1.2</b> Topography and Traffic Stress</a></li>
+<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#fac_4"><i class="fa fa-check"></i><b>5.1.3</b> <code>Fac_4</code></a></li>
+<li class="chapter" data-level="5.1.4" data-path="results.html"><a href="results.html#index-of-structural-ridability"><i class="fa fa-check"></i><b>5.1.4</b> Index of structural ridability</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="results.html"><a href="results.html#green-view-index-gvi"><i class="fa fa-check"></i><b>5.2.1</b> Green View Index (GVI)</a></li>
+<li class="chapter" data-level="5.2.2" data-path="08-appendix.html"><a href="#no%E2%82%82-concentration"><i class="fa fa-check"></i><b>5.2.2</b> NO₂ Concentration</a></li>
+<li class="chapter" data-level="5.2.3" data-path="results.html"><a href="results.html#natural-landscape"><i class="fa fa-check"></i><b>5.2.3</b> Natural Landscape</a></li>
+<li class="chapter" data-level="5.2.4" data-path="results.html"><a href="results.html#index-of-environmental-perception"><i class="fa fa-check"></i><b>5.2.4</b> Index of environmental perception</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#module-3-network-centrality"><i class="fa fa-check"></i><b>5.3</b> Module 3: Network Centrality</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#interpretation-of-centrality-patterns-in-londons-road-network"><i class="fa fa-check"></i><b>5.3.1</b> Interpretation of Centrality Patterns in London’s Road Network</a></li>
+<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#index-of-network-centrality"><i class="fa fa-check"></i><b>5.3.2</b> Index of network centrality</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#cycling-environment-composite-index-ceci-analysis"><i class="fa fa-check"></i><b>5.4</b> Cycling Environment Composite Index (CECI) Analysis</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#city-wide-distribution-and-bottleneck-identification"><i class="fa fa-check"></i><b>5.4.1</b> City-Wide Distribution and Bottleneck Identification</a></li>
+<li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#ceci-kernel-density-estimation-in-london"><i class="fa fa-check"></i><b>5.4.2</b> CECI Kernel Density Estimation in London</a></li>
+<li class="chapter" data-level="5.4.3" data-path="results.html"><a href="results.html#the-ceci-analysis-at-the-borough-level"><i class="fa fa-check"></i><b>5.4.3</b> The CECI analysis at the borough level</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="discussion.html"><a href="discussion.html#research-significance"><i class="fa fa-check"></i><b>6.1</b> Research significance</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="discussion.html"><a href="discussion.html#global-development-goals"><i class="fa fa-check"></i><b>6.1.1</b> Global development goals</a></li>
+<li class="chapter" data-level="6.1.2" data-path="discussion.html"><a href="discussion.html#local-policy"><i class="fa fa-check"></i><b>6.1.2</b> Local policy</a></li>
+<li class="chapter" data-level="6.1.3" data-path="discussion.html"><a href="discussion.html#academic-research"><i class="fa fa-check"></i><b>6.1.3</b> Academic research</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="discussion.html"><a href="discussion.html#limitations"><i class="fa fa-check"></i><b>6.2</b> Limitations</a></li>
+<li class="chapter" data-level="6.3" data-path="discussion.html"><a href="discussion.html#transferability"><i class="fa fa-check"></i><b>6.3</b> Transferability</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="conclusion-1.html"><a href="conclusion-1.html#recommendations"><i class="fa fa-check"></i><b>7.1</b> Recommendations</a></li>
+<li class="chapter" data-level="7.2" data-path="conclusion-1.html"><a href="conclusion-1.html#future-research-directions"><i class="fa fa-check"></i><b>7.2</b> Future Research Directions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>8</b> Appendix</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#appendix-a-key-parameter-summary"><i class="fa fa-check"></i>Appendix A Key Parameter Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-b-research-log.html"><a href="appendix-b-research-log.html"><i class="fa fa-check"></i>Appendix B Research log</a></li>
+<li class="divider"></li>
+<li><a href="" target="blank"></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CASA dissertation using Bookdown</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix-b-research-log" class="section level1 unnumbered hasAnchor">
+<h1>Appendix B Research log<a href="appendix-b-research-log.html#appendix-b-research-log" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Date
+</th>
+<th style="text-align:left;font-weight: bold;">
+Task
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+28th June 2025
+</td>
+<td style="text-align:left;">
+Outlined research framework and indicator system
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5th July 2025
+</td>
+<td style="text-align:left;">
+Reviewed data sources and access channels
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10th July 2025
+</td>
+<td style="text-align:left;">
+Downloaded street network data and checked structure
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+15th July 2025
+</td>
+<td style="text-align:left;">
+Processed GVI remote sensing data
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+20th July 2025
+</td>
+<td style="text-align:left;">
+Collected AQI and landscape data
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+21st July 2025
+</td>
+<td style="text-align:left;">
+Cleaned street network dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+24th July 2025
+</td>
+<td style="text-align:left;">
+Built LTS classification fields
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+27th July 2025
+</td>
+<td style="text-align:left;">
+Generated slope layer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+30th July 2025
+</td>
+<td style="text-align:left;">
+Standardized environmental indicators
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2nd Aug 2025
+</td>
+<td style="text-align:left;">
+Merged datasets and created master table
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+6th Aug 2025
+</td>
+<td style="text-align:left;">
+Calculated centrality measures
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10th Aug 2025
+</td>
+<td style="text-align:left;">
+Conducted correlation and clustering analysis
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+13th Aug 2025
+</td>
+<td style="text-align:left;">
+Produced spatial maps (LTS, slope, GVI)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+15th Aug 2025
+</td>
+<td style="text-align:left;">
+Started writing methodology
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+17th Aug 2025
+</td>
+<td style="text-align:left;">
+Computed Impedance Index
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+19th Aug 2025
+</td>
+<td style="text-align:left;">
+Expanded results draft
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+20th Aug 2025
+</td>
+<td style="text-align:left;">
+Continued writing methodology and results
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+21st Aug 2025
+</td>
+<td style="text-align:left;">
+Integrated figures into results
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+22nd Aug 2025
+</td>
+<td style="text-align:left;">
+Linked literature review with methodology
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+24th Aug 2025
+</td>
+<td style="text-align:left;">
+Drafted discussion section
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+26th Aug 2025
+</td>
+<td style="text-align:left;">
+Finalized writing
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="appendix.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": false
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/andrewmaclachlan/CASA-MSc-thesis/edit/main/08-appendix.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["CASA-Thesis.pdf", "https://github.com/andrewmaclachlan/CASA-MSc-thesis/raw/main/08-appendix.Rmd"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
