@@ -188,11 +188,11 @@ div.csl-indent {
 <li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#interpretation-of-centrality-patterns-in-londons-road-network"><i class="fa fa-check"></i><b>5.3.1</b> Interpretation of Centrality Patterns in London’s Road Network</a></li>
 <li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#index-of-network-centrality"><i class="fa fa-check"></i><b>5.3.2</b> Index of network centrality</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#cycling-quality-index-cqi-analysis"><i class="fa fa-check"></i><b>5.4</b> Cycling Quality Index (CQI) Analysis</a>
+<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#cycling-environment-composite-index-ceci-analysis"><i class="fa fa-check"></i><b>5.4</b> Cycling Environment Composite Index (CECI) Analysis</a>
 <ul>
 <li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#city-wide-distribution-and-bottleneck-identification"><i class="fa fa-check"></i><b>5.4.1</b> City-Wide Distribution and Bottleneck Identification</a></li>
-<li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#cqi-kernel-density-estimation-in-london"><i class="fa fa-check"></i><b>5.4.2</b> CQI Kernel Density Estimation in London</a></li>
-<li class="chapter" data-level="5.4.3" data-path="results.html"><a href="results.html#the-cqi-analysis-at-the-borough-level"><i class="fa fa-check"></i><b>5.4.3</b> The CQI analysis at the borough level</a></li>
+<li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#ceci-kernel-density-estimation-in-london"><i class="fa fa-check"></i><b>5.4.2</b> CECI Kernel Density Estimation in London</a></li>
+<li class="chapter" data-level="5.4.3" data-path="results.html"><a href="results.html#the-ceci-analysis-at-the-borough-level"><i class="fa fa-check"></i><b>5.4.3</b> The CECI analysis at the borough level</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a>
@@ -236,12 +236,12 @@ div.csl-indent {
 <div id="methodology" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Methodology<a href="methodology.html#methodology" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:flow"></span>
-<img src="general_images/flow.png" alt="Workflow of the Composite Cycling Environment Index (CECI)" width="100%" />
+<img src="general_images/flow.png" alt="Workflow of the Cycling Environment Composite Index (CECI)" width="100%" />
 <p class="caption">
-Figure 4.1: Workflow of the Composite Cycling Environment Index (CECI)
+Figure 4.1: Workflow of the Cycling Environment Composite Index (CECI)
 </p>
 </div>
-<p>Figure <a href="methodology.html#fig:flow">4.1</a> summarises the end-to-end pipeline for constructing a link-level Composite Cycling Environment Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.</p>
+<p>Figure <a href="methodology.html#fig:flow">4.1</a> summarises the end-to-end pipeline for constructing a link-level Cycling Environment Composite Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.</p>
 <div id="network-acquisition-and-pre-processing" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Network acquisition and pre-processing<a href="methodology.html#network-acquisition-and-pre-processing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
@@ -371,6 +371,7 @@ fac4
 </tr>
 </tbody>
 </table>
+<p>(PC1 = 43.31%, PC2 = 25.32%, PC3 = 17.18%, PC4 = 14.19%)</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:pca"></span>
 <img src="general_images/pca.png" alt="PCA biplot (PC1 vs PC2). Arrows denote variable loadings. LTS (stress level) aligns with PC1; fac4 defines PC2, indicating complementary dimensions." width="90%" />
 <p class="caption">
@@ -465,7 +466,7 @@ The structural specification preserves the core Berlin logic while substituting 
 </div>
 <div id="composite-scoring" class="section level3 hasAnchor" number="4.5.2">
 <h3><span class="header-section-number">4.5.2</span> Composite scoring<a href="methodology.html#composite-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The composite index is the arithmetic mean of the three sub-indices under a baseline equal-weights assumption:</p>
+<p>The Cycling Environment Composite Index (CECI) is the arithmetic mean of the three sub-indices under a baseline equal-weights assumption:</p>
 <p><span class="math display">\[CECI = \frac{Index_{1} + Index_{2} + Index_{3}}{3}\]</span></p>
 <p>This choice balances design quality, environmental comfort, and network position at evaluation stage. Length-weighted summaries may subsequently be produced for Borough or MSOA units for descriptive purposes; these aggregations are intentionally separated from model construction.</p>
 </div>

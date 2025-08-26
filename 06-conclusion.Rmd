@@ -1,6 +1,6 @@
 # Conclusion
 
-This dissertation has developed and applied a composite framework for evaluating the cycling environment of London, addressing the interplay between infrastructural conditions, environmental perception, and network connectivity. The research was motivated by the need to move beyond fragmented assessments of cycling quality and to deliver a holistic tool that can highlight disparities and guide targeted interventions. Through the construction of a Cycling Quality Index (CQI), the study has provided new insights into the spatial distribution of cycling opportunities and constraints across Greater London.
+This dissertation has developed and applied a composite framework for evaluating the cycling environment of London, addressing the interplay between infrastructural conditions, environmental perception, and network connectivity. The research was motivated by the need to move beyond fragmented assessments of cycling quality and to deliver a holistic tool that can highlight disparities and guide targeted interventions. Through the construction of a Cycling Environment Composite Index (CECI), the study has provided new insights into the spatial distribution of cycling opportunities and constraints across Greater London.
 
 The findings revealed a marked core–periphery gradient, with central districts characterised by high traffic stress, fragmented facilities, and environmental burdens, while outer areas contained more isolated but higher-quality segments often associated with parks and green corridors. Importantly, the analysis showed that no single dimension is sufficient for evaluating cycling quality: infrastructural improvements may be undermined by environmental pressures, while attractive green routes may fail to deliver connectivity. By integrating these factors into a unified index, the study contributes both methodologically, by operationalising a replicable evaluation tool, and empirically, by providing one of the most detailed portraits of London’s cycling environment to date.
 
@@ -21,14 +21,14 @@ Based on the findings, several recommendations are offered:
    Borough-level variation demonstrates that cycling provision remains uneven. Policies should therefore focus not only on expanding total infrastructure but also on ensuring that improvements address underserved communities and neighbourhoods.
 
 5. Adopt multi-dimensional evaluation tools  
-   The CQI framework developed here can support monitoring and prioritisation. Incorporating such composite indicators into policy evaluation would enable decision-makers to capture the full range of factors shaping cycling quality rather than relying on isolated metrics.
+   The CECI framework developed here can support monitoring and prioritisation. Incorporating such composite indicators into policy evaluation would enable decision-makers to capture the full range of factors shaping cycling quality rather than relying on isolated metrics.
 
 ## Future Research Directions
 
 While this study provides a comprehensive assessment, further work is required to refine and extend the framework:
 
 * Dynamic and temporal analysis: Incorporating peak-hour traffic conditions, seasonal variations in air quality, and temporal changes in greenery would provide a richer understanding of cyclists’ experiences.  
-* User-centred validation: Surveys, sensor data, or participatory mapping could be employed to ground-truth the CQI and ensure that it aligns with the perceptions of diverse user groups.  
+* User-centred validation: Surveys, sensor data, or participatory mapping could be employed to ground-truth the CECI and ensure that it aligns with the perceptions of diverse user groups.  
 * Cross-city comparison: Applying the framework to other urban contexts would test its adaptability and create benchmarks for evaluating cycling environments internationally.  
 * Integration with multimodal accessibility: Future work could explore how cycling quality interacts with public transport nodes, last-mile connections, and emerging forms of micro-mobility.
 

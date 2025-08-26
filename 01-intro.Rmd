@@ -24,7 +24,7 @@ This question is pursued through three interrelated aims:
 
 1. Framework development 
 
-To design a composite Cycling Quality Index (CQI) that synthesises three complementary perspectives:  
+To design a Cycling Environment Composite Index (CECI) that synthesises three complementary perspectives:  
 
 * Structural rideability, capturing infrastructure types, geometry, and traffic-related stressors.  
 * Environmental perception, accounting for greenery, air quality, and proximity to natural landscapes.  
