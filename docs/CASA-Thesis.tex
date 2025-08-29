@@ -126,7 +126,7 @@ MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 \strut \\
 Word count: 11,066}
-\date{2025-08-27}
+\date{2025-08-29}
 
 \begin{document}
 \maketitle
@@ -217,7 +217,7 @@ Variance Inflation Factor & VIF\\
 
 Cycling is increasingly recognised as a cornerstone of sustainable transport strategies worldwide. Compared with private cars, it produces negligible emissions, requires less road space, and contributes positively to public health (\textcite{pucher_cycling_2017}). For cities such as London, promoting cycling is not only a response to the global climate emergency but also a way to address pressing local challenges such as air pollution, congestion, and social inequalities in mobility access.
 
-Over the past decade, London has launched a series of cycling initiatives, ranging from the construction of Cycle Superhighways and Quietways to the more recent introduction of low-traffic neighbourhoods (\textcite{tfl_cycling_action_2018}). These investments reflect growing political and societal support for active travel, as well as recognition that cycling can play a meaningful role in shifting travel behaviour. Nevertheless, the actual quality of the cycling environment remains uneven across the city. Central districts often experience heavy traffic, fragmented facilities, and environmental burdens, while peripheral areas may enjoy greener conditions yet lack coherent connections to employment centres or public transport hubs. This unevenness creates barriers for everyday commuting and limits the potential of cycling to become a mainstream mode of transport.
+Over the past decade, London has launched a series of cycling initiatives, ranging from the construction of Cycle Superhighways and Quietways to the more recent re-introduction of low-traffic neighbourhoods (\textcite{tfl_cycling_action_2018}). These investments reflect growing political and societal support for active travel, as well as recognition that cycling can play a meaningful role in shifting travel behaviour. Nevertheless, the actual quality of the cycling environment remains uneven across the city. Central districts often experience heavy traffic, fragmented facilities, and environmental burdens, while peripheral areas may enjoy greener conditions yet lack coherent connections to employment centres or public transport hubs. This unevenness creates barriers for everyday cycle travel and limits the potential of cycling to become a mainstream mode of transport.
 
 Traditional assessments of cycling in London have tended to focus on individual aspects, such as the length of designated cycle lanes or the presence of green corridors. While informative, such isolated measures fail to capture the lived experience of cyclists, who are simultaneously affected by infrastructure design, environmental quality, and network connectivity (\textcite{giles-corti_city_2016}). What is missing is a holistic and systematic framework that can integrate these multiple dimensions into a coherent measure of cycling quality. Without such an approach, it is difficult for policymakers to identify where interventions are most urgently needed, or to evaluate whether current investments are leading to a more equitable cycling environment.
 
@@ -290,7 +290,7 @@ Overall, the literature indicates that cycling can play a meaningful role in red
 
 \subsection{Structural Rideability}\label{structural-rideability}
 
-A critical dimension of cycling environment assessment is Structural Rideability, capturing physical infrastructure attributes that directly influence cycling comfort, safety, and user inclusivity. This concept aligns with established frameworks such as the Canadian Bikeway Comfort and Safety (Can-BICS) Classification System, which systematically evaluates cycling infrastructure based on safety performance and user comfort across different facility types (\textcite{ferster_developing_2023}). Similarly, the Dutch CROW Design Manual emphasizes five key principles for effective cycling infrastructure: cohesion, directness, safety, comfort, and attractiveness (\textcite{crow_design_2016}), reinforcing the multidimensional nature of structural cycling environment assessment.
+A critical dimension of cycling environment assessment is Structural Rideability, capturing physical infrastructure attributes that directly influences cycling comfort, safety, and user inclusivity. This concept aligns with established frameworks such as the Canadian Bikeway Comfort and Safety (Can-BICS) Classification System, which systematically evaluates cycling infrastructure based on safety performance and user comfort across different facility types (\textcite{ferster_developing_2023}). Similarly, the Dutch CROW Design Manual emphasizes five key principles for effective cycling infrastructure: cohesion, directness, safety, comfort, and attractiveness (\textcite{crow_design_2016}), reinforcing the multidimensional nature of structural cycling environment assessment.
 
 A foundational metric within this domain is the Level of Traffic Stress (LTS) (\textcite{mekuria_low-stress_2012}), which categorizes road segments by traffic conditions, lane width, speed, and cycling infrastructure presence. The LTS framework has been extensively validated and refined across multiple contexts, with \textcite{furth_network_2016} demonstrating its applicability for network-wide cycling infrastructure assessment, and \textcite{dill_revisiting_2016} establishing its relationship with cyclist behavior patterns. Recent developments have extended LTS applicability through open-source mapping platforms, with \textcite{wasserman_evaluating_2019} demonstrating in San Francisco that OpenStreetMap-derived LTS scores achieve 89.9\% accuracy compared to field-validated assessments, facilitating scalable urban mapping applications.
 
@@ -324,7 +324,14 @@ Vehicle speed and traffic volume represent fundamental determinants of cycling s
 \end{enumerate}
 
 The continuity of cycling networks and intersection treatments constitute essential elements of comprehensive cycling environment assessment. Research demonstrates that cyclist interactions become more severe and less safe at locations with cycling network discontinuities, highlighting the importance of seamless network connections. Intersection and crossing treatments are fundamental considerations in LTS evaluation, with studies showing that specialized intersection designs can significantly reduce cyclist-motorist conflicts and improve overall network usability.
-4. Spatial Configuration and Design Standards
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Spatial Configuration and Design Standards
+\end{enumerate}
 
 The geometric design of cycling facilities, including lane width, marking clarity, and spatial relationship to vehicular traffic, influences both objective and subjective safety measures. LTS assessment incorporates the number of lanes, effective vehicle speed, and the presence and type of bicycle facility, creating a comprehensive evaluation framework that accounts for the multidimensional nature of cycling infrastructure quality.
 
@@ -434,7 +441,7 @@ Cycling experience is also shaped by environmental and perceptual factors. Three
 
 Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.
 
-In sum, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London's cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO\(_2\)), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
+In summary, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London's cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO\(_2\)), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
 
 The following table represents the data sources used in this study:
 
@@ -477,7 +484,7 @@ Road Centrality Data & Betweenness and closeness derived from OSM road network &
 \caption{Workflow of the Cycling Environment Composite Index (CECI)}\label{fig:flow}
 \end{figure}
 
-Figure \ref{fig:flow} summarises the end-to-end pipeline for constructing a link-level Cycling Environment Composite Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
+Figure \ref{fig:flow} summarises the end-to-end pipeline for constructing a link-level Cycling Environment Composite Index (CECI) for London. The workflow proceeds through four modules: (1) network acquisition and pre-processing, delivering a cleaned street graph and processed attributes; (2) a structural rideability module that assigns facility- and safety-related factors to each link and produces Index1; (3) an environmental perception module that aggregates greenery, air quality, and natural-landscape proximity into Index2; and (4) a network centrality module that computes graph-theoretic measures and yields Index3. The three sub-indices are winsorised and scaled to a common range and then combined into the CECI under a baseline equal-weights scheme, with predefined alternatives used for robustness. All operations are undertaken in the British National Grid (OSGB36), EPSG:27700. Parameter values and rule tables appear in the Appendix to support reproducibility.
 
 \section{Network acquisition and pre-processing}\label{network-acquisition-and-pre-processing}
 
@@ -747,11 +754,11 @@ Beyond infrastructure, topography and traffic stress are key determinants of rid
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{general_images/slopeLTS} 
+{\centering \includegraphics[width=0.9\linewidth]{general_images/slopeLTS} 
 
 }
 
-\caption{Spatial distribution of slope (a) and Level of Traffic Stress (b) across Greater London.}\label{fig:slopeLTS}
+\caption{Spatial distribution of slope (a) and Level of Traffic Stress (b) across Greater London}\label{fig:slopeLTS}
 \end{figure}
 
 \begin{enumerate}
@@ -772,6 +779,15 @@ The spatial distribution of slope across Greater London reveals a distinct topog
 \end{enumerate}
 
 At the citywide scale, high-stress segments dominate the network. By link counts, LTS = 4 comprises 65.5\% (107,510 links) and LTS = 3 2.5\% (4,137 links), whereas low-stress LTS = 1 and LTS = 2 account for 18.6\% (30,444 links) and 13.4\% (21,985 links), respectively. This distribution indicates that, in its current form, London's cycling network primarily serves riders with greater experience or higher stress tolerance. Although low-stress facilities are widespread, they are largely fragmented and corridor-based, rather than forming a continuous citywide backbone.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{general_images/LTS12} 
+
+}
+
+\caption{Distribution of Low-Stress Routes (LTS 1 and 2) in London}\label{fig:LTS12}
+\end{figure}
 
 Spatially, LTS = 1 ``blue corridors'' concentrate along motor-traffic-free or strongly separated alignments, including rivers/canals, greenways traversing large parks, and a subset of newly built or retrofitted segregated cycle tracks. These corridors are internally continuous, yet connections between corridors and into the metropolitan core are frequently severed by LTS = 3--4 segments. LTS = 2 is more common on lower-speed, lower-class residential streets, forming patches in the outer boroughs; however, inter-patch continuity is still constrained by LTS = 4 radial arterials and ring roads. LTS = 3--4 are widespread along primary/fast corridors, bridgeheads, and key connectors---locations that typically combine higher motor-traffic speeds and volumes or mixing with bus lanes---thus functioning as critical bottlenecks to network continuity.
 

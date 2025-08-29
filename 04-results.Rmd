@@ -29,7 +29,7 @@ The base index primarily reflects a facility's priority status. As shown in Figu
 
 Beyond infrastructure, topography and traffic stress are key determinants of ridability.
 
-```{r slopeLTS, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Spatial distribution of slope (a) and Level of Traffic Stress (b) across Greater London."}
+```{r slopeLTS, echo=FALSE, out.width="90%", fig.align='center', fig.cap="Spatial distribution of slope (a) and Level of Traffic Stress (b) across Greater London"}
 library(here)
 knitr::include_graphics(here::here('general_images','slopeLTS.png'))
 ```
@@ -41,6 +41,11 @@ The spatial distribution of slope across Greater London reveals a distinct topog
 2. LTS(`fac_5`)
 
 At the citywide scale, high-stress segments dominate the network. By link counts, LTS = 4 comprises 65.5% (107,510 links) and LTS = 3 2.5% (4,137 links), whereas low-stress LTS = 1 and LTS = 2 account for 18.6% (30,444 links) and 13.4% (21,985 links), respectively. This distribution indicates that, in its current form, London’s cycling network primarily serves riders with greater experience or higher stress tolerance. Although low-stress facilities are widespread, they are largely fragmented and corridor-based, rather than forming a continuous citywide backbone.
+
+```{r LTS12, echo=FALSE, out.width="100%", fig.align='center', fig.cap="Distribution of Low-Stress Routes (LTS 1 and 2) in London"}
+library(here)
+knitr::include_graphics(here::here('general_images','LTS12.png'))
+```
 
 Spatially, LTS = 1 “blue corridors” concentrate along motor-traffic-free or strongly separated alignments, including rivers/canals, greenways traversing large parks, and a subset of newly built or retrofitted segregated cycle tracks. These corridors are internally continuous, yet connections between corridors and into the metropolitan core are frequently severed by LTS = 3–4 segments. LTS = 2 is more common on lower-speed, lower-class residential streets, forming patches in the outer boroughs; however, inter-patch continuity is still constrained by LTS = 4 radial arterials and ring roads. LTS = 3–4 are widespread along primary/fast corridors, bridgeheads, and key connectors—locations that typically combine higher motor-traffic speeds and volumes or mixing with bus lanes—thus functioning as critical bottlenecks to network continuity.
 
