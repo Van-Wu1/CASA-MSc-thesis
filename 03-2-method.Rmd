@@ -166,7 +166,9 @@ Edge betweenness is estimated using approximate sampling with K = 1200 source pa
 
 ### Range-limited closeness
 
-Node closeness is computed within 2 km and 5 km network radii; edge-level closeness is the mean of endpoint values. A multi-scale composite is formed as:
+The National Travel Survey reported that the average cycling trip length in England was approximately 3 miles (around 4.8 km) in 2023 (@dft_nts_2024). Based on this evidence, closeness centrality was calculated at 2 km and 5 km radii, representing typical short-distance and upper-range commuter cycling trips. Greater weight was assigned to the 2 km radius as local trips dominate everyday cycling patterns, while the 5 km radius captures longer journeys within the average commuting range.
+
+The two scales were combined into a multi-scale composite as:
 
 $$C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}$$
 

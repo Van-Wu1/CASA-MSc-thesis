@@ -357,14 +357,14 @@ Nitrogen dioxide (NO\(_2\)) serves as a representative indicator of urban air po
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Natural Features and Landscape Elements
+  Natural Landscape Elements
 \end{enumerate}
 
-The presence and accessibility of natural features---including parks, green spaces, and water bodies---constitute essential components of environmental perception in cycling assessment. Research consistently demonstrates that exposure to natural environments generates measurable psychological benefits, with studies showing that green spaces boost serotonin and dopamine levels in the brain, contributing to happiness and well-being (\textcite{lee_health_2011}).
+The presence and accessibility of natural landscapes---including parks, green spaces, and water bodies---constitute essential components of environmental perception in cycling assessment. Research consistently demonstrates that exposure to natural environments generates measurable psychological benefits, with studies showing that green spaces boost serotonin and dopamine levels in the brain, contributing to happiness and well-being (\textcite{lee_health_2011}).
 
-Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (\textcite{hooyberg_general_2020}). The integration of natural features into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.
+Evidence indicates that people living in proximity to natural spaces have significantly improved mental health outcomes, with benefits persisting up to three years after establishing residence near greener areas (Nieuwenhuijsen et al., 2017). Furthermore, cross-national studies across 18 countries found that frequency of recreational visits to green, inland-blue, and coastal-blue spaces were all positively associated with well-being and negatively associated with mental distress (\textcite{hooyberg_general_2020}). The integration of natural landscapes into cycling route evaluation reflects the understanding that proximity to lakes, parks, and natural landscapes enhances overall cycling experience through psychological restoration and mood improvement.
 
-Collectively, these three environmental perception dimensions---visual greenery (GVI), air quality (NO\(_2\)), and natural features---provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
+Collectively, these three environmental perception dimensions---visual greenery (GVI), air quality (NO\(_2\)), and natural landscapes---provide a comprehensive framework for capturing the subjective yet quantifiable aspects of cycling environments that significantly influence user behavior, comfort, and participation decisions.
 
 \subsection{Network Performance}\label{network-performance}
 
@@ -443,6 +443,10 @@ Finally, the spatial configuration of the road network was modelled to capture s
 
 In summary, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London's cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO\(_2\)), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
 
+\subsection{VData for External Validation}\label{vdata-for-external-validation}
+
+To support external validation of the CECI scores, this study additionally uses data from TfL's Active Travel Counts Programme (2024 W1, spring). The dataset provides 15-minute manual counts of cycling flows across Central, Inner, Outer London and Cycleways, with site coordinates reported in both WGS84 and British National Grid. Counts were aggregated to site-level average daily volumes for weekdays (07:00--19:00) and subsequently linked to the nearest road segment in the CECI network.
+
 The following table represents the data sources used in this study:
 
 \begingroup\fontsize{9}{11}\selectfont
@@ -469,7 +473,8 @@ Green View Index (GVI) & Percentage of visible greenery from street-level imager
 NO₂ Concentration & Modelled nitrogen dioxide levels & 20m Grid Raster & London Air Quality Network & 2016\\
 \addlinespace
 Natural Features & Parks, woodlands, meadows, water bodies from OSM tags & Polygon & OpenStreetMap & 2025\\
-Road Centrality Data & Betweenness and closeness derived from OSM road network & Line segments & Derived via OSMnx & 2025\\*
+Road Centrality Data & Betweenness and closeness derived from OSM road network & Line segments & Derived via OSMnx & 2025\\
+TfL Active Travel Counts (W1, spring) & Manual counts of cycling flows, aggregated to weekday daily volumes & Point / Site & Transport for London (TfL) & 2024\\*
 \end{longtable}
 \endgroup{}
 
@@ -645,11 +650,13 @@ The gridded NO\(_2\) surface (cell size 20 m) is sampled every 10 m along each l
 
 \subsection{Natural-landscape proximity}\label{natural-landscape-proximity}
 
-Polygons representing natural features are dissolved by type to avoid double counting. A multi-ring proximity function is computed around each link using the levels (50 m, 0.1), (40 m, 0.2), (30 m, 0.3), (20 m, 0.5), (10 m, 0.7), (1 m, 1.0); weights increase with proximity.
+Polygons representing natural landscapes are dissolved by type to avoid double counting. A multi-ring proximity function is computed around each link using the levels (50 m, 0.1), (40 m, 0.2), (30 m, 0.3), (20 m, 0.5), (10 m, 0.7), (1 m, 1.0); weights increase with proximity.
 
 \subsection{Sub-index formulation}\label{sub-index-formulation}
 
-After normalisation to {[}0, 1{]}, the three components are combined as:
+Considering that NO₂ concentration is more relevant to long-term health than to immediate perceptual experience, and that natural landscapes provide a diffuse but less easily quantifiable contribution to cycling quality, greater weight was assigned to GVI, which directly captures visible greenery and has been shown to strongly shape comfort and safety. Among the three components, GVI was regarded as the most salient and consistently measurable factor influencing perceived cycling quality.
+
+Accordingly, the three components were combined after normalisation to {[}0, 1{]} as:
 
 \[Index_{2} = 0.5 \times GVI_{\text{norm}} + 0.3 \times (1 - NO_{2,\text{norm}}) + 0.2 \times Natural_{\text{norm}}\]
 
@@ -667,7 +674,9 @@ Edge betweenness is estimated using approximate sampling with K = 1200 source pa
 
 \subsection{Range-limited closeness}\label{range-limited-closeness}
 
-Node closeness is computed within 2 km and 5 km network radii; edge-level closeness is the mean of endpoint values. A multi-scale composite is formed as:
+The National Travel Survey reported that the average cycling trip length in England was approximately 3 miles (around 4.8 km) in 2023 (\textcite{dft_nts_2024}). Based on this evidence, closeness centrality was calculated at 2 km and 5 km radii, representing typical short-distance and upper-range commuter cycling trips. Greater weight was assigned to the 2 km radius as local trips dominate everyday cycling patterns, while the 5 km radius captures longer journeys within the average commuting range.
+
+The two scales were combined into a multi-scale composite as:
 
 \[C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}\]
 
@@ -712,7 +721,7 @@ Comparative statistics and maps are reported alongside the baseline.
 
 \subsection{Quality control and implementation notes}\label{quality-control-and-implementation-notes}
 
-Post-cleaning checks review connectivity and degree distributions. Borough-level sidepath rates are monitored to flag tagging anomalies. Overlay steps (slope, greenery, pollution, natural features) record geometry--attribute counts to confirm coverage before index computation. Normalisation diagnostics document the effect of p1--p99 winsorisation. Processing uses standard Python geospatial libraries (GeoPandas, Shapely, rasterio, OSMnx) and graph tools with fixed random seeds. Parameter files and scripts are available in the project repository.
+Post-cleaning checks review connectivity and degree distributions. Borough-level sidepath rates are monitored to flag tagging anomalies. Overlay steps (slope, greenery, pollution, natural landscapes) record geometry--attribute counts to confirm coverage before index computation. Normalisation diagnostics document the effect of p1--p99 winsorisation. Processing uses standard Python geospatial libraries (GeoPandas, Shapely, rasterio, OSMnx) and graph tools with fixed random seeds. Parameter files and scripts are available in the project repository.
 
 \chapter{Results}\label{results}
 
@@ -805,7 +814,7 @@ Regression analysis shows that \texttt{fac\_4} contributes negligibly to the var
 
 }
 
-\caption{Spatial Distribution of the Index of Structural Ridability}\label{fig:indexs1}
+\caption{Spatial Distribution of the Index of Structural Ridability (Higher values indicate better performance)}\label{fig:indexs1}
 \end{figure}
 
 \begin{figure}
@@ -870,7 +879,7 @@ The spatial distribution of natural landscape features presents a dispersed yet 
 
 }
 
-\caption{Spatial Distribution of the Index of Environmental Perception}\label{fig:indexs2}
+\caption{Spatial Distribution of the Index of Environmental Perception (Higher values indicate better performance)}\label{fig:indexs2}
 \end{figure}
 
 When constructing the composite index that integrates GVI, NO\(_2\), and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac\(_1\) (GVI) and fac\(_3\) (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac\(_3\) was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure \ref{fig:indexs2}) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (\texttt{fac\_gvi} = 1.077, fac\_NO\(_2\) = 1.039, \texttt{fac\_nat} = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.
@@ -906,7 +915,7 @@ The results also highlight the role of river crossings. Bridges along the Thames
 
 }
 
-\caption{Spatial Distribution of the Index of Network Centrality.}\label{fig:indexs3}
+\caption{Spatial Distribution of the Index of Network Centrality (Higher values indicate better performance)}\label{fig:indexs3}
 \end{figure}
 
 The composite centrality index demonstrates a highly uneven distribution across London's road network. High-centrality roads are concentrated within the central districts and along radial corridors, reflecting the city's monocentric structure combined with radial arterial organization. Peripheral suburban streets are predominantly located in the lowest centrality category, highlighting their marginal contribution to overall connectivity.
@@ -925,7 +934,7 @@ Synthesizing the structural, environmental, and network metrics, the final CECI 
 
 }
 
-\caption{Spatial Distribution of the Cycling Environment Composite Index (CECI) by Quantile}\label{fig:cqi}
+\caption{Spatial Distribution of the Cycling Environment Composite Index (CECI) by Quantile (Higher values indicate better performance)}\label{fig:cqi}
 \end{figure}
 
 The figure \ref{fig:cqi} illustrates the Cycling Environment Compliance Index across Greater London, computed at the road-segment level and classified by quintiles. A pronounced core--periphery gradient is evident: low-value segments are densely concentrated in the inner city and central areas, while the outer boroughs gradually transition to medium and higher scores. Spatially, several continuous high-value corridors can be identified, most prominently along the Thames, canal routes, and selected upgraded arterials. However, these are frequently interrupted by low-value ``breakpoints'' at bridges, junctions, and complex intersections, reflecting the weakening of network continuity at critical nodes. In outer London, high-value links tend to appear as scattered patches, often connected to park greenways or local residential streets, but rarely forming coherent networks at a commuting scale.

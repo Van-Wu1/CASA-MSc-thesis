@@ -449,7 +449,8 @@ The structural specification preserves the core Berlin logic while substituting 
 </div>
 <div id="range-limited-closeness" class="section level3 hasAnchor" number="4.4.3">
 <h3><span class="header-section-number">4.4.3</span> Range-limited closeness<a href="methodology.html#range-limited-closeness" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Node closeness is computed within 2 km and 5 km network radii; edge-level closeness is the mean of endpoint values. A multi-scale composite is formed as:</p>
+<p>The National Travel Survey reported that the average cycling trip length in England was approximately 3 miles (around 4.8 km) in 2023 (<span class="citation">Department for Transport (<a href="#ref-dft_nts_2024">2024</a>)</span>). Based on this evidence, closeness centrality was calculated at 2 km and 5 km radii, representing typical short-distance and upper-range commuter cycling trips. Greater weight was assigned to the 2 km radius as local trips dominate everyday cycling patterns, while the 5 km radius captures longer journeys within the average commuting range.</p>
+<p>The two scales were combined into a multi-scale composite as:</p>
 <p><span class="math display">\[C_{\text{multi}} = 0.6 \times C_{2\text{km}} + 0.4 \times C_{5\text{km}}\]</span></p>
 <p>then scaled to [0, 1].</p>
 </div>
@@ -491,6 +492,9 @@ The structural specification preserves the core Berlin logic while substituting 
 </div>
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-dft_nts_2024" class="csl-entry">
+Department for Transport. 2024. <span>“Walking and Cycling Statistics, England: 2023.”</span> Department for Transport. <a href="https://www.gov.uk/government/statistics/walking-and-cycling-statistics-england-2023/walking-and-cycling-statistics-england-introduction-and-main-findings-national-travel-survey">https://www.gov.uk/government/statistics/walking-and-cycling-statistics-england-2023/walking-and-cycling-statistics-england-introduction-and-main-findings-national-travel-survey</a>.
+</div>
 <div id="ref-osm_cycling_quality_index" class="csl-entry">
 SupaplexOSM. 2021. <span>“OSM Cycling Quality Index.”</span> 2021. <a href="https://github.com/SupaplexOSM/OSM-Cycling-Quality-Index">https://github.com/SupaplexOSM/OSM-Cycling-Quality-Index</a>.
 </div>
