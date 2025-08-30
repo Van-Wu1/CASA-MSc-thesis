@@ -141,11 +141,13 @@ The gridded NO$_2$ surface (cell size 20 m) is sampled every 10 m along each lin
 
 ### Natural-landscape proximity
 
-Polygons representing natural features are dissolved by type to avoid double counting. A multi-ring proximity function is computed around each link using the levels (50 m, 0.1), (40 m, 0.2), (30 m, 0.3), (20 m, 0.5), (10 m, 0.7), (1 m, 1.0); weights increase with proximity.
+Polygons representing natural landscapes are dissolved by type to avoid double counting. A multi-ring proximity function is computed around each link using the levels (50 m, 0.1), (40 m, 0.2), (30 m, 0.3), (20 m, 0.5), (10 m, 0.7), (1 m, 1.0); weights increase with proximity.
 
 ### Sub-index formulation
 
-After normalisation to [0, 1], the three components are combined as:
+Considering that NO₂ concentration is more relevant to long-term health than to immediate perceptual experience, and that natural landscapes provide a diffuse but less easily quantifiable contribution to cycling quality, greater weight was assigned to GVI, which directly captures visible greenery and has been shown to strongly shape comfort and safety. Among the three components, GVI was regarded as the most salient and consistently measurable factor influencing perceived cycling quality.
+
+Accordingly, the three components were combined after normalisation to [0, 1] as:
 
 $$Index_{2} = 0.5 \times GVI_{\text{norm}} + 0.3 \times (1 - NO_{2,\text{norm}}) + 0.2 \times Natural_{\text{norm}}$$
 
@@ -206,4 +208,4 @@ Comparative statistics and maps are reported alongside the baseline.
 
 ### Quality control and implementation notes
 
-Post-cleaning checks review connectivity and degree distributions. Borough-level sidepath rates are monitored to flag tagging anomalies. Overlay steps (slope, greenery, pollution, natural features) record geometry–attribute counts to confirm coverage before index computation. Normalisation diagnostics document the effect of p1–p99 winsorisation. Processing uses standard Python geospatial libraries (GeoPandas, Shapely, rasterio, OSMnx) and graph tools with fixed random seeds. Parameter files and scripts are available in the project repository.
+Post-cleaning checks review connectivity and degree distributions. Borough-level sidepath rates are monitored to flag tagging anomalies. Overlay steps (slope, greenery, pollution, natural landscapes) record geometry–attribute counts to confirm coverage before index computation. Normalisation diagnostics document the effect of p1–p99 winsorisation. Processing uses standard Python geospatial libraries (GeoPandas, Shapely, rasterio, OSMnx) and graph tools with fixed random seeds. Parameter files and scripts are available in the project repository.

@@ -126,7 +126,7 @@ MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 \strut \\
 Word count: 11,066}
-\date{2025-08-29}
+\date{2025-08-30}
 
 \begin{document}
 \maketitle
@@ -793,7 +793,7 @@ Spatially, LTS = 1 ``blue corridors'' concentrate along motor-traffic-free or st
 
 These patterns are consistent with the classification logic: the script applies thresholding on way type, effective width, and speed limit, while also detecting sidepaths relative to adjacent motor carriageways. Facilities with physical separation or explicit cycle priority (cycle tracks/segregated/shared paths that satisfy width/speed criteria) are assigned to LTS = 1--2. Segments that mix with motor traffic, fall below width thresholds, or exceed 30 km/h speed limits are escalated to LTS = 3--4. In addition, shared/segregated paths that are not sidepaths are down-weighted for motor adjacency, biasing them toward lower LTS and producing the observed low-stress ``blue network'' along greenways, parks, and waterfronts. Where these routes must cross primary roads or bridges, the speed/width thresholds are triggered and stress increases sharply, yielding the red breakpoints observed in the map.
 
-\subsection{\texorpdfstring{\texttt{Fac\_4}}{Fac\_4}}\label{fac_4}
+\subsection{\texorpdfstring{Miscellaneous attributes(\texttt{Fac\_4})}{Miscellaneous attributes(Fac\_4)}}\label{miscellaneous-attributesfac_4}
 
 Regression analysis shows that \texttt{fac\_4} contributes negligibly to the variation of \texttt{index\_1\_nor} (R² = 0.003). Although the coefficient is statistically significant ( \(\beta = 26.91\), \(p < 0.001\) ), the explained variance remains below 1\%, confirming that \texttt{fac\_4} functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, \texttt{fac\_4} was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
 
@@ -808,7 +808,16 @@ Regression analysis shows that \texttt{fac\_4} contributes negligibly to the var
 \caption{Spatial Distribution of the Index of Structural Ridability}\label{fig:indexs1}
 \end{figure}
 
-The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map and accompanying pie chart, nearly 70\% of road segments fall within the 15--25 and 25--35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0--15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (\textgreater45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{general_images/index1histogram} 
+
+}
+
+\caption{Histogram of Index of Structural Ridability}\label{fig:indexs1histogram}
+\end{figure}
+
+The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map with a pie chart \ref{fig:indexs1} and the histogram \ref{fig:indexs1histogram}, nearly 70\% of road segments fall within the 15--25 and 25--35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0--15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (\textgreater45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.
 
 \section{Module 2: Environmental Perception}\label{module-2-environmental-perception}
 

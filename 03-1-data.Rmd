@@ -38,6 +38,10 @@ Finally, the spatial configuration of the road network was modelled to capture s
 
 In summary, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO$_2$), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
 
+### VData for External Validation
+
+To support external validation of the CECI scores, this study additionally uses data from TfL’s Active Travel Counts Programme (2024 W1, spring). The dataset provides 15-minute manual counts of cycling flows across Central, Inner, Outer London and Cycleways, with site coordinates reported in both WGS84 and British National Grid. Counts were aggregated to site-level average daily volumes for weekdays (07:00–19:00) and subsequently linked to the nearest road segment in the CECI network.
+
 The following table represents the data sources used in this study:
 
 ```{r datasource, echo=FALSE, message=FALSE, warning=FALSE}

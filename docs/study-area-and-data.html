@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-08-29" />
+<meta name="date" content="2025-08-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -132,6 +132,7 @@ div.csl-indent {
 <li class="chapter" data-level="3.2.2" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-structural-rideability"><i class="fa fa-check"></i><b>3.2.2</b> Data for Structural Rideability</a></li>
 <li class="chapter" data-level="3.2.3" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-environmental-perception"><i class="fa fa-check"></i><b>3.2.3</b> Data for Environmental Perception</a></li>
 <li class="chapter" data-level="3.2.4" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-network-centrality"><i class="fa fa-check"></i><b>3.2.4</b> Data for Network Centrality</a></li>
+<li class="chapter" data-level="3.2.5" data-path="study-area-and-data.html"><a href="study-area-and-data.html#vdata-for-external-validation"><i class="fa fa-check"></i><b>3.2.5</b> VData for External Validation</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>4</b> Methodology</a>
@@ -173,7 +174,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="5.1.1" data-path="results.html"><a href="results.html#facility-type-geometry-and-traffic-context"><i class="fa fa-check"></i><b>5.1.1</b> Facility Type, Geometry, and Traffic Context</a></li>
 <li class="chapter" data-level="5.1.2" data-path="results.html"><a href="results.html#topography-and-traffic-stress"><i class="fa fa-check"></i><b>5.1.2</b> Topography and Traffic Stress</a></li>
-<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#fac_4"><i class="fa fa-check"></i><b>5.1.3</b> <code>Fac_4</code></a></li>
+<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#miscellaneous-attributesfac_4"><i class="fa fa-check"></i><b>5.1.3</b> Miscellaneous attributes(<code>Fac_4</code>)</a></li>
 <li class="chapter" data-level="5.1.4" data-path="results.html"><a href="results.html#index-of-structural-ridability"><i class="fa fa-check"></i><b>5.1.4</b> Index of structural ridability</a></li>
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
@@ -266,6 +267,10 @@ div.csl-indent {
 <h3><span class="header-section-number">3.2.4</span> Data for Network Centrality<a href="study-area-and-data.html#data-for-network-centrality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.</p>
 <p>In summary, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London’s cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO<span class="math inline">\(_2\)</span>), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.</p>
+</div>
+<div id="vdata-for-external-validation" class="section level3 hasAnchor" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> VData for External Validation<a href="study-area-and-data.html#vdata-for-external-validation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To support external validation of the CECI scores, this study additionally uses data from TfL’s Active Travel Counts Programme (2024 W1, spring). The dataset provides 15-minute manual counts of cycling flows across Central, Inner, Outer London and Cycleways, with site coordinates reported in both WGS84 and British National Grid. Counts were aggregated to site-level average daily volumes for weekdays (07:00–19:00) and subsequently linked to the nearest road segment in the CECI network.</p>
 <p>The following table represents the data sources used in this study:</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
@@ -409,6 +414,23 @@ Derived via OSMnx
 </td>
 <td style="text-align:left;">
 2025
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TfL Active Travel Counts (W1, spring)
+</td>
+<td style="text-align:left;">
+Manual counts of cycling flows, aggregated to weekday daily volumes
+</td>
+<td style="text-align:left;">
+Point / Site
+</td>
+<td style="text-align:left;">
+Transport for London (TfL)
+</td>
+<td style="text-align:left;">
+2024
 </td>
 </tr>
 </tbody>

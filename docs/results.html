@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-08-29" />
+<meta name="date" content="2025-08-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -132,6 +132,7 @@ div.csl-indent {
 <li class="chapter" data-level="3.2.2" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-structural-rideability"><i class="fa fa-check"></i><b>3.2.2</b> Data for Structural Rideability</a></li>
 <li class="chapter" data-level="3.2.3" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-environmental-perception"><i class="fa fa-check"></i><b>3.2.3</b> Data for Environmental Perception</a></li>
 <li class="chapter" data-level="3.2.4" data-path="study-area-and-data.html"><a href="study-area-and-data.html#data-for-network-centrality"><i class="fa fa-check"></i><b>3.2.4</b> Data for Network Centrality</a></li>
+<li class="chapter" data-level="3.2.5" data-path="study-area-and-data.html"><a href="study-area-and-data.html#vdata-for-external-validation"><i class="fa fa-check"></i><b>3.2.5</b> VData for External Validation</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>4</b> Methodology</a>
@@ -173,7 +174,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="5.1.1" data-path="results.html"><a href="results.html#facility-type-geometry-and-traffic-context"><i class="fa fa-check"></i><b>5.1.1</b> Facility Type, Geometry, and Traffic Context</a></li>
 <li class="chapter" data-level="5.1.2" data-path="results.html"><a href="results.html#topography-and-traffic-stress"><i class="fa fa-check"></i><b>5.1.2</b> Topography and Traffic Stress</a></li>
-<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#fac_4"><i class="fa fa-check"></i><b>5.1.3</b> <code>Fac_4</code></a></li>
+<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#miscellaneous-attributesfac_4"><i class="fa fa-check"></i><b>5.1.3</b> Miscellaneous attributes(<code>Fac_4</code>)</a></li>
 <li class="chapter" data-level="5.1.4" data-path="results.html"><a href="results.html#index-of-structural-ridability"><i class="fa fa-check"></i><b>5.1.4</b> Index of structural ridability</a></li>
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
@@ -282,19 +283,25 @@ Figure 5.3: Distribution of Low-Stress Routes (LTS 1 and 2) in London
 <p>Spatially, LTS = 1 “blue corridors” concentrate along motor-traffic-free or strongly separated alignments, including rivers/canals, greenways traversing large parks, and a subset of newly built or retrofitted segregated cycle tracks. These corridors are internally continuous, yet connections between corridors and into the metropolitan core are frequently severed by LTS = 3–4 segments. LTS = 2 is more common on lower-speed, lower-class residential streets, forming patches in the outer boroughs; however, inter-patch continuity is still constrained by LTS = 4 radial arterials and ring roads. LTS = 3–4 are widespread along primary/fast corridors, bridgeheads, and key connectors—locations that typically combine higher motor-traffic speeds and volumes or mixing with bus lanes—thus functioning as critical bottlenecks to network continuity.</p>
 <p>These patterns are consistent with the classification logic: the script applies thresholding on way type, effective width, and speed limit, while also detecting sidepaths relative to adjacent motor carriageways. Facilities with physical separation or explicit cycle priority (cycle tracks/segregated/shared paths that satisfy width/speed criteria) are assigned to LTS = 1–2. Segments that mix with motor traffic, fall below width thresholds, or exceed 30 km/h speed limits are escalated to LTS = 3–4. In addition, shared/segregated paths that are not sidepaths are down-weighted for motor adjacency, biasing them toward lower LTS and producing the observed low-stress “blue network” along greenways, parks, and waterfronts. Where these routes must cross primary roads or bridges, the speed/width thresholds are triggered and stress increases sharply, yielding the red breakpoints observed in the map.</p>
 </div>
-<div id="fac_4" class="section level3 hasAnchor" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> <code>Fac_4</code><a href="results.html#fac_4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="miscellaneous-attributesfac_4" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Miscellaneous attributes(<code>Fac_4</code>)<a href="results.html#miscellaneous-attributesfac_4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Regression analysis shows that <code>fac_4</code> contributes negligibly to the variation of <code>index_1_nor</code> (R² = 0.003). Although the coefficient is statistically significant ( <span class="math inline">\(\beta = 26.91\)</span>, <span class="math inline">\(p &lt; 0.001\)</span> ), the explained variance remains below 1%, confirming that <code>fac_4</code> functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, <code>fac_4</code> was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.</p>
 </div>
 <div id="index-of-structural-ridability" class="section level3 hasAnchor" number="5.1.4">
 <h3><span class="header-section-number">5.1.4</span> Index of structural ridability<a href="results.html#index-of-structural-ridability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:indexs1"></span>
-<img src="general_images/index_s1.png" alt="Spatial Distribution of the Index of Structural Ridability" width="100%" />
+<img src="general_images/index_s1.png" alt="Spatial Distribution of the Index of Structural Ridability (Higher values indicate better performance)" width="100%" />
 <p class="caption">
-Figure 5.4: Spatial Distribution of the Index of Structural Ridability
+Figure 5.4: Spatial Distribution of the Index of Structural Ridability (Higher values indicate better performance)
 </p>
 </div>
-<p>The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map and accompanying pie chart, nearly 70% of road segments fall within the 15–25 and 25–35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0–15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (&gt;45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:indexs1histogram"></span>
+<img src="general_images/index1histogram.png" alt="Histogram of Index of Structural Ridability" width="100%" />
+<p class="caption">
+Figure 5.5: Histogram of Index of Structural Ridability
+</p>
+</div>
+<p>The spatial distribution of the structural ridability index reveals a predominantly mid-range performance across London. As shown in the map with a pie chart <a href="results.html#fig:indexs1">5.4</a> and the histogram <a href="results.html#fig:indexs1histogram">5.5</a>, nearly 70% of road segments fall within the 15–25 and 25–35 bands, indicating that the majority of the cycling network provides only moderate levels of rideability. In contrast, low-value segments (0–15) remain limited, though not negligible, and are dispersed across multiple boroughs. High-value corridors (&gt;45) are comparatively rare but spatially clustered along specific arterial routes, suggesting that well-performing links tend to form isolated pockets rather than a continuous backbone. Overall, the results highlight a broad concentration around medium scores, with only a small proportion of routes delivering consistently safe and comfortable conditions.</p>
 </div>
 </div>
 <div id="module-2-environmental-perception" class="section level2 hasAnchor" number="5.2">
@@ -305,7 +312,7 @@ Figure 5.4: Spatial Distribution of the Index of Structural Ridability
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:gvi"></span>
 <img src="general_images/gvi.png" alt="Hot and Cold Spot Analysis (Getis-Ord Gi*) of the Green View Index (GVI)" width="100%" />
 <p class="caption">
-Figure 5.5: Hot and Cold Spot Analysis (Getis-Ord Gi*) of the Green View Index (GVI)
+Figure 5.6: Hot and Cold Spot Analysis (Getis-Ord Gi*) of the Green View Index (GVI)
 </p>
 </div>
 <p>This is a GVI heat map, which shows that the distribution of people’s perception of green landscapes is not random but exhibits a distinct clustering pattern. High-value clusters (hot spots) are predominantly located in areas with large urban parks, river corridors, and low-density residential neighborhoods, forming continuous belts of greenery. In contrast, low-value clusters (cold spots) are concentrated in the urban core, particularly around transport interchanges, high-density commercial centers, and major road intersections where vegetation is limited.</p>
@@ -315,31 +322,31 @@ Figure 5.5: Hot and Cold Spot Analysis (Getis-Ord Gi*) of the Green View Index (
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:no2"></span>
 <img src="general_images/no2.png" alt="Spatial Distribution of Annual Mean NO$_2$ Concentration." width="100%" />
 <p class="caption">
-Figure 5.6: Spatial Distribution of Annual Mean NO<span class="math inline">\(_2\)</span> Concentration.
+Figure 5.7: Spatial Distribution of Annual Mean NO<span class="math inline">\(_2\)</span> Concentration.
 </p>
 </div>
-<p>The spatial distribution of NO<span class="math inline">\(_2\)</span> concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear “corridor effect.” These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure <a href="results.html#fig:no2">5.6</a>).</p>
+<p>The spatial distribution of NO<span class="math inline">\(_2\)</span> concentration mirrors the urban transport system. Elevated values are observed along major arterial roads, highways, and around transport hubs, forming a clear “corridor effect.” These areas, typically characterized by heavy traffic flow, exhibit persistent air quality challenges. By contrast, peripheral zones and green buffer areas display significantly lower concentrations, reflecting the mitigating effect of distance from vehicular emissions. The overall pattern highlights the dominant role of transportation emissions in shaping urban air pollution gradients, reinforcing the spatial inequality in environmental exposure across the study area (Figure <a href="results.html#fig:no2">5.7</a>).</p>
 </div>
 <div id="natural-landscape" class="section level3 hasAnchor" number="5.2.3">
 <h3><span class="header-section-number">5.2.3</span> Natural Landscape<a href="results.html#natural-landscape" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:nf"></span>
 <img src="general_images/nf.png" alt="Spatial Distribution of Natural Landscape Coverage." width="100%" />
 <p class="caption">
-Figure 5.7: Spatial Distribution of Natural Landscape Coverage.
+Figure 5.8: Spatial Distribution of Natural Landscape Coverage.
 </p>
 </div>
-<p>The spatial distribution of natural landscape features presents a dispersed yet relatively balanced pattern. High-value clusters are concentrated along riverbanks, lakes, and peri-urban zones, forming ecological patches with visible continuity. In the urban core, the index values decline sharply, with natural landscape elements confined to isolated historical parks or large-scale public open spaces. This spatial pattern underscores the dominance of built-up land use in central districts while highlighting the ecological advantages of peripheral zones. The results suggest that natural landscapes in cities act as fragmented ecological enclaves that provide important, though unevenly distributed, ecosystem services (Figure <a href="results.html#fig:nf">5.7</a>).</p>
+<p>The spatial distribution of natural landscape features presents a dispersed yet relatively balanced pattern. High-value clusters are concentrated along riverbanks, lakes, and peri-urban zones, forming ecological patches with visible continuity. In the urban core, the index values decline sharply, with natural landscape elements confined to isolated historical parks or large-scale public open spaces. This spatial pattern underscores the dominance of built-up land use in central districts while highlighting the ecological advantages of peripheral zones. The results suggest that natural landscapes in cities act as fragmented ecological enclaves that provide important, though unevenly distributed, ecosystem services (Figure <a href="results.html#fig:nf">5.8</a>).</p>
 </div>
 <div id="index-of-environmental-perception" class="section level3 hasAnchor" number="5.2.4">
 <h3><span class="header-section-number">5.2.4</span> Index of environmental perception<a href="results.html#index-of-environmental-perception" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:indexs2"></span>
-<img src="general_images/index_s2.png" alt="Spatial Distribution of the Index of Environmental Perception" width="100%" />
+<img src="general_images/index_s2.png" alt="Spatial Distribution of the Index of Environmental Perception (Higher values indicate better performance)" width="100%" />
 <p class="caption">
-Figure 5.8: Spatial Distribution of the Index of Environmental Perception
+Figure 5.9: Spatial Distribution of the Index of Environmental Perception (Higher values indicate better performance)
 </p>
 </div>
-<p>When constructing the composite index that integrates GVI, NO<span class="math inline">\(_2\)</span>, and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac<span class="math inline">\(_1\)</span> (GVI) and fac<span class="math inline">\(_3\)</span> (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac<span class="math inline">\(_3\)</span> was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure <a href="results.html#fig:indexs2">5.8</a>) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (<code>fac_gvi</code> = 1.077, fac_NO<span class="math inline">\(_2\)</span> = 1.039, <code>fac_nat</code> = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.</p>
-<p>The resulting composite index demonstrates a distinct spatial gradient. High-value areas are primarily distributed in peripheral districts characterized by abundant green infrastructure and natural landscape patches, whereas low-value areas are concentrated in the city center, where limited greenery coincides with elevated pollution levels. This contrast highlights the compounded disadvantage faced by central urban districts, where deficits in environmental quality are most pronounced (Figure <a href="results.html#fig:indexs2">5.8</a>).</p>
+<p>When constructing the composite index that integrates GVI, NO<span class="math inline">\(_2\)</span>, and natural landscape variables, a weighting adjustment was applied to account for the partial overlap between fac<span class="math inline">\(_1\)</span> (GVI) and fac<span class="math inline">\(_3\)</span> (natural landscape), both of which represent greenery-related attributes. Specifically, the weight of fac<span class="math inline">\(_3\)</span> was slightly reduced to avoid redundancy. To ensure the robustness of factor integration, a multicollinearity test was conducted using correlation matrices (Figure <a href="results.html#fig:indexs2">5.9</a>) and Variance Inflation Factor (VIF) statistics. The results confirmed that all variables have VIF values close to 1 (<code>fac_gvi</code> = 1.077, fac_NO<span class="math inline">\(_2\)</span> = 1.039, <code>fac_nat</code> = 1.057), indicating the absence of multicollinearity and supporting the rationality of the weighting scheme.</p>
+<p>The resulting composite index demonstrates a distinct spatial gradient. High-value areas are primarily distributed in peripheral districts characterized by abundant green infrastructure and natural landscape patches, whereas low-value areas are concentrated in the city center, where limited greenery coincides with elevated pollution levels. This contrast highlights the compounded disadvantage faced by central urban districts, where deficits in environmental quality are most pronounced (Figure <a href="results.html#fig:indexs2">5.9</a>).</p>
 <p>In summary, the results from Module 2 reveal differentiated spatial patterns across three key dimensions of the urban environment—green visibility, air pollution, and natural landscape—and demonstrate the value of synthesizing them into a single composite indicator. The findings confirm that central urban areas consistently perform worse in terms of environmental livability, while peripheral districts benefit from greater ecological resources and lower pollution burdens. The multivariate analysis further validates that the integration of these factors is statistically robust and analytically meaningful. Collectively, this module provides a solid empirical foundation for evaluating urban environmental quality and supports the application of multi-factor composite indices in spatial planning and sustainability research.</p>
 </div>
 </div>
@@ -350,7 +357,7 @@ Figure 5.8: Spatial Distribution of the Index of Environmental Perception
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:Centrality"></span>
 <img src="general_images/Centrality.png" alt="Betweenness and Closeness Centrality in London's Road Network" width="100%" />
 <p class="caption">
-Figure 5.9: Betweenness and Closeness Centrality in London’s Road Network
+Figure 5.10: Betweenness and Closeness Centrality in London’s Road Network
 </p>
 </div>
 <p>The spatial distribution of betweenness and closeness centrality in London’s street network demonstrates a pattern that is consistent with the city’s established urban structure. High values of both indices are concentrated in the central districts, particularly within the City of London, the West End, and adjacent areas along the Thames. This reflects the dense street configuration and the high level of interconnectivity, whereby these locations serve both as destinations of significant accessibility (closeness) and as critical intermediaries on shortest paths (betweenness).</p>
@@ -360,9 +367,9 @@ Figure 5.9: Betweenness and Closeness Centrality in London’s Road Network
 <div id="index-of-network-centrality" class="section level3 hasAnchor" number="5.3.2">
 <h3><span class="header-section-number">5.3.2</span> Index of network centrality<a href="results.html#index-of-network-centrality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:indexs3"></span>
-<img src="general_images/index_s3.png" alt="Spatial Distribution of the Index of Network Centrality." width="100%" />
+<img src="general_images/index_s3.png" alt="Spatial Distribution of the Index of Network Centrality (Higher values indicate better performance)" width="100%" />
 <p class="caption">
-Figure 5.10: Spatial Distribution of the Index of Network Centrality.
+Figure 5.11: Spatial Distribution of the Index of Network Centrality (Higher values indicate better performance)
 </p>
 </div>
 <p>The composite centrality index demonstrates a highly uneven distribution across London’s road network. High-centrality roads are concentrated within the central districts and along radial corridors, reflecting the city’s monocentric structure combined with radial arterial organization. Peripheral suburban streets are predominantly located in the lowest centrality category, highlighting their marginal contribution to overall connectivity.</p>
@@ -375,12 +382,12 @@ Figure 5.10: Spatial Distribution of the Index of Network Centrality.
 <div id="city-wide-distribution-and-bottleneck-identification" class="section level3 hasAnchor" number="5.4.1">
 <h3><span class="header-section-number">5.4.1</span> City-Wide Distribution and Bottleneck Identification<a href="results.html#city-wide-distribution-and-bottleneck-identification" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:cqi"></span>
-<img src="general_images/cqi.png" alt="Spatial Distribution of the Cycling Environment Composite Index (CECI) by Quantile" width="100%" />
+<img src="general_images/cqi.png" alt="Spatial Distribution of the Cycling Environment Composite Index (CECI) by Quantile (Higher values indicate better performance)" width="100%" />
 <p class="caption">
-Figure 5.11: Spatial Distribution of the Cycling Environment Composite Index (CECI) by Quantile
+Figure 5.12: Spatial Distribution of the Cycling Environment Composite Index (CECI) by Quantile (Higher values indicate better performance)
 </p>
 </div>
-<p>The figure <a href="results.html#fig:cqi">5.11</a> illustrates the Cycling Environment Compliance Index across Greater London, computed at the road-segment level and classified by quintiles. A pronounced core–periphery gradient is evident: low-value segments are densely concentrated in the inner city and central areas, while the outer boroughs gradually transition to medium and higher scores. Spatially, several continuous high-value corridors can be identified, most prominently along the Thames, canal routes, and selected upgraded arterials. However, these are frequently interrupted by low-value “breakpoints” at bridges, junctions, and complex intersections, reflecting the weakening of network continuity at critical nodes. In outer London, high-value links tend to appear as scattered patches, often connected to park greenways or local residential streets, but rarely forming coherent networks at a commuting scale.</p>
+<p>The figure <a href="results.html#fig:cqi">5.12</a> illustrates the Cycling Environment Compliance Index across Greater London, computed at the road-segment level and classified by quintiles. A pronounced core–periphery gradient is evident: low-value segments are densely concentrated in the inner city and central areas, while the outer boroughs gradually transition to medium and higher scores. Spatially, several continuous high-value corridors can be identified, most prominently along the Thames, canal routes, and selected upgraded arterials. However, these are frequently interrupted by low-value “breakpoints” at bridges, junctions, and complex intersections, reflecting the weakening of network continuity at critical nodes. In outer London, high-value links tend to appear as scattered patches, often connected to park greenways or local residential streets, but rarely forming coherent networks at a commuting scale.</p>
 <p>Regionally, the most substantial cluster of low values is located within London’s Central Activity Zone (CAZ), covering the Oxford Street–Strand corridor and its surrounding districts, including Soho, Covent Garden, and Bloomsbury. Here, the extremely dense street network, frequent intersections, and heavy motor traffic volumes contribute to persistently low index scores (0–35% percentile), forming a continuous and extensive low-value core. This area not only constrains local cycling accessibility but also functions as a critical barrier, interrupting east–west and north–south connections between higher-quality corridors at the city-wide level.</p>
 <p>In sum, London’s cycling environment demonstrates a pattern of linear clustering along major corridors, widespread low-quality coverage on side streets, and insufficient continuity across rivers and key nodes. High-quality facilities are largely confined to linear routes and have not yet permeated the dense urban fabric.</p>
 </div>
@@ -389,7 +396,7 @@ Figure 5.11: Spatial Distribution of the Cycling Environment Composite Index (CE
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:kde"></span>
 <img src="general_images/cqi_kde.png" alt="Kernel Density Estimation (KDE) of Low-CECI Road Segments" width="100%" />
 <p class="caption">
-Figure 5.12: Kernel Density Estimation (KDE) of Low-CECI Road Segments
+Figure 5.13: Kernel Density Estimation (KDE) of Low-CECI Road Segments
 </p>
 </div>
 <p>This study applied kernel density estimation (KDE) to identify the spatial distribution of the Cycling Environment Composite Index (CECI). Road segments were sampled at 10 m intervals, CECI values were winsorised at the 1st–99th percentiles and normalised, and weighted points were aggregated on a 10 m grid with a 200 m Gaussian kernel. A separate surface was also generated for the top 20% of CECI values to emphasise high-performing corridors.</p>
@@ -415,28 +422,28 @@ Figure 5.12: Kernel Density Estimation (KDE) of Low-CECI Road Segments
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:AverageCQIbyBorough"></span>
 <img src="general_images/AverageCQIbyBorough.png" alt="Average CECI by London Borough" width="100%" />
 <p class="caption">
-Figure 5.13: Average CECI by London Borough
+Figure 5.14: Average CECI by London Borough
 </p>
 </div>
 <p>By averaging the CECI across boroughs, notable spatial disparities emerge. The highest-performing areas are Richmond upon Thames (32.19), Waltham Forest (31.09), Greenwich (30.44), Sutton (29.95), and Southwark (29.80), which all exceed the citywide mean and highlight relatively stronger cycling environments. In contrast, the lowest CECI values are observed in City of London (22.08), Westminster (25.36), Kensington and Chelsea (26.06), Brent (26.16), and Bexley (26.18), reflecting more constrained cycling conditions. This divergence suggests that central and inner boroughs with dense urban form and heavy traffic flows tend to perform worse, while outer or suburban boroughs with more space and dedicated infrastructure achieve higher quality levels. The results point to a spatial imbalance in cycling provision, where infrastructure quality does not align evenly with urban density and travel demand.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:BoroughComposition"></span>
 <img src="general_images/BoroughComposition.png" alt="Borough Road Composition by London-Wide CECI Quantiles" width="100%" />
 <p class="caption">
-Figure 5.14: Borough Road Composition by London-Wide CECI Quantiles
+Figure 5.15: Borough Road Composition by London-Wide CECI Quantiles
 </p>
 </div>
 <p>By examining borough-level road composition according to London-wide CECI quantiles, clear differences can be observed. The City of London shows the highest proportion of low-CECI links, highlighting its particularly constrained cycling conditions. For most boroughs, the share of mid-range CECI roads remains relatively stable, indicating that borough ranking is largely determined by the relative balance between high- and low-CECI segments rather than the middle category. This pattern suggests that differences in cycling quality across boroughs are more strongly driven by the extremes of infrastructure provision than by average conditions.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:boxcqiborough"></span>
 <img src="general_images/box_cqi_by_borough.png" alt="Distribution of CECI Scores within Each London Borough" width="100%" />
 <p class="caption">
-Figure 5.15: Distribution of CECI Scores within Each London Borough
+Figure 5.16: Distribution of CECI Scores within Each London Borough
 </p>
 </div>
-<p>To further examine intra-borough variation, Figure <a href="results.html#fig:boxcqiborough">5.15</a> presents the distribution of CECI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked boroughs, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CECI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.</p>
+<p>To further examine intra-borough variation, Figure <a href="results.html#fig:boxcqiborough">5.16</a> presents the distribution of CECI scores for each borough. The results show that internal disparities are substantial across all boroughs. Even in the highest-ranked boroughs, such as Richmond upon Thames and Waltham Forest, large interquartile ranges and overlapping distributions suggest that high cycling quality is not uniform but concentrated in selected corridors, while many other links remain only mid-performing. Similarly, in lower-ranked boroughs like the City of London and Westminster, the distributions are not only shifted towards lower medians but also highly dispersed, with numerous extreme low-CECI links. This highlights that borough-level averages can obscure significant within-borough inequalities: cycling environments are highly fragmented, and the experience of riders depends heavily on the specific routes available rather than the overall borough ranking.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:cqirobustnessdeltabar"></span>
 <img src="general_images/cqi_robustness_delta_bar.png" alt="Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes" width="100%" />
 <p class="caption">
-Figure 5.16: Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes
+Figure 5.17: Sensitivity Analysis of Borough Rankings under Alternative Weighting Schemes
 </p>
 </div>
 <p>Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|=7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (<span class="math inline">\(\tau = 0.84\)</span>) but undergoes moderate reconfigurations under W2 and W3 (<span class="math inline">\(\tau = 0.57\)</span>). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.</p>
