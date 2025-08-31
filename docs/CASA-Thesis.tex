@@ -125,7 +125,7 @@ This dissertation is submitted in part requirement for the\\
 MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 \strut \\
-Word count: 11,066}
+Word count: 11,678}
 \date{2025-08-31}
 
 \begin{document}
@@ -142,7 +142,7 @@ This study develops a composite framework to evaluate the cycling environment in
 
 \chapter*{Declaration}\label{declaration}
 
-I, Yifan Wu, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+I, Yifan Wu, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is 11,678 words in length.
 
 Yifan Wu, 24th August 2025
 
@@ -483,7 +483,7 @@ Cycling experience is also shaped by environmental and perceptual factors. Three
 
 Finally, the spatial configuration of the road network was modelled to capture structural importance. Using OSMnx, a graph representation of the OSM road network was constructed. Classic measures of network analysis such as betweenness centrality and closeness centrality were then computed. These measures help identify which roads function as critical connectors or bottlenecks, offering valuable insights into where infrastructure upgrades could generate the greatest improvements in overall cycling accessibility.
 
-In summary, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London's cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality(NO\(_2\)), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
+In summary, this study combines structural, environmental, and network-based datasets to produce a holistic representation of London's cycling environment. The OSM-derived road network serves as the unifying backbone, onto which slope, greenery, air quality (NO\(_2\)), and centrality indicators are layered. This multi-source framework allows for a nuanced assessment that moves beyond simple distance-based measures, accounting for both the physical feasibility and the perceptual quality of cycling in London.
 
 \subsection{VData for External Validation}\label{vdata-for-external-validation}
 
@@ -816,7 +816,7 @@ Beyond infrastructure, topography and traffic stress are key determinants of rid
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Slope(\texttt{fac\_3})
+  Slope (\texttt{fac\_3})
 \end{enumerate}
 
 The spatial distribution of slope across Greater London reveals a distinct topographic gradient, with high-slope areas predominantly concentrated along the northern and southern peripheries of the region (Figure \ref{fig:slopeLTS}). In particular, the southern belt exhibits continuous steep zones associated with the North Downs, while fragmented high-slope patches are observed in the northern uplands. By contrast, the central and eastern parts of London are characterized by extensive low-slope terrain, reflecting the dominance of the Thames floodplain and surrounding flatlands.
@@ -826,7 +826,7 @@ The spatial distribution of slope across Greater London reveals a distinct topog
 \setcounter{enumi}{1}
 \tightlist
 \item
-  LTS(\texttt{fac\_5})
+  LTS (\texttt{fac\_5})
 \end{enumerate}
 
 At the citywide scale, high-stress segments dominate the network. By link counts, LTS = 4 comprises 65.5\% (107,510 links) and LTS = 3 2.5\% (4,137 links), whereas low-stress LTS = 1 and LTS = 2 account for 18.6\% (30,444 links) and 13.4\% (21,985 links), respectively. This distribution indicates that, in its current form, London's cycling network primarily serves riders with greater experience or higher stress tolerance. Although low-stress facilities are widespread, they are largely fragmented and corridor-based, rather than forming a continuous citywide backbone.
@@ -844,7 +844,7 @@ Spatially, LTS = 1 ``blue corridors'' concentrate along motor-traffic-free or st
 
 These patterns are consistent with the classification logic: the script applies thresholding on way type, effective width, and speed limit, while also detecting sidepaths relative to adjacent motor carriageways. Facilities with physical separation or explicit cycle priority (cycle tracks/segregated/shared paths that satisfy width/speed criteria) are assigned to LTS = 1--2. Segments that mix with motor traffic, fall below width thresholds, or exceed 30 km/h speed limits are escalated to LTS = 3--4. In addition, shared/segregated paths that are not sidepaths are down-weighted for motor adjacency, biasing them toward lower LTS and producing the observed low-stress ``blue network'' along greenways, parks, and waterfronts. Where these routes must cross primary roads or bridges, the speed/width thresholds are triggered and stress increases sharply, yielding the red breakpoints observed in the map.
 
-\subsection{\texorpdfstring{Miscellaneous attributes(\texttt{Fac\_4})}{Miscellaneous attributes(Fac\_4)}}\label{miscellaneous-attributesfac_4}
+\subsection{\texorpdfstring{Miscellaneous attributes (\texttt{Fac\_4})}{Miscellaneous attributes (Fac\_4)}}\label{miscellaneous-attributes-fac_4}
 
 Regression analysis shows that \texttt{fac\_4} contributes negligibly to the variation of \texttt{index\_1\_nor} (R² = 0.003). Although the coefficient is statistically significant ( \(\beta = 26.91\), \(p < 0.001\) ), the explained variance remains below 1\%, confirming that \texttt{fac\_4} functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, \texttt{fac\_4} was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
 
@@ -1092,8 +1092,6 @@ The study further compared CECI with observed cycling volumes from TfL's 2024 sp
 As shown in Figure \ref{fig:validation}, the results indicate a positive but weak association between CECI and observed cycling volumes: Pearson r = 0.03 (p = 0.22), Spearman ρ = 0.10 (p \textless{} 0.001). This suggests that, although explanatory power is limited, road segments with higher CECI scores generally correspond to slightly greater cycling flows, supporting the basic validity of the index in capturing spatial variation in cycling environment quality. The weak correlations likely reflect the restricted temporal coverage of the validation dataset and potential spatial mismatches between monitoring sites and road segments. Accordingly, CECI is more appropriately interpreted as a relative spatial diagnostic rather than a direct predictor of absolute cycling flows.
 
 \chapter{Discussion}\label{discussion}
-
-Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
 
 \section{Research significance}\label{research-significance}
 
@@ -1443,7 +1441,7 @@ NA & gvi\_buffer\_radius & 30 m & Buffer radius centered at the segment midpoint
 \addlinespace
 NA & borough\_mean\_impute & TRUE & Impute missing values with the mean of the containing borough\\
 NA & gvi\_flag & 0/1 & 0 = use buffer mean; 1 = use borough mean\\
-NO₂ processing & no2\_source & NO₂ raster (AQI/LAEI2025) & Data source (read from .tif)\\
+NO2 processing & no2\_source & NO2 raster (AQI/LAEI2025) & Data source (read from .tif)\\
 NA & no2\_sample\_step & 10 m & Spacing of sample points along the segment\\
 NA & no2\_statistic & mean & Average raster value over sampled points\\
 \addlinespace

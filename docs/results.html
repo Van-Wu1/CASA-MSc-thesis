@@ -174,7 +174,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="5.1.1" data-path="results.html"><a href="results.html#facility-type-geometry-and-traffic-context"><i class="fa fa-check"></i><b>5.1.1</b> Facility Type, Geometry, and Traffic Context</a></li>
 <li class="chapter" data-level="5.1.2" data-path="results.html"><a href="results.html#topography-and-traffic-stress"><i class="fa fa-check"></i><b>5.1.2</b> Topography and Traffic Stress</a></li>
-<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#miscellaneous-attributesfac_4"><i class="fa fa-check"></i><b>5.1.3</b> Miscellaneous attributes(<code>Fac_4</code>)</a></li>
+<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#miscellaneous-attributes-fac_4"><i class="fa fa-check"></i><b>5.1.3</b> Miscellaneous attributes (<code>Fac_4</code>)</a></li>
 <li class="chapter" data-level="5.1.4" data-path="results.html"><a href="results.html#index-of-structural-ridability"><i class="fa fa-check"></i><b>5.1.4</b> Index of structural ridability</a></li>
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#module-2-environmental-perception"><i class="fa fa-check"></i><b>5.2</b> Module 2: Environmental Perception</a>
@@ -268,11 +268,11 @@ Figure 5.2: Spatial distribution of slope (a) and Level of Traffic Stress (b) ac
 </p>
 </div>
 <ol style="list-style-type: decimal">
-<li>Slope(<code>fac_3</code>)</li>
+<li>Slope (<code>fac_3</code>)</li>
 </ol>
 <p>The spatial distribution of slope across Greater London reveals a distinct topographic gradient, with high-slope areas predominantly concentrated along the northern and southern peripheries of the region (Figure <a href="results.html#fig:slopeLTS">5.2</a>). In particular, the southern belt exhibits continuous steep zones associated with the North Downs, while fragmented high-slope patches are observed in the northern uplands. By contrast, the central and eastern parts of London are characterized by extensive low-slope terrain, reflecting the dominance of the Thames floodplain and surrounding flatlands.</p>
 <ol start="2" style="list-style-type: decimal">
-<li>LTS(<code>fac_5</code>)</li>
+<li>LTS (<code>fac_5</code>)</li>
 </ol>
 <p>At the citywide scale, high-stress segments dominate the network. By link counts, LTS = 4 comprises 65.5% (107,510 links) and LTS = 3 2.5% (4,137 links), whereas low-stress LTS = 1 and LTS = 2 account for 18.6% (30,444 links) and 13.4% (21,985 links), respectively. This distribution indicates that, in its current form, London’s cycling network primarily serves riders with greater experience or higher stress tolerance. Although low-stress facilities are widespread, they are largely fragmented and corridor-based, rather than forming a continuous citywide backbone.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:LTS12"></span>
@@ -284,8 +284,8 @@ Figure 5.3: Distribution of Low-Stress Routes (LTS 1 and 2) in London
 <p>Spatially, LTS = 1 “blue corridors” concentrate along motor-traffic-free or strongly separated alignments, including rivers/canals, greenways traversing large parks, and a subset of newly built or retrofitted segregated cycle tracks. These corridors are internally continuous, yet connections between corridors and into the metropolitan core are frequently severed by LTS = 3–4 segments. LTS = 2 is more common on lower-speed, lower-class residential streets, forming patches in the outer boroughs; however, inter-patch continuity is still constrained by LTS = 4 radial arterials and ring roads. LTS = 3–4 are widespread along primary/fast corridors, bridgeheads, and key connectors—locations that typically combine higher motor-traffic speeds and volumes or mixing with bus lanes—thus functioning as critical bottlenecks to network continuity.</p>
 <p>These patterns are consistent with the classification logic: the script applies thresholding on way type, effective width, and speed limit, while also detecting sidepaths relative to adjacent motor carriageways. Facilities with physical separation or explicit cycle priority (cycle tracks/segregated/shared paths that satisfy width/speed criteria) are assigned to LTS = 1–2. Segments that mix with motor traffic, fall below width thresholds, or exceed 30 km/h speed limits are escalated to LTS = 3–4. In addition, shared/segregated paths that are not sidepaths are down-weighted for motor adjacency, biasing them toward lower LTS and producing the observed low-stress “blue network” along greenways, parks, and waterfronts. Where these routes must cross primary roads or bridges, the speed/width thresholds are triggered and stress increases sharply, yielding the red breakpoints observed in the map.</p>
 </div>
-<div id="miscellaneous-attributesfac_4" class="section level3 hasAnchor" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> Miscellaneous attributes(<code>Fac_4</code>)<a href="results.html#miscellaneous-attributesfac_4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="miscellaneous-attributes-fac_4" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Miscellaneous attributes (<code>Fac_4</code>)<a href="results.html#miscellaneous-attributes-fac_4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Regression analysis shows that <code>fac_4</code> contributes negligibly to the variation of <code>index_1_nor</code> (R² = 0.003). Although the coefficient is statistically significant ( <span class="math inline">\(\beta = 26.91\)</span>, <span class="math inline">\(p &lt; 0.001\)</span> ), the explained variance remains below 1%, confirming that <code>fac_4</code> functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, <code>fac_4</code> was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.</p>
 </div>
 <div id="index-of-structural-ridability" class="section level3 hasAnchor" number="5.1.4">

@@ -34,11 +34,11 @@ library(here)
 knitr::include_graphics(here::here('general_images','slopeLTS.png'))
 ```
 
-1. Slope(`fac_3`)
+1. Slope (`fac_3`)
 
 The spatial distribution of slope across Greater London reveals a distinct topographic gradient, with high-slope areas predominantly concentrated along the northern and southern peripheries of the region (Figure \@ref(fig:slopeLTS)). In particular, the southern belt exhibits continuous steep zones associated with the North Downs, while fragmented high-slope patches are observed in the northern uplands. By contrast, the central and eastern parts of London are characterized by extensive low-slope terrain, reflecting the dominance of the Thames floodplain and surrounding flatlands.
 
-2. LTS(`fac_5`)
+2. LTS (`fac_5`)
 
 At the citywide scale, high-stress segments dominate the network. By link counts, LTS = 4 comprises 65.5% (107,510 links) and LTS = 3 2.5% (4,137 links), whereas low-stress LTS = 1 and LTS = 2 account for 18.6% (30,444 links) and 13.4% (21,985 links), respectively. This distribution indicates that, in its current form, London’s cycling network primarily serves riders with greater experience or higher stress tolerance. Although low-stress facilities are widespread, they are largely fragmented and corridor-based, rather than forming a continuous citywide backbone.
 
@@ -51,7 +51,7 @@ Spatially, LTS = 1 “blue corridors” concentrate along motor-traffic-free or 
 
 These patterns are consistent with the classification logic: the script applies thresholding on way type, effective width, and speed limit, while also detecting sidepaths relative to adjacent motor carriageways. Facilities with physical separation or explicit cycle priority (cycle tracks/segregated/shared paths that satisfy width/speed criteria) are assigned to LTS = 1–2. Segments that mix with motor traffic, fall below width thresholds, or exceed 30 km/h speed limits are escalated to LTS = 3–4. In addition, shared/segregated paths that are not sidepaths are down-weighted for motor adjacency, biasing them toward lower LTS and producing the observed low-stress “blue network” along greenways, parks, and waterfronts. Where these routes must cross primary roads or bridges, the speed/width thresholds are triggered and stress increases sharply, yielding the red breakpoints observed in the map.
 
-### Miscellaneous attributes(`Fac_4`)
+### Miscellaneous attributes (`Fac_4`)
 
 Regression analysis shows that `fac_4` contributes negligibly to the variation of `index_1_nor` (R² = 0.003). Although the coefficient is statistically significant ( $\beta = 26.91$, $p < 0.001$ ), the explained variance remains below 1%, confirming that `fac_4` functions primarily as a correction factor rather than a substantive determinant of the index. Given its marginal explanatory power, `fac_4` was not visualised separately in the results section but was instead acknowledged as an auxiliary adjustment within the index construction.
 
