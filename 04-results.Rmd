@@ -213,3 +213,14 @@ knitr::include_graphics(here::here('general_images','cqi_robustness_delta_bar.pn
 ```
 
 Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|=7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 ($\tau = 0.84$) but undergoes moderate reconfigurations under W2 and W3 ($\tau = 0.57$). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.
+
+## Validation
+
+The study further compared CECI with observed cycling volumes from TfL’s 2024 spring count campaign. The raw dataset consisted of monitoring records collected at 15-minute intervals, covering three categories of cycling modes: conventional cycles, hire bikes, and private cycles. After cleaning, only these three modes were retained, and records were restricted to weekdays between 07:00 and 19:00. Counts were then aggregated into daily totals and averaged for each site. Monitoring stations were subsequently matched to the nearest road segment with a CECI value within 100 m.
+
+```{r validation, echo=FALSE, out.width="90%", fig.align='center', fig.cap="Validation: Cycle counts vs CECI (TfL 2024 W1 spring)"}
+library(here)
+knitr::include_graphics(here::here('general_images','validation.png'))
+```
+
+As shown in Figure \@ref(fig:validation), the results indicate a positive but weak association between CECI and observed cycling volumes: Pearson r = 0.03 (p = 0.22), Spearman ρ = 0.10 (p < 0.001). This suggests that, although explanatory power is limited, road segments with higher CECI scores generally correspond to slightly greater cycling flows, supporting the basic validity of the index in capturing spatial variation in cycling environment quality. The weak correlations likely reflect the restricted temporal coverage of the validation dataset and potential spatial mismatches between monitoring sites and road segments. Accordingly, CECI is more appropriately interpreted as a relative spatial diagnostic rather than a direct predictor of absolute cycling flows.

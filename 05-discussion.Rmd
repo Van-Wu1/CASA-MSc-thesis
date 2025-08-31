@@ -28,6 +28,8 @@ The dependence on OSM further entails issues of coverage and tagging consistency
 
 Design choices embedded in the network analysis also shape results. Centrality is computed on a primal, undirected, length-weighted graph, which abstracts from signal delay, turn costs, grade at junctions, and micro-routing preferences; the selected closeness radii and the approximate betweenness sampler represent defensible but not unique specifications. Similarly, distributional treatment through p1–p99 winsorisation and min–max scaling reduces the influence of extremes but compresses tail variation, with potential consequences for the relative prominence of isolated high- or low-scoring segments.
 
+Besides, validation provides limited temporal coverage, while autumn counts only cover Cycleways. The results should therefore be interpreted as indicative rather than comprehensive.
+
 In addition, the composite weighting schemes encode normative assumptions regarding the relative salience of structural quality, environmental comfort, and network position. Alternative analytical or policy perspectives might reasonably prioritise these dimensions differently, yielding variation in spatial rankings. Taken together, these considerations indicate that the index should be interpreted as a comparative, spatial diagnostic rather than as a definitive, time-specific measure of present conditions.
 
 

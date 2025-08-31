@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-08-30" />
+<meta name="date" content="2025-08-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -195,6 +195,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#ceci-kernel-density-estimation-in-london"><i class="fa fa-check"></i><b>5.4.2</b> CECI Kernel Density Estimation in London</a></li>
 <li class="chapter" data-level="5.4.3" data-path="results.html"><a href="results.html#the-ceci-analysis-at-the-borough-level"><i class="fa fa-check"></i><b>5.4.3</b> The CECI analysis at the borough level</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="results.html"><a href="results.html#validation"><i class="fa fa-check"></i><b>5.5</b> Validation</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a>
 <ul>
@@ -447,8 +448,19 @@ Figure 5.17: Sensitivity Analysis of Borough Rankings under Alternative Weightin
 </p>
 </div>
 <p>Sensitivity tests confirm that the equal-weight baseline is robust to moderate re-weighting. The alternative specification W1 shows negligible differences from the baseline (r=0.97, max |Δ|=7.5%), indicating that small perturbations do not materially affect borough-level results. By contrast, prioritising Perceptual Environment (W2) raises overall CECI levels by approximately 10–25%, whereas prioritising Network Centrality (W3) lowers levels by 8–18%. These shifts are consistent with city-wide sub-index distributions, where environmental quality achieves relatively higher scores while centrality underperforms on average. Rank correlations further show that borough ordering remains broadly stable under W1 (<span class="math inline">\(\tau = 0.84\)</span>) but undergoes moderate reconfigurations under W2 and W3 (<span class="math inline">\(\tau = 0.57\)</span>). The low correlation between W2 and W3 highlights complementary spatial logics rather than redundancy. Therefore, the equal-weight index is retained for headline analysis, while W2 and W3 provide policy-relevant bounds reflecting amenity-oriented versus connectivity-oriented priorities.</p>
-
 </div>
+</div>
+<div id="validation" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Validation<a href="results.html#validation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The study further compared CECI with observed cycling volumes from TfL’s 2024 spring count campaign. The raw dataset consisted of monitoring records collected at 15-minute intervals, covering three categories of cycling modes: conventional cycles, hire bikes, and private cycles. After cleaning, only these three modes were retained, and records were restricted to weekdays between 07:00 and 19:00. Counts were then aggregated into daily totals and averaged for each site. Monitoring stations were subsequently matched to the nearest road segment with a CECI value within 100 m.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:validation"></span>
+<img src="general_images/validation.png" alt="Validation: Cycle counts vs CECI (TfL 2024 W1 spring)" width="90%" />
+<p class="caption">
+Figure 5.18: Validation: Cycle counts vs CECI (TfL 2024 W1 spring)
+</p>
+</div>
+<p>As shown in Figure <a href="results.html#fig:validation">5.18</a>, the results indicate a positive but weak association between CECI and observed cycling volumes: Pearson r = 0.03 (p = 0.22), Spearman ρ = 0.10 (p &lt; 0.001). This suggests that, although explanatory power is limited, road segments with higher CECI scores generally correspond to slightly greater cycling flows, supporting the basic validity of the index in capturing spatial variation in cycling environment quality. The weak correlations likely reflect the restricted temporal coverage of the validation dataset and potential spatial mismatches between monitoring sites and road segments. Accordingly, CECI is more appropriately interpreted as a relative spatial diagnostic rather than a direct predictor of absolute cycling flows.</p>
+
 </div>
 </div>
             </section>

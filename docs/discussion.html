@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-08-30" />
+<meta name="date" content="2025-08-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -195,6 +195,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#ceci-kernel-density-estimation-in-london"><i class="fa fa-check"></i><b>5.4.2</b> CECI Kernel Density Estimation in London</a></li>
 <li class="chapter" data-level="5.4.3" data-path="results.html"><a href="results.html#the-ceci-analysis-at-the-borough-level"><i class="fa fa-check"></i><b>5.4.3</b> The CECI analysis at the borough level</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="results.html"><a href="results.html#validation"><i class="fa fa-check"></i><b>5.5</b> Validation</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a>
 <ul>
@@ -259,6 +260,7 @@ div.csl-indent {
 <p>Limitations also arise from cross-city parameter transfer within the structural rideability module. Thresholds and mappings for elements such as effective width, separation, and buffer rules derive from a framework calibrated in Berlin. Although the metadata in both contexts are sourced from OSM via Overpass Turbo, country-specific tagging practices, attribute completeness, and data conventions differ. During transfer, this heterogeneity can increase the frequency of missing or partially specified attributes. To avoid optimistic bias where attributes are absent, a conservative penalty mechanism is adopted that applies uniform downward adjustments under defined missingness conditions; this improves internal consistency but may produce a systematic downward shift in areas with sparser tagging.</p>
 <p>The dependence on OSM further entails issues of coverage and tagging consistency. Volunteer-contributed data are uneven across space and over feature types, and fine-grained fields of particular relevance to cycling—cycleway subtype, buffer presence and width, surface and smoothness—may be omitted or inconsistently recorded. Such variation can propagate to factor assignment and to the stability of LTS classification, especially in neighbourhoods where infrastructure is evolving faster than tagging activity.</p>
 <p>Design choices embedded in the network analysis also shape results. Centrality is computed on a primal, undirected, length-weighted graph, which abstracts from signal delay, turn costs, grade at junctions, and micro-routing preferences; the selected closeness radii and the approximate betweenness sampler represent defensible but not unique specifications. Similarly, distributional treatment through p1–p99 winsorisation and min–max scaling reduces the influence of extremes but compresses tail variation, with potential consequences for the relative prominence of isolated high- or low-scoring segments.</p>
+<p>Besides, validation provides limited temporal coverage, while autumn counts only cover Cycleways. The results should therefore be interpreted as indicative rather than comprehensive.</p>
 <p>In addition, the composite weighting schemes encode normative assumptions regarding the relative salience of structural quality, environmental comfort, and network position. Alternative analytical or policy perspectives might reasonably prioritise these dimensions differently, yielding variation in spatial rankings. Taken together, these considerations indicate that the index should be interpreted as a comparative, spatial diagnostic rather than as a definitive, time-specific measure of present conditions.</p>
 </div>
 <div id="transferability" class="section level2 hasAnchor" number="6.3">
